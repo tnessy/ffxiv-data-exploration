@@ -1,0 +1,54 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate graphs and diffs
+        run: python generate_csv_graph.py
+
+      - name: Generate visualization
+        run: python generate_viz.py
+
+      # Reads metadata.root from the generated graph to handle both
+      # csv/en (7.41+) and flat csv/ (pre-7.41) layouts automatically.
+      - name: Copy latest CSV data into site
+        shell: python
+        run: |
+          import json, shutil, pathlib
+          root = json.loads(pathlib.Path('csv_graph_latest.json').read_text(encoding='utf-8'))['metadata']['root']
+          src = pathlib.Path(root)
+          dst = pathlib.Path('site') / root
+          dst.parent.mkdir(parents=True, exist_ok=True)
+          shutil.copytree(src, dst)
+          print(f"Copied {src} -> {dst}")
+
+      # force_orphan replaces gh-pages with a single new commit on every
+      # deploy — the branch never accumulates history.
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
+          commit_message: "deploy: ${{ github.sha }}"

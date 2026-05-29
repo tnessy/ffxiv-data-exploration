@@ -7,12 +7,12 @@ Versions are registered in versions.json at the project root.
 Run from the project root:
     python generate_csv_graph.py
 
-Outputs (one per version):
+Outputs (one per version, project root — build intermediates, not deployed):
     csv_graph_{version_id}.json
 
-Outputs (one per consecutive pair):
-    diff_{from_id}_to_{to_id}.json      — schema + edge diffs
-    data_diff_{from_id}_to_{to_id}.json — row-level data diffs for tables with stable schemas
+Outputs (one per consecutive pair, written to site/ — deployed to gh-pages):
+    site/diff_{from_id}_to_{to_id}.json      — schema + edge diffs
+    site/data_diff_{from_id}_to_{to_id}.json — row-level data diffs for tables with stable schemas
 """
 import csv
 import json
@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 VERSIONS_FILE = Path("versions.json")
+SITE_DIR      = Path("site")
 # Ordered by preference: language-scoped layout (7.41+) then flat layout (pre-7.41)
 CSV_SUBDIRS   = [Path("csv/en"), Path("csv")]
 
@@ -271,6 +272,7 @@ def main():
         raise ValueError("versions.json is empty")
 
     print(f"Processing {len(versions)} version(s) from {VERSIONS_FILE}...\n")
+    SITE_DIR.mkdir(exist_ok=True)
 
     graphs: dict[str, dict] = {}
 
@@ -302,8 +304,8 @@ def main():
     print("Generating diffs...")
     for from_id, to_id in zip(processed, processed[1:]):
         diff     = build_diff(graphs[from_id], graphs[to_id], from_id, to_id)
-        out_path = Path(f"diff_{from_id}_to_{to_id}.json")
-        out_path.write_text(json.dumps(diff, indent=2), encoding="utf-8")
+        out_path = SITE_DIR / f"diff_{from_id}_to_{to_id}.json"
+        out_path.write_text(json.dumps(diff, separators=(",", ":")), encoding="utf-8")
         t = diff["tables"]
         e = diff["edges"]
         print(
@@ -315,8 +317,8 @@ def main():
 
         print(f"  Building data diff {from_id} -> {to_id} (reading all rows)...")
         data_diff     = build_data_diff(graphs[from_id], graphs[to_id], diff)
-        data_out_path = Path(f"data_diff_{from_id}_to_{to_id}.json")
-        data_out_path.write_text(json.dumps(data_diff, indent=2), encoding="utf-8")
+        data_out_path = SITE_DIR / f"data_diff_{from_id}_to_{to_id}.json"
+        data_out_path.write_text(json.dumps(data_diff, separators=(",", ":")), encoding="utf-8")
         s = data_diff["summary"]
         print(
             f"  {from_id} -> {to_id} (data)  |"
