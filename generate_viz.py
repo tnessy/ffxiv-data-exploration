@@ -1,7 +1,8 @@
 """
-Generates a self-contained D3 visualization from csv_graph.json.
+Generates a self-contained D3 visualization from csv_graph_latest.json.
 Run from project root:  python generate_viz.py
-Requires:               csv_graph.json  (from generate_csv_graph.py)
+Requires:               csv_graph_latest.json  (from generate_csv_graph.py)
+                        versions.json          (version registry)
 Output:                 graph_viz.html  (serve via HTTP — e.g. python -m http.server)
 
 CSV row data is loaded dynamically at runtime via fetch(), so the HTML stays small.
@@ -11,9 +12,10 @@ import re
 from collections import Counter
 from pathlib import Path
 
-GRAPH_FILE    = Path("csv_graph.json")
+GRAPH_FILE    = Path("csv_graph_latest.json")
 TEMPLATE_FILE = Path("graph_viz_template.html")
 OUTPUT_FILE   = Path("graph_viz.html")
+VERSIONS_FILE = Path("versions.json")
 
 # This exact string in the template is replaced with real data.
 DATA_MARKER = '{"nodes":[],"edges":[]}; // __INJECT_DATA__'
@@ -54,12 +56,29 @@ def main():
     family_counts = Counter(n["family"] for n in viz_nodes)
     top_families = [f for f, _ in family_counts.most_common(15)]
 
+    # Collect version list and available diff pairs for the UI
+    versions_meta: list[dict] = []
+    diff_pairs: list[dict] = []
+    data_diff_pairs: list[dict] = []
+    if VERSIONS_FILE.exists():
+        raw_versions = json.loads(VERSIONS_FILE.read_text(encoding="utf-8"))
+        versions_meta = [{"id": v["id"], "label": v.get("label", v["id"])} for v in raw_versions]
+        for a, b in zip(raw_versions, raw_versions[1:]):
+            from_id, to_id = a["id"], b["id"]
+            if Path(f"diff_{from_id}_to_{to_id}.json").exists():
+                diff_pairs.append({"from": from_id, "to": to_id})
+            if Path(f"data_diff_{from_id}_to_{to_id}.json").exists():
+                data_diff_pairs.append({"from": from_id, "to": to_id})
+
     data = {
         "nodes": viz_nodes,
         "edges": edges,
         "meta": {
             "top_families":    top_families,
             "total_families":  len(family_counts),
+            "versions":        versions_meta,
+            "diff_pairs":      diff_pairs,
+            "data_diff_pairs": data_diff_pairs,
         },
     }
     data_json = json.dumps(data, separators=(",", ":"))

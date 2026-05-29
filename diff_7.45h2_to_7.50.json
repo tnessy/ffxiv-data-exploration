@@ -1,0 +1,927 @@
+{
+  "from": "7.45h2",
+  "to": "7.50",
+  "tables": {
+    "added": [
+      "ArrayActionCheck",
+      "BNpcResist",
+      "CustomTalkSimpleNest",
+      "DynamicEventScreenImage",
+      "EventImage",
+      "ExtendedQuestCounter",
+      "ItemConvertTalk",
+      "KTGBNpc",
+      "KTGContent",
+      "KTGParam",
+      "KTGTypeWordProgram",
+      "KTGTypeWordTextData",
+      "PhantomWeaponExTodo",
+      "PhantomWeaponExTodoDetailTxt",
+      "PhantomWeaponExTodoDetails",
+      "QuestExtendedTodoBnpc",
+      "QuestRedoEvacuateWarp",
+      "QuestRedoInvalidTerritory",
+      "TinyCustomTalk",
+      "WKSMechaTank",
+      "WKSMissionToDoRecover",
+      "WeatherCategory",
+      "WorldPhysicalDC",
+      "WorldRegionGroup",
+      "XBMActionEffectType",
+      "XBMActionTarget",
+      "XBMBattleDetail",
+      "XBMBattleDetailAction",
+      "XBMContent",
+      "XBMContentBattle",
+      "XBMContentCamp",
+      "XBMContentRandomStageEvent",
+      "XBMContentStageEvent",
+      "XBMContentStageEventMap",
+      "XBMElement",
+      "XBMEntrance",
+      "XBMItem",
+      "XBMItemType",
+      "XBMPet",
+      "XBMPetParamGrow",
+      "XBMRandomStageEvent",
+      "XBMScoreBonus",
+      "XBMScoreRank",
+      "XBMStageEventType"
+    ],
+    "removed": [
+      "StainTransient"
+    ],
+    "changed": {
+      "Adventure": {
+        "columns_added": [
+          "Unknown0",
+          "Unknown1"
+        ],
+        "columns_removed": []
+      },
+      "BNpcBase": {
+        "columns_added": [
+          "Unknown11"
+        ],
+        "columns_removed": []
+      },
+      "Booster": {
+        "columns_added": [
+          "Unknown4"
+        ],
+        "columns_removed": []
+      },
+      "CSBonusContentIdentifier": {
+        "columns_added": [
+          "Unknown7"
+        ],
+        "columns_removed": []
+      },
+      "CSBonusSeason": {
+        "columns_added": [
+          "Unknown13",
+          "Unknown14",
+          "Unknown15",
+          "Unknown16",
+          "Unknown17"
+        ],
+        "columns_removed": []
+      },
+      "ContentFinderCondition": {
+        "columns_added": [
+          "CrystallineConflictCasualRoulette",
+          "CrystallineConflictRankedRoulette"
+        ],
+        "columns_removed": [
+          "Unknown27",
+          "Unknown28"
+        ]
+      },
+      "ContentTodo": {
+        "columns_added": [
+          "Objective",
+          "Unknown1"
+        ],
+        "columns_removed": [
+          "Text",
+          "Unknown0"
+        ]
+      },
+      "CutScreenImage": {
+        "columns_added": [
+          "Unknown1"
+        ],
+        "columns_removed": []
+      },
+      "DescriptionStandAloneTransient": {
+        "columns_added": [
+          "Name"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "DisposalShop": {
+        "columns_added": [
+          "Unknown17"
+        ],
+        "columns_removed": []
+      },
+      "DpsChallengeOfficer": {
+        "columns_added": [
+          "ChallengeName[25]"
+        ],
+        "columns_removed": []
+      },
+      "DynamicEvent": {
+        "columns_added": [
+          "IconObjective0",
+          "IconObjective1",
+          "Unknown9"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "EObj": {
+        "columns_added": [
+          "Unknown11",
+          "Unknown12"
+        ],
+        "columns_removed": [
+          "EventHighAddition"
+        ]
+      },
+      "EmjCostume": {
+        "columns_added": [
+          "OffsetX",
+          "OffsetY",
+          "Scale",
+          "Sort",
+          "Unknown0",
+          "UnlockText"
+        ],
+        "columns_removed": [
+          "Unknown2",
+          "Unknown3",
+          "Unknown4",
+          "Unknown5"
+        ]
+      },
+      "EmjVoiceNpc": {
+        "columns_added": [
+          "Unknown0"
+        ],
+        "columns_removed": []
+      },
+      "EventMountGimmickPathMove": {
+        "columns_added": [
+          "Unknown9"
+        ],
+        "columns_removed": []
+      },
+      "Fate": {
+        "columns_added": [
+          "Unknown14",
+          "Unknown15"
+        ],
+        "columns_removed": []
+      },
+      "GFATE": {
+        "columns_added": [
+          "Type"
+        ],
+        "columns_removed": [
+          "Unknown10"
+        ]
+      },
+      "GFateClimbing": {
+        "columns_added": [
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown1"
+        ]
+      },
+      "GFateStelth": {
+        "columns_added": [
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown1"
+        ]
+      },
+      "GFateType": {
+        "columns_added": [
+          "Name"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "GroupPoseFrame": {
+        "columns_added": [
+          "Festival",
+          "SortKey",
+          "UnlockCriteria",
+          "UnlockType"
+        ],
+        "columns_removed": [
+          "Unknown3",
+          "Unknown4",
+          "Unknown5",
+          "Unknown6"
+        ]
+      },
+      "GroupPoseStamp": {
+        "columns_added": [
+          "Festival",
+          "SortKey",
+          "UnlockCriteria",
+          "UnlockType"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown2",
+          "Unknown3",
+          "Unknown4"
+        ]
+      },
+      "HousingFurniture": {
+        "columns_added": [
+          "PlaceLimitType"
+        ],
+        "columns_removed": [
+          "Unknown1"
+        ]
+      },
+      "HousingLandSet": {
+        "columns_added": [
+          "LandSet[0].MapRange",
+          "LandSet[0].RoomExit",
+          "LandSet[10].MapRange",
+          "LandSet[10].RoomExit",
+          "LandSet[11].MapRange",
+          "LandSet[11].RoomExit",
+          "LandSet[12].MapRange",
+          "LandSet[12].RoomExit",
+          "LandSet[13].MapRange",
+          "LandSet[13].RoomExit",
+          "LandSet[14].MapRange",
+          "LandSet[14].RoomExit",
+          "LandSet[15].MapRange",
+          "LandSet[15].RoomExit",
+          "LandSet[16].MapRange",
+          "LandSet[16].RoomExit",
+          "LandSet[17].MapRange",
+          "LandSet[17].RoomExit",
+          "LandSet[18].MapRange",
+          "LandSet[18].RoomExit",
+          "LandSet[19].MapRange",
+          "LandSet[19].RoomExit",
+          "LandSet[1].MapRange",
+          "LandSet[1].RoomExit",
+          "LandSet[20].MapRange",
+          "LandSet[20].RoomExit",
+          "LandSet[21].MapRange",
+          "LandSet[21].RoomExit",
+          "LandSet[22].MapRange",
+          "LandSet[22].RoomExit",
+          "LandSet[23].MapRange",
+          "LandSet[23].RoomExit",
+          "LandSet[24].MapRange",
+          "LandSet[24].RoomExit",
+          "LandSet[25].MapRange",
+          "LandSet[25].RoomExit",
+          "LandSet[26].MapRange",
+          "LandSet[26].RoomExit",
+          "LandSet[27].MapRange",
+          "LandSet[27].RoomExit",
+          "LandSet[28].MapRange",
+          "LandSet[28].RoomExit",
+          "LandSet[29].MapRange",
+          "LandSet[29].RoomExit",
+          "LandSet[2].MapRange",
+          "LandSet[2].RoomExit",
+          "LandSet[30].MapRange",
+          "LandSet[30].RoomExit",
+          "LandSet[31].MapRange",
+          "LandSet[31].RoomExit",
+          "LandSet[32].MapRange",
+          "LandSet[32].RoomExit",
+          "LandSet[33].MapRange",
+          "LandSet[33].RoomExit",
+          "LandSet[34].MapRange",
+          "LandSet[34].RoomExit",
+          "LandSet[35].MapRange",
+          "LandSet[35].RoomExit",
+          "LandSet[36].MapRange",
+          "LandSet[36].RoomExit",
+          "LandSet[37].MapRange",
+          "LandSet[37].RoomExit",
+          "LandSet[38].MapRange",
+          "LandSet[38].RoomExit",
+          "LandSet[39].MapRange",
+          "LandSet[39].RoomExit",
+          "LandSet[3].MapRange",
+          "LandSet[3].RoomExit",
+          "LandSet[40].MapRange",
+          "LandSet[40].RoomExit",
+          "LandSet[41].MapRange",
+          "LandSet[41].RoomExit",
+          "LandSet[42].MapRange",
+          "LandSet[42].RoomExit",
+          "LandSet[43].MapRange",
+          "LandSet[43].RoomExit",
+          "LandSet[44].MapRange",
+          "LandSet[44].RoomExit",
+          "LandSet[45].MapRange",
+          "LandSet[45].RoomExit",
+          "LandSet[46].MapRange",
+          "LandSet[46].RoomExit",
+          "LandSet[47].MapRange",
+          "LandSet[47].RoomExit",
+          "LandSet[48].MapRange",
+          "LandSet[48].RoomExit",
+          "LandSet[49].MapRange",
+          "LandSet[49].RoomExit",
+          "LandSet[4].MapRange",
+          "LandSet[4].RoomExit",
+          "LandSet[50].MapRange",
+          "LandSet[50].RoomExit",
+          "LandSet[51].MapRange",
+          "LandSet[51].RoomExit",
+          "LandSet[52].MapRange",
+          "LandSet[52].RoomExit",
+          "LandSet[53].MapRange",
+          "LandSet[53].RoomExit",
+          "LandSet[54].MapRange",
+          "LandSet[54].RoomExit",
+          "LandSet[55].MapRange",
+          "LandSet[55].RoomExit",
+          "LandSet[56].MapRange",
+          "LandSet[56].RoomExit",
+          "LandSet[57].MapRange",
+          "LandSet[57].RoomExit",
+          "LandSet[58].MapRange",
+          "LandSet[58].RoomExit",
+          "LandSet[59].MapRange",
+          "LandSet[59].RoomExit",
+          "LandSet[5].MapRange",
+          "LandSet[5].RoomExit",
+          "LandSet[6].MapRange",
+          "LandSet[6].RoomExit",
+          "LandSet[7].MapRange",
+          "LandSet[7].RoomExit",
+          "LandSet[8].MapRange",
+          "LandSet[8].RoomExit",
+          "LandSet[9].MapRange",
+          "LandSet[9].RoomExit",
+          "MainApartment",
+          "SubdivisionApartment"
+        ],
+        "columns_removed": [
+          "LandSet[0].UnknownRange1",
+          "LandSet[0].UnknownRange2",
+          "LandSet[10].UnknownRange1",
+          "LandSet[10].UnknownRange2",
+          "LandSet[11].UnknownRange1",
+          "LandSet[11].UnknownRange2",
+          "LandSet[12].UnknownRange1",
+          "LandSet[12].UnknownRange2",
+          "LandSet[13].UnknownRange1",
+          "LandSet[13].UnknownRange2",
+          "LandSet[14].UnknownRange1",
+          "LandSet[14].UnknownRange2",
+          "LandSet[15].UnknownRange1",
+          "LandSet[15].UnknownRange2",
+          "LandSet[16].UnknownRange1",
+          "LandSet[16].UnknownRange2",
+          "LandSet[17].UnknownRange1",
+          "LandSet[17].UnknownRange2",
+          "LandSet[18].UnknownRange1",
+          "LandSet[18].UnknownRange2",
+          "LandSet[19].UnknownRange1",
+          "LandSet[19].UnknownRange2",
+          "LandSet[1].UnknownRange1",
+          "LandSet[1].UnknownRange2",
+          "LandSet[20].UnknownRange1",
+          "LandSet[20].UnknownRange2",
+          "LandSet[21].UnknownRange1",
+          "LandSet[21].UnknownRange2",
+          "LandSet[22].UnknownRange1",
+          "LandSet[22].UnknownRange2",
+          "LandSet[23].UnknownRange1",
+          "LandSet[23].UnknownRange2",
+          "LandSet[24].UnknownRange1",
+          "LandSet[24].UnknownRange2",
+          "LandSet[25].UnknownRange1",
+          "LandSet[25].UnknownRange2",
+          "LandSet[26].UnknownRange1",
+          "LandSet[26].UnknownRange2",
+          "LandSet[27].UnknownRange1",
+          "LandSet[27].UnknownRange2",
+          "LandSet[28].UnknownRange1",
+          "LandSet[28].UnknownRange2",
+          "LandSet[29].UnknownRange1",
+          "LandSet[29].UnknownRange2",
+          "LandSet[2].UnknownRange1",
+          "LandSet[2].UnknownRange2",
+          "LandSet[30].UnknownRange1",
+          "LandSet[30].UnknownRange2",
+          "LandSet[31].UnknownRange1",
+          "LandSet[31].UnknownRange2",
+          "LandSet[32].UnknownRange1",
+          "LandSet[32].UnknownRange2",
+          "LandSet[33].UnknownRange1",
+          "LandSet[33].UnknownRange2",
+          "LandSet[34].UnknownRange1",
+          "LandSet[34].UnknownRange2",
+          "LandSet[35].UnknownRange1",
+          "LandSet[35].UnknownRange2",
+          "LandSet[36].UnknownRange1",
+          "LandSet[36].UnknownRange2",
+          "LandSet[37].UnknownRange1",
+          "LandSet[37].UnknownRange2",
+          "LandSet[38].UnknownRange1",
+          "LandSet[38].UnknownRange2",
+          "LandSet[39].UnknownRange1",
+          "LandSet[39].UnknownRange2",
+          "LandSet[3].UnknownRange1",
+          "LandSet[3].UnknownRange2",
+          "LandSet[40].UnknownRange1",
+          "LandSet[40].UnknownRange2",
+          "LandSet[41].UnknownRange1",
+          "LandSet[41].UnknownRange2",
+          "LandSet[42].UnknownRange1",
+          "LandSet[42].UnknownRange2",
+          "LandSet[43].UnknownRange1",
+          "LandSet[43].UnknownRange2",
+          "LandSet[44].UnknownRange1",
+          "LandSet[44].UnknownRange2",
+          "LandSet[45].UnknownRange1",
+          "LandSet[45].UnknownRange2",
+          "LandSet[46].UnknownRange1",
+          "LandSet[46].UnknownRange2",
+          "LandSet[47].UnknownRange1",
+          "LandSet[47].UnknownRange2",
+          "LandSet[48].UnknownRange1",
+          "LandSet[48].UnknownRange2",
+          "LandSet[49].UnknownRange1",
+          "LandSet[49].UnknownRange2",
+          "LandSet[4].UnknownRange1",
+          "LandSet[4].UnknownRange2",
+          "LandSet[50].UnknownRange1",
+          "LandSet[50].UnknownRange2",
+          "LandSet[51].UnknownRange1",
+          "LandSet[51].UnknownRange2",
+          "LandSet[52].UnknownRange1",
+          "LandSet[52].UnknownRange2",
+          "LandSet[53].UnknownRange1",
+          "LandSet[53].UnknownRange2",
+          "LandSet[54].UnknownRange1",
+          "LandSet[54].UnknownRange2",
+          "LandSet[55].UnknownRange1",
+          "LandSet[55].UnknownRange2",
+          "LandSet[56].UnknownRange1",
+          "LandSet[56].UnknownRange2",
+          "LandSet[57].UnknownRange1",
+          "LandSet[57].UnknownRange2",
+          "LandSet[58].UnknownRange1",
+          "LandSet[58].UnknownRange2",
+          "LandSet[59].UnknownRange1",
+          "LandSet[59].UnknownRange2",
+          "LandSet[5].UnknownRange1",
+          "LandSet[5].UnknownRange2",
+          "LandSet[6].UnknownRange1",
+          "LandSet[6].UnknownRange2",
+          "LandSet[7].UnknownRange1",
+          "LandSet[7].UnknownRange2",
+          "LandSet[8].UnknownRange1",
+          "LandSet[8].UnknownRange2",
+          "LandSet[9].UnknownRange1",
+          "LandSet[9].UnknownRange2",
+          "UnknownRange1",
+          "UnknownRange2"
+        ]
+      },
+      "HousingMateAuthority": {
+        "columns_added": [
+          "Permission"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "HousingTrainingDoll": {
+        "columns_added": [
+          "Base"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "HousingUnplacement": {
+        "columns_added": [
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "HousingYardObject": {
+        "columns_added": [
+          "PlaceLimitType",
+          "Placement",
+          "Unplacement",
+          "UnplacementStorage"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1",
+          "Unknown2",
+          "Unknown3"
+        ]
+      },
+      "IKDContentBonus": {
+        "columns_added": [
+          "BonusMultiplier"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "IKDFishParam": {
+        "columns_added": [
+          "IKDContentBonus[0]",
+          "IKDContentBonus[1]"
+        ],
+        "columns_removed": [
+          "IKDContentBonus",
+          "Unknown0"
+        ]
+      },
+      "InstanceContent": {
+        "columns_added": [],
+        "columns_removed": [
+          "Colosseum"
+        ]
+      },
+      "LFGExtensionContent": {
+        "columns_added": [
+          "Unknown4"
+        ],
+        "columns_removed": []
+      },
+      "MKDData": {
+        "columns_added": [
+          "Unknown10",
+          "Unknown11",
+          "Unknown12",
+          "Unknown13",
+          "Unknown14"
+        ],
+        "columns_removed": []
+      },
+      "NotebookDivision": {
+        "columns_added": [
+          "Unknown1"
+        ],
+        "columns_removed": []
+      },
+      "NpcYell": {
+        "columns_added": [
+          "Name"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "PartyContentTransient": {
+        "columns_added": [
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "Pet": {
+        "columns_added": [
+          "Unknown18"
+        ],
+        "columns_removed": []
+      },
+      "QuestCustomTodo": {
+        "columns_added": [
+          "Unknown10",
+          "Unknown11",
+          "Unknown12",
+          "Unknown13",
+          "Unknown14",
+          "Unknown9"
+        ],
+        "columns_removed": []
+      },
+      "ScreenImage": {
+        "columns_added": [
+          "Unknown0"
+        ],
+        "columns_removed": []
+      },
+      "ShellFixedFromCommand": {
+        "columns_added": [
+          "Unknown22[0]",
+          "Unknown22[10]",
+          "Unknown22[11]",
+          "Unknown22[12]",
+          "Unknown22[13]",
+          "Unknown22[14]",
+          "Unknown22[15]",
+          "Unknown22[1]",
+          "Unknown22[2]",
+          "Unknown22[3]",
+          "Unknown22[4]",
+          "Unknown22[5]",
+          "Unknown22[6]",
+          "Unknown22[7]",
+          "Unknown22[8]",
+          "Unknown22[9]"
+        ],
+        "columns_removed": []
+      },
+      "SpecialShop": {
+        "columns_added": [
+          "CustomTalk"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "Stain": {
+        "columns_added": [
+          "Item[0]",
+          "Item[1]"
+        ],
+        "columns_removed": []
+      },
+      "Status": {
+        "columns_added": [
+          "Unknown8"
+        ],
+        "columns_removed": []
+      },
+      "TerritoryIntendedUse": {
+        "columns_added": [
+          "EnableClassJobChange",
+          "EnableClassJobChangeCombatJobCheck"
+        ],
+        "columns_removed": [
+          "Unknown7",
+          "Unknown8"
+        ]
+      },
+      "TerritoryType": {
+        "columns_added": [
+          "Unknown17",
+          "Unknown18"
+        ],
+        "columns_removed": []
+      },
+      "VVDData": {
+        "columns_added": [
+          "RouteData"
+        ],
+        "columns_removed": [
+          "Unknown6"
+        ]
+      },
+      "VVDVoteRoute": {
+        "columns_added": [
+          "Options[0]",
+          "Options[1]",
+          "Options[2]",
+          "Options[3]",
+          "Title"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1",
+          "Unknown2",
+          "Unknown3",
+          "Unknown4"
+        ]
+      },
+      "VVDVoteRouteLabel": {
+        "columns_added": [
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "WKSCosmoToolClass": {
+        "columns_added": [
+          "Stages[17].Item",
+          "Stages[17].Name",
+          "Stages[17].Unknown0",
+          "Stages[18].Item",
+          "Stages[18].Name",
+          "Stages[18].Unknown0",
+          "Stages[19].Item",
+          "Stages[19].Name",
+          "Stages[19].Unknown0",
+          "Types[6].CosmicName",
+          "Types[6].Icon",
+          "Types[6].Name"
+        ],
+        "columns_removed": []
+      },
+      "WKSCosmoToolDataAmount": {
+        "columns_added": [
+          "Stages[0].MaxAmount[6]",
+          "Stages[0].RequiredAmount[6]",
+          "Stages[10].MaxAmount[6]",
+          "Stages[10].RequiredAmount[6]",
+          "Stages[11].MaxAmount[6]",
+          "Stages[11].RequiredAmount[6]",
+          "Stages[12].MaxAmount[6]",
+          "Stages[12].RequiredAmount[6]",
+          "Stages[13].MaxAmount[6]",
+          "Stages[13].RequiredAmount[6]",
+          "Stages[14].MaxAmount[6]",
+          "Stages[14].RequiredAmount[6]",
+          "Stages[15].MaxAmount[6]",
+          "Stages[15].RequiredAmount[6]",
+          "Stages[16].MaxAmount[6]",
+          "Stages[16].RequiredAmount[6]",
+          "Stages[17].MaxAmount[0]",
+          "Stages[17].MaxAmount[1]",
+          "Stages[17].MaxAmount[2]",
+          "Stages[17].MaxAmount[3]",
+          "Stages[17].MaxAmount[4]",
+          "Stages[17].MaxAmount[5]",
+          "Stages[17].MaxAmount[6]",
+          "Stages[17].RequiredAmount[0]",
+          "Stages[17].RequiredAmount[1]",
+          "Stages[17].RequiredAmount[2]",
+          "Stages[17].RequiredAmount[3]",
+          "Stages[17].RequiredAmount[4]",
+          "Stages[17].RequiredAmount[5]",
+          "Stages[17].RequiredAmount[6]",
+          "Stages[18].MaxAmount[0]",
+          "Stages[18].MaxAmount[1]",
+          "Stages[18].MaxAmount[2]",
+          "Stages[18].MaxAmount[3]",
+          "Stages[18].MaxAmount[4]",
+          "Stages[18].MaxAmount[5]",
+          "Stages[18].MaxAmount[6]",
+          "Stages[18].RequiredAmount[0]",
+          "Stages[18].RequiredAmount[1]",
+          "Stages[18].RequiredAmount[2]",
+          "Stages[18].RequiredAmount[3]",
+          "Stages[18].RequiredAmount[4]",
+          "Stages[18].RequiredAmount[5]",
+          "Stages[18].RequiredAmount[6]",
+          "Stages[19].MaxAmount[0]",
+          "Stages[19].MaxAmount[1]",
+          "Stages[19].MaxAmount[2]",
+          "Stages[19].MaxAmount[3]",
+          "Stages[19].MaxAmount[4]",
+          "Stages[19].MaxAmount[5]",
+          "Stages[19].MaxAmount[6]",
+          "Stages[19].RequiredAmount[0]",
+          "Stages[19].RequiredAmount[1]",
+          "Stages[19].RequiredAmount[2]",
+          "Stages[19].RequiredAmount[3]",
+          "Stages[19].RequiredAmount[4]",
+          "Stages[19].RequiredAmount[5]",
+          "Stages[19].RequiredAmount[6]",
+          "Stages[1].MaxAmount[6]",
+          "Stages[1].RequiredAmount[6]",
+          "Stages[2].MaxAmount[6]",
+          "Stages[2].RequiredAmount[6]",
+          "Stages[3].MaxAmount[6]",
+          "Stages[3].RequiredAmount[6]",
+          "Stages[4].MaxAmount[6]",
+          "Stages[4].RequiredAmount[6]",
+          "Stages[5].MaxAmount[6]",
+          "Stages[5].RequiredAmount[6]",
+          "Stages[6].MaxAmount[6]",
+          "Stages[6].RequiredAmount[6]",
+          "Stages[7].MaxAmount[6]",
+          "Stages[7].RequiredAmount[6]",
+          "Stages[8].MaxAmount[6]",
+          "Stages[8].RequiredAmount[6]",
+          "Stages[9].MaxAmount[6]",
+          "Stages[9].RequiredAmount[6]"
+        ],
+        "columns_removed": []
+      },
+      "WKSMechaEventObject": {
+        "columns_added": [
+          "Unknown6"
+        ],
+        "columns_removed": []
+      },
+      "WKSMissionMapMarker": {
+        "columns_added": [
+          "Icon",
+          "Radius",
+          "X",
+          "Y"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1",
+          "Unknown2",
+          "Unknown3"
+        ]
+      },
+      "WKSMissionToDo": {
+        "columns_added": [
+          "MapMarker",
+          "Unknown18",
+          "Unknown19"
+        ],
+        "columns_removed": [
+          "Unknown13"
+        ]
+      },
+      "WKSMissionUnit": {
+        "columns_added": [
+          "Unknown1",
+          "Unknown2"
+        ],
+        "columns_removed": []
+      },
+      "WKSScoreList": {
+        "columns_added": [
+          "Unknown5",
+          "Unknown6"
+        ],
+        "columns_removed": []
+      },
+      "WKSSharedGroup": {
+        "columns_added": [
+          "Unknown6"
+        ],
+        "columns_removed": []
+      },
+      "World": {
+        "columns_added": [
+          "Unknown0",
+          "Unknown1",
+          "Unknown2"
+        ],
+        "columns_removed": []
+      }
+    }
+  },
+  "edges": {
+    "added": [
+      {
+        "source": "GroupPoseFrame",
+        "target": "Festival",
+        "via": "Festival"
+      },
+      {
+        "source": "GroupPoseStamp",
+        "target": "Festival",
+        "via": "Festival"
+      },
+      {
+        "source": "HousingMateAuthority",
+        "target": "Permission",
+        "via": "Permission"
+      },
+      {
+        "source": "SpecialShop",
+        "target": "CustomTalk",
+        "via": "CustomTalk"
+      },
+      {
+        "source": "VVDVoteRoute",
+        "target": "Title",
+        "via": "Title"
+      },
+      {
+        "source": "WKSMissionToDo",
+        "target": "MapMarker",
+        "via": "MapMarker"
+      }
+    ],
+    "removed": [
+      {
+        "source": "IKDFishParam",
+        "target": "IKDContentBonus",
+        "via": "IKDContentBonus"
+      },
+      {
+        "source": "InstanceContent",
+        "target": "Colosseum",
+        "via": "Colosseum"
+      }
+    ]
+  }
+}

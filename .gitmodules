@@ -1,3 +1,30 @@
 [submodule "ffxiv-datamining"]
 	path = ffxiv-datamining
 	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.50h1"]
+	path = ffxiv-datamining-7.50h1
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.50"]
+	path = ffxiv-datamining-7.50
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.45h2"]
+	path = ffxiv-datamining-7.45h2
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.45h1"]
+	path = ffxiv-datamining-7.45h1
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.45"]
+	path = ffxiv-datamining-7.45
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.41"]
+	path = ffxiv-datamining-7.41
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.4h2"]
+	path = ffxiv-datamining-7.4h2
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.4h1"]
+	path = ffxiv-datamining-7.4h1
+	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "ffxiv-datamining-7.4"]
+	path = ffxiv-datamining-7.4
+	url = https://github.com/xivapi/ffxiv-datamining.git

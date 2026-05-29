@@ -1,0 +1,82 @@
+{
+  "from": "7.45",
+  "to": "7.45h1",
+  "summary": {
+    "tables_compared": 1150,
+    "tables_skipped_schema_changed": 3,
+    "tables_skipped_not_in_both": 0,
+    "tables_with_changes": 4
+  },
+  "tables": {
+    "Action": {
+      "rows_added": [],
+      "rows_removed": [],
+      "rows_changed": {
+        "45598": {
+          "Unknown14": [
+            "True",
+            "False"
+          ]
+        },
+        "45599": {
+          "Unknown14": [
+            "True",
+            "False"
+          ]
+        },
+        "45600": {
+          "Unknown14": [
+            "True",
+            "False"
+          ]
+        },
+        "45601": {
+          "Unknown14": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    "Mount": {
+      "rows_added": [],
+      "rows_removed": [],
+      "rows_changed": {
+        "421": {
+          "ExitMoveDist": [
+            "20",
+            "0"
+          ]
+        }
+      }
+    },
+    "MountCustomize": {
+      "rows_added": [],
+      "rows_removed": [],
+      "rows_changed": {
+        "171": {
+          "MiqoFemaleCameraHeight": [
+            "100",
+            "152"
+          ],
+          "RoeMaleCameraHeight": [
+            "100",
+            "152"
+          ]
+        }
+      }
+    },
+    "SpecialShop": {
+      "rows_added": [],
+      "rows_removed": [],
+      "rows_changed": {
+        "1770733": {
+          "RequiredContentFinderCondition": [
+            "980",
+            "0"
+          ]
+        }
+      }
+    }
+  }
+}

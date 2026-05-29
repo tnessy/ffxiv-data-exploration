@@ -1,0 +1,38 @@
+{
+  "from": "7.45",
+  "to": "7.45h1",
+  "tables": {
+    "added": [],
+    "removed": [],
+    "changed": {
+      "MKDRelicGrowth2ContentList": {
+        "columns_added": [
+          "Content"
+        ],
+        "columns_removed": [
+          "Unknown1"
+        ]
+      },
+      "RecastNavimesh": {
+        "columns_added": [
+          "Name"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "VVDNotebookSeries": {
+        "columns_added": [
+          "Contents[12]"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      }
+    }
+  },
+  "edges": {
+    "added": [],
+    "removed": []
+  }
+}

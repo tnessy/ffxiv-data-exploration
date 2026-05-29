@@ -1,0 +1,13 @@
+{
+  "from": "7.50h1",
+  "to": "latest",
+  "tables": {
+    "added": [],
+    "removed": [],
+    "changed": {}
+  },
+  "edges": {
+    "added": [],
+    "removed": []
+  }
+}

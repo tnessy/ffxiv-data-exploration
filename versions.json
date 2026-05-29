@@ -1,0 +1,12 @@
+[
+  {"id": "7.4",   "label": "7.4",     "path": "ffxiv-datamining-7.4",   "date": null},
+  {"id": "7.4h1",   "label": "7.4 HF1",     "path": "ffxiv-datamining-7.4h1",   "date": null},
+  {"id": "7.4h2",   "label": "7.4 HF2",     "path": "ffxiv-datamining-7.4h2",   "date": null},
+  {"id": "7.41",   "label": "7.41",     "path": "ffxiv-datamining-7.41",   "date": null},
+  {"id": "7.45",   "label": "7.45",     "path": "ffxiv-datamining-7.45",   "date": null},
+  {"id": "7.45h1",   "label": "7.45 HF1",     "path": "ffxiv-datamining-7.45h1",   "date": null},
+  {"id": "7.45h2",   "label": "7.45 HF2",     "path": "ffxiv-datamining-7.45h2",   "date": null},
+  {"id": "7.50",   "label": "7.50",     "path": "ffxiv-datamining-7.50",   "date": null},
+  {"id": "7.50h1", "label": "7.50 HF1", "path": "ffxiv-datamining-7.50h1", "date": null},
+  {"id": "latest", "label": "Latest",   "path": "ffxiv-datamining-latest",  "date": null}
+]

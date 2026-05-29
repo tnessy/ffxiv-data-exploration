@@ -1,0 +1,187 @@
+{
+  "from": "7.41",
+  "to": "7.45",
+  "tables": {
+    "added": [],
+    "removed": [],
+    "changed": {
+      "ContentDirectorManagedSG": {
+        "columns_added": [
+          "LayoutId"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "CustomTalkDefineClient": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "DirectorSystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "FittingShopCategory": {
+        "columns_added": [
+          "Name"
+        ],
+        "columns_removed": [
+          "Unknown0"
+        ]
+      },
+      "FittingShopCategoryItem": {
+        "columns_added": [
+          "DisplayId",
+          "Item"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "GoldSaucerArcadeMachine": {
+        "columns_added": [
+          "Description",
+          "Name",
+          "PayoutExplanation",
+          "Timeout",
+          "TotalPayoutText"
+        ],
+        "columns_removed": [
+          "Unknown20",
+          "Unknown21",
+          "Unknown22",
+          "Unknown23",
+          "Unknown27"
+        ]
+      },
+      "LeveSystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "ModelChara": {
+        "columns_added": [
+          "AnimationVariant"
+        ],
+        "columns_removed": [
+          "Unknown2"
+        ]
+      },
+      "OpeningSystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "QuestBattleSystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "QuestDefineClient": {
+        "columns_added": [
+          "DefineVaue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Target",
+          "Unknown0"
+        ]
+      },
+      "QuestSystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "StorySystemDefine": {
+        "columns_added": [
+          "DefineValue",
+          "Text"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      },
+      "WKSDevGrade": {
+        "columns_added": [
+          "FestivalId",
+          "FestivalPhase",
+          "LodestoneRank",
+          "Thumbnail"
+        ],
+        "columns_removed": [
+          "Unknown3",
+          "Unknown5",
+          "Unknown6",
+          "Unknown7"
+        ]
+      },
+      "WKSMissionReward": {
+        "columns_added": [
+          "BaseDronebits"
+        ],
+        "columns_removed": [
+          "Unknown20"
+        ]
+      },
+      "WKSPioneeringTrail": {
+        "columns_added": [
+          "ActivationStage",
+          "Thumbnail"
+        ],
+        "columns_removed": [
+          "Unknown0",
+          "Unknown1"
+        ]
+      }
+    }
+  },
+  "edges": {
+    "added": [
+      {
+        "source": "FittingShopCategoryItem",
+        "target": "Item",
+        "via": "Item"
+      },
+      {
+        "source": "GoldSaucerArcadeMachine",
+        "target": "Description",
+        "via": "Description"
+      }
+    ],
+    "removed": []
+  }
+}

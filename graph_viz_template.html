@@ -71,7 +71,7 @@
       overflow: hidden;
     }
 
-    #search-wrap { padding: 10px; border-bottom: 1px solid #30363d; position: relative; }
+    #search-wrap { padding: 8px 10px 6px; }
     #search {
       width: 100%;
       padding: 6px 10px;
@@ -129,12 +129,44 @@
     .crumb-cur { color: #f78166; cursor: default; }
     .crumb-sep { color: #30363d; }
 
-    /* ── Info panel ── */
-    #info-panel {
+    /* ── Table list ── */
+    #table-list {
       flex: 1;
       overflow-y: auto;
-      padding: 10px;
+      min-height: 0;
       border-bottom: 1px solid #30363d;
+    }
+    .tbl-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 12px;
+      color: #c9d1d9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .tbl-item:hover { background: #21262d; color: #58a6ff; }
+    .tbl-item.active { background: #1a2332; color: #58a6ff; }
+
+    /* ── Info panel ── */
+    #info-drag {
+      height: 5px;
+      background: #21262d;
+      cursor: row-resize;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    #info-drag:hover, #info-drag.dragging { background: #1f6feb; }
+
+    #info-panel {
+      overflow-y: auto;
+      padding: 10px;
+      height: 200px;
+      min-height: 32px;
+      flex-shrink: 0;
     }
     .placeholder { color: #6e7681; font-size: 12px; text-align: center; margin-top: 16px; }
 
@@ -152,26 +184,7 @@
     .peer-name { color: #58a6ff; font-weight: 500; display: block; }
     .via-col { color: #6e7681; font-size: 11px; }
 
-    /* ── Legend ── */
-    #legend { padding: 10px; overflow-y: auto; }
-    #legend h4 {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #6e7681;
-      margin-bottom: 7px;
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 11px;
-      color: #8b949e;
-      margin-bottom: 4px;
-    }
-    .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-    .legend-item em { color: #6e7681; font-style: normal; }
-    .legend-more { color: #6e7681; font-size: 11px; margin-top: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
     /* ── Right column (graph + data panel stacked) ── */
     #right-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
@@ -285,8 +298,26 @@
       stroke-width: 1.5;
       transition: stroke 0.1s;
     }
+    .edge-diff-added { stroke: #3fb950; stroke-width: 2; }
     .edge-active { stroke: #f78166; stroke-width: 2; }
     .edge-dimmed { stroke: #161b22; }
+
+    /* ── Diff toolbar ── */
+    #diff-controls { display: flex; align-items: center; gap: 8px; padding-left: 10px; border-left: 1px solid #30363d; }
+    .diff-label { font-size: 13px; color: #8b949e; white-space: nowrap; }
+    .diff-select {
+      padding: 3px 6px; background: #0d1117; border: 1px solid #30363d;
+      border-radius: 6px; color: #c9d1d9; font-size: 12px; cursor: pointer; outline: none;
+    }
+    .diff-select:focus { border-color: #58a6ff; }
+    .diff-arrow { color: #6e7681; font-size: 13px; }
+
+    /* Column diff badges in data panel */
+    .col-diff { display: flex; flex-wrap: wrap; gap: 4px; padding: 6px 0 8px; border-bottom: 1px solid #30363d; margin-bottom: 6px; }
+    .col-diff-hdr { width: 100%; color: #6e7681; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .col-badge { padding: 1px 7px; border-radius: 10px; font-size: 11px; }
+    .col-added   { background: rgba(63,185,80,0.15);  color: #3fb950; }
+    .col-removed { background: rgba(248,81,73,0.15);  color: #f85149; }
 
     .node rect {
       stroke: #0d1117;
@@ -305,6 +336,104 @@
       text-anchor: middle;
       dominant-baseline: middle;
     }
+
+    /* ── Data View layout ── */
+    #dv-graph-area {
+      height: 260px;
+      flex-shrink: 0;
+      background: #0d1117;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      border-top: 1px solid #30363d;
+    }
+    #right-area.mode-data #graph-area  { display: none; }
+    #right-area.mode-data #data-panel  { flex: 1; height: auto !important; display: flex !important; min-height: 0; }
+    #right-area.mode-data #dv-graph-area { display: flex; }
+    #right-area.mode-data #dp-drag    { display: none; }
+    #right-area.mode-data #dp-close   { display: none; }
+
+    #dv-resize {
+      height: 5px;
+      background: #21262d;
+      cursor: row-resize;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    #dv-resize:hover, #dv-resize.dragging { background: #1f6feb; }
+
+    #dv-graph-header {
+      display: flex;
+      align-items: center;
+      padding: 3px 12px;
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      flex-shrink: 0;
+    }
+    #dv-graph-label { font-size: 11px; color: #6e7681; flex: 1; }
+    #dv-graph { flex: 1; width: 100%; min-height: 0; display: block; }
+
+    /* ── Mini-graph node roles ── */
+    .node-parent rect { stroke: #58a6ff !important; stroke-width: 1.5 !important; }
+    .node-l2 rect  { opacity: 0.55; }
+    .node-l2 text  { opacity: 0.55; }
+
+    /* ── Row diff highlighting in data table ── */
+    tr.row-diff-added   td { background: rgba(63,185,80,0.10) !important; }
+    tr.row-diff-changed td { background: rgba(210,153,34,0.07) !important; }
+    td.cell-diff-changed   { background: rgba(210,153,34,0.28) !important; color: #d29922; }
+
+    /* ── Row toggle ── */
+    .row-toggle {
+      display: inline-block;
+      width: 14px;
+      font-size: 9px;
+      color: #6e7681;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+    }
+    .row-toggle:hover { color: #c9d1d9; }
+
+    /* ── Inline detail row ── */
+    .diff-detail-row td { padding: 0; border: none; }
+    .diff-detail-content {
+      padding: 8px 14px 10px;
+      background: #0a0d11;
+      border-bottom: 2px solid rgba(210,153,34,0.25);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+    .diff-field { min-width: 140px; flex: 1 1 180px; max-width: 500px; }
+    .diff-field-name {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #6e7681;
+      margin-bottom: 3px;
+    }
+    .diff-val-old, .diff-val-new {
+      font-size: 11px;
+      padding: 3px 7px;
+      border-radius: 3px;
+      word-break: break-word;
+      white-space: pre-wrap;
+      line-height: 1.4;
+    }
+    .diff-val-old { background: rgba(248,81,73,0.1);  color: #f85149; margin-bottom: 2px; }
+    .diff-val-new { background: rgba(63,185,80,0.1);  color: #3fb950; }
+
+    /* ── Sidebar row diff panel ── */
+    .rdiff-title  { font-size: 12px; font-weight: 600; color: #d29922; margin-bottom: 10px; }
+    .rdiff-field  { margin-bottom: 10px; }
+    .rdiff-fname  { font-size: 9px; text-transform: uppercase; letter-spacing: 0.07em; color: #6e7681; margin-bottom: 3px; }
+    .rdiff-old    { font-size: 11px; padding: 3px 7px; border-radius: 3px; word-break: break-word;
+                    white-space: pre-wrap; background: rgba(248,81,73,0.1); color: #f85149;
+                    margin-bottom: 2px; line-height: 1.4; }
+    .rdiff-new    { font-size: 11px; padding: 3px 7px; border-radius: 3px; word-break: break-word;
+                    white-space: pre-wrap; background: rgba(63,185,80,0.1);  color: #3fb950;
+                    line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -314,10 +443,20 @@
   <div style="display:flex;gap:6px">
     <button class="mode-btn active" data-mode="graph">Graph View</button>
     <button class="mode-btn" data-mode="explore">Explore View</button>
+    <button class="mode-btn" data-mode="data">Data View</button>
   </div>
-  <label class="filter-label">
+  <label class="filter-label" id="show-isolated-wrap">
     <input type="checkbox" id="show-isolated"> Show isolated nodes
   </label>
+  <div id="diff-controls" style="display:none">
+    <span class="diff-label">Diff:</span>
+    <select class="diff-select" id="diff-from"><option value="">—</option></select>
+    <span class="diff-arrow">&#8594;</span>
+    <select class="diff-select" id="diff-to"><option value="">—</option></select>
+    <label class="filter-label" id="diff-changed-wrap" style="display:none">
+      <input type="checkbox" id="diff-only-changed"> Only changed
+    </label>
+  </div>
   <span id="stats"></span>
 </div>
 
@@ -325,15 +464,12 @@
   <div id="sidebar">
     <div id="search-wrap">
       <input id="search" type="text" placeholder="Search tables…" autocomplete="off">
-      <div id="search-drop"></div>
     </div>
+    <div id="table-list"></div>
     <div id="breadcrumb"></div>
+    <div id="info-drag" title="Drag to resize"></div>
     <div id="info-panel">
       <p class="placeholder">Click a node to see its connections</p>
-    </div>
-    <div id="legend">
-      <h4>Node Family</h4>
-      <div id="legend-items"></div>
     </div>
   </div>
 
@@ -341,7 +477,6 @@
     <div id="graph-area">
       <svg id="graph"></svg>
       <div id="explore-hint"><p>Search for a table above to start exploring</p></div>
-      <div id="tooltip"></div>
     </div>
 
     <div id="data-panel" class="dp-hidden">
@@ -354,8 +489,17 @@
         <div id="dp-data" class="dp-pane"></div>
       </div>
     </div>
+
+    <div id="dv-graph-area">
+      <div id="dv-resize" title="Drag to resize"></div>
+      <div id="dv-graph-header">
+        <span id="dv-graph-label"></span>
+      </div>
+      <svg id="dv-graph"></svg>
+    </div>
   </div>
 </div>
+<div id="tooltip"></div>
 
 <script>
 // ── Data ─────────────────────────────────────────────────────────
@@ -379,19 +523,36 @@ function familyColor(family) {
   return `hsl(${(h >>> 0) % 360},60%,58%)`;
 }
 
-// ── Legend ───────────────────────────────────────────────────────
-const legendEl = document.getElementById('legend-items');
-(RAW.meta?.top_families || []).forEach(f => {
-  const item = document.createElement('div');
-  item.className = 'legend-item';
-  item.innerHTML = `<span class="legend-dot" style="background:${familyColor(f)}"></span>${f}`;
-  legendEl.appendChild(item);
-});
-if ((RAW.meta?.total_families || 0) > (RAW.meta?.top_families?.length || 0)) {
-  const more = document.createElement('div');
-  more.className = 'legend-more';
-  more.textContent = `+ ${RAW.meta.total_families - RAW.meta.top_families.length} more families`;
-  legendEl.appendChild(more);
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Info panel resize ────────────────────────────────────────────
+{
+  const infoDrag = document.getElementById('info-drag');
+  let dragging = false, startY = 0, startH = 0;
+  infoDrag.addEventListener('mousedown', e => {
+    dragging = true;
+    startY = e.clientY;
+    startH = infoPanel.offsetHeight;
+    infoDrag.classList.add('dragging');
+    document.body.style.cursor = 'row-resize';
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const delta = startY - e.clientY;  // drag up = taller panel
+    const newH = Math.max(32, Math.min(startH + delta, window.innerHeight * 0.7));
+    infoPanel.style.height = newH + 'px';
+  });
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    infoDrag.classList.remove('dragging');
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+  });
 }
 
 // ── State ────────────────────────────────────────────────────────
@@ -399,18 +560,38 @@ const state = {
   mode: 'graph',
   focused: null,
   showIsolated: false,
+  showOnlyChanged: false,
   exploreRoot: null,
   exploreHistory: [],
 };
 
+// ── Diff state ────────────────────────────────────────────────────
+const DIFF_COLORS = { added: '#3fb950', removed: '#f85149', changed: '#d29922' };
+let diffData     = null;
+let dataDiffData = null;        // row-level diffs from data_diff_*.json
+let rowDiffState = { diffs: {}, cols: [] };  // shared with click handlers
+let diffEdgeAddedKeys = new Set();
+
+// ── Data View state ───────────────────────────────────────────────
+let dvSim  = null;
+let dvNode = null;
+
+function getDiffClass(nodeId) {
+  if (!diffData) return null;
+  if (diffData.tables.added.includes(nodeId))   return 'added';
+  if (diffData.tables.removed.includes(nodeId)) return 'removed';
+  if (nodeId in diffData.tables.changed)         return 'changed';
+  return null;
+}
+
 // ── DOM refs ─────────────────────────────────────────────────────
-const infoPanel  = document.getElementById('info-panel');
-const searchEl   = document.getElementById('search');
-const searchDrop = document.getElementById('search-drop');
-const breadcrumb = document.getElementById('breadcrumb');
-const statsEl    = document.getElementById('stats');
-const tipEl      = document.getElementById('tooltip');
+const infoPanel   = document.getElementById('info-panel');
+const searchEl    = document.getElementById('search');
+const breadcrumb  = document.getElementById('breadcrumb');
+const statsEl     = document.getElementById('stats');
+const tipEl       = document.getElementById('tooltip');
 const exploreHint = document.getElementById('explore-hint');
+const rightArea   = document.getElementById('right-area');
 
 const PLACEHOLDER = '<p class="placeholder">Click a node to see its connections</p>';
 
@@ -466,12 +647,23 @@ function pillW(id) { return id.length * CHAR_W + PILL_PAD * 2; }
 let sim = null, linkSel = null, nodeSel = null;
 
 function visibleNodes() {
+  let nodes;
   if (state.mode === 'graph') {
-    return RAW.nodes.filter(n => n.connected || state.showIsolated);
+    nodes = RAW.nodes.filter(n => n.connected || state.showIsolated);
+  } else {
+    if (!state.exploreRoot) return [];
+    const ids = new Set([state.exploreRoot, ...(adj.get(state.exploreRoot) || []).map(c => c.peer)]);
+    nodes = RAW.nodes.filter(n => ids.has(n.id));
   }
-  if (!state.exploreRoot) return [];
-  const ids = new Set([state.exploreRoot, ...(adj.get(state.exploreRoot) || []).map(c => c.peer)]);
-  return RAW.nodes.filter(n => ids.has(n.id));
+  if (state.mode === 'graph' && diffData && state.showOnlyChanged) {
+    const changedIds = new Set([
+      ...diffData.tables.added,
+      ...diffData.tables.removed,
+      ...Object.keys(diffData.tables.changed),
+    ]);
+    nodes = nodes.filter(n => changedIds.has(n.id));
+  }
+  return nodes;
 }
 
 function render() {
@@ -505,6 +697,8 @@ function render() {
     .on('mouseenter', (e, d) => showTip(e,
       `<b>${d.source.id}</b> → <b>${d.target.id}</b><br><span style="color:#6e7681">via ${d.via}</span>`))
     .on('mouseleave', hideTip);
+  linkSel.classed('edge-diff-added', d =>
+    diffEdgeAddedKeys.has(`${d.source.id}|${d.target.id}|${d.via}`));
 
   // Nodes
   nodeSel = g.append('g')
@@ -525,7 +719,7 @@ function render() {
     .attr('x', d => -pillW(d.id) / 2)
     .attr('y', -PILL_H / 2)
     .attr('rx', PILL_H / 2)
-    .attr('fill', d => familyColor(d.family));
+    .attr('fill', d => { const dc = getDiffClass(d.id); return dc ? DIFF_COLORS[dc] : familyColor(d.family); });
   nodeSel.append('text').attr('class', 'node-label').text(d => d.id);
 
   sim = d3.forceSimulation(nodes)
@@ -560,6 +754,7 @@ function handleNodeClick(d) {
 
 function focusNode(id) {
   state.focused = id;
+  setTableListActive(id);
   const nbrs = new Set([id, ...(adj.get(id) || []).map(c => c.peer)]);
   nodeSel
     .classed('node-focused', d => d.id === id)
@@ -575,6 +770,7 @@ function focusNode(id) {
 
 function clearFocus() {
   state.focused = null;
+  setTableListActive(null);
   nodeSel?.classed('node-focused', false).classed('node-dimmed', false);
   linkSel?.classed('edge-active', false).classed('edge-dimmed', false)
           .attr('marker-end', 'url(#arrow)');
@@ -586,6 +782,7 @@ function clearFocus() {
 function navigateTo(id) {
   if (state.exploreRoot) state.exploreHistory.push(state.exploreRoot);
   state.exploreRoot = id;
+  setTableListActive(id);
   exploreHint.style.display = 'none';
   render();
   // Delay focus so nodeSel is populated after render
@@ -612,6 +809,7 @@ function updateInfoPanel(id) {
   infoPanel.querySelectorAll('[data-peer]').forEach(el => {
     el.addEventListener('click', () => {
       const peerId = el.dataset.peer;
+      if (state.mode === 'data')    { dvNavigateTo(peerId); return; }
       if (state.mode === 'explore') { navigateTo(peerId); return; }
       focusNode(peerId);
       const target = nodeSel?.data().find(d => d.id === peerId);
@@ -626,6 +824,187 @@ function zoomTo(node) {
     zoom.transform,
     d3.zoomIdentity.translate(w / 2, h / 2).scale(3).translate(-node.x, -node.y)
   );
+}
+
+// ── Data View: mini-graph helpers ─────────────────────────────────
+function computeMiniGraphData(id) {
+  // Parents: nodes that reference this table (edge.target === id)
+  const parentIds  = new Set(RAW.edges.filter(e => e.target === id).map(e => e.source));
+  // L1 children: tables this node's FK columns point to (edge.source === id)
+  const childL1Ids = new Set(RAW.edges.filter(e => e.source === id).map(e => e.target));
+  // L2 children: outgoing from L1, capped to avoid clutter
+  const childL2Ids = new Set();
+  const MAX_L2 = 20;
+  outer: for (const cid of childL1Ids) {
+    for (const e of RAW.edges) {
+      if (e.source === cid && e.target !== id &&
+          !parentIds.has(e.target) && !childL1Ids.has(e.target)) {
+        childL2Ids.add(e.target);
+        if (childL2Ids.size >= MAX_L2) break outer;
+      }
+    }
+  }
+  const allIds  = new Set([id, ...parentIds, ...childL1Ids, ...childL2Ids]);
+  const nodes   = RAW.nodes.filter(n => allIds.has(n.id)).map(n => ({ ...n }));
+  const nodeMap = new Map(nodes.map(n => [n.id, n]));
+  const edges   = RAW.edges
+    .filter(e => allIds.has(e.source) && allIds.has(e.target))
+    .map(e => ({ source: nodeMap.get(e.source), target: nodeMap.get(e.target), via: e.via }));
+  return { nodes, edges, parentIds, childL1Ids, childL2Ids };
+}
+
+function renderMiniGraph(id) {
+  if (dvSim) { dvSim.stop(); dvSim = null; }
+  const dvSvgEl = document.getElementById('dv-graph');
+  const dvSvg   = d3.select(dvSvgEl);
+  dvSvg.selectAll('*').remove();
+  if (!id || !nodeById.has(id)) return;
+
+  const W = dvSvgEl.clientWidth  || 600;
+  const H = dvSvgEl.clientHeight || 190;
+  const PITCH = 26;   // vertical gap between nodes in a column
+  const PAD_X = 14;   // horizontal padding from svg edges
+  const MAX_PER_COL = Math.max(3, Math.floor((H - PITCH) / PITCH));
+
+  const { nodes, edges, parentIds, childL1Ids, childL2Ids } = computeMiniGraphData(id);
+
+  // Split nodes into ordered columns: parents | focus | L1 | L2
+  function sortedLayer(ids) {
+    return [...ids].filter(nid => nodes.find(n => n.id === nid)).sort()
+      .map(nid => nodes.find(n => n.id === nid));
+  }
+  const parentNodes = sortedLayer(parentIds);
+  const l1Nodes     = sortedLayer(childL1Ids);
+  const l2Nodes     = sortedLayer(childL2Ids);
+  const focusNode   = nodes.find(n => n.id === id);
+
+  const cols = [];
+  if (parentNodes.length) cols.push({ key: 'parent', all: parentNodes });
+  cols.push({ key: 'focus', all: [focusNode] });
+  if (l1Nodes.length)  cols.push({ key: 'l1', all: l1Nodes });
+  if (l2Nodes.length)  cols.push({ key: 'l2', all: l2Nodes });
+
+  // Assign x positions evenly across width
+  const colStep = (W - PAD_X * 2) / Math.max(1, cols.length - 1);
+  cols.forEach((col, i) => {
+    col.x = cols.length === 1 ? W / 2 : PAD_X + i * colStep;
+    col.visible  = col.all.slice(0, MAX_PER_COL);
+    col.overflow = col.all.length - col.visible.length;
+  });
+
+  // Assign y positions: vertically center each column's nodes
+  cols.forEach(col => {
+    const rows  = col.visible.length + (col.overflow > 0 ? 1 : 0);
+    const totalH = rows * PITCH;
+    const startY = (H - totalH) / 2 + PITCH / 2;
+    col.visible.forEach((node, i) => {
+      node.x = col.x;
+      node.y = startY + i * PITCH;
+    });
+    col._overflowY = startY + col.visible.length * PITCH;
+  });
+
+  // Set up zoom/pan
+  const dvG = dvSvg.append('g');
+  const dvZoom = d3.zoom().scaleExtent([0.2, 4])
+    .on('zoom', ({ transform }) => dvG.attr('transform', transform));
+  dvSvg.call(dvZoom).on('dblclick.zoom', null);
+  dvSvg.on('mousemove', e => {
+    if (+tipEl.style.opacity) {
+      tipEl.style.left = (e.clientX + 14) + 'px';
+      tipEl.style.top  = (e.clientY + 10) + 'px';
+    }
+  });
+
+  // Arrow marker
+  dvSvg.append('defs').append('marker').attr('id', 'dv-arrow')
+    .attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('refY', 0)
+    .attr('markerWidth', 4).attr('markerHeight', 4).attr('orient', 'auto')
+    .append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', '#484f58');
+
+  // Visible node set for edge filtering
+  const visibleIds = new Set(cols.flatMap(c => c.visible.map(n => n.id)));
+
+  // Draw edges as cubic bezier paths (left → right)
+  dvG.append('g').selectAll('path')
+    .data(edges.filter(e => visibleIds.has(e.source.id) && visibleIds.has(e.target.id)
+                         && e.source.x < e.target.x))   // only left-to-right
+    .join('path')
+    .attr('fill', 'none')
+    .attr('class', 'edge')
+    .attr('marker-end', 'url(#dv-arrow)')
+    .attr('d', d => {
+      const sx = d.source.x + pillW(d.source.id) / 2;
+      const tx = d.target.x - pillW(d.target.id) / 2;
+      const mx = (sx + tx) / 2;
+      return `M${sx},${d.source.y} C${mx},${d.source.y} ${mx},${d.target.y} ${tx},${d.target.y}`;
+    })
+    .on('mouseenter', (e, d) => showTip(e,
+      `<b>${d.source.id}</b> → <b>${d.target.id}</b><br><span style="color:#6e7681">via ${d.via}</span>`))
+    .on('mouseleave', hideTip);
+
+  // Draw nodes
+  const allVisible = cols.flatMap(c => c.visible);
+  dvG.append('g').selectAll('g').data(allVisible, d => d.id).join('g')
+    .attr('class', d => {
+      if (d.id === id)           return 'node node-focused';
+      if (parentIds.has(d.id))   return 'node node-parent';
+      if (childL2Ids.has(d.id))  return 'node node-l2';
+      return 'node';
+    })
+    .attr('transform', d => `translate(${d.x},${d.y})`)
+    .on('click', (e, d) => { e.stopPropagation(); dvNavigateTo(d.id); })
+    .on('mouseenter', (e, d) => {
+      const role = d.id === id ? 'focus' :
+                   parentIds.has(d.id)  ? 'references this' :
+                   childL1Ids.has(d.id) ? 'child L1' : 'child L2';
+      showTip(e, `<b>${d.id}</b><br><span style="color:#6e7681">${role}</span>`);
+    })
+    .on('mouseleave', hideTip)
+    .call(sel => {
+      sel.append('rect')
+        .attr('width',  d => pillW(d.id)).attr('height', PILL_H)
+        .attr('x', d => -pillW(d.id) / 2).attr('y', -PILL_H / 2)
+        .attr('rx', PILL_H / 2)
+        .attr('fill', d => { const dc = getDiffClass(d.id); return dc ? DIFF_COLORS[dc] : familyColor(d.family); });
+      sel.append('text').attr('class', 'node-label').text(d => d.id);
+    });
+
+  // Overflow labels
+  cols.forEach(col => {
+    if (!col.overflow) return;
+    dvG.append('text')
+      .attr('x', col.x).attr('y', col._overflowY)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('font-size', '10px').attr('fill', '#6e7681')
+      .text(`+${col.overflow} more`);
+  });
+
+  // Column header labels
+  const LABELS = { parent: 'references this', focus: null, l1: 'L1 children', l2: 'L2 children' };
+  cols.forEach(col => {
+    const lbl = LABELS[col.key];
+    if (!lbl) return;
+    dvG.append('text')
+      .attr('x', col.x).attr('y', 8)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'hanging')
+      .attr('font-size', '9px').attr('fill', '#484f58')
+      .text(lbl);
+  });
+
+  const p = parentIds.size, c1 = childL1Ids.size, c2 = childL2Ids.size;
+  document.getElementById('dv-graph-label').textContent =
+    `${p} parent${p !== 1 ? 's' : ''} · ${c1} child${c1 !== 1 ? 'ren' : ''} L1 · ${c2} L2` +
+    (c2 >= 20 ? ' (capped)' : '');
+}
+
+function dvNavigateTo(id) {
+  if (!nodeById.has(id)) return;
+  dvNode = id;
+  setTableListActive(id);
+  openDataPanel(id);
+  renderMiniGraph(id);
+  updateInfoPanel(id);
 }
 
 // ── Breadcrumb ────────────────────────────────────────────────────
@@ -653,45 +1032,55 @@ function refreshBreadcrumb() {
 }
 
 // ── Search ────────────────────────────────────────────────────────
-searchEl.addEventListener('input', () => {
-  const q = searchEl.value.trim().toLowerCase();
-  if (q.length < 3) { searchDrop.style.display = 'none'; return; }
-  const hits = RAW.nodes
-    .filter(n => n.id.toLowerCase().includes(q))
-    .sort((a, b) => {
-      const aId = a.id.toLowerCase(), bId = b.id.toLowerCase();
-      if (aId === q && bId !== q) return -1;
-      if (bId === q && aId !== q) return 1;
-      const aStarts = aId.startsWith(q), bStarts = bId.startsWith(q);
-      if (aStarts !== bStarts) return aStarts ? -1 : 1;
-      return a.id.localeCompare(b.id);
-    });
-  if (!hits.length) { searchDrop.style.display = 'none'; return; }
-  searchDrop.style.display = 'block';
-  searchDrop.innerHTML = hits.map(n =>
-    `<div class="drop-item" data-id="${n.id}">
-      <span class="drop-dot" style="background:${familyColor(n.family)}"></span>${n.id}
-    </div>`
-  ).join('');
-  searchDrop.querySelectorAll('.drop-item').forEach(el => {
-    el.addEventListener('click', () => {
-      const id = el.dataset.id;
-      searchEl.value = id;
-      searchDrop.style.display = 'none';
-      if (state.mode === 'explore') {
-        state.exploreHistory = [];
-        navigateTo(id);
-      } else {
-        const target = nodeSel?.data().find(d => d.id === id);
-        if (target) { focusNode(id); zoomTo(target); }
-        else { updateInfoPanel(id); }
-      }
-    });
+// ── Table list ────────────────────────────────────────────────────
+function setTableListActive(id) {
+  const items = document.querySelectorAll('#table-list .tbl-item');
+  let hit = null;
+  items.forEach(item => {
+    const active = item.dataset.id === id;
+    item.classList.toggle('active', active);
+    if (active) hit = item;
   });
-});
-document.addEventListener('click', e => {
-  if (!document.getElementById('search-wrap').contains(e.target))
-    searchDrop.style.display = 'none';
+  hit?.scrollIntoView({ block: 'nearest' });
+}
+
+function filterTableList(q) {
+  const lower = q.toLowerCase();
+  const listEl = document.getElementById('table-list');
+  listEl.querySelectorAll('.tbl-item').forEach(item => {
+    item.style.display = (!lower || item.dataset.id.toLowerCase().includes(lower)) ? '' : 'none';
+  });
+  if (lower) listEl.scrollTop = 0;
+}
+
+function initTableList() {
+  const listEl = document.getElementById('table-list');
+  const schemaNodes = RAW.nodes.slice().sort((a, b) => a.id.localeCompare(b.id));
+  listEl.innerHTML = schemaNodes.map(n =>
+    `<div class="tbl-item" data-id="${n.id}">` +
+    `<span class="drop-dot" style="background:${familyColor(n.family)}"></span>${n.id}</div>`
+  ).join('');
+  listEl.addEventListener('click', e => {
+    const item = e.target.closest('.tbl-item');
+    if (!item) return;
+    const id = item.dataset.id;
+    searchEl.value = '';
+    filterTableList('');
+    if (state.mode === 'data') {
+      dvNavigateTo(id);
+    } else if (state.mode === 'explore') {
+      state.exploreHistory = [];
+      navigateTo(id);
+    } else {
+      const target = nodeSel?.data().find(d => d.id === id);
+      if (target) { focusNode(id); zoomTo(target); }
+      else { updateInfoPanel(id); openDataPanel(id); }
+    }
+  });
+}
+
+searchEl.addEventListener('input', () => {
+  filterTableList(searchEl.value.trim());
 });
 
 // ── Mode toggle ───────────────────────────────────────────────────
@@ -699,6 +1088,16 @@ document.querySelectorAll('.mode-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const m = btn.dataset.mode;
     if (m === state.mode) return;
+
+    // Tear down previous mode
+    if (state.mode === 'data') {
+      rightArea.classList.remove('mode-data');
+      document.getElementById('show-isolated-wrap').style.display = '';
+      if (dvSim) dvSim.stop();
+      dvNode = null;
+      // Keep dpNode / data panel open if it was loaded
+    }
+
     state.mode = m;
     state.focused = null;
     document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === m));
@@ -712,8 +1111,38 @@ document.querySelectorAll('.mode-btn').forEach(btn => {
       exploreHint.style.display = 'flex';
       statsEl.textContent = '';
       refreshBreadcrumb();
-    } else {
+
+    } else if (m === 'data') {
+      rightArea.classList.add('mode-data');
+      document.getElementById('show-isolated-wrap').style.display = 'none';
+      if (sim) sim.stop();
+      g.selectAll('*').remove();
       exploreHint.style.display = 'none';
+      statsEl.textContent = '';
+      refreshBreadcrumb();
+
+      // Carry a previously focused node into data view
+      const carryOver = dpNode || state.exploreRoot;
+      state.exploreRoot = null;
+      state.exploreHistory = [];
+      infoPanel.innerHTML = PLACEHOLDER;
+
+      // Always show data panel in data mode
+      dataPanel.classList.remove('dp-hidden');
+
+      if (carryOver && nodeById.has(carryOver)) {
+        dvNavigateTo(carryOver);
+      } else {
+        dvNode = null;
+        dpTitle.textContent = 'Data View';
+        dpDataPane.innerHTML = '<p class="placeholder">Search for a table above to begin</p>';
+        document.getElementById('dv-graph-label').textContent = '';
+      }
+
+    } else { // graph
+      exploreHint.style.display = 'none';
+      state.exploreHistory = [];
+      state.exploreRoot = null;
       render();
     }
   });
@@ -731,11 +1160,22 @@ const dpTitle    = document.getElementById('dp-title');
 const dpDataPane = document.getElementById('dp-data');
 const dpDrag     = document.getElementById('dp-drag');
 
-const CSV_BASE = 'ffxiv-datamining/csv/en';
+const CSV_BASE = 'ffxiv-datamining-latest/csv/en';
 
 let dpNode = null;
 let dpPage = 0;
-const DP_PAGE = 15;
+let DP_PAGE = 15;
+
+function calcDpPage() {
+  const body = document.getElementById('dp-body');
+  if (!body) return 15;
+  const bodyH = body.offsetHeight;
+  const ROW_H = 22, THEAD = 26, PAGINATION = 44, BUFFER = 8;
+  let overhead = THEAD + PAGINATION + BUFFER;
+  if (diffData?.tables.changed?.[dpNode])  overhead += 52;
+  if (dataDiffData?.tables?.[dpNode])      overhead += 52;
+  return Math.max(5, Math.floor((bodyH - overhead) / ROW_H));
+}
 
 // Parse a full CSV text into an array of rows (handles quoted fields and embedded newlines).
 function parseCSVText(text) {
@@ -805,6 +1245,7 @@ function closeDpPanel() {
 }
 
 function renderDataPane() {
+  DP_PAGE = calcDpPage();
   const node = nodeById.get(dpNode);
   if (!node) return;
   if (node._fetchError) {
@@ -812,12 +1253,31 @@ function renderDataPane() {
     return;
   }
   const rows = node._rows || [];
-  const cols  = node.columns || [];
-  const fkMap = new Map(RAW.edges.filter(e => e.source === dpNode).map(e => [e.via, e.target]));
-  const total = rows.length;
+  const cols   = node.columns || [];
+  const fkMap  = new Map(RAW.edges.filter(e => e.source === dpNode).map(e => [e.via, e.target]));
+
+  // Schema diff info
+  const diffChange = diffData?.tables.changed?.[dpNode];
+
+  // Row-level diff info
+  const tableDataDiff  = dataDiffData?.tables?.[dpNode];
+  const addedRowSet    = tableDataDiff ? new Set(tableDataDiff.rows_added.map(String)) : new Set();
+  const changedRowMap  = tableDataDiff?.rows_changed || {};
+
+  // In data view with "Only changed" active, restrict rows to added/changed ones
+  let displayRows = rows;
+  if (state.mode === 'data' && state.showOnlyChanged && tableDataDiff) {
+    const changedIds = new Set([
+      ...tableDataDiff.rows_added.map(String),
+      ...Object.keys(tableDataDiff.rows_changed),
+    ]);
+    displayRows = rows.filter(row => changedIds.has(row[0]));
+  }
+
+  const total = displayRows.length;
   const pages = Math.max(1, Math.ceil(total / DP_PAGE));
   const start = dpPage * DP_PAGE;
-  const slice = rows.slice(start, start + DP_PAGE);
+  const slice = displayRows.slice(start, start + DP_PAGE);
   const end   = start + slice.length;
 
   const thead = cols.map(c => {
@@ -826,11 +1286,64 @@ function renderDataPane() {
       ? `<th class="th-fk" data-target="${tgt}" title="→ ${tgt}">${c}</th>`
       : `<th>${c}</th>`;
   }).join('');
-  const tbody = slice.map(row =>
-    `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
-  ).join('');
 
-  dpDataPane.innerHTML = `
+  // Share full diff map with click handlers (covers all rows, not just current page)
+  rowDiffState = { diffs: changedRowMap, cols };
+
+  const tbody = slice.flatMap(row => {
+    const rowId     = row[0];
+    const rowChange = changedRowMap[rowId];
+    const isAdded   = addedRowSet.has(rowId);
+    const isChanged = !!rowChange;
+
+    const trAttrs = isAdded   ? ' class="row-diff-added"'
+                  : isChanged ? ` class="row-diff-changed" data-rowid="${escHtml(rowId)}"` : '';
+
+    const cells = row.map((cell, ci) => {
+      if (ci === 0 && isChanged)
+        return `<td><span class="row-toggle" title="Toggle inline diff">▶</span>${cell}</td>`;
+      const change = rowChange?.[cols[ci]];
+      return change ? `<td class="cell-diff-changed">${cell}</td>` : `<td>${cell}</td>`;
+    }).join('');
+
+    const mainRow = `<tr${trAttrs}>${cells}</tr>`;
+    if (!isChanged) return [mainRow];
+
+    // Detail row (hidden until toggled)
+    const fields = Object.entries(rowChange).map(([col, [ov, nv]]) =>
+      `<div class="diff-field">` +
+      `<div class="diff-field-name">${escHtml(col)}</div>` +
+      `<div class="diff-val-old">&#8722;&nbsp;${escHtml(String(ov))}</div>` +
+      `<div class="diff-val-new">+&nbsp;${escHtml(String(nv))}</div>` +
+      `</div>`
+    ).join('');
+    const detailRow =
+      `<tr class="diff-detail-row" data-for="${escHtml(rowId)}" style="display:none">` +
+      `<td colspan="${cols.length}"><div class="diff-detail-content">${fields}</div></td></tr>`;
+
+    return [mainRow, detailRow];
+  }).join('');
+
+  const diffSection = diffChange ? `
+    <div class="col-diff">
+      <span class="col-diff-hdr">Schema changes in this diff</span>
+      ${diffChange.columns_added.map(c => `<span class="col-badge col-added">+ ${c}</span>`).join('')}
+      ${diffChange.columns_removed.map(c => `<span class="col-badge col-removed">&#8722; ${c}</span>`).join('')}
+    </div>` : '';
+
+  const rowDiffSection = tableDataDiff ? (() => {
+    const na = tableDataDiff.rows_added.length;
+    const nr = tableDataDiff.rows_removed.length;
+    const nc = Object.keys(tableDataDiff.rows_changed).length;
+    return `<div class="col-diff">
+      <span class="col-diff-hdr">Row changes in this diff</span>
+      ${na ? `<span class="col-badge col-added">+${na} added</span>` : ''}
+      ${nr ? `<span class="col-badge col-removed">&#8722;${nr} removed</span>` : ''}
+      ${nc ? `<span class="col-badge" style="background:rgba(210,153,34,0.15);color:#d29922">~${nc} changed</span>` : ''}
+    </div>`;
+  })() : '';
+
+  dpDataPane.innerHTML = `${diffSection}${rowDiffSection}
     <div class="table-scroll">
       <table class="data-table">
         <thead><tr>${thead}</tr></thead>
@@ -857,9 +1370,13 @@ function renderDataPane() {
   dpDataPane.querySelectorAll('th.th-fk[data-target]').forEach(th => {
     th.addEventListener('click', () => navigateToFromPanel(th.dataset.target));
   });
+
+  dpDataPane.querySelector('.data-table')
+    ?.addEventListener('click', handleTableRowClick);
 }
 
 function navigateToFromPanel(id) {
+  if (state.mode === 'data') { dvNavigateTo(id); return; }
   if (state.mode === 'explore') { navigateTo(id); }
   else {
     focusNode(id);
@@ -869,7 +1386,41 @@ function navigateToFromPanel(id) {
   openDataPanel(id);
 }
 
-// ── Drag-to-resize ────────────────────────────────────────────────
+// ── Row diff interaction ──────────────────────────────────────────
+function handleTableRowClick(e) {
+  // Toggle icon → expand/collapse inline detail row (Option A)
+  const toggle = e.target.closest('.row-toggle');
+  if (toggle) {
+    e.stopPropagation();
+    const rowId = toggle.closest('tr').dataset.rowid;
+    const detail = dpDataPane.querySelector(`.diff-detail-row[data-for="${CSS.escape(rowId)}"]`);
+    if (!detail) return;
+    const opening = detail.style.display === 'none';
+    detail.style.display = opening ? '' : 'none';
+    toggle.textContent = opening ? '▼' : '▶';
+    return;
+  }
+
+  // Click anywhere else on a changed row → sidebar diff (Option B)
+  const tr = e.target.closest('tr.row-diff-changed');
+  if (tr) showRowDiffInSidebar(tr.dataset.rowid);
+}
+
+function showRowDiffInSidebar(rowId) {
+  const changes = rowDiffState.diffs[rowId];
+  if (!changes) return;
+  infoPanel.innerHTML =
+    `<div class="rdiff-title">Row ${escHtml(rowId)} &mdash; changes</div>` +
+    Object.entries(changes).map(([col, [ov, nv]]) =>
+      `<div class="rdiff-field">` +
+      `<div class="rdiff-fname">${escHtml(col)}</div>` +
+      `<div class="rdiff-old">&#8722;&nbsp;${escHtml(String(ov))}</div>` +
+      `<div class="rdiff-new">+&nbsp;${escHtml(String(nv))}</div>` +
+      `</div>`
+    ).join('');
+}
+
+// ── Drag-to-resize (data panel in graph/explore mode) ────────────
 {
   let dragging = false, startY = 0, startH = 0;
   dpDrag.addEventListener('mousedown', e => {
@@ -883,7 +1434,7 @@ function navigateToFromPanel(id) {
   });
   document.addEventListener('mousemove', e => {
     if (!dragging) return;
-    const delta = startY - e.clientY;           // up = positive = taller panel
+    const delta = startY - e.clientY;
     const newH  = Math.max(80, Math.min(startH + delta, window.innerHeight * 0.85));
     dataPanel.style.height = newH + 'px';
   });
@@ -896,7 +1447,111 @@ function navigateToFromPanel(id) {
   });
 }
 
-document.getElementById('dp-close').addEventListener('click', closeDpPanel);
+// ── Drag-to-resize (mini-graph in data view) ──────────────────────
+{
+  const dvResize = document.getElementById('dv-resize');
+  const dvGraphArea = document.getElementById('dv-graph-area');
+  let dragging = false, startY = 0, startH = 0;
+  dvResize.addEventListener('mousedown', e => {
+    dragging = true;
+    startY = e.clientY;
+    startH = dvGraphArea.offsetHeight;
+    dvResize.classList.add('dragging');
+    document.body.style.cursor = 'row-resize';
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const delta = startY - e.clientY;   // drag up = taller mini-graph
+    const newH  = Math.max(100, Math.min(startH + delta, window.innerHeight * 0.7));
+    dvGraphArea.style.height = newH + 'px';
+  });
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    dvResize.classList.remove('dragging');
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+  });
+}
+
+// Re-render when the data panel body changes height (resize drag or mode switch)
+new ResizeObserver(() => {
+  if (dpNode) renderDataPane();
+}).observe(document.getElementById('dp-body'));
+
+document.getElementById('dp-close').addEventListener('click', () => {
+  if (state.mode !== 'data') closeDpPanel();
+});
+
+// ── Diff loading & controls ───────────────────────────────────────
+async function loadDiff(fromId, toId) {
+  try {
+    const resp = await fetch(`diff_${fromId}_to_${toId}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    diffData = await resp.json();
+    diffEdgeAddedKeys = new Set(diffData.edges.added.map(e => `${e.source}|${e.target}|${e.via}`));
+  } catch(e) {
+    diffData = null;
+    diffEdgeAddedKeys = new Set();
+  }
+}
+
+async function applyDiff() {
+  const from = document.getElementById('diff-from').value;
+  const to   = document.getElementById('diff-to').value;
+  const changedWrap = document.getElementById('diff-changed-wrap');
+  const onlyChanged = document.getElementById('diff-only-changed');
+
+  if (from && to && from !== to) {
+    const validSchema = (RAW.meta.diff_pairs || []).some(p => p.from === from && p.to === to);
+    if (validSchema) {
+      await loadDiff(from, to);
+    } else {
+      diffData = null;
+      diffEdgeAddedKeys = new Set();
+    }
+
+    // Also load row-level data diff if available
+    const validData = (RAW.meta.data_diff_pairs || []).some(p => p.from === from && p.to === to);
+    if (validData) {
+      try {
+        const resp = await fetch(`data_diff_${from}_to_${to}.json`);
+        dataDiffData = resp.ok ? await resp.json() : null;
+      } catch { dataDiffData = null; }
+    } else {
+      dataDiffData = null;
+    }
+  } else {
+    diffData = null;
+    diffEdgeAddedKeys = new Set();
+    dataDiffData = null;
+  }
+
+  const hasDiff        = !!diffData;
+  const hasAnyDiff     = hasDiff || !!dataDiffData;
+  changedWrap.style.display = hasAnyDiff ? 'flex' : 'none';
+  if (!hasAnyDiff) { onlyChanged.checked = false; state.showOnlyChanged = false; }
+
+  if (state.mode === 'data') {
+    if (dpNode) renderDataPane();
+  } else {
+    render();
+  }
+}
+
+document.getElementById('diff-from').addEventListener('change', applyDiff);
+document.getElementById('diff-to').addEventListener('change', applyDiff);
+document.getElementById('diff-only-changed').addEventListener('change', e => {
+  state.showOnlyChanged = e.target.checked;
+  if (state.mode === 'data') {
+    dpPage = 0;
+    if (dpNode) renderDataPane();
+  } else {
+    render();
+  }
+});
 
 // ── URL hash state ────────────────────────────────────────────────
 function updateHash() {
@@ -922,6 +1577,19 @@ function readHash() {
 }
 
 // ── Init ──────────────────────────────────────────────────────────
+{
+  const versions = RAW.meta.versions || [];
+  if (versions.length > 1) {
+    const fromEl = document.getElementById('diff-from');
+    const toEl   = document.getElementById('diff-to');
+    versions.forEach(v => {
+      fromEl.appendChild(Object.assign(document.createElement('option'), { value: v.id, textContent: v.label }));
+      toEl.appendChild(Object.assign(document.createElement('option'), { value: v.id, textContent: v.label }));
+    });
+    document.getElementById('diff-controls').style.display = 'flex';
+  }
+}
+initTableList();
 render();
 readHash();
 </script>
