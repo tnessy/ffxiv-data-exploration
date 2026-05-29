@@ -383,6 +383,91 @@
     tr.row-diff-changed td { background: rgba(210,153,34,0.07) !important; }
     td.cell-diff-changed   { background: rgba(210,153,34,0.28) !important; color: #d29922; }
 
+    /* ── Changelog mode ── */
+    #right-area.mode-changelog #graph-area    { display: none; }
+    #right-area.mode-changelog #dv-graph-area { display: none; }
+    #right-area.mode-changelog #data-panel    { display: none !important; }
+    #right-area.mode-changelog #changelog-area { display: flex; }
+    #content.mode-changelog #sidebar          { display: none; }
+
+    #changelog-area {
+      display: none;
+      flex: 1;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 0;
+    }
+    #cl-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid #21262d;
+      flex-shrink: 0;
+    }
+    #cl-toolbar label { color: #8b949e; font-size: 12px; }
+    #cl-version { background: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 4px; padding: 3px 8px; font-size: 13px; }
+    #cl-version:focus { outline: none; border-color: #58a6ff; }
+    #cl-header-summary { color: #6e7681; font-size: 12px; margin-left: 8px; }
+    #cl-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+    }
+    .cl-section { margin-bottom: 12px; }
+    .cl-section-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px 6px 0 0;
+      cursor: pointer;
+      user-select: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .cl-section-header:hover { background: #1c2128; }
+    .cl-section-count { color: #6e7681; font-weight: normal; }
+    .cl-section-chevron { color: #6e7681; font-size: 10px; transition: transform 0.15s; }
+    .cl-collapsed .cl-section-chevron { transform: rotate(-90deg); }
+    .cl-collapsed .cl-section-body { display: none; }
+    .cl-section-body { border: 1px solid #21262d; border-top: none; border-radius: 0 0 6px 6px; }
+    .cl-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      border-bottom: 1px solid #1c2128;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .cl-row:last-child { border-bottom: none; }
+    .cl-row:hover { background: #161b22; }
+    .cl-row.cl-expanded { background: #0d1117; }
+    .cl-row-name { flex: 1; color: #c9d1d9; font-family: monospace; font-size: 12px; }
+    .cl-row-badges { display: flex; gap: 4px; }
+    .cl-chevron { color: #6e7681; font-size: 10px; transition: transform 0.15s; }
+    .cl-row.cl-expanded .cl-chevron { transform: rotate(90deg); }
+    .cl-inline {
+      padding: 0 12px 10px 28px;
+      border-bottom: 1px solid #1c2128;
+      background: #090d12;
+      overflow-x: auto;
+      font-size: 11px;
+    }
+    .cl-inline:last-child { border-bottom: none; }
+    .cl-inline table { border-collapse: collapse; width: 100%; margin-top: 6px; }
+    .cl-inline th { padding: 3px 8px; text-align: left; color: #6e7681; border-bottom: 1px solid #21262d; white-space: nowrap; }
+    .cl-inline td { padding: 3px 8px; color: #c9d1d9; border-bottom: 1px solid #0d1117; white-space: nowrap; max-width: 300px; overflow: hidden; text-overflow: ellipsis; }
+    .cl-inline .cl-row-added td  { background: rgba(63,185,80,0.10); }
+    .cl-inline .cl-row-removed td { background: rgba(248,81,73,0.10); }
+    .cl-inline td.cl-cell-changed { background: rgba(210,153,34,0.25); color: #d29922; }
+    .cl-inline .cl-load-msg { color: #6e7681; padding: 8px 0; }
+    .cl-col-added   { color: #3fb950; }
+    .cl-col-removed { color: #f85149; }
+
     /* ── Row toggle ── */
     .row-toggle {
       display: inline-block;
@@ -444,6 +529,7 @@
     <button class="mode-btn active" data-mode="graph">Graph View</button>
     <button class="mode-btn" data-mode="explore">Explore View</button>
     <button class="mode-btn" data-mode="data">Data View</button>
+    <button class="mode-btn" data-mode="changelog">Patch Summary</button>
   </div>
   <label class="filter-label" id="show-isolated-wrap">
     <input type="checkbox" id="show-isolated"> Show isolated nodes
@@ -496,6 +582,17 @@
         <span id="dv-graph-label"></span>
       </div>
       <svg id="dv-graph"></svg>
+    </div>
+
+    <div id="changelog-area">
+      <div id="cl-toolbar">
+        <label for="cl-version">Version:</label>
+        <select id="cl-version"><option value="">— select —</option></select>
+        <span id="cl-header-summary"></span>
+      </div>
+      <div id="cl-body">
+        <p style="color:#6e7681;padding:20px">Select a version above to see its patch summary.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -592,6 +689,7 @@ const statsEl     = document.getElementById('stats');
 const tipEl       = document.getElementById('tooltip');
 const exploreHint = document.getElementById('explore-hint');
 const rightArea   = document.getElementById('right-area');
+const contentEl   = document.getElementById('content');
 
 const PLACEHOLDER = '<p class="placeholder">Click a node to see its connections</p>';
 
@@ -1113,13 +1211,27 @@ document.querySelectorAll('.mode-btn').forEach(btn => {
       if (dvSim) dvSim.stop();
       dvNode = null;
       // Keep dpNode / data panel open if it was loaded
+    } else if (state.mode === 'changelog') {
+      rightArea.classList.remove('mode-changelog');
+      contentEl.classList.remove('mode-changelog');
+      document.getElementById('diff-controls').style.display = (RAW.meta.versions?.length > 1) ? 'flex' : 'none';
+      document.getElementById('show-isolated-wrap').style.display = '';
     }
 
     state.mode = m;
     state.focused = null;
     document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === m));
 
-    if (m === 'explore') {
+    if (m === 'changelog') {
+      rightArea.classList.add('mode-changelog');
+      contentEl.classList.add('mode-changelog');
+      document.getElementById('diff-controls').style.display = 'none';
+      document.getElementById('show-isolated-wrap').style.display = 'none';
+      if (sim) sim.stop();
+      g.selectAll('*').remove();
+      statsEl.textContent = '';
+
+    } else if (m === 'explore') {
       state.exploreHistory = [];
       state.exploreRoot = null;
       if (sim) sim.stop();
@@ -1682,6 +1794,228 @@ document.getElementById('diff-only-changed').addEventListener('change', e => {
   }
 });
 
+// ── Changelog mode ────────────────────────────────────────────────
+let clSchemaDiff = null;
+let clDataDiff   = null;
+const clRowDataCache = new Map(); // tableId -> loaded node rows
+
+async function loadChangelogVersion(versionId) {
+  const versions = RAW.meta.versions || [];
+  const idx = versions.findIndex(v => v.id === versionId);
+  if (idx <= 0) return;
+  const fromId = versions[idx - 1].id;
+
+  const [sd, dd] = await Promise.all([
+    fetch(`diff_${fromId}_to_${versionId}.json`).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`data_diff_${fromId}_to_${versionId}.json`).then(r => r.ok ? r.json() : null).catch(() => null),
+  ]);
+  clSchemaDiff = sd;
+  clDataDiff   = dd;
+  clRowDataCache.clear();
+  renderChangelog(versionId);
+}
+
+function renderChangelog(versionId) {
+  const body = document.getElementById('cl-body');
+  const summaryEl = document.getElementById('cl-header-summary');
+
+  if (!clSchemaDiff && !clDataDiff) {
+    body.innerHTML = '<p style="color:#6e7681;padding:20px">No diff data available for this version.</p>';
+    summaryEl.textContent = '';
+    return;
+  }
+
+  const versions  = RAW.meta.versions || [];
+  const idx       = versions.findIndex(v => v.id === versionId);
+  const fromLabel = idx > 0 ? versions[idx - 1].label : '?';
+  const toLabel   = versions[idx]?.label || versionId;
+
+  const tables    = clSchemaDiff?.tables || { added: [], removed: [], changed: {} };
+  const dataTbls  = clDataDiff?.tables   || {};
+  const na = tables.added.length, nr = tables.removed.length;
+  const nc = Object.keys(tables.changed).length, nd = Object.keys(dataTbls).length;
+
+  const parts = [];
+  if (na) parts.push(`<span style="color:#3fb950">+${na} added</span>`);
+  if (nr) parts.push(`<span style="color:#f85149">−${nr} removed</span>`);
+  if (nc) parts.push(`<span style="color:#d29922">~${nc} schema</span>`);
+  if (nd) parts.push(`<span style="color:#58a6ff">${nd} row changes</span>`);
+  summaryEl.innerHTML = `${fromLabel} &rarr; ${toLabel} &nbsp; ${parts.join(' &nbsp; ')}`;
+
+  let html = '';
+
+  if (na) html += clMakeSection('cl-s-added',   `Added Tables`,        na, tables.added.slice().sort().map(t   => clMakeRow(t, 'added', null, null)).join(''));
+  if (nr) html += clMakeSection('cl-s-removed',  `Removed Tables`,      nr, tables.removed.slice().sort().map(t => clMakeRow(t, 'removed', null, null)).join(''));
+  if (nc) html += clMakeSection('cl-s-schema',   `Schema Changes`,      nc, Object.entries(tables.changed).sort((a,b)=>a[0].localeCompare(b[0])).map(([t,c]) => clMakeRow(t, 'schema', c, null)).join(''));
+  if (nd) html += clMakeSection('cl-s-rowdata',  `Row Changes`,         nd, Object.entries(dataTbls).sort((a,b)=>a[0].localeCompare(b[0])).map(([t,d])  => clMakeRow(t, 'rowdata', null, d)).join(''));
+
+  body.innerHTML = html;
+
+  body.querySelectorAll('.cl-section-header').forEach(hdr => {
+    hdr.addEventListener('click', () => hdr.closest('.cl-section').classList.toggle('cl-collapsed'));
+  });
+  body.querySelectorAll('.cl-row').forEach(row => {
+    row.addEventListener('click', () => clToggleRow(row));
+  });
+}
+
+function clMakeSection(id, title, count, rowsHtml) {
+  return `<div class="cl-section" id="${id}">
+    <div class="cl-section-header">
+      <span class="cl-section-chevron">&#9660;</span>
+      <span>${title}</span> <span class="cl-section-count">(${count})</span>
+    </div>
+    <div class="cl-section-body">${rowsHtml}</div>
+  </div>`;
+}
+
+function clMakeRow(tableId, type, schemaChange, rowData) {
+  const dot = nodeById.has(tableId)
+    ? `<span class="drop-dot" style="background:${familyColor(nodeById.get(tableId).family)}"></span>` : '';
+
+  let badges = '';
+  if (type === 'added') {
+    badges = `<span class="col-badge col-added">new</span>`;
+  } else if (type === 'removed') {
+    badges = `<span class="col-badge col-removed">removed</span>`;
+  } else if (type === 'schema' && schemaChange) {
+    const ca = schemaChange.columns_added?.length || 0, cr = schemaChange.columns_removed?.length || 0;
+    if (ca) badges += `<span class="col-badge col-added">+${ca} col${ca>1?'s':''}</span>`;
+    if (cr) badges += `<span class="col-badge col-removed">−${cr} col${cr>1?'s':''}</span>`;
+  } else if (type === 'rowdata' && rowData) {
+    const ra = rowData.rows_added?.length || 0, rr = rowData.rows_removed?.length || 0, rc = Object.keys(rowData.rows_changed||{}).length;
+    if (ra) badges += `<span class="col-badge col-added">+${ra}</span>`;
+    if (rr) badges += `<span class="col-badge col-removed">−${rr}</span>`;
+    if (rc) badges += `<span class="col-badge" style="background:rgba(210,153,34,0.15);color:#d29922">~${rc}</span>`;
+  }
+
+  return `<div class="cl-row" data-id="${tableId}" data-type="${type}">
+    ${dot}<span class="cl-row-name">${tableId}</span>
+    <div class="cl-row-badges">${badges}</div>
+    <span class="cl-chevron">&#9654;</span>
+  </div>`;
+}
+
+async function clToggleRow(rowEl) {
+  const tableId = rowEl.dataset.id;
+  const type    = rowEl.dataset.type;
+
+  // If already expanded, collapse
+  const existing = rowEl.nextElementSibling;
+  if (existing?.classList.contains('cl-inline')) {
+    existing.remove();
+    rowEl.classList.remove('cl-expanded');
+    return;
+  }
+  rowEl.classList.add('cl-expanded');
+
+  const inline = document.createElement('div');
+  inline.className = 'cl-inline';
+  inline.innerHTML = '<p class="cl-load-msg">Loading…</p>';
+  rowEl.after(inline);
+
+  if (type === 'removed') {
+    inline.innerHTML = '<p class="cl-load-msg" style="color:#6e7681">Row data not available — table was removed in this version.</p>';
+    return;
+  }
+
+  const node = nodeById.get(tableId);
+  if (!node) {
+    inline.innerHTML = '<p class="cl-load-msg">Table not found in current version.</p>';
+    return;
+  }
+
+  // Load rows if not cached
+  if (!clRowDataCache.has(tableId)) {
+    try {
+      const resp = await fetch(`${CSV_BASE}/${node.path}`);
+      if (!resp.ok) throw new Error();
+      const text  = await resp.text();
+      const parsed = parseCSVText(text);
+      clRowDataCache.set(tableId, parsed);
+    } catch {
+      clRowDataCache.set(tableId, null);
+    }
+  }
+
+  const rows = clRowDataCache.get(tableId);
+  if (!rows) {
+    inline.innerHTML = '<p class="cl-load-msg">Failed to load CSV data.</p>';
+    return;
+  }
+
+  const cols = (node.columns || []).slice(1); // skip '#' header
+
+  if (type === 'added') {
+    // Show all rows (up to 200)
+    const entries = Object.entries(rows);
+    const shown   = entries.slice(0, 200);
+    const more    = entries.length - shown.length;
+    inline.innerHTML = clRenderTable(cols, shown.map(([id, vals]) => ({ id, vals, kind: 'added' })), more);
+
+  } else if (type === 'schema') {
+    const schemaChange = clSchemaDiff?.tables.changed?.[tableId] || {};
+    const addedCols    = new Set(schemaChange.columns_added   || []);
+    const removedCols  = new Set(schemaChange.columns_removed || []);
+    const colHeaders   = cols.map(c =>
+      addedCols.has(c)   ? `<span class="cl-col-added">+&nbsp;${c}</span>` :
+      removedCols.has(c) ? `<span class="cl-col-removed">−&nbsp;${c}</span>` : c
+    );
+    const entries = Object.entries(rows).slice(0, 50);
+    inline.innerHTML = clRenderTable(colHeaders, entries.map(([id, vals]) => ({ id, vals, kind: '' })), 0, true);
+
+  } else if (type === 'rowdata') {
+    const rd  = clDataDiff?.tables?.[tableId];
+    if (!rd) { inline.innerHTML = '<p class="cl-load-msg">No row diff data.</p>'; return; }
+    const addedSet    = new Set(rd.rows_added.map(String));
+    const removedSet  = new Set(rd.rows_removed.map(String));
+    const changedMap  = rd.rows_changed || {};
+    const allIds      = new Set([...addedSet, ...removedSet, ...Object.keys(changedMap)]);
+
+    const rowItems = [];
+    for (const id of allIds) {
+      const vals = rows[id];
+      if (addedSet.has(id))  { rowItems.push({ id, vals: vals || [], kind: 'added' }); continue; }
+      if (removedSet.has(id)){ rowItems.push({ id, vals: vals || [], kind: 'removed' }); continue; }
+      if (changedMap[id])    { rowItems.push({ id, vals: vals || [], kind: 'changed', diffs: changedMap[id] }); }
+    }
+    rowItems.sort((a, b) => {
+      const ai = isNaN(a.id) ? a.id : Number(a.id);
+      const bi = isNaN(b.id) ? b.id : Number(b.id);
+      return ai < bi ? -1 : ai > bi ? 1 : 0;
+    });
+    inline.innerHTML = clRenderTable(cols, rowItems, 0);
+  }
+}
+
+function clRenderTable(cols, rowItems, moreCount, rawColHtml = false) {
+  if (!rowItems.length) return '<p class="cl-load-msg">No rows.</p>';
+  const thHtml = cols.map(c => `<th>${rawColHtml ? c : escHtml(String(c))}</th>`).join('');
+  const tbHtml = rowItems.map(({ id, vals, kind, diffs }) => {
+    const cls = kind === 'added' ? 'cl-row-added' : kind === 'removed' ? 'cl-row-removed' : '';
+    const tdHtml = vals.map((v, i) => {
+      const col = cols[i];
+      const changed = diffs && diffs[col];
+      if (changed) {
+        const [oldV, newV] = changed;
+        return `<td class="cl-cell-changed" title="was: ${escHtml(String(oldV))}">${escHtml(String(newV))}</td>`;
+      }
+      return `<td>${escHtml(String(v ?? ''))}</td>`;
+    }).join('');
+    return `<tr class="${cls}"><td>${escHtml(String(id))}</td>${tdHtml}</tr>`;
+  }).join('');
+  const more = moreCount > 0 ? `<p class="cl-load-msg">… and ${moreCount} more rows</p>` : '';
+  return `<table><thead><tr><th>#</th>${thHtml}</tr></thead><tbody>${tbHtml}</tbody></table>${more}`;
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+document.getElementById('cl-version').addEventListener('change', e => {
+  if (e.target.value) loadChangelogVersion(e.target.value);
+});
+
 // ── URL hash state ────────────────────────────────────────────────
 function updateHash() {
   if (dpNode) {
@@ -1711,9 +2045,12 @@ function readHash() {
   if (versions.length > 1) {
     const fromEl = document.getElementById('diff-from');
     const toEl   = document.getElementById('diff-to');
-    versions.forEach(v => {
+    const clEl   = document.getElementById('cl-version');
+    versions.forEach((v, i) => {
       fromEl.appendChild(Object.assign(document.createElement('option'), { value: v.id, textContent: v.label }));
       toEl.appendChild(Object.assign(document.createElement('option'), { value: v.id, textContent: v.label }));
+      // Changelog: skip the first version (no previous to diff against)
+      if (i > 0) clEl.appendChild(Object.assign(document.createElement('option'), { value: v.id, textContent: v.label }));
     });
     document.getElementById('diff-controls').style.display = 'flex';
   }
