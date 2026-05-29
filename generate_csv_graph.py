@@ -20,7 +20,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 VERSIONS_FILE = Path("versions.json")
-CSV_SUBDIR    = Path("csv/en")
+# Ordered by preference: language-scoped layout (7.41+) then flat layout (pre-7.41)
+CSV_SUBDIRS   = [Path("csv/en"), Path("csv")]
+
+
+def find_csv_dir(version_path: Path) -> Path | None:
+    """Return the CSV root for a version, probing for language subfolder then flat csv/."""
+    for sub in CSV_SUBDIRS:
+        candidate = version_path / sub
+        if candidate.is_dir():
+            return candidate
+    return None
 
 
 def _row_sort_key(row_id: str) -> tuple:
@@ -267,12 +277,12 @@ def main():
     for v in versions:
         vid      = v["id"]
         label    = v.get("label", vid)
-        base_dir = Path(v["path"]) / CSV_SUBDIR
+        base_dir = find_csv_dir(Path(v["path"]))
 
-        print(f"[{label}]  {base_dir}")
-        if not base_dir.exists():
-            print(f"  SKIPPED — path not found\n")
+        if base_dir is None:
+            print(f"[{label}]  SKIPPED — no csv/ directory found under {v['path']}\n")
             continue
+        print(f"[{label}]  {base_dir}")
 
         graph = build_graph(base_dir)
         graphs[vid] = graph

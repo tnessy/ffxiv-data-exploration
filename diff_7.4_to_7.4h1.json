@@ -1,0 +1,13 @@
+{
+  "from": "7.4",
+  "to": "7.4h1",
+  "tables": {
+    "added": [],
+    "removed": [],
+    "changed": {}
+  },
+  "edges": {
+    "added": [],
+    "removed": []
+  }
+}
