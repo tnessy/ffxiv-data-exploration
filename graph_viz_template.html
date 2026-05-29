@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFXIV CSV Relationship Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Toolbar ── */
+    #toolbar {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 16px;
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    #toolbar h1 { font-size: 15px; font-weight: 600; color: #58a6ff; white-space: nowrap; }
+
+    .mode-btn {
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+      background: transparent;
+      color: #8b949e;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .mode-btn.active { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+    .mode-btn:hover:not(.active) { background: #21262d; color: #c9d1d9; }
+
+    .filter-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #8b949e;
+      cursor: pointer;
+      user-select: none;
+    }
+    .filter-label input { cursor: pointer; accent-color: #1f6feb; }
+
+    #stats { margin-left: auto; font-size: 12px; color: #6e7681; white-space: nowrap; }
+
+    /* ── Body layout ── */
+    #content { display: flex; flex: 1; overflow: hidden; }
+
+    /* ── Sidebar ── */
+    #sidebar {
+      width: 250px;
+      min-width: 250px;
+      background: #161b22;
+      border-right: 1px solid #30363d;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #search-wrap { padding: 10px; border-bottom: 1px solid #30363d; position: relative; }
+    #search {
+      width: 100%;
+      padding: 6px 10px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #c9d1d9;
+      font-size: 13px;
+      outline: none;
+    }
+    #search:focus { border-color: #58a6ff; }
+
+    #search-drop {
+      position: absolute;
+      top: calc(100% - 10px);
+      left: 10px;
+      right: 10px;
+      background: #1c2128;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      max-height: 220px;
+      overflow-y: auto;
+      z-index: 100;
+      display: none;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .drop-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .drop-item:hover { background: #21262d; color: #58a6ff; }
+    .drop-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Breadcrumb ── */
+    #breadcrumb {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 10px;
+      background: #0d1117;
+      border-bottom: 1px solid #30363d;
+      font-size: 11px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .crumb { color: #8b949e; cursor: pointer; }
+    .crumb:hover { color: #58a6ff; }
+    .crumb-cur { color: #f78166; cursor: default; }
+    .crumb-sep { color: #30363d; }
+
+    /* ── Info panel ── */
+    #info-panel {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      border-bottom: 1px solid #30363d;
+    }
+    .placeholder { color: #6e7681; font-size: 12px; text-align: center; margin-top: 16px; }
+
+    .info-name { font-size: 13px; font-weight: 600; color: #f78166; word-break: break-all; }
+    .info-meta { font-size: 11px; color: #6e7681; margin: 3px 0 10px; }
+
+    .conn-list { list-style: none; }
+    .conn-list li {
+      padding: 5px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .conn-list li:hover { background: #21262d; }
+    .peer-name { color: #58a6ff; font-weight: 500; display: block; }
+    .via-col { color: #6e7681; font-size: 11px; }
+
+    /* ── Legend ── */
+    #legend { padding: 10px; overflow-y: auto; }
+    #legend h4 {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6e7681;
+      margin-bottom: 7px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      color: #8b949e;
+      margin-bottom: 4px;
+    }
+    .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .legend-item em { color: #6e7681; font-style: normal; }
+    .legend-more { color: #6e7681; font-size: 11px; margin-top: 4px; }
+
+    /* ── Right column (graph + data panel stacked) ── */
+    #right-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
+
+    /* ── Graph area ── */
+    #graph-area { flex: 1; position: relative; overflow: hidden; min-height: 0; }
+    #graph { width: 100%; height: 100%; cursor: grab; }
+    #graph:active { cursor: grabbing; }
+
+    /* ── Data panel ── */
+    #data-panel {
+      height: 280px;
+      flex-shrink: 0;
+      background: #161b22;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    #data-panel.dp-hidden { display: none; }
+
+    /* Drag-to-resize handle */
+    #dp-drag {
+      height: 5px;
+      background: #1f6feb;
+      cursor: row-resize;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    #dp-drag:hover, #dp-drag.dragging { background: #58a6ff; }
+
+    #dp-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px 12px;
+      background: #21262d;
+      border-bottom: 1px solid #30363d;
+      flex-shrink: 0;
+    }
+    #dp-title { font-size: 13px; font-weight: 600; color: #f78166; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    #dp-close { background: transparent; border: none; color: #6e7681; cursor: pointer; font-size: 18px; line-height: 1; padding: 0 2px; flex-shrink: 0; }
+    #dp-close:hover { color: #c9d1d9; }
+
+    #dp-body { flex: 1; overflow: hidden; position: relative; }
+    .dp-pane { position: absolute; inset: 0; overflow: auto; padding: 10px 14px; }
+
+    /* Data table */
+    .data-table { border-collapse: collapse; font-size: 11px; white-space: nowrap; min-width: 100%; }
+    .table-scroll { overflow-x: auto; }
+    .data-table th {
+      padding: 4px 8px; background: #21262d; color: #8b949e;
+      border: 1px solid #30363d; text-align: left; font-weight: 600;
+      position: sticky; top: 0; z-index: 1;
+    }
+    .data-table th.th-fk { color: #f78166; cursor: pointer; }
+    .data-table th.th-fk:hover { color: #ffaa99; background: #2a1a1a; }
+    .data-table td { padding: 3px 8px; border: 1px solid #21262d; color: #c9d1d9; max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+    .data-table tr:nth-child(even) td { background: #0d1117; }
+
+    /* Pagination */
+    .page-bar { display: flex; align-items: center; gap: 8px; padding: 8px 0 2px; font-size: 12px; color: #6e7681; flex-wrap: wrap; }
+    .page-btn { padding: 2px 10px; background: #21262d; border: 1px solid #30363d; color: #c9d1d9; border-radius: 4px; cursor: pointer; font-size: 12px; }
+    .page-btn:disabled { opacity: 0.35; cursor: default; }
+    .page-btn:not(:disabled):hover { background: #30363d; }
+    .page-input {
+      width: 52px; padding: 2px 5px; background: #0d1117; border: 1px solid #30363d;
+      color: #c9d1d9; border-radius: 4px; font-size: 12px; text-align: center;
+    }
+    .page-input:focus { outline: none; border-color: #58a6ff; }
+    .row-range { margin-left: auto; color: #6e7681; font-size: 11px; }
+
+    /* ── Explore hint overlay ── */
+    #explore-hint {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    #explore-hint p {
+      font-size: 14px;
+      color: #6e7681;
+      background: #161b22;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+    /* ── Tooltip ── */
+    #tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: #1c2128;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 7px 11px;
+      font-size: 12px;
+      color: #c9d1d9;
+      opacity: 0;
+      transition: opacity 0.1s;
+      max-width: 260px;
+      z-index: 999;
+      line-height: 1.5;
+    }
+    #tooltip b { color: #58a6ff; }
+
+    /* ── D3 graph elements ── */
+    .edge {
+      stroke: #21262d;
+      stroke-width: 1.5;
+      transition: stroke 0.1s;
+    }
+    .edge-active { stroke: #f78166; stroke-width: 2; }
+    .edge-dimmed { stroke: #161b22; }
+
+    .node rect {
+      stroke: #0d1117;
+      stroke-width: 1;
+      cursor: pointer;
+    }
+    .node-focused rect { stroke: #fff; stroke-width: 2; }
+    .node-dimmed rect { opacity: 0.15; }
+    .node-dimmed text { opacity: 0.15; }
+
+    .node-label {
+      fill: #0d1117;
+      font-size: 9px;
+      font-weight: 600;
+      pointer-events: none;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+  </style>
+</head>
+<body>
+
+<div id="toolbar">
+  <h1>FFXIV CSV Graph</h1>
+  <div style="display:flex;gap:6px">
+    <button class="mode-btn active" data-mode="graph">Graph View</button>
+    <button class="mode-btn" data-mode="explore">Explore View</button>
+  </div>
+  <label class="filter-label">
+    <input type="checkbox" id="show-isolated"> Show isolated nodes
+  </label>
+  <span id="stats"></span>
+</div>
+
+<div id="content">
+  <div id="sidebar">
+    <div id="search-wrap">
+      <input id="search" type="text" placeholder="Search tables…" autocomplete="off">
+      <div id="search-drop"></div>
+    </div>
+    <div id="breadcrumb"></div>
+    <div id="info-panel">
+      <p class="placeholder">Click a node to see its connections</p>
+    </div>
+    <div id="legend">
+      <h4>Node Family</h4>
+      <div id="legend-items"></div>
+    </div>
+  </div>
+
+  <div id="right-area">
+    <div id="graph-area">
+      <svg id="graph"></svg>
+      <div id="explore-hint"><p>Search for a table above to start exploring</p></div>
+      <div id="tooltip"></div>
+    </div>
+
+    <div id="data-panel" class="dp-hidden">
+      <div id="dp-drag" title="Drag to resize"></div>
+      <div id="dp-header">
+        <span id="dp-title"></span>
+        <button id="dp-close">✕</button>
+      </div>
+      <div id="dp-body">
+        <div id="dp-data" class="dp-pane"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Data ─────────────────────────────────────────────────────────
+const RAW = {"nodes":[],"edges":[]}; // __INJECT_DATA__
+
+// ── Lookup map for full node data (includes columns/rows) ────────
+const nodeById = new Map(RAW.nodes.map(n => [n.id, n]));
+
+// ── Adjacency index (undirected) ──────────────────────────────────
+const adj = new Map();
+RAW.nodes.forEach(n => adj.set(n.id, []));
+RAW.edges.forEach(e => {
+  adj.get(e.source)?.push({ peer: e.target, via: e.via });
+  adj.get(e.target)?.push({ peer: e.source, via: e.via });
+});
+
+// ── Family color (hash-based HSL, consistent per family name) ─────
+function familyColor(family) {
+  let h = 0;
+  for (const c of family) h = Math.imul(h, 31) + c.charCodeAt(0) | 0;
+  return `hsl(${(h >>> 0) % 360},60%,58%)`;
+}
+
+// ── Legend ───────────────────────────────────────────────────────
+const legendEl = document.getElementById('legend-items');
+(RAW.meta?.top_families || []).forEach(f => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  item.innerHTML = `<span class="legend-dot" style="background:${familyColor(f)}"></span>${f}`;
+  legendEl.appendChild(item);
+});
+if ((RAW.meta?.total_families || 0) > (RAW.meta?.top_families?.length || 0)) {
+  const more = document.createElement('div');
+  more.className = 'legend-more';
+  more.textContent = `+ ${RAW.meta.total_families - RAW.meta.top_families.length} more families`;
+  legendEl.appendChild(more);
+}
+
+// ── State ────────────────────────────────────────────────────────
+const state = {
+  mode: 'graph',
+  focused: null,
+  showIsolated: false,
+  exploreRoot: null,
+  exploreHistory: [],
+};
+
+// ── DOM refs ─────────────────────────────────────────────────────
+const infoPanel  = document.getElementById('info-panel');
+const searchEl   = document.getElementById('search');
+const searchDrop = document.getElementById('search-drop');
+const breadcrumb = document.getElementById('breadcrumb');
+const statsEl    = document.getElementById('stats');
+const tipEl      = document.getElementById('tooltip');
+const exploreHint = document.getElementById('explore-hint');
+
+const PLACEHOLDER = '<p class="placeholder">Click a node to see its connections</p>';
+
+// ── SVG & zoom ───────────────────────────────────────────────────
+const svgEl = document.getElementById('graph');
+const svg   = d3.select(svgEl);
+const g     = svg.append('g');
+
+// Arrow markers (default grey + active orange-red)
+const defs = svg.append('defs');
+['arrow', 'arrow-active'].forEach((id, i) => {
+  defs.append('marker')
+    .attr('id', id)
+    .attr('viewBox', '0 -4 8 8')
+    .attr('refX', 8).attr('refY', 0)
+    .attr('markerWidth', 5).attr('markerHeight', 5)
+    .attr('orient', 'auto')
+    .append('path').attr('d', 'M0,-4L8,0L0,4')
+    .attr('fill', i === 0 ? '#30363d' : '#f78166');
+});
+
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 12])
+  .on('zoom', ({ transform }) => {
+    g.attr('transform', transform);
+  });
+
+svg.call(zoom).on('dblclick.zoom', null);
+svg.on('click', e => { if (e.target === svgEl) clearFocus(); });
+
+// ── Tooltip helpers ───────────────────────────────────────────────
+svg.on('mousemove', e => {
+  if (+tipEl.style.opacity) {
+    tipEl.style.left = (e.clientX + 14) + 'px';
+    tipEl.style.top  = (e.clientY + 10) + 'px';
+  }
+});
+function showTip(e, html) {
+  tipEl.innerHTML = html;
+  tipEl.style.opacity = 1;
+  tipEl.style.left = (e.clientX + 14) + 'px';
+  tipEl.style.top  = (e.clientY + 10) + 'px';
+}
+function hideTip() { tipEl.style.opacity = 0; }
+
+// ── Pill dimensions ───────────────────────────────────────────────
+const PILL_H = 18;
+const CHAR_W = 5.5; // approximate px per character at 9px font
+const PILL_PAD = 8;
+function pillW(id) { return id.length * CHAR_W + PILL_PAD * 2; }
+
+// ── Simulation & selections ───────────────────────────────────────
+let sim = null, linkSel = null, nodeSel = null;
+
+function visibleNodes() {
+  if (state.mode === 'graph') {
+    return RAW.nodes.filter(n => n.connected || state.showIsolated);
+  }
+  if (!state.exploreRoot) return [];
+  const ids = new Set([state.exploreRoot, ...(adj.get(state.exploreRoot) || []).map(c => c.peer)]);
+  return RAW.nodes.filter(n => ids.has(n.id));
+}
+
+function render() {
+  if (sim) sim.stop();
+  g.selectAll('*').remove();
+  state.focused = null;
+
+  const nodes = visibleNodes().map(n => ({ ...n }));
+  const ids   = new Set(nodes.map(n => n.id));
+  const nodeMap = new Map(nodes.map(n => [n.id, n]));
+
+  const links = RAW.edges
+    .filter(e => ids.has(e.source) && ids.has(e.target))
+    .map(e => ({ source: nodeMap.get(e.source), target: nodeMap.get(e.target), via: e.via }));
+
+  // Spread nodes in a circle for faster initial convergence
+  const w = svgEl.clientWidth || 900;
+  const h = svgEl.clientHeight || 600;
+  const r0 = Math.min(w, h) * 0.35;
+  nodes.forEach((d, i) => {
+    const a = (2 * Math.PI * i) / nodes.length;
+    d.x = w / 2 + r0 * Math.cos(a);
+    d.y = h / 2 + r0 * Math.sin(a);
+  });
+
+  // Edges
+  linkSel = g.append('g')
+    .selectAll('line').data(links).join('line')
+    .attr('class', 'edge')
+    .attr('marker-end', 'url(#arrow)')
+    .on('mouseenter', (e, d) => showTip(e,
+      `<b>${d.source.id}</b> → <b>${d.target.id}</b><br><span style="color:#6e7681">via ${d.via}</span>`))
+    .on('mouseleave', hideTip);
+
+  // Nodes
+  nodeSel = g.append('g')
+    .selectAll('g').data(nodes, d => d.id).join('g')
+    .attr('class', 'node')
+    .call(d3.drag()
+      .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag',  (e, d) => { d.fx = e.x; d.fy = e.y; })
+      .on('end',   (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }))
+    .on('click',      (e, d) => { e.stopPropagation(); handleNodeClick(d); })
+    .on('mouseenter', (e, d) => showTip(e,
+      `<b>${d.id}</b><br><span style="color:#6e7681">${d.family} · ${(adj.get(d.id)||[]).length} connections</span>`))
+    .on('mouseleave', hideTip);
+
+  nodeSel.append('rect')
+    .attr('width',  d => pillW(d.id))
+    .attr('height', PILL_H)
+    .attr('x', d => -pillW(d.id) / 2)
+    .attr('y', -PILL_H / 2)
+    .attr('rx', PILL_H / 2)
+    .attr('fill', d => familyColor(d.family));
+  nodeSel.append('text').attr('class', 'node-label').text(d => d.id);
+
+  sim = d3.forceSimulation(nodes)
+    .force('link',    d3.forceLink(links).id(d => d.id).distance(120).strength(0.4))
+    .force('charge',  d3.forceManyBody().strength(-300))
+    .force('center',  d3.forceCenter(w / 2, h / 2))
+    .force('collide', d3.forceCollide(d => pillW(d.id) / 2 + 4))
+    .on('tick', () => {
+      linkSel.each(function(d) {
+        const dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
+        const len = Math.sqrt(dx * dx + dy * dy) || 1;
+        // Approximate rect-edge distance along this direction
+        const absCos = Math.abs(dx / len), absSin = Math.abs(dy / len);
+        const pad = (pillW(d.target.id) / 2) * absCos + (PILL_H / 2) * absSin + 4;
+        d3.select(this)
+          .attr('x1', d.source.x).attr('y1', d.source.y)
+          .attr('x2', d.target.x - dx / len * pad)
+          .attr('y2', d.target.y - dy / len * pad);
+      });
+      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+
+  statsEl.textContent = `${nodes.length} nodes · ${links.length} edges`;
+  refreshBreadcrumb();
+}
+
+// ── Interaction ───────────────────────────────────────────────────
+function handleNodeClick(d) {
+  if (state.mode === 'explore') { navigateTo(d.id); return; }
+  state.focused === d.id ? clearFocus() : focusNode(d.id);
+}
+
+function focusNode(id) {
+  state.focused = id;
+  const nbrs = new Set([id, ...(adj.get(id) || []).map(c => c.peer)]);
+  nodeSel
+    .classed('node-focused', d => d.id === id)
+    .classed('node-dimmed',  d => !nbrs.has(d.id));
+  linkSel
+    .classed('edge-active', d => d.source.id === id || d.target.id === id)
+    .classed('edge-dimmed', d => d.source.id !== id && d.target.id !== id)
+    .attr('marker-end', d =>
+      (d.source.id === id || d.target.id === id) ? 'url(#arrow-active)' : 'url(#arrow)');
+  updateInfoPanel(id);
+  openDataPanel(id);
+}
+
+function clearFocus() {
+  state.focused = null;
+  nodeSel?.classed('node-focused', false).classed('node-dimmed', false);
+  linkSel?.classed('edge-active', false).classed('edge-dimmed', false)
+          .attr('marker-end', 'url(#arrow)');
+  infoPanel.innerHTML = PLACEHOLDER;
+  closeDpPanel();
+}
+
+// ── Explore navigation ────────────────────────────────────────────
+function navigateTo(id) {
+  if (state.exploreRoot) state.exploreHistory.push(state.exploreRoot);
+  state.exploreRoot = id;
+  exploreHint.style.display = 'none';
+  render();
+  // Delay focus so nodeSel is populated after render
+  requestAnimationFrame(() => focusNode(id));
+}
+
+// ── Info panel ────────────────────────────────────────────────────
+function updateInfoPanel(id) {
+  const conns = adj.get(id) || [];
+  const node  = RAW.nodes.find(n => n.id === id);
+  let html = `<div class="info-name">${id}</div>
+    <div class="info-meta">${node?.family || ''} · ${conns.length} connection${conns.length !== 1 ? 's' : ''}</div>`;
+
+  if (conns.length) {
+    html += '<ul class="conn-list">' + conns.map(({ peer, via }) =>
+      `<li data-peer="${peer}">
+        <span class="peer-name">${peer}</span>
+        <span class="via-col">via ${via}</span>
+      </li>`
+    ).join('') + '</ul>';
+  }
+  infoPanel.innerHTML = html;
+
+  infoPanel.querySelectorAll('[data-peer]').forEach(el => {
+    el.addEventListener('click', () => {
+      const peerId = el.dataset.peer;
+      if (state.mode === 'explore') { navigateTo(peerId); return; }
+      focusNode(peerId);
+      const target = nodeSel?.data().find(d => d.id === peerId);
+      if (target?.x != null) zoomTo(target);
+    });
+  });
+}
+
+function zoomTo(node) {
+  const w = svgEl.clientWidth, h = svgEl.clientHeight;
+  svg.transition().duration(500).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(w / 2, h / 2).scale(3).translate(-node.x, -node.y)
+  );
+}
+
+// ── Breadcrumb ────────────────────────────────────────────────────
+function refreshBreadcrumb() {
+  if (state.mode !== 'explore' || !state.exploreRoot) {
+    breadcrumb.style.display = 'none';
+    return;
+  }
+  breadcrumb.style.display = 'flex';
+  const trail = [...state.exploreHistory, state.exploreRoot];
+  breadcrumb.innerHTML = trail.map((id, i) => {
+    const cur = i === trail.length - 1;
+    return `<span class="${cur ? 'crumb-cur' : 'crumb'}" data-idx="${i}">${id}</span>` +
+           (cur ? '' : '<span class="crumb-sep">›</span>');
+  }).join('');
+  breadcrumb.querySelectorAll('.crumb').forEach(el => {
+    el.addEventListener('click', () => {
+      const idx = +el.dataset.idx;
+      state.exploreRoot = state.exploreHistory[idx];
+      state.exploreHistory = state.exploreHistory.slice(0, idx);
+      render();
+      requestAnimationFrame(() => focusNode(state.exploreRoot));
+    });
+  });
+}
+
+// ── Search ────────────────────────────────────────────────────────
+searchEl.addEventListener('input', () => {
+  const q = searchEl.value.trim().toLowerCase();
+  if (q.length < 3) { searchDrop.style.display = 'none'; return; }
+  const hits = RAW.nodes
+    .filter(n => n.id.toLowerCase().includes(q))
+    .sort((a, b) => {
+      const aId = a.id.toLowerCase(), bId = b.id.toLowerCase();
+      if (aId === q && bId !== q) return -1;
+      if (bId === q && aId !== q) return 1;
+      const aStarts = aId.startsWith(q), bStarts = bId.startsWith(q);
+      if (aStarts !== bStarts) return aStarts ? -1 : 1;
+      return a.id.localeCompare(b.id);
+    });
+  if (!hits.length) { searchDrop.style.display = 'none'; return; }
+  searchDrop.style.display = 'block';
+  searchDrop.innerHTML = hits.map(n =>
+    `<div class="drop-item" data-id="${n.id}">
+      <span class="drop-dot" style="background:${familyColor(n.family)}"></span>${n.id}
+    </div>`
+  ).join('');
+  searchDrop.querySelectorAll('.drop-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.id;
+      searchEl.value = id;
+      searchDrop.style.display = 'none';
+      if (state.mode === 'explore') {
+        state.exploreHistory = [];
+        navigateTo(id);
+      } else {
+        const target = nodeSel?.data().find(d => d.id === id);
+        if (target) { focusNode(id); zoomTo(target); }
+        else { updateInfoPanel(id); }
+      }
+    });
+  });
+});
+document.addEventListener('click', e => {
+  if (!document.getElementById('search-wrap').contains(e.target))
+    searchDrop.style.display = 'none';
+});
+
+// ── Mode toggle ───────────────────────────────────────────────────
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const m = btn.dataset.mode;
+    if (m === state.mode) return;
+    state.mode = m;
+    state.focused = null;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === m));
+
+    if (m === 'explore') {
+      state.exploreHistory = [];
+      state.exploreRoot = null;
+      if (sim) sim.stop();
+      g.selectAll('*').remove();
+      infoPanel.innerHTML = PLACEHOLDER;
+      exploreHint.style.display = 'flex';
+      statsEl.textContent = '';
+      refreshBreadcrumb();
+    } else {
+      exploreHint.style.display = 'none';
+      render();
+    }
+  });
+});
+
+// ── Isolated filter ───────────────────────────────────────────────
+document.getElementById('show-isolated').addEventListener('change', e => {
+  state.showIsolated = e.target.checked;
+  if (state.mode === 'graph') render();
+});
+
+// ── Data panel ───────────────────────────────────────────────────
+const dataPanel  = document.getElementById('data-panel');
+const dpTitle    = document.getElementById('dp-title');
+const dpDataPane = document.getElementById('dp-data');
+const dpDrag     = document.getElementById('dp-drag');
+
+const CSV_BASE = 'ffxiv-datamining/csv/en';
+
+let dpNode = null;
+let dpPage = 0;
+const DP_PAGE = 15;
+
+// Parse a full CSV text into an array of rows (handles quoted fields and embedded newlines).
+function parseCSVText(text) {
+  const rows = [];
+  let i = 0;
+  const n = text.length;
+  while (i < n) {
+    const row = [];
+    rowLoop: while (true) {
+      let field = '';
+      if (i < n && text[i] === '"') {
+        i++;
+        while (i < n) {
+          if (text[i] === '"' && text[i + 1] === '"') { field += '"'; i += 2; }
+          else if (text[i] === '"') { i++; break; }
+          else field += text[i++];
+        }
+      } else {
+        while (i < n && text[i] !== ',' && text[i] !== '\r' && text[i] !== '\n') field += text[i++];
+      }
+      row.push(field);
+      if (i < n && text[i] === ',') { i++; continue rowLoop; }
+      break;
+    }
+    if (i < n && text[i] === '\r') i++;
+    if (i < n && text[i] === '\n') i++;
+    if (row.length === 1 && row[0] === '') continue;
+    rows.push(row);
+  }
+  return rows;
+}
+
+async function loadCSVRows(node) {
+  if ('_rows' in node) return;
+  try {
+    const resp = await fetch(`${CSV_BASE}/${node.path}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const text = await resp.text();
+    const all = parseCSVText(text);
+    node._rows = all.slice(1); // first line is the # schema header
+  } catch (e) {
+    node._rows = [];
+    node._fetchError = String(e);
+  }
+}
+
+async function openDataPanel(id, page = 0) {
+  const node = nodeById.get(id);
+  if (!node) return;
+  dpNode = id;
+  dpPage = page;
+  dpTitle.textContent = id;
+  dataPanel.classList.remove('dp-hidden');
+  updateHash();
+  if (!('_rows' in node)) {
+    dpDataPane.innerHTML = '<p class="placeholder">Loading…</p>';
+    await loadCSVRows(node);
+    if (dpNode !== id) return; // user navigated away during fetch
+  }
+  renderDataPane();
+}
+
+function closeDpPanel() {
+  dataPanel.classList.add('dp-hidden');
+  dpNode = null;
+  history.replaceState(null, '', location.pathname + location.search);
+}
+
+function renderDataPane() {
+  const node = nodeById.get(dpNode);
+  if (!node) return;
+  if (node._fetchError) {
+    dpDataPane.innerHTML = `<p class="placeholder">Failed to load CSV: ${node._fetchError}</p>`;
+    return;
+  }
+  const rows = node._rows || [];
+  const cols  = node.columns || [];
+  const fkMap = new Map(RAW.edges.filter(e => e.source === dpNode).map(e => [e.via, e.target]));
+  const total = rows.length;
+  const pages = Math.max(1, Math.ceil(total / DP_PAGE));
+  const start = dpPage * DP_PAGE;
+  const slice = rows.slice(start, start + DP_PAGE);
+  const end   = start + slice.length;
+
+  const thead = cols.map(c => {
+    const tgt = fkMap.get(c);
+    return tgt
+      ? `<th class="th-fk" data-target="${tgt}" title="→ ${tgt}">${c}</th>`
+      : `<th>${c}</th>`;
+  }).join('');
+  const tbody = slice.map(row =>
+    `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
+  ).join('');
+
+  dpDataPane.innerHTML = `
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody}</tbody>
+      </table>
+    </div>
+    <div class="page-bar">
+      <button class="page-btn" id="dp-prev" ${dpPage === 0 ? 'disabled' : ''}>‹ Prev</button>
+      <span>Page <input class="page-input" id="dp-pg-in" type="text" value="${dpPage + 1}"> of ${pages}</span>
+      <button class="page-btn" id="dp-next" ${dpPage >= pages - 1 ? 'disabled' : ''}>Next ›</button>
+      <span class="row-range">rows ${start + 1}–${end} of ${total}</span>
+    </div>`;
+
+  dpDataPane.querySelector('#dp-prev').addEventListener('click', () => { dpPage--; updateHash(); renderDataPane(); });
+  dpDataPane.querySelector('#dp-next').addEventListener('click', () => { dpPage++; updateHash(); renderDataPane(); });
+
+  const pgIn = dpDataPane.querySelector('#dp-pg-in');
+  pgIn.addEventListener('change', () => {
+    const p = Math.max(1, Math.min(parseInt(pgIn.value, 10) || 1, pages)) - 1;
+    if (p !== dpPage) { dpPage = p; updateHash(); renderDataPane(); }
+  });
+  pgIn.addEventListener('keydown', e => { if (e.key === 'Enter') pgIn.dispatchEvent(new Event('change')); });
+
+  dpDataPane.querySelectorAll('th.th-fk[data-target]').forEach(th => {
+    th.addEventListener('click', () => navigateToFromPanel(th.dataset.target));
+  });
+}
+
+function navigateToFromPanel(id) {
+  if (state.mode === 'explore') { navigateTo(id); }
+  else {
+    focusNode(id);
+    const t = nodeSel?.data().find(d => d.id === id);
+    if (t?.x != null) zoomTo(t);
+  }
+  openDataPanel(id);
+}
+
+// ── Drag-to-resize ────────────────────────────────────────────────
+{
+  let dragging = false, startY = 0, startH = 0;
+  dpDrag.addEventListener('mousedown', e => {
+    dragging = true;
+    startY = e.clientY;
+    startH = dataPanel.offsetHeight;
+    dpDrag.classList.add('dragging');
+    document.body.style.cursor = 'row-resize';
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const delta = startY - e.clientY;           // up = positive = taller panel
+    const newH  = Math.max(80, Math.min(startH + delta, window.innerHeight * 0.85));
+    dataPanel.style.height = newH + 'px';
+  });
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    dpDrag.classList.remove('dragging');
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+  });
+}
+
+document.getElementById('dp-close').addEventListener('click', closeDpPanel);
+
+// ── URL hash state ────────────────────────────────────────────────
+function updateHash() {
+  if (dpNode) {
+    history.replaceState(null, '', `#node=${encodeURIComponent(dpNode)}&page=${dpPage + 1}`);
+  }
+}
+
+function readHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  const id   = params.get('node');
+  const page = Math.max(0, (parseInt(params.get('page'), 10) || 1) - 1);
+  if (!id || !nodeById.has(id)) return;
+  openDataPanel(id, page);
+  if (state.mode === 'graph') {
+    focusNode(id);
+    sim?.on('end.hashrestore', () => {
+      const t = nodeSel?.data().find(d => d.id === id);
+      if (t?.x != null) zoomTo(t);
+      sim.on('end.hashrestore', null);
+    });
+  }
+}
+
+// ── Init ──────────────────────────────────────────────────────────
+render();
+readHash();
+</script>
+</body>
+</html>
