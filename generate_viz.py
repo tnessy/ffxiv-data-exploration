@@ -1,25 +1,24 @@
 """
-Generates a self-contained D3 visualization from csv_graph_latest.json.
+Generates the deployable site from source files.
 Run from project root:  python generate_viz.py
 Requires:               csv_graph_latest.json  (from generate_csv_graph.py)
                         versions.json          (version registry)
-Output:                 site/index.html  (deploy site/ to gh-pages)
-
-CSV row data is loaded dynamically at runtime via fetch(), so the HTML stays small.
+                        graph_viz_template.html
+                        src/styles.css
+                        src/app.js
+Output (all in site/):  index.html, styles.css, app.js, data.js
 """
 import json
 import re
+import shutil
 from collections import Counter
 from pathlib import Path
 
 GRAPH_FILE    = Path("csv_graph_latest.json")
 TEMPLATE_FILE = Path("graph_viz_template.html")
+SRC_DIR       = Path("src")
 SITE_DIR      = Path("site")
-OUTPUT_FILE   = SITE_DIR / "index.html"
 VERSIONS_FILE = Path("versions.json")
-
-# This exact string in the template is replaced with real data.
-DATA_MARKER = '{"nodes":[],"edges":[]}; // __INJECT_DATA__'
 
 
 def get_family(name: str) -> str:
@@ -31,10 +30,6 @@ def get_family(name: str) -> str:
 
 def main():
     graph = json.loads(GRAPH_FILE.read_text(encoding="utf-8"))
-    template = TEMPLATE_FILE.read_text(encoding="utf-8")
-
-    if DATA_MARKER not in template:
-        raise ValueError(f"Data marker not found in {TEMPLATE_FILE}")
 
     SITE_DIR.mkdir(exist_ok=True)
 
@@ -60,7 +55,6 @@ def main():
     top_families = [f for f, _ in family_counts.most_common(15)]
 
     # Collect version list and available diff pairs for the UI.
-    # Diff files live in site/ alongside the HTML.
     versions_meta: list[dict] = []
     diff_pairs: list[dict] = []
     data_diff_pairs: list[dict] = []
@@ -85,18 +79,29 @@ def main():
             "data_diff_pairs": data_diff_pairs,
         },
     }
-    data_json = json.dumps(data, separators=(",", ":"))
-    data_json = data_json.replace("</script>", r"<\/script>")
 
-    OUTPUT_FILE.write_text(template.replace(DATA_MARKER, f"{data_json};"), encoding="utf-8")
+    # Write data.js — the only file that changes between builds
+    data_json = json.dumps(data, separators=(",", ":"))
+    (SITE_DIR / "data.js").write_text(f"const RAW = {data_json};", encoding="utf-8")
+
+    # Copy static source files
+    shutil.copy(SRC_DIR / "styles.css", SITE_DIR / "styles.css")
+    shutil.copy(SRC_DIR / "app.js",     SITE_DIR / "app.js")
+
+    # Copy HTML template as index.html (no injection needed)
+    shutil.copy(TEMPLATE_FILE, SITE_DIR / "index.html")
 
     connected_count = sum(1 for n in viz_nodes if n["connected"])
-    file_kb = OUTPUT_FILE.stat().st_size // 1024
-    print(f"Written to {OUTPUT_FILE} ({file_kb} KB)")
-    print(f"  Schema nodes : {len(viz_nodes)} ({connected_count} connected, {len(viz_nodes)-connected_count} isolated)")
-    print(f"  Edges        : {len(edges)}")
-    print(f"  Families     : {len(family_counts)} ({len(top_families)} shown in legend)")
-    print(f"  CSV rows     : loaded dynamically at runtime via fetch()")
+    index_kb = (SITE_DIR / "index.html").stat().st_size // 1024
+    data_kb  = (SITE_DIR / "data.js").stat().st_size // 1024
+    print(f"Written to {SITE_DIR}/")
+    print(f"  index.html  : {index_kb} KB")
+    print(f"  data.js     : {data_kb} KB  ({len(viz_nodes)} nodes, {len(edges)} edges)")
+    print(f"  styles.css  : {(SITE_DIR / 'styles.css').stat().st_size // 1024} KB")
+    print(f"  app.js      : {(SITE_DIR / 'app.js').stat().st_size // 1024} KB")
+    print(f"  Schema nodes: {len(viz_nodes)} ({connected_count} connected, {len(viz_nodes)-connected_count} isolated)")
+    print(f"  Families    : {len(family_counts)} ({len(top_families)} shown in legend)")
+    print(f"  CSV rows    : loaded dynamically at runtime via fetch()")
 
 
 if __name__ == "__main__":
