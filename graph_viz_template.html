@@ -1486,16 +1486,114 @@ document.getElementById('dp-close').addEventListener('click', () => {
 });
 
 // ── Diff loading & controls ───────────────────────────────────────
-async function loadDiff(fromId, toId) {
-  try {
-    const resp = await fetch(`diff_${fromId}_to_${toId}.json`);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    diffData = await resp.json();
-    diffEdgeAddedKeys = new Set(diffData.edges.added.map(e => `${e.source}|${e.target}|${e.via}`));
-  } catch(e) {
-    diffData = null;
-    diffEdgeAddedKeys = new Set();
+function getVersionChain(fromId, toId) {
+  const versions = RAW.meta.versions || [];
+  const fromIdx  = versions.findIndex(v => v.id === fromId);
+  const toIdx    = versions.findIndex(v => v.id === toId);
+  if (fromIdx === -1 || toIdx === -1 || fromIdx >= toIdx) return null;
+  return versions.slice(fromIdx, toIdx + 1).map(v => v.id);
+}
+
+function mergeSchemaDiffs(diffs) {
+  const netAddedTables   = new Set();
+  const netRemovedTables = new Set();
+  const netChangedTables = {};
+  const netAddedEdges    = new Set();
+  const netRemovedEdges  = new Set();
+  const edgeByKey        = {};
+
+  for (const diff of diffs) {
+    for (const t of diff.tables.added) {
+      if (netRemovedTables.has(t)) { netRemovedTables.delete(t); } else { netAddedTables.add(t); }
+      delete netChangedTables[t];
+    }
+    for (const t of diff.tables.removed) {
+      if (netAddedTables.has(t)) { netAddedTables.delete(t); } else { netRemovedTables.add(t); }
+      delete netChangedTables[t];
+    }
+    for (const [t, changes] of Object.entries(diff.tables.changed)) {
+      if (netAddedTables.has(t) || netRemovedTables.has(t)) continue;
+      if (!netChangedTables[t]) netChangedTables[t] = { columns_added: new Set(), columns_removed: new Set() };
+      const tc = netChangedTables[t];
+      for (const col of (changes.columns_added || [])) {
+        if (tc.columns_removed.has(col)) { tc.columns_removed.delete(col); } else { tc.columns_added.add(col); }
+      }
+      for (const col of (changes.columns_removed || [])) {
+        if (tc.columns_added.has(col)) { tc.columns_added.delete(col); } else { tc.columns_removed.add(col); }
+      }
+    }
+    for (const e of diff.edges.added) {
+      const key = `${e.source}|${e.target}|${e.via}`;
+      edgeByKey[key] = e;
+      if (netRemovedEdges.has(key)) { netRemovedEdges.delete(key); } else { netAddedEdges.add(key); }
+    }
+    for (const e of diff.edges.removed) {
+      const key = `${e.source}|${e.target}|${e.via}`;
+      edgeByKey[key] = e;
+      if (netAddedEdges.has(key)) { netAddedEdges.delete(key); } else { netRemovedEdges.add(key); }
+    }
   }
+
+  const changedTables = {};
+  for (const [t, tc] of Object.entries(netChangedTables)) {
+    if (tc.columns_added.size || tc.columns_removed.size)
+      changedTables[t] = { columns_added: [...tc.columns_added], columns_removed: [...tc.columns_removed] };
+  }
+
+  return {
+    from: diffs[0].from,
+    to:   diffs[diffs.length - 1].to,
+    tables: { added: [...netAddedTables], removed: [...netRemovedTables], changed: changedTables },
+    edges:  { added: [...netAddedEdges].map(k => edgeByKey[k]), removed: [...netRemovedEdges].map(k => edgeByKey[k]) },
+  };
+}
+
+function mergeDataDiffs(dataDiffs) {
+  const acc = {};
+
+  for (const diff of dataDiffs) {
+    for (const [table, changes] of Object.entries(diff.tables || {})) {
+      if (!acc[table]) acc[table] = { rows_added: new Set(), rows_removed: new Set(), rows_changed: {} };
+      const tr = acc[table];
+
+      for (const id of (changes.rows_added || [])) {
+        const key = String(id);
+        if (tr.rows_removed.has(key)) { tr.rows_removed.delete(key); delete tr.rows_changed[key]; }
+        else { tr.rows_added.add(key); }
+      }
+      for (const id of (changes.rows_removed || [])) {
+        const key = String(id);
+        if (tr.rows_added.has(key)) { tr.rows_added.delete(key); }
+        else { tr.rows_removed.add(key); }
+        delete tr.rows_changed[key];
+      }
+      for (const [rowId, fieldDiffs] of Object.entries(changes.rows_changed || {})) {
+        const key = String(rowId);
+        if (tr.rows_added.has(key) || tr.rows_removed.has(key)) continue;
+        if (!tr.rows_changed[key]) tr.rows_changed[key] = {};
+        const existing = tr.rows_changed[key];
+        for (const [col, [oldVal, newVal]] of Object.entries(fieldDiffs)) {
+          if (existing[col]) {
+            existing[col] = [existing[col][0], newVal];
+            if (existing[col][0] === existing[col][1]) delete existing[col];
+          } else {
+            existing[col] = [oldVal, newVal];
+          }
+        }
+        if (!Object.keys(existing).length) delete tr.rows_changed[key];
+      }
+    }
+  }
+
+  const result = {};
+  for (const [table, tr] of Object.entries(acc)) {
+    const rows_added   = [...tr.rows_added].map(id => isNaN(id) ? id : Number(id));
+    const rows_removed = [...tr.rows_removed].map(id => isNaN(id) ? id : Number(id));
+    const rows_changed = tr.rows_changed;
+    if (rows_added.length || rows_removed.length || Object.keys(rows_changed).length)
+      result[table] = { rows_added, rows_removed, rows_changed };
+  }
+  return result;
 }
 
 async function applyDiff() {
@@ -1504,33 +1602,44 @@ async function applyDiff() {
   const changedWrap = document.getElementById('diff-changed-wrap');
   const onlyChanged = document.getElementById('diff-only-changed');
 
+  diffData          = null;
+  diffEdgeAddedKeys = new Set();
+  dataDiffData      = null;
+
   if (from && to && from !== to) {
-    const validSchema = (RAW.meta.diff_pairs || []).some(p => p.from === from && p.to === to);
-    if (validSchema) {
-      await loadDiff(from, to);
-    } else {
-      diffData = null;
-      diffEdgeAddedKeys = new Set();
+    const chain = getVersionChain(from, to);
+    const pairs = chain ? chain.slice(0, -1).map((id, i) => ({ from: id, to: chain[i + 1] })) : [];
+
+    // Schema diffs: fetch all consecutive pairs in the chain, skip any missing files
+    if (pairs.length) {
+      const fetched = await Promise.all(pairs.map(async p => {
+        try { const r = await fetch(`diff_${p.from}_to_${p.to}.json`); return r.ok ? r.json() : null; }
+        catch { return null; }
+      }));
+      const valid = fetched.filter(Boolean);
+      if (valid.length) {
+        diffData = valid.length === 1 ? valid[0] : mergeSchemaDiffs(valid);
+        diffEdgeAddedKeys = new Set(diffData.edges.added.map(e => `${e.source}|${e.target}|${e.via}`));
+      }
     }
 
-    // Also load row-level data diff if available
-    const validData = (RAW.meta.data_diff_pairs || []).some(p => p.from === from && p.to === to);
-    if (validData) {
-      try {
-        const resp = await fetch(`data_diff_${from}_to_${to}.json`);
-        dataDiffData = resp.ok ? await resp.json() : null;
-      } catch { dataDiffData = null; }
-    } else {
-      dataDiffData = null;
+    // Data diffs: fetch all consecutive pairs in the chain, skip any missing files
+    if (pairs.length) {
+      const fetched = await Promise.all(pairs.map(async p => {
+        try { const r = await fetch(`data_diff_${p.from}_to_${p.to}.json`); return r.ok ? r.json() : null; }
+        catch { return null; }
+      }));
+      const valid = fetched.filter(Boolean);
+      if (valid.length === 1) {
+        dataDiffData = valid[0];
+      } else if (valid.length > 1) {
+        dataDiffData = { from, to, tables: mergeDataDiffs(valid) };
+      }
     }
-  } else {
-    diffData = null;
-    diffEdgeAddedKeys = new Set();
-    dataDiffData = null;
   }
 
-  const hasDiff        = !!diffData;
-  const hasAnyDiff     = hasDiff || !!dataDiffData;
+  const hasDiff    = !!diffData;
+  const hasAnyDiff = hasDiff || !!dataDiffData;
   changedWrap.style.display = hasAnyDiff ? 'flex' : 'none';
   if (!hasAnyDiff) { onlyChanged.checked = false; state.showOnlyChanged = false; }
 
