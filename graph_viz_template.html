@@ -1047,10 +1047,27 @@ function setTableListActive(id) {
 function filterTableList(q) {
   const lower = q.toLowerCase();
   const listEl = document.getElementById('table-list');
+
+  let changedTables = null;
+  if (state.showOnlyChanged && (diffData || dataDiffData)) {
+    changedTables = new Set();
+    if (diffData) {
+      diffData.tables.added.forEach(t => changedTables.add(t));
+      diffData.tables.removed.forEach(t => changedTables.add(t));
+      Object.keys(diffData.tables.changed).forEach(t => changedTables.add(t));
+    }
+    if (dataDiffData) {
+      Object.keys(dataDiffData.tables).forEach(t => changedTables.add(t));
+    }
+  }
+
   listEl.querySelectorAll('.tbl-item').forEach(item => {
-    item.style.display = (!lower || item.dataset.id.toLowerCase().includes(lower)) ? '' : 'none';
+    const id = item.dataset.id;
+    const matchesSearch = !lower || id.toLowerCase().includes(lower);
+    const matchesDiff   = !changedTables || changedTables.has(id);
+    item.style.display  = (matchesSearch && matchesDiff) ? '' : 'none';
   });
-  if (lower) listEl.scrollTop = 0;
+  if (lower || changedTables) listEl.scrollTop = 0;
 }
 
 function initTableList() {
@@ -1643,6 +1660,8 @@ async function applyDiff() {
   changedWrap.style.display = hasAnyDiff ? 'flex' : 'none';
   if (!hasAnyDiff) { onlyChanged.checked = false; state.showOnlyChanged = false; }
 
+  filterTableList(searchEl.value.trim());
+
   if (state.mode === 'data') {
     if (dpNode) renderDataPane();
   } else {
@@ -1654,6 +1673,7 @@ document.getElementById('diff-from').addEventListener('change', applyDiff);
 document.getElementById('diff-to').addEventListener('change', applyDiff);
 document.getElementById('diff-only-changed').addEventListener('change', e => {
   state.showOnlyChanged = e.target.checked;
+  filterTableList(searchEl.value.trim());
   if (state.mode === 'data') {
     dpPage = 0;
     if (dpNode) renderDataPane();
