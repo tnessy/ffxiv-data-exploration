@@ -49,15 +49,24 @@ def _to_int_id(s: str) -> int | str:
 
 
 def read_schema_columns(csv_path: Path) -> list[str] | None:
-    """Return column list if the file is a schema table (first line starts with '#'), else None."""
+    """Return column list if the file is a schema table, else None.
+
+    Supports two header layouts:
+      Modern (7.41+): first line is '#,ColA,ColB,...'
+      Legacy (7.3x):  first line is 'key,0,1,...', second line is '#,ColA,ColB,...'
+    """
     try:
-        with open(csv_path, encoding="utf-8", errors="replace") as f:
+        with open(csv_path, encoding="utf-8-sig", errors="replace") as f:
             first_line = f.readline().rstrip("\n")
+            if first_line.startswith("#"):
+                return next(csv.reader([first_line]))
+            if first_line.startswith("key,"):
+                second_line = f.readline().rstrip("\n")
+                if second_line.startswith("#"):
+                    return next(csv.reader([second_line]))
     except OSError:
-        return None
-    if not first_line.startswith("#"):
-        return None
-    return next(csv.reader([first_line]))
+        pass
+    return None
 
 
 def build_graph(base_dir: Path) -> dict:
@@ -166,14 +175,22 @@ def build_diff(graph_a: dict, graph_b: dict, from_id: str, to_id: str) -> dict:
 def read_table_rows(csv_path: Path) -> dict[str, list[str]] | None:
     """Read all data rows from a schema CSV. Returns {row_id: [field_values]} or None if not a schema file.
 
-    Rows whose first cell is not an integer (e.g. type-hint lines in some formats) are skipped.
+    Supports modern (7.41+) and legacy (7.3x) header layouts.
+    Rows whose first cell is not an integer (type-hint lines, extra headers) are skipped.
     """
     try:
-        with open(csv_path, encoding="utf-8", errors="replace", newline="") as f:
+        with open(csv_path, encoding="utf-8-sig", errors="replace", newline="") as f:
             reader = csv.reader(f)
             header = next(reader, None)
-            if header is None or not header[0].startswith("#"):
+            if header is None:
                 return None
+            if not header[0].startswith("#"):
+                if not header[0].startswith("key"):
+                    return None
+                # Legacy format: skip the 'key,...' line; next line is '#,...'
+                header = next(reader, None)
+                if header is None or not header[0].startswith("#"):
+                    return None
             rows: dict[str, list[str]] = {}
             for row in reader:
                 if not row:
