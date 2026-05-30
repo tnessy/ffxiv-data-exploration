@@ -263,6 +263,95 @@ def build_data_diff(graph_a: dict, graph_b: dict, schema_diff: dict) -> dict:
     }
 
 
+# ── Search index ─────────────────────────────────────────────────────────────
+
+# Column name substrings (case-insensitive) that suggest human-readable name fields.
+# Using an allowlist keeps the index focused on searchable names rather than flags/codes.
+_NAME_COL_PATTERNS = frozenset({
+    "name", "singular", "plural", "title", "label",
+})
+
+# Values longer than this are almost certainly prose, not names.
+_MAX_VALUE_LEN = 80
+# Values shorter than this are likely codes, flags, or single letters.
+_MIN_VALUE_LEN = 2
+
+
+def _is_name_col(col_name: str) -> bool:
+    lower = col_name.lower()
+    return any(pat in lower for pat in _NAME_COL_PATTERNS)
+
+
+def _is_numeric(value: str) -> bool:
+    if not value:
+        return True
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+
+
+def build_search_index(graphs: dict[str, dict]) -> dict:
+    """Build a deduplicated flat search index of name-like string values across all versions.
+
+    Entries are deduplicated by (table, col, rowId, value): identical values that appear
+    in multiple versions are stored once with a list of version IDs.
+
+    Returns a dict with:
+      - "fields": column order for each entry
+      - "entries": list of [table, col, rowId, value, [versions...]]
+    """
+    # (table, col, rowId, value) -> set of version IDs
+    seen: dict[tuple, set[str]] = {}
+    stats: dict[str, int] = {"tables_scanned": 0, "rows_scanned": 0, "values_indexed": 0}
+
+    for version_id, graph in graphs.items():
+        root         = Path(graph["metadata"]["root"])
+        schema_nodes = [n for n in graph["nodes"] if n["is_schema"]]
+
+        for node in schema_nodes:
+            cols = node.get("columns", [])
+            if len(cols) < 2:
+                continue
+
+            # cols[0] is the "#" row-key header; data_cols aligns with read_table_rows values
+            data_cols   = cols[1:]
+            include_col = [_is_name_col(c) for c in data_cols]
+            if not any(include_col):
+                continue
+
+            rows = read_table_rows(root / node["path"])
+            if not rows:
+                continue
+
+            stats["tables_scanned"] += 1
+            stats["rows_scanned"]   += len(rows)
+
+            for row_id, values in rows.items():
+                for i, val in enumerate(values):
+                    if i >= len(data_cols) or not include_col[i]:
+                        continue
+                    if not val or _is_numeric(val):
+                        continue
+                    if len(val) < _MIN_VALUE_LEN or len(val) > _MAX_VALUE_LEN:
+                        continue
+                    key = (node["id"], data_cols[i], _to_int_id(row_id), val)
+                    if key not in seen:
+                        seen[key] = set()
+                        stats["values_indexed"] += 1
+                    seen[key].add(version_id)
+
+    # Serialise: sort versions for deterministic output, use version order from graphs
+    version_order = list(graphs.keys())
+    entries = [
+        [t, c, r, v, sorted(vs, key=lambda x: version_order.index(x) if x in version_order else 99)]
+        for (t, c, r, v), vs in seen.items()
+    ]
+
+    return {"fields": ["t", "c", "r", "s", "vs"], "entries": entries, "_stats": stats}
+
+
 def main():
     if not VERSIONS_FILE.exists():
         raise FileNotFoundError(f"{VERSIONS_FILE} not found — create it to register versions")
@@ -327,6 +416,19 @@ def main():
             f"  skipped: {s['tables_skipped_schema_changed']} schema-changed, {s['tables_skipped_not_in_both']} not-in-both"
             f"  ->  {data_out_path}"
         )
+
+    print("\nBuilding search index...")
+    index      = build_search_index(graphs)
+    st         = index.pop("_stats")
+    index_path = SITE_DIR / "search_index.json"
+    index_path.write_text(json.dumps(index, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+    size_kb    = index_path.stat().st_size // 1024
+    print(
+        f"  {st['tables_scanned']} tables  |"
+        f"  {st['rows_scanned']:,} rows scanned  |"
+        f"  {st['values_indexed']:,} values indexed  |"
+        f"  {size_kb} KB  ->  {index_path}"
+    )
 
 
 if __name__ == "__main__":

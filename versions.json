@@ -1,4 +1,10 @@
 [
+  {"id": "7.30",   "label": "7.30",     "path": "ffxiv-datamining-7.30",   "date": null},
+  {"id": "7.30h1",   "label": "7.30h1",     "path": "ffxiv-datamining-7.30h1",   "date": null},
+  {"id": "7.31",   "label": "7.31",     "path": "ffxiv-datamining-7.31",   "date": null},
+  {"id": "7.31h1",   "label": "7.31h1",     "path": "ffxiv-datamining-7.31h1",   "date": null},
+  {"id": "7.35",   "label": "7.35",     "path": "ffxiv-datamining-7.35",   "date": null},
+  {"id": "7.38",   "label": "7.38",     "path": "ffxiv-datamining-7.38",   "date": null},
   {"id": "7.4",   "label": "7.4",     "path": "ffxiv-datamining-7.4",   "date": null},
   {"id": "7.4h1",   "label": "7.4 HF1",     "path": "ffxiv-datamining-7.4h1",   "date": null},
   {"id": "7.4h2",   "label": "7.4 HF2",     "path": "ffxiv-datamining-7.4h2",   "date": null},

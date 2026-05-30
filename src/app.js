@@ -56,6 +56,7 @@ const state = {
   showOnlyChanged: false,
   exploreRoot: null,
   exploreHistory: [],
+  searchTarget: null,  // { table, rowId } — set by search result click
 };
 
 // ── Diff state ────────────────────────────────────────────────────
@@ -688,9 +689,10 @@ const dpDrag     = document.getElementById('dp-drag');
 
 const CSV_BASE = 'ffxiv-datamining-latest/csv/en';
 
-let dpNode = null;
-let dpPage = 0;
-let DP_PAGE = 15;
+let dpNode        = null;
+let dpPage        = 0;
+let DP_PAGE       = 15;
+let dpSelectedRow = null;
 
 function calcDpPage() {
   const body = document.getElementById('dp-body');
@@ -751,8 +753,12 @@ async function loadCSVRows(node) {
 async function openDataPanel(id, page = 0) {
   const node = nodeById.get(id);
   if (!node) return;
+  if (dpNode !== id) dpSelectedRow = null;
   dpNode = id;
   dpPage = page;
+  // If a search target is arriving for this table, record it as the selected row immediately
+  // so updateHash() below includes it in the URL.
+  if (state.searchTarget?.table === id) dpSelectedRow = state.searchTarget.rowId;
   dpTitle.textContent = id;
   dataPanel.classList.remove('dp-hidden');
   updateHash();
@@ -767,6 +773,7 @@ async function openDataPanel(id, page = 0) {
 function closeDpPanel() {
   dataPanel.classList.add('dp-hidden');
   dpNode = null;
+  dpSelectedRow = null;
   history.replaceState(null, '', location.pathname + location.search);
 }
 
@@ -800,6 +807,13 @@ function renderDataPane() {
     displayRows = rows.filter(row => changedIds.has(row[0]));
   }
 
+  // If a search result targeted this table, jump to the page containing that row
+  const searchTargetId = state.searchTarget?.table === dpNode ? String(state.searchTarget.rowId) : null;
+  if (searchTargetId) {
+    const idx = displayRows.findIndex(r => r[0] === searchTargetId);
+    if (idx !== -1) dpPage = Math.floor(idx / DP_PAGE);
+  }
+
   const total = displayRows.length;
   const pages = Math.max(1, Math.ceil(total / DP_PAGE));
   const start = dpPage * DP_PAGE;
@@ -822,8 +836,15 @@ function renderDataPane() {
     const isAdded   = addedRowSet.has(rowId);
     const isChanged = !!rowChange;
 
-    const trAttrs = isAdded   ? ' class="row-diff-added"'
-                  : isChanged ? ` class="row-diff-changed" data-rowid="${escHtml(rowId)}"` : '';
+    const isTarget   = searchTargetId === rowId;
+    const isSelected = dpSelectedRow   === rowId;
+    const cls = [
+      isAdded    ? 'row-diff-added'    : '',
+      isChanged  ? 'row-diff-changed'  : '',
+      isTarget   ? 'row-search-target' : '',
+      isSelected ? 'row-selected'      : '',
+    ].filter(Boolean).join(' ');
+    const trAttrs = (cls ? ` class="${cls}"` : '') + ` data-rowid="${escHtml(rowId)}"`;
 
     const cells = row.map((cell, ci) => {
       if (ci === 0 && isChanged)
@@ -883,6 +904,13 @@ function renderDataPane() {
       <span class="row-range">rows ${start + 1}–${end} of ${total}</span>
     </div>`;
 
+  if (searchTargetId) {
+    requestAnimationFrame(() => {
+      dpDataPane.querySelector('.row-search-target')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      state.searchTarget = null;
+    });
+  }
+
   dpDataPane.querySelector('#dp-prev').addEventListener('click', () => { dpPage--; updateHash(); renderDataPane(); });
   dpDataPane.querySelector('#dp-next').addEventListener('click', () => { dpPage++; updateHash(); renderDataPane(); });
 
@@ -927,9 +955,23 @@ function handleTableRowClick(e) {
     return;
   }
 
-  // Click anywhere else on a changed row → sidebar diff
-  const tr = e.target.closest('tr.row-diff-changed');
-  if (tr) showRowDiffInSidebar(tr.dataset.rowid);
+  // Click on any data row → select/deselect it
+  const tr = e.target.closest('tr[data-rowid]');
+  if (!tr) return;
+  const rowId = tr.dataset.rowid;
+
+  if (dpSelectedRow === rowId) {
+    tr.classList.remove('row-selected');
+    dpSelectedRow = null;
+  } else {
+    dpDataPane.querySelector('.row-selected')?.classList.remove('row-selected');
+    tr.classList.add('row-selected');
+    dpSelectedRow = rowId;
+  }
+  updateHash();
+
+  // Also show diff detail in sidebar for changed rows
+  if (tr.classList.contains('row-diff-changed')) showRowDiffInSidebar(rowId);
 }
 
 function showRowDiffInSidebar(rowId) {
@@ -1415,6 +1457,7 @@ function updateHash() {
   if (state.mode === 'data' && dpNode) {
     p.set('node', dpNode);
     p.set('page', dpPage + 1);
+    if (dpSelectedRow) p.set('row', dpSelectedRow);
   } else if (state.mode === 'changelog') {
     const ver = document.getElementById('cl-version').value;
     if (ver) p.set('version', ver);
@@ -1435,7 +1478,13 @@ function readHash() {
     document.querySelector(`.mode-btn[data-mode="${targetMode}"]`)?.click();
   }
 
+  const row = params.get('row');
+
   if (id && nodeById.has(id)) {
+    if (row) {
+      dpSelectedRow       = row;
+      state.searchTarget  = { table: id, rowId: row };
+    }
     openDataPanel(id, page);
     if (state.mode === 'graph') {
       focusNode(id);
@@ -1453,6 +1502,178 @@ function readHash() {
     loadChangelogVersion(ver);
   }
 }
+
+// ── Levenshtein distance ──────────────────────────────────────────
+function levenshtein(a, b) {
+  const la = a.length, lb = b.length;
+  if (la === 0) return lb;
+  if (lb === 0) return la;
+  let prev = Array.from({ length: lb + 1 }, (_, i) => i);
+  let curr = new Array(lb + 1);
+  for (let i = 1; i <= la; i++) {
+    curr[0] = i;
+    for (let j = 1; j <= lb; j++) {
+      curr[j] = a[i-1] === b[j-1]
+        ? prev[j-1]
+        : 1 + Math.min(prev[j], curr[j-1], prev[j-1]);
+    }
+    [prev, curr] = [curr, prev];
+  }
+  return prev[lb];
+}
+
+// ── Search overlay ────────────────────────────────────────────────
+let searchIndexData = null;  // null = not yet loaded
+let searchLoadState = 'idle'; // 'idle' | 'loading' | 'ready' | 'error'
+let searchDebounce  = null;
+
+async function loadSearchIndex() {
+  if (searchLoadState !== 'idle') return;
+  searchLoadState = 'loading';
+  document.getElementById('so-status').textContent = 'Loading index…';
+  try {
+    const r = await fetch('search_index.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    searchIndexData = data.entries; // [t, c, r, s, vs]
+    searchLoadState = 'ready';
+    document.getElementById('so-status').textContent =
+      `${searchIndexData.length.toLocaleString()} entries across ${(RAW.meta.versions||[]).length} versions`;
+  } catch {
+    searchLoadState = 'error';
+    document.getElementById('so-status').textContent = 'Failed to load search index';
+    searchIndexData = [];
+  }
+  runSearch(document.getElementById('so-input').value.trim());
+}
+
+function openSearchOverlay() {
+  document.getElementById('search-overlay').style.display = 'flex';
+  document.getElementById('so-input').select();
+  if (searchLoadState === 'idle') loadSearchIndex();
+}
+
+function closeSearchOverlay() {
+  document.getElementById('search-overlay').style.display = 'none';
+  clearTimeout(searchDebounce);
+}
+
+function runSearch(query) {
+  const resultsEl = document.getElementById('so-results');
+  const q = query.trim();
+
+  if (q.length < 2) {
+    resultsEl.innerHTML = '<p class="so-hint">Type at least 2 characters to search</p>';
+    return;
+  }
+  if (searchLoadState === 'loading') {
+    resultsEl.innerHTML = '<p class="so-hint">Loading index…</p>';
+    return;
+  }
+  if (!searchIndexData?.length) {
+    resultsEl.innerHTML = '<p class="so-hint">No index available — run update.ps1 to generate it</p>';
+    return;
+  }
+
+  const lower   = q.toLowerCase();
+  const matches = searchIndexData.filter(e => e[3].toLowerCase().includes(lower));
+
+  if (!matches.length) {
+    resultsEl.innerHTML = `<p class=”so-hint”>No results for “${escHtml(q)}”</p>`;
+    return;
+  }
+
+  // Score by Levenshtein distance between query and value (case-insensitive),
+  // tiebreak by value length so shorter/more-exact values rank higher.
+  matches.sort((a, b) => {
+    const da = levenshtein(lower, a[3].toLowerCase());
+    const db = levenshtein(lower, b[3].toLowerCase());
+    return da !== db ? da - db : a[3].length - b[3].length;
+  });
+
+  const MAX_SHOWN = 200;
+  const shown = matches.slice(0, MAX_SHOWN);
+  const more  = matches.length - shown.length;
+  const allVersions = RAW.meta.versions || [];
+
+  resultsEl.innerHTML = shown.map(e => {
+    const [table, col, rowId, val, versions] = e;
+    return `<div class="so-result" data-table="${escHtml(table)}" data-row="${escHtml(String(rowId))}">
+      <div class="so-result-meta">
+        <span class="so-result-table">${escHtml(table)}</span>
+        <span style="color:#484f58"> &middot; ${escHtml(col)} &middot; row ${rowId}</span>
+      </div>
+      <div class="so-result-val">${soHighlight(val, q)}</div>
+      ${soVersionBadges(versions, allVersions)}
+    </div>`;
+  }).join('') +
+  (more > 0 ? `<p class="so-hint">… and ${more.toLocaleString()} more &mdash; refine your search</p>` : '');
+
+  resultsEl.querySelectorAll('.so-result').forEach(el => {
+    el.addEventListener('click', () => soNavigate(el.dataset.table, el.dataset.row));
+  });
+}
+
+function soHighlight(val, query) {
+  const lower = val.toLowerCase();
+  const idx   = lower.indexOf(query.toLowerCase());
+  if (idx === -1) return escHtml(val);
+  return escHtml(val.slice(0, idx)) +
+    `<mark class="so-mark">${escHtml(val.slice(idx, idx + query.length))}</mark>` +
+    escHtml(val.slice(idx + query.length));
+}
+
+function soVersionBadges(versions, allVersions) {
+  if (!versions?.length) return '';
+  if (versions.length === allVersions.length)
+    return '<div class="so-versions"><span class="so-versions-label">all versions</span></div>';
+  const shown = versions.slice(0, 5);
+  const extra = versions.length - shown.length;
+  const badges = shown.map(v => {
+    const meta = allVersions.find(x => x.id === v);
+    return `<span class="so-ver-badge">${escHtml(meta?.label || v)}</span>`;
+  }).join('');
+  return `<div class="so-versions">${badges}${extra > 0 ? `<span class="so-ver-badge so-ver-more">+${extra}</span>` : ''}</div>`;
+}
+
+function soNavigate(table, rowId) {
+  closeSearchOverlay();
+  state.searchTarget = { table, rowId };
+  if (state.mode !== 'data') document.querySelector('.mode-btn[data-mode="data"]').click();
+  dvNavigateTo(table);
+}
+
+// Wiring
+document.getElementById('search-btn').addEventListener('click', openSearchOverlay);
+document.getElementById('so-close').addEventListener('click', closeSearchOverlay);
+document.getElementById('search-overlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('search-overlay')) closeSearchOverlay();
+});
+document.getElementById('so-input').addEventListener('input', e => {
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(() => runSearch(e.target.value), 200);
+});
+document.getElementById('so-input').addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSearchOverlay();
+  if (e.key === 'Enter') {
+    const first = document.querySelector('.so-result');
+    if (first) soNavigate(first.dataset.table, first.dataset.row);
+  }
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    document.querySelector('.so-result')?.focus();
+  }
+});
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('search-overlay').style.display === 'none'
+      ? openSearchOverlay() : closeSearchOverlay();
+  }
+  if (e.key === 'Escape' && document.getElementById('search-overlay').style.display !== 'none') {
+    closeSearchOverlay();
+  }
+});
 
 // ── Init ──────────────────────────────────────────────────────────
 {
