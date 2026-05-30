@@ -8,15 +8,19 @@ on:
 permissions:
   contents: write
 
+env:
+  # Bump this to bust the build cache when the output format changes.
+  CACHE_VERSION: v1
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout with submodules
+      - name: Checkout main repo (no submodules)
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: false
           fetch-depth: 1
 
       - name: Set up Python
@@ -24,9 +28,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Cache key includes a manual schema version (v1) and the generator script hash.
-      # Bump the schema version (v1 -> v2) in this file to force a full cache bust
-      # whenever the output format changes and cached files would be stale.
+      # Cache key includes CACHE_VERSION (top of file) and the generator script hash.
+      # Bump CACHE_VERSION to force a full cache bust when the output format changes.
       - name: Restore build cache
         uses: actions/cache/restore@v4
         with:
@@ -36,9 +39,58 @@ jobs:
             site/data_diff_*.json
             site/data_diff_*/
             site/search_index.json
-          key: build-v1-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
+          key: build-${{ env.CACHE_VERSION }}-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
           restore-keys: |
-            build-v1-${{ hashFiles('generate_csv_graph.py') }}-
+            build-${{ env.CACHE_VERSION }}-${{ hashFiles('generate_csv_graph.py') }}-
+
+      # Only checkout submodules whose cached graph hash doesn't match the expected
+      # commit in the git index. The last version (latest) is always checked out
+      # because its CSV files are always copied to site/ for serving.
+      - name: Checkout stale submodules
+        shell: python
+        run: |
+          import json, subprocess
+          from pathlib import Path
+
+          versions   = json.loads(Path('versions.json').read_text(encoding='utf-8'))
+          latest_id  = versions[-1]['id'] if versions else None
+          checked_out, skipped = 0, 0
+
+          for v in versions:
+              path = v['path']
+
+              # Expected commit hash from git index — no network needed
+              r = subprocess.run(['git', 'ls-files', '-s', '--', path],
+                                 capture_output=True, text=True)
+              if not r.stdout.strip():
+                  continue
+              expected = r.stdout.strip().split()[1]
+
+              # Cached hash stored in graph file by generate_csv_graph.py
+              graph_file = Path(f'csv_graph_{v["id"]}.json')
+              cached_hash = None
+              if graph_file.exists():
+                  try:
+                      data = json.loads(graph_file.read_text(encoding='utf-8'))
+                      cached_hash = data.get('metadata', {}).get('submodule_hash')
+                  except Exception:
+                      pass
+
+              # Always checkout latest — its CSV files are copied to site/ for serving
+              if expected == cached_hash and v['id'] != latest_id:
+                  print(f'  {v["id"]}  cached ({expected[:8]})')
+                  skipped += 1
+              else:
+                  reason = 'always-latest' if v['id'] == latest_id and expected == cached_hash \
+                           else ('new' if not cached_hash else f'{cached_hash[:8]} -> {expected[:8]}')
+                  print(f'  {v["id"]}  checking out ({reason})')
+                  subprocess.run(
+                      ['git', 'submodule', 'update', '--init', '--depth=1', path],
+                      check=True
+                  )
+                  checked_out += 1
+
+          print(f'\n{checked_out} submodule(s) checked out, {skipped} skipped')
 
       - name: Generate graphs and diffs
         run: python generate_csv_graph.py
@@ -52,7 +104,7 @@ jobs:
             site/data_diff_*.json
             site/data_diff_*/
             site/search_index.json
-          key: build-v1-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
+          key: build-${{ env.CACHE_VERSION }}-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
 
       - name: Generate visualization
         run: python generate_viz.py

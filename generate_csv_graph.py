@@ -27,17 +27,23 @@ CSV_SUBDIRS   = [Path("csv/en"), Path("csv")]
 
 
 def get_submodule_hash(submodule_path: Path) -> str | None:
-    """Return the HEAD commit hash of a git submodule, or None if unavailable."""
+    """Return the recorded commit hash for a submodule from the parent repo's git index.
+
+    Reads from the parent index via ``git ls-files -s``, so it works whether or not
+    the submodule directory is currently checked out.
+    """
     try:
         result = subprocess.run(
-            ["git", "rev-parse", "HEAD"],
-            cwd=submodule_path,
+            ["git", "ls-files", "-s", "--", str(submodule_path)],
             capture_output=True,
             text=True,
             timeout=5,
         )
-        if result.returncode == 0:
-            return result.stdout.strip()
+        if result.returncode == 0 and result.stdout.strip():
+            # Output format: "160000 <hash> 0\t<path>"
+            parts = result.stdout.strip().split()
+            if len(parts) >= 2:
+                return parts[1]
     except Exception:
         pass
     return None
@@ -408,16 +414,12 @@ def main():
     for v in versions:
         vid      = v["id"]
         label    = v.get("label", vid)
-        base_dir = find_csv_dir(Path(v["path"]))
-
-        if base_dir is None:
-            print(f"[{label}]  SKIPPED — no csv/ directory found under {v['path']}\n")
-            continue
 
         out_path    = Path(f"csv_graph_{vid}.json")
         submod_hash = get_submodule_hash(Path(v["path"]))
 
-        # Use cached graph when the submodule commit hasn't changed.
+        # Cache check runs before find_csv_dir so that non-checked-out submodules
+        # (skipped during selective CI checkout) are correctly served from cache.
         if out_path.exists() and submod_hash:
             try:
                 cached = json.loads(out_path.read_text(encoding="utf-8"))
@@ -427,6 +429,11 @@ def main():
                     continue
             except (json.JSONDecodeError, KeyError):
                 pass
+
+        base_dir = find_csv_dir(Path(v["path"]))
+        if base_dir is None:
+            print(f"[{label}]  SKIPPED — no csv/ directory found under {v['path']}\n")
+            continue
 
         print(f"[{label}]  {base_dir}")
         graph = build_graph(base_dir)
