@@ -1641,14 +1641,14 @@ function runSearch(query) {
   const allVersions = RAW.meta.versions || [];
 
   resultsEl.innerHTML = shown.map(e => {
-    const [table, col, rowId, val, versions] = e;
+    const [table, col, rowId, val, vf, vl] = e;
     return `<div class="so-result" data-table="${escHtml(table)}" data-row="${escHtml(String(rowId))}">
       <div class="so-result-meta">
         <span class="so-result-table">${escHtml(table)}</span>
         <span style="color:#484f58"> &middot; ${escHtml(col)} &middot; row ${rowId}</span>
       </div>
       <div class="so-result-val">${soHighlight(val, q)}</div>
-      ${soVersionBadges(versions, allVersions)}
+      ${soVersionBadges(vf, vl, allVersions)}
     </div>`;
   }).join('') +
   (more > 0 ? `<p class="so-hint">… and ${more.toLocaleString()} more &mdash; refine your search</p>` : '');
@@ -1667,17 +1667,20 @@ function soHighlight(val, query) {
     escHtml(val.slice(idx + query.length));
 }
 
-function soVersionBadges(versions, allVersions) {
-  if (!versions?.length) return '';
-  if (versions.length === allVersions.length)
-    return '<div class="so-versions"><span class="so-versions-label">all versions</span></div>';
-  const shown = versions.slice(0, 5);
-  const extra = versions.length - shown.length;
-  const badges = shown.map(v => {
-    const meta = allVersions.find(x => x.id === v);
-    return `<span class="so-ver-badge">${escHtml(meta?.label || v)}</span>`;
-  }).join('');
-  return `<div class="so-versions">${badges}${extra > 0 ? `<span class="so-ver-badge so-ver-more">+${extra}</span>` : ''}</div>`;
+function soVersionBadges(vf, vl, allVersions) {
+  if (!vf) return '';
+  const label = v => allVersions.find(x => x.id === v)?.label || v;
+  if (vl === null) {
+    // Still present — show "Since X" unless it's been there from the very first version
+    const firstLabel = label(vf);
+    const isFirst    = allVersions[0]?.id === vf;
+    return isFirst
+      ? ''
+      : `<div class="so-versions"><span class="so-ver-badge">${escHtml(firstLabel)} &rarr; latest</span></div>`;
+  }
+  // Removed — show range
+  const removed = `<span class="so-ver-badge so-ver-more">${escHtml(label(vf))} &rarr; ${escHtml(label(vl))}</span>`;
+  return `<div class="so-versions">${removed}</div>`;
 }
 
 function soNavigate(table, rowId) {

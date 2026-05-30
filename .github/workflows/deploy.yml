@@ -24,8 +24,35 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Cache key includes a manual schema version (v1) and the generator script hash.
+      # Bump the schema version (v1 -> v2) in this file to force a full cache bust
+      # whenever the output format changes and cached files would be stale.
+      - name: Restore build cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            csv_graph_*.json
+            site/diff_*.json
+            site/data_diff_*.json
+            site/data_diff_*/
+            site/search_index.json
+          key: build-v1-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
+          restore-keys: |
+            build-v1-${{ hashFiles('generate_csv_graph.py') }}-
+
       - name: Generate graphs and diffs
         run: python generate_csv_graph.py
+
+      - name: Save build cache
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            csv_graph_*.json
+            site/diff_*.json
+            site/data_diff_*.json
+            site/data_diff_*/
+            site/search_index.json
+          key: build-v1-${{ hashFiles('generate_csv_graph.py') }}-${{ github.run_id }}
 
       - name: Generate visualization
         run: python generate_viz.py

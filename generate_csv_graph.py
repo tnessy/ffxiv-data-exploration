@@ -16,6 +16,7 @@ Outputs (one per consecutive pair, written to site/ — deployed to gh-pages):
 """
 import csv
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -23,6 +24,23 @@ VERSIONS_FILE = Path("versions.json")
 SITE_DIR      = Path("site")
 # Ordered by preference: language-scoped layout (7.41+) then flat layout (pre-7.41)
 CSV_SUBDIRS   = [Path("csv/en"), Path("csv")]
+
+
+def get_submodule_hash(submodule_path: Path) -> str | None:
+    """Return the HEAD commit hash of a git submodule, or None if unavailable."""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=submodule_path,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except Exception:
+        pass
+    return None
 
 
 def find_csv_dir(version_path: Path) -> Path | None:
@@ -309,21 +327,26 @@ def _is_numeric(value: str) -> bool:
         return False
 
 
-def build_search_index(graphs: dict[str, dict]) -> dict:
-    """Build a deduplicated flat search index of name-like string values across all versions.
+def build_search_index(graphs: dict[str, dict], version_order: list[str]) -> dict:
+    """Build a flat search index of name-like string values across all versions.
 
-    Entries are deduplicated by (table, col, rowId, value): identical values that appear
-    in multiple versions are stored once with a list of version IDs.
+    Each entry records the first version a value appeared and the last version it was
+    seen (None if it is still present in the final/latest version).  This is far more
+    compact than storing the full version list for every entry.
 
     Returns a dict with:
       - "fields": column order for each entry
-      - "entries": list of [table, col, rowId, value, [versions...]]
+      - "entries": list of [table, col, rowId, value, vf, vl]
+                   where vf = first version id, vl = last version id or null if still present
     """
-    # (table, col, rowId, value) -> set of version IDs
-    seen: dict[tuple, set[str]] = {}
+    # (table, col, rowId, value) -> [first_idx, last_idx]  (indices into version_order)
+    seen: dict[tuple, list[int]] = {}
     stats: dict[str, int] = {"tables_scanned": 0, "rows_scanned": 0, "values_indexed": 0}
 
-    for version_id, graph in graphs.items():
+    for v_idx, version_id in enumerate(version_order):
+        if version_id not in graphs:
+            continue
+        graph        = graphs[version_id]
         root         = Path(graph["metadata"]["root"])
         schema_nodes = [n for n in graph["nodes"] if n["is_schema"]]
 
@@ -332,7 +355,6 @@ def build_search_index(graphs: dict[str, dict]) -> dict:
             if len(cols) < 2:
                 continue
 
-            # cols[0] is the "#" row-key header; data_cols aligns with read_table_rows values
             data_cols   = cols[1:]
             include_col = [_is_name_col(c) for c in data_cols]
             if not any(include_col):
@@ -355,18 +377,18 @@ def build_search_index(graphs: dict[str, dict]) -> dict:
                         continue
                     key = (node["id"], data_cols[i], _to_int_id(row_id), val)
                     if key not in seen:
-                        seen[key] = set()
+                        seen[key] = [v_idx, v_idx]
                         stats["values_indexed"] += 1
-                    seen[key].add(version_id)
+                    else:
+                        seen[key][1] = v_idx  # extend last-seen index
 
-    # Serialise: sort versions for deterministic output, use version order from graphs
-    version_order = list(graphs.keys())
+    final_idx = len(version_order) - 1
     entries = [
-        [t, c, r, v, sorted(vs, key=lambda x: version_order.index(x) if x in version_order else 99)]
-        for (t, c, r, v), vs in seen.items()
+        [t, c, r, v, version_order[first], (None if last == final_idx else version_order[last])]
+        for (t, c, r, v), (first, last) in seen.items()
     ]
 
-    return {"fields": ["t", "c", "r", "s", "vs"], "entries": entries, "_stats": stats}
+    return {"fields": ["t", "c", "r", "s", "vf", "vl"], "entries": entries, "_stats": stats}
 
 
 def main():
@@ -381,6 +403,7 @@ def main():
     SITE_DIR.mkdir(exist_ok=True)
 
     graphs: dict[str, dict] = {}
+    freshly_built: set[str] = set()  # versions rebuilt this run (not loaded from cache)
 
     for v in versions:
         vid      = v["id"]
@@ -390,12 +413,28 @@ def main():
         if base_dir is None:
             print(f"[{label}]  SKIPPED — no csv/ directory found under {v['path']}\n")
             continue
+
+        out_path    = Path(f"csv_graph_{vid}.json")
+        submod_hash = get_submodule_hash(Path(v["path"]))
+
+        # Use cached graph when the submodule commit hasn't changed.
+        if out_path.exists() and submod_hash:
+            try:
+                cached = json.loads(out_path.read_text(encoding="utf-8"))
+                if cached.get("metadata", {}).get("submodule_hash") == submod_hash:
+                    graphs[vid] = cached
+                    print(f"[{label}]  cached ({submod_hash[:8]})")
+                    continue
+            except (json.JSONDecodeError, KeyError):
+                pass
+
         print(f"[{label}]  {base_dir}")
-
         graph = build_graph(base_dir)
+        if submod_hash:
+            graph["metadata"]["submodule_hash"] = submod_hash
         graphs[vid] = graph
+        freshly_built.add(vid)
 
-        out_path = Path(f"csv_graph_{vid}.json")
         out_path.write_text(json.dumps(graph, indent=2), encoding="utf-8")
         m = graph["metadata"]
         print(f"  Written -> {out_path}")
@@ -407,8 +446,19 @@ def main():
         print("Only one version processed — no diffs to generate.")
         return
 
+    skipped_pairs: set[tuple[str, str]] = set()
+
     print("Generating diffs...")
     for from_id, to_id in zip(processed, processed[1:]):
+        diff_path      = SITE_DIR / f"diff_{from_id}_to_{to_id}.json"
+        data_diff_path = SITE_DIR / f"data_diff_{from_id}_to_{to_id}.json"
+
+        if (from_id not in freshly_built and to_id not in freshly_built
+                and diff_path.exists() and data_diff_path.exists()):
+            print(f"  {from_id} -> {to_id}  cached")
+            skipped_pairs.add((from_id, to_id))
+            continue
+
         diff     = build_diff(graphs[from_id], graphs[to_id], from_id, to_id)
         out_path = SITE_DIR / f"diff_{from_id}_to_{to_id}.json"
         out_path.write_text(json.dumps(diff, separators=(",", ":")), encoding="utf-8")
@@ -471,18 +521,26 @@ def main():
             f"  detail {detail_kb} KB ({s['tables_with_changes']} files)"
         )
 
-    print("\nBuilding search index...")
-    index      = build_search_index(graphs)
-    st         = index.pop("_stats")
     index_path = SITE_DIR / "search_index.json"
-    index_path.write_text(json.dumps(index, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
-    size_kb    = index_path.stat().st_size // 1024
-    print(
-        f"  {st['tables_scanned']} tables  |"
-        f"  {st['rows_scanned']:,} rows scanned  |"
-        f"  {st['values_indexed']:,} values indexed  |"
-        f"  {size_kb} KB  ->  {index_path}"
-    )
+    if not freshly_built and index_path.exists():
+        print(f"\nSearch index  cached ({index_path.stat().st_size // 1024} KB)")
+    else:
+        print("\nBuilding search index...")
+        index   = build_search_index(graphs, processed)
+        st      = index.pop("_stats")
+        index_path.write_text(json.dumps(index, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+        size_kb = index_path.stat().st_size // 1024
+        print(
+            f"  {st['tables_scanned']} tables  |"
+            f"  {st['rows_scanned']:,} rows scanned  |"
+            f"  {st['values_indexed']:,} values indexed  |"
+            f"  {size_kb} KB  ->  {index_path}"
+        )
+
+    rebuilt = len(freshly_built)
+    skipped = len([v for v in graphs if v not in freshly_built])
+    print(f"\nSummary: {rebuilt} version(s) rebuilt, {skipped} cached, "
+          f"{len(skipped_pairs)} diff pair(s) skipped")
 
 
 if __name__ == "__main__":
