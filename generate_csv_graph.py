@@ -422,16 +422,53 @@ def main():
         )
 
         print(f"  Building data diff {from_id} -> {to_id} (reading all rows)...")
-        data_diff     = build_data_diff(graphs[from_id], graphs[to_id], diff)
+        data_diff = build_data_diff(graphs[from_id], graphs[to_id], diff)
+        s         = data_diff["summary"]
+
+        # Summary file: only counts per table — keeps the file tiny regardless of row volume.
+        summary = {
+            "from": from_id,
+            "to":   to_id,
+            "tables": {
+                t: {"ra": len(v["rows_added"]), "rr": len(v["rows_removed"]), "rc": len(v["rows_changed"])}
+                for t, v in data_diff["tables"].items()
+            },
+        }
         data_out_path = SITE_DIR / f"data_diff_{from_id}_to_{to_id}.json"
-        data_out_path.write_text(json.dumps(data_diff, separators=(",", ":")), encoding="utf-8")
-        s = data_diff["summary"]
+        data_out_path.write_text(json.dumps(summary, separators=(",", ":")), encoding="utf-8")
+
+        # Per-table detail files: full row data, fetched lazily by the UI.
+        # rows_changed is capped to avoid multi-MB files for large tables.
+        MAX_ROWS_CHANGED = 2_000
+        if data_diff["tables"]:
+            detail_dir = SITE_DIR / f"data_diff_{from_id}_to_{to_id}"
+            detail_dir.mkdir(exist_ok=True)
+            for table_id, table_data in data_diff["tables"].items():
+                rc = table_data["rows_changed"]
+                if len(rc) > MAX_ROWS_CHANGED:
+                    sorted_keys = sorted(rc, key=_row_sort_key)
+                    output = {
+                        "rows_added":   table_data["rows_added"],
+                        "rows_removed": table_data["rows_removed"],
+                        "rows_changed": {k: rc[k] for k in sorted_keys[:MAX_ROWS_CHANGED]},
+                        "_rc_truncated": len(rc) - MAX_ROWS_CHANGED,
+                    }
+                else:
+                    output = table_data
+                (detail_dir / f"{table_id}.json").write_text(
+                    json.dumps(output, separators=(",", ":")), encoding="utf-8"
+                )
+
+        detail_kb = sum(
+            (SITE_DIR / f"data_diff_{from_id}_to_{to_id}" / f"{t}.json").stat().st_size
+            for t in data_diff["tables"]
+        ) // 1024 if data_diff["tables"] else 0
         print(
             f"  {from_id} -> {to_id} (data)  |"
             f"  compared {s['tables_compared']} tables  |"
             f"  {s['tables_with_changes']} with row changes  |"
-            f"  skipped: {s['tables_skipped_schema_changed']} schema-changed, {s['tables_skipped_not_in_both']} not-in-both"
-            f"  ->  {data_out_path}"
+            f"  summary {data_out_path.stat().st_size // 1024} KB  |"
+            f"  detail {detail_kb} KB ({s['tables_with_changes']} files)"
         )
 
     print("\nBuilding search index...")

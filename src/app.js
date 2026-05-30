@@ -61,9 +61,11 @@ const state = {
 
 // ── Diff state ────────────────────────────────────────────────────
 const DIFF_COLORS = { added: '#3fb950', removed: '#f85149', changed: '#d29922' };
-let diffData     = null;
-let dataDiffData = null;        // row-level diffs from data_diff_*.json
-let rowDiffState = { diffs: {}, cols: [] };  // shared with click handlers
+let diffData          = null;
+let dataDiffData      = null;       // summary: { tables: {T: {ra,rr,rc}}, _pairs: [{from,to}] }
+let dataDiffPairs     = [];         // active consecutive pairs for per-table fetching
+let dataDiffTableCache = new Map(); // tableId -> full {rows_added, rows_removed, rows_changed}
+let rowDiffState      = { diffs: {}, cols: [] };
 let diffEdgeAddedKeys = new Set();
 
 // ── Data View state ───────────────────────────────────────────────
@@ -700,8 +702,8 @@ function calcDpPage() {
   const bodyH = body.offsetHeight;
   const ROW_H = 22, THEAD = 26, PAGINATION = 44, BUFFER = 8;
   let overhead = THEAD + PAGINATION + BUFFER;
-  if (diffData?.tables.changed?.[dpNode])  overhead += 52;
-  if (dataDiffData?.tables?.[dpNode])      overhead += 52;
+  if (diffData?.tables.changed?.[dpNode])       overhead += 52;
+  if (dataDiffData?.tables?.[dpNode])           overhead += 52;
   return Math.max(5, Math.floor((bodyH - overhead) / ROW_H));
 }
 
@@ -767,6 +769,8 @@ async function openDataPanel(id, page = 0) {
     await loadCSVRows(node);
     if (dpNode !== id) return; // user navigated away during fetch
   }
+  // Pre-fetch per-table diff so renderDataPane can use it synchronously
+  if (dataDiffData) await fetchTableDiff(id);
   renderDataPane();
 }
 
@@ -792,10 +796,11 @@ function renderDataPane() {
   // Schema diff info
   const diffChange = diffData?.tables.changed?.[dpNode];
 
-  // Row-level diff info
-  const tableDataDiff  = dataDiffData?.tables?.[dpNode];
+  // Row-level diff info — per-table detail was pre-fetched into cache by openDataPanel
+  const tableDataDiff  = dataDiffTableCache.get(dpNode) ?? null;
   const addedRowSet    = tableDataDiff ? new Set(tableDataDiff.rows_added.map(String)) : new Set();
   const changedRowMap  = tableDataDiff?.rows_changed || {};
+  const diffSummary    = dataDiffData?.tables?.[dpNode] ?? null; // counts: {ra,rr,rc}
 
   // In data view with "Only changed" active, restrict rows to added/changed ones
   let displayRows = rows;
@@ -878,15 +883,17 @@ function renderDataPane() {
       ${diffChange.columns_removed.map(c => `<span class="col-badge col-removed">&#8722; ${c}</span>`).join('')}
     </div>` : '';
 
-  const rowDiffSection = tableDataDiff ? (() => {
-    const na = tableDataDiff.rows_added.length;
-    const nr = tableDataDiff.rows_removed.length;
-    const nc = Object.keys(tableDataDiff.rows_changed).length;
+  const rowDiffSection = diffSummary ? (() => {
+    const na       = diffSummary.ra ?? tableDataDiff?.rows_added.length   ?? 0;
+    const nr       = diffSummary.rr ?? tableDataDiff?.rows_removed.length ?? 0;
+    const nc       = diffSummary.rc ?? Object.keys(tableDataDiff?.rows_changed ?? {}).length;
+    const truncated = tableDataDiff?._rc_truncated ?? 0;
     return `<div class="col-diff">
       <span class="col-diff-hdr">Row changes in this diff</span>
       ${na ? `<span class="col-badge col-added">+${na} added</span>` : ''}
       ${nr ? `<span class="col-badge col-removed">&#8722;${nr} removed</span>` : ''}
       ${nc ? `<span class="col-badge" style="background:rgba(210,153,34,0.15);color:#d29922">~${nc} changed</span>` : ''}
+      ${truncated ? `<span class="col-badge" style="background:rgba(110,118,129,0.15);color:#6e7681" title="Showing first ${nc - truncated} of ${nc} changed rows">&#x26A0; ${truncated} rows truncated</span>` : ''}
     </div>`;
   })() : '';
 
@@ -1116,51 +1123,74 @@ function mergeSchemaDiffs(diffs) {
   };
 }
 
-function mergeDataDiffs(dataDiffs) {
-  const acc = {};
-
-  for (const diff of dataDiffs) {
-    for (const [table, changes] of Object.entries(diff.tables || {})) {
-      if (!acc[table]) acc[table] = { rows_added: new Set(), rows_removed: new Set(), rows_changed: {} };
-      const tr = acc[table];
-
-      for (const id of (changes.rows_added || [])) {
-        const key = String(id);
-        if (tr.rows_removed.has(key)) { tr.rows_removed.delete(key); delete tr.rows_changed[key]; }
-        else { tr.rows_added.add(key); }
-      }
-      for (const id of (changes.rows_removed || [])) {
-        const key = String(id);
-        if (tr.rows_added.has(key)) { tr.rows_added.delete(key); }
-        else { tr.rows_removed.add(key); }
-        delete tr.rows_changed[key];
-      }
-      for (const [rowId, fieldDiffs] of Object.entries(changes.rows_changed || {})) {
-        const key = String(rowId);
-        if (tr.rows_added.has(key) || tr.rows_removed.has(key)) continue;
-        if (!tr.rows_changed[key]) tr.rows_changed[key] = {};
-        const existing = tr.rows_changed[key];
-        for (const [col, [oldVal, newVal]] of Object.entries(fieldDiffs)) {
-          if (existing[col]) {
-            existing[col] = [existing[col][0], newVal];
-            if (existing[col][0] === existing[col][1]) delete existing[col];
-          } else {
-            existing[col] = [oldVal, newVal];
-          }
+// Merge full row-level data for a single table across consecutive diff steps.
+function mergeTableDiffs(tables) {
+  const tr = { rows_added: new Set(), rows_removed: new Set(), rows_changed: {} };
+  for (const changes of tables) {
+    for (const id of (changes.rows_added || [])) {
+      const key = String(id);
+      if (tr.rows_removed.has(key)) { tr.rows_removed.delete(key); delete tr.rows_changed[key]; }
+      else { tr.rows_added.add(key); }
+    }
+    for (const id of (changes.rows_removed || [])) {
+      const key = String(id);
+      if (tr.rows_added.has(key)) { tr.rows_added.delete(key); }
+      else { tr.rows_removed.add(key); }
+      delete tr.rows_changed[key];
+    }
+    for (const [rowId, fieldDiffs] of Object.entries(changes.rows_changed || {})) {
+      const key = String(rowId);
+      if (tr.rows_added.has(key) || tr.rows_removed.has(key)) continue;
+      if (!tr.rows_changed[key]) tr.rows_changed[key] = {};
+      const existing = tr.rows_changed[key];
+      for (const [col, [oldVal, newVal]] of Object.entries(fieldDiffs)) {
+        if (existing[col]) {
+          existing[col] = [existing[col][0], newVal];
+          if (existing[col][0] === existing[col][1]) delete existing[col];
+        } else {
+          existing[col] = [oldVal, newVal];
         }
-        if (!Object.keys(existing).length) delete tr.rows_changed[key];
       }
+      if (!Object.keys(existing).length) delete tr.rows_changed[key];
     }
   }
+  return {
+    rows_added:   [...tr.rows_added].map(id => isNaN(id) ? id : Number(id)),
+    rows_removed: [...tr.rows_removed].map(id => isNaN(id) ? id : Number(id)),
+    rows_changed: tr.rows_changed,
+  };
+}
 
+// Merge summary-level data diff objects (counts only — used for table list badges).
+function mergeDataDiffs(summaries) {
   const result = {};
-  for (const [table, tr] of Object.entries(acc)) {
-    const rows_added   = [...tr.rows_added].map(id => isNaN(id) ? id : Number(id));
-    const rows_removed = [...tr.rows_removed].map(id => isNaN(id) ? id : Number(id));
-    const rows_changed = tr.rows_changed;
-    if (rows_added.length || rows_removed.length || Object.keys(rows_changed).length)
-      result[table] = { rows_added, rows_removed, rows_changed };
+  for (const s of summaries) {
+    for (const [table, counts] of Object.entries(s.tables || {})) {
+      if (!result[table]) result[table] = { ra: 0, rr: 0, rc: 0 };
+      result[table].ra += counts.ra;
+      result[table].rr += counts.rr;
+      result[table].rc += counts.rc;
+    }
   }
+  return result;
+}
+
+// Fetch and cache the full per-table diff for the active diff range.
+async function fetchTableDiff(tableId) {
+  if (dataDiffTableCache.has(tableId)) return dataDiffTableCache.get(tableId);
+  if (!dataDiffPairs.length) return null;
+
+  const fetched = await Promise.all(dataDiffPairs.map(async ({ from, to }) => {
+    try {
+      const r = await fetch(`data_diff_${from}_to_${to}/${tableId}.json`);
+      return r.ok ? r.json() : null;
+    } catch { return null; }
+  }));
+  const valid = fetched.filter(Boolean);
+  const result = valid.length === 0 ? null
+               : valid.length === 1 ? valid[0]
+               : mergeTableDiffs(valid);
+  dataDiffTableCache.set(tableId, result);
   return result;
 }
 
@@ -1173,6 +1203,8 @@ async function applyDiff() {
   diffData          = null;
   diffEdgeAddedKeys = new Set();
   dataDiffData      = null;
+  dataDiffPairs     = [];
+  dataDiffTableCache.clear();
 
   if (from && to && from !== to) {
     const chain = getVersionChain(from, to);
@@ -1191,17 +1223,17 @@ async function applyDiff() {
       }
     }
 
-    // Data diffs: fetch all consecutive pairs in the chain, skip any missing files
+    // Data diffs: fetch summaries only — per-table detail loaded lazily via fetchTableDiff
     if (pairs.length) {
       const fetched = await Promise.all(pairs.map(async p => {
         try { const r = await fetch(`data_diff_${p.from}_to_${p.to}.json`); return r.ok ? r.json() : null; }
         catch { return null; }
       }));
       const valid = fetched.filter(Boolean);
-      if (valid.length === 1) {
-        dataDiffData = valid[0];
-      } else if (valid.length > 1) {
-        dataDiffData = { from, to, tables: mergeDataDiffs(valid) };
+      if (valid.length) {
+        const tables = valid.length === 1 ? (valid[0].tables || {}) : mergeDataDiffs(valid);
+        dataDiffData  = { from, to, tables };
+        dataDiffPairs = pairs;
       }
     }
   }
@@ -1321,7 +1353,8 @@ function clMakeRow(tableId, type, schemaChange, rowData) {
     if (ca) badges += `<span class="col-badge col-added">+${ca} col${ca>1?'s':''}</span>`;
     if (cr) badges += `<span class="col-badge col-removed">&#8722;${cr} col${cr>1?'s':''}</span>`;
   } else if (type === 'rowdata' && rowData) {
-    const ra = rowData.rows_added?.length || 0, rr = rowData.rows_removed?.length || 0, rc = Object.keys(rowData.rows_changed||{}).length;
+    // rowData is a summary {ra,rr,rc} from the data_diff summary file
+    const ra = rowData.ra ?? 0, rr = rowData.rr ?? 0, rc = rowData.rc ?? 0;
     if (ra) badges += `<span class="col-badge col-added">+${ra}</span>`;
     if (rr) badges += `<span class="col-badge col-removed">&#8722;${rr}</span>`;
     if (rc) badges += `<span class="col-badge" style="background:rgba(210,153,34,0.15);color:#d29922">~${rc}</span>`;
@@ -1399,7 +1432,18 @@ async function clToggleRow(rowEl) {
     inline.innerHTML = clRenderTable(colHeaders, shown.map(r => ({ id: r[0], vals: r.slice(1), kind: '' })), 0, true);
 
   } else if (type === 'rowdata') {
-    const rd = clDataDiff?.tables?.[tableId];
+    // Per-table detail is in a separate file — fetch it lazily
+    const versions = RAW.meta.versions || [];
+    const idx      = versions.findIndex(v => v.id === document.getElementById('cl-version').value);
+    const fromId   = idx > 0 ? versions[idx - 1].id : null;
+    const toId     = versions[idx]?.id;
+    let rd = null;
+    if (fromId && toId) {
+      try {
+        const r = await fetch(`data_diff_${fromId}_to_${toId}/${tableId}.json`);
+        rd = r.ok ? await r.json() : null;
+      } catch { rd = null; }
+    }
     if (!rd) { inline.innerHTML = '<p class="cl-load-msg">No row diff data.</p>'; return; }
 
     const addedSet   = new Set(rd.rows_added.map(String));
