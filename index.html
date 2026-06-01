@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFXIV CSV Relationship Graph</title>
+  <script src="d3.v7.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="toolbar">
+  <h1>FFXIV CSV Graph</h1>
+  <div style="display:flex;gap:6px">
+    <button class="mode-btn active" data-mode="graph">Graph View</button>
+    <button class="mode-btn" data-mode="explore">Explore View</button>
+    <button class="mode-btn" data-mode="data">Data View</button>
+    <button class="mode-btn" data-mode="changelog">Patch Summary</button>
+  </div>
+  <button id="search-btn" title="Search all versions (Ctrl+K)">
+    Search <span class="so-kbd">Ctrl K</span>
+  </button>
+  <label class="filter-label" id="show-isolated-wrap">
+    <input type="checkbox" id="show-isolated"> Show isolated nodes
+  </label>
+  <div id="diff-controls" style="display:none">
+    <span class="diff-label">Diff:</span>
+    <select class="diff-select" id="diff-from"><option value="">—</option></select>
+    <span class="diff-arrow">&#8594;</span>
+    <select class="diff-select" id="diff-to"><option value="">—</option></select>
+    <label class="filter-label" id="diff-changed-wrap" style="display:none">
+      <input type="checkbox" id="diff-only-changed"> Only changed
+    </label>
+  </div>
+  <span id="stats"></span>
+</div>
+
+<div id="content">
+  <div id="sidebar">
+    <div id="search-wrap">
+      <input id="search" type="text" placeholder="Search tables…" autocomplete="off">
+    </div>
+    <div id="table-list"></div>
+    <div id="breadcrumb"></div>
+    <div id="info-drag" title="Drag to resize"></div>
+    <div id="info-panel">
+      <p class="placeholder">Click a node to see its connections</p>
+    </div>
+  </div>
+
+  <div id="right-area">
+    <div id="graph-area">
+      <svg id="graph"></svg>
+      <div id="explore-hint"><p>Search for a table above to start exploring</p></div>
+    </div>
+
+    <div id="data-panel" class="dp-hidden">
+      <div id="dp-drag" title="Drag to resize"></div>
+      <div id="dp-header">
+        <span id="dp-title"></span>
+        <button id="dp-close">&#x2715;</button>
+      </div>
+      <div id="dp-body">
+        <div id="dp-data" class="dp-pane"></div>
+      </div>
+    </div>
+
+    <div id="dv-graph-area">
+      <div id="dv-resize" title="Drag to resize"></div>
+      <div id="dv-graph-header">
+        <span id="dv-graph-label"></span>
+      </div>
+      <svg id="dv-graph"></svg>
+    </div>
+
+    <div id="changelog-area">
+      <div id="cl-toolbar">
+        <label for="cl-version">Version:</label>
+        <select id="cl-version"><option value="">— select —</option></select>
+        <span id="cl-header-summary"></span>
+      </div>
+      <div id="cl-body">
+        <p style="color:#6e7681;padding:20px">Select a version above to see its patch summary.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="tooltip"></div>
+
+<div id="search-overlay">
+  <div id="so-modal">
+    <div id="so-input-wrap">
+      <span id="so-search-icon">&#9906;</span>
+      <input id="so-input" type="text" placeholder="Search names across all versions&#8230;" autocomplete="off" spellcheck="false">
+      <button id="so-close">esc</button>
+    </div>
+    <div id="so-status">Type to search</div>
+    <div id="so-results">
+      <p class="so-hint">Type at least 2 characters to search</p>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
