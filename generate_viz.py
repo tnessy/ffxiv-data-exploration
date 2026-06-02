@@ -60,7 +60,7 @@ def main():
     data_diff_pairs: list[dict] = []
     if VERSIONS_FILE.exists():
         raw_versions = json.loads(VERSIONS_FILE.read_text(encoding="utf-8"))
-        versions_meta = [{"id": v["id"], "label": v.get("label", v["id"])} for v in raw_versions]
+        versions_meta = [{"id": v["id"], "label": v.get("label", v["id"]), "path": v["path"]} for v in raw_versions]
         for a, b in zip(raw_versions, raw_versions[1:]):
             from_id, to_id = a["id"], b["id"]
             if (SITE_DIR / f"diff_{from_id}_to_{to_id}.json").exists():

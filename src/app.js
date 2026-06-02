@@ -689,7 +689,8 @@ const dpTitle    = document.getElementById('dp-title');
 const dpDataPane = document.getElementById('dp-data');
 const dpDrag     = document.getElementById('dp-drag');
 
-const CSV_BASE = 'ffxiv-datamining-latest/csv/en';
+const _latestVer = (RAW.meta.versions || []).at(-1);
+const CSV_BASE = _latestVer ? `${_latestVer.path}/csv/en` : 'ffxiv-datamining-latest/csv/en';
 
 let dpNode        = null;
 let dpPage        = 0;
