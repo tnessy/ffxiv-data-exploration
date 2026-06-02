@@ -1,9 +1,0 @@
-﻿key,0,1,2
-#,Rare Material,,Area
-int32,MJIItemPouch,byte,MJIText
-0,"Island Alyssum",0,"None"
-1,"Raw Island Garnet",1,"Cozy Cabin I"
-2,"Island Spruce Log",2,"Cozy Cabin II"
-3,"Island Hammerhead",3,"Cozy Cabin III"
-4,"Island Silver Ore",4,"Workshop I"
-5,"Island Cave Shrimp",5,"Workshop II"

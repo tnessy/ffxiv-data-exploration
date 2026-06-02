@@ -1,6 +1,0 @@
-﻿key,0,1,2,3,4,5,6,7,8,9,10
-#,Name,CompanyCraftType[0],CompanyCraftType[1],CompanyCraftType[2],CompanyCraftType[3],CompanyCraftType[4],CompanyCraftType[5],CompanyCraftType[6],CompanyCraftType[7],CompanyCraftType[8],CompanyCraftType[9]
-int32,str,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType,CompanyCraftType
-0,"Aetherial Wheels","Wheel Stand","Aetherial Wheel","","","","","","","",""
-1,"Airships & Submersibles","Airship Hull","Airship Rigging","Airship Forecastle","Airship Aftcastle","Submersible Hull","Submersible Stern","Submersible Bow","Submersible Bridge","",""
-2,"Housing","Full Estate Exterior","Exterior Wall (Single)","Roof","Door","Window","Fence","Signboard","Roof Decoration","Wall Decoration",""
