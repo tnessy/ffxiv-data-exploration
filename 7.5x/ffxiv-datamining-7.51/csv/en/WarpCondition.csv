@@ -1,0 +1,74 @@
+﻿key,0,1,2,3,4,5,6,7
+#,Gil,CompleteParam,RequiredQuest{1},RequiredQuest{2},RequiredQuest{3},RequiredQuest{4},QuestReward,Class{Level}
+int32,uint16,byte,Quest,Quest,Quest,Quest,uint16,uint16
+0,0,1,,,,,0,0
+1,0,1,,,,,0,0
+2,80,1,,,,,0,10
+3,0,2,"To Guard a Guardian","Fire in the Gloom",,,0,0
+4,0,1,,,,,0,10
+5,0,1,,,,,2,0
+6,40,1,,,,,0,12
+7,0,1,,,,,0,0
+8,0,1,"Duty, Honor, Country",,,,0,0
+9,120,2,"The Gridanian Envoy","The Ul'dahn Envoy","The Lominsan Envoy",,0,0
+10,80,2,"The Gridanian Envoy","The Ul'dahn Envoy","The Lominsan Envoy",,0,0
+11,40,1,,,,,0,15
+12,40,1,,,,,0,30
+13,40,1,,,,,0,0
+14,40,1,,,,,0,15
+15,0,1,"Broadening Horizons",,,,0,0
+16,40,1,,,,,0,0
+17,0,1,,,,,0,0
+18,0,1,,,,,0,0
+19,0,1,"Renewing the Covenant",,,,0,0
+20,0,1,"A Mizzenmast Repast",,,,0,0
+21,0,1,"The Scions of the Seventh Dawn",,,"Lord of the Inferno",0,0
+22,40,1,"The Reluctant Researcher",,,,0,0
+23,40,1,,,,,0,0
+24,0,1,"Where the Heart Is (The Lavender Beds)",,,,0,0
+25,0,1,"Where the Heart Is (Mist)",,,,0,0
+26,0,1,"Where the Heart Is (The Goblet)",,,,0,0
+27,0,1,"My First Daggers",,,,0,0
+28,0,1,"Peasants by Day, Ninjas by Night",,,,0,0
+29,0,1,"It Could Happen to You",,,,0,0
+30,120,1,,,,,0,0
+31,0,1,"A World Away",,,,0,0
+32,0,1,"A Striking Opportunity",,,,0,0
+33,150,1,"Litany of Peace",,,,0,0
+34,0,1,"Litany of Peace","It Could Happen to You",,,0,0
+35,0,1,"I'll Be Home for Starlight",,,,0,0
+36,0,1,"Not without Incident",,,,0,0
+37,300,1,,,,,0,0
+38,0,1,"In the Footsteps of Bardam the Brave",,,,0,0
+39,0,1,"Another Striking Opportunity",,,,0,0
+40,30,1,,,,,0,0
+41,0,1,,,,,2,0
+42,0,1,"Yet Another Striking Opportunity",,,,0,0
+43,0,1,"Travelers of Norvrandt",,,,0,0
+44,0,1,"A Ship on His Shoulder",,,,0,0
+45,0,1,"Towards the Firmament",,,,0,0
+46,0,1,"Pretty in Peaches",,,,0,0
+47,0,1,"Reflections in Crystal",,,,0,0
+48,0,1,"Reflections in Crystal",,,,0,0
+49,0,1,"Caught Shorthanded",,,,0,0
+50,0,1,"The Killer Instinct",,,,0,0
+51,0,1,"Litany of Peace",,,,0,0
+52,0,1,"Towards the Firmament",,,,0,0
+53,0,1,"Coming to Ishgard",,,,0,0
+54,300,1,"Endwalker",,,,0,0
+55,500,1,"Endwalker",,,,0,0
+56,300,1,"Endwalker",,,,0,0
+57,0,1,"A Place to Train",,,,0,0
+58,300,1,,,,,0,0
+59,0,1,"Going Underground",,,,0,0
+60,0,1,"Fhul Me Once",,,,0,0
+61,0,1,"A Mad Masquerade",,,,0,0
+62,0,1,"Be Our Guest",,,,0,0
+63,0,1,"Be Our Guest",,,,0,0
+64,0,1,"A Charmed Life",,,,0,0
+65,0,1,"Just Crowning Around",,,,0,0
+66,0,1,"Trial by Spire",,,,0,0
+67,0,1,"All Fiends Sated on All Saints' Wake",,,,0,0
+68,0,1,"Dressed to Impresario",,,,0,0
+69,0,1,"守護天節と面妖なかくれんぼ",,,,0,0
+70,0,1,"",,,,0,0

@@ -1,0 +1,916 @@
+﻿key,0,1,2,3,4,5,6,7,8,9
+#,Name,Icon,ClassJob,,Level,Quest,Value,ClassJobCategory,,
+int32,str,Image,ClassJob,byte,byte,Quest,uint32,ClassJobCategory,byte,byte
+0,"",,"",0,0,,0,"",0,0
+1,"Enhanced Vitality",,"",0,0,,0,"",0,0
+2,"Enhanced Vitality II",,"",0,0,,0,"",0,0
+3,"Enhanced Vitality III",,"",0,0,,0,"",0,0
+4,"Enhanced Vitality",,"",0,0,,0,"",0,0
+5,"Enhanced Vitality II",,"",0,0,,0,"",0,0
+6,"Enhanced Vitality III",,"",0,0,,0,"",0,0
+7,"Enhanced Strength",,"",0,0,,0,"",0,0
+8,"Enhanced Strength II",,"",0,0,,0,"",0,0
+9,"Enhanced Strength III",,"",0,0,,0,"",0,0
+10,"Enhanced Greased Lightning",,"",0,0,,0,"",0,0
+11,"Enhanced Greased Lightning II",,"",0,0,,0,"",0,0
+12,"Enhanced Strength",,"",0,0,,0,"",0,0
+13,"Enhanced Strength II",,"",0,0,,0,"",0,0
+14,"Enhanced Strength III",,"",0,0,,0,"",0,0
+15,"Enhanced Dexterity",,"",0,0,,0,"",0,0
+16,"Enhanced Dexterity II",,"",0,0,,0,"",0,0
+17,"Heavier Shot","ui/icon/005000/005321.tex","",5,50,,0,"",50,0
+18,"Increased Action Damage","ui/icon/005000/005302.tex","",5,50,,0,"BSM",50,0
+19,"Enhanced Dexterity III",,"",0,0,,0,"",0,0
+20,"Increased Action Damage II","ui/icon/005000/005303.tex","",5,50,,0,"PLD",50,0
+21,"Enhanced Mind",,"",0,0,,0,"",0,0
+22,"Enhanced Mind II",,"",0,0,,0,"",0,0
+23,"Maim and Mend","ui/icon/005000/005185.tex","",6,53,,0,"BSM",53,0
+24,"Enhanced Mind III",,"",0,0,,0,"",0,0
+25,"Freecure","ui/icon/005000/005330.tex","",6,53,,0,"",53,0
+26,"Maim and Mend II","ui/icon/005000/005186.tex","",6,53,,0,"Disciple of War",53,0
+27,"Enhanced Intelligence",,"",0,0,,0,"",0,0
+28,"Enhanced Intelligence II",,"",0,0,,0,"",0,0
+29,"Maim and Mend","ui/icon/005000/005185.tex","",7,55,,0,"BSM",55,0
+30,"Enhanced Intelligence III",,"",0,0,,0,"",0,0
+31,"Maim and Mend II","ui/icon/005000/005186.tex","",7,55,,0,"Disciple of War",55,0
+32,"Firestarter","ui/icon/005000/005352.tex","",7,55,,0,"",55,0
+33,"Thundercloud","ui/icon/005000/005355.tex","",0,0,,0,"",0,0
+34,"Auto Triangulate","ui/icon/005000/005451.tex","",17,18,,0,"",18,0
+35,"Enhanced Stealth",,"",0,0,,0,"Disciple of War",0,0
+36,"Enhanced Stealth II",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK WAR DRG BRD NIN",0,0
+37,"Enhanced Stealth III",,"",0,0,,0,"ARC BRD",0,0
+38,"Auto Prospect","ui/icon/005000/005426.tex","",16,17,,0,"",17,0
+39,"Enhanced Stealth",,"",0,0,,0,"Disciple of War",0,0
+40,"Enhanced Stealth II",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK WAR DRG BRD NIN",0,0
+41,"Enhanced Stealth III",,"",0,0,,0,"ARC BRD",0,0
+42,"Tree Whisperer","ui/icon/005000/005455.tex","",17,18,,0,"",18,0
+43,"Tree Whisperer II","ui/icon/005000/005456.tex","",17,18,,0,"",18,0
+44,"Tree Whisperer III","ui/icon/005000/005457.tex","",17,18,,0,"",18,0
+45,"Tree Whisperer IV","ui/icon/005000/005458.tex","",17,18,,0,"",18,0
+46,"Enhanced Twelve's Bounty","ui/icon/005000/005459.tex","",17,18,,0,"",18,0
+47,"Enhanced Twelve's Bounty II","ui/icon/005000/005460.tex","",17,18,,0,"",18,0
+48,"Stone Whisperer","ui/icon/005000/005430.tex","",16,17,,0,"",17,0
+49,"Stone Whisperer II","ui/icon/005000/005431.tex","",16,17,,0,"",17,0
+50,"Stone Whisperer III","ui/icon/005000/005432.tex","",16,17,,0,"",17,0
+51,"Stone Whisperer IV","ui/icon/005000/005433.tex","",16,17,,0,"",17,0
+52,"Enhanced Twelve's Bounty","ui/icon/005000/005434.tex","",16,17,,0,"",17,0
+53,"Enhanced Twelve's Bounty II","ui/icon/005000/005435.tex","",16,17,,0,"",17,0
+54,"Dunefishing","ui/icon/005000/005483.tex","",18,19,,0,"",19,0
+55,"Skyfishing","ui/icon/005000/005484.tex","",18,19,,0,"",19,0
+56,"Enhanced Stealth",,"",0,0,,0,"Disciple of War",0,0
+57,"Enhanced Stealth II",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK WAR DRG BRD NIN",0,0
+58,"Enhanced Stealth III",,"",0,0,,0,"ARC BRD",0,0
+59,"Gulleye","ui/icon/005000/005479.tex","",18,19,,0,"ALC",19,0
+60,"Gulleye II",,"",0,0,,0,"Disciples of the Land or Hand",0,0
+61,"Gulleye III",,"",0,0,,0,"ARC BRD",0,0
+62,"Double Mooching","ui/icon/005000/005482.tex","",18,19,,0,"",19,0
+63,"Aetherdam",,"",0,0,,0,"",0,0
+64,"Enhanced Intelligence",,"",0,0,,0,"",0,0
+65,"Enhanced Intelligence II",,"",0,0,,0,"",0,0
+66,"Maim and Mend","ui/icon/005000/005185.tex","",26,68,,0,"BSM",68,0
+67,"Aetherdam II",,"",0,0,,0,"",0,0
+68,"Enhanced Intelligence III",,"",0,0,,0,"",0,0
+69,"Maim and Mend II","ui/icon/005000/005186.tex","",26,68,,0,"Disciple of War",68,0
+70,"Aetherdam III",,"",0,0,,0,"",0,0
+71,"Enhanced Strength","ui/icon/009000/009004.tex","",0,0,,0,"LNC",0,0
+72,"Increased HP","ui/icon/009000/009001.tex","",0,0,,0,"BSM",0,0
+73,"Enhanced Accuracy","ui/icon/009000/009010.tex","",0,0,,0,"LNC",0,0
+74,"Enhanced Critical Hit","ui/icon/009000/009012.tex","",0,0,,0,"ALC",0,0
+75,"Enhanced Strength","ui/icon/009000/009004.tex","",0,0,,0,"LNC",0,0
+76,"Increased HP","ui/icon/009000/009001.tex","",0,0,,0,"BSM",0,0
+77,"Enhanced Strength","ui/icon/009000/009004.tex","",0,0,,0,"LNC",0,0
+78,"Increased HP","ui/icon/009000/009001.tex","",0,0,,0,"LNC",0,0
+79,"Enhanced Accuracy","ui/icon/009000/009010.tex","",0,0,,0,"LNC",0,0
+80,"Enhanced Critical Hit","ui/icon/009000/009012.tex","",0,0,,0,"ALC",0,0
+81,"Enhanced Strength","ui/icon/009000/009004.tex","",0,0,,0,"BSM",0,0
+82,"Increase Attack Speed","ui/icon/009000/009013.tex","",0,0,,0,,0,0
+83,"Enhanced Mind","ui/icon/009000/009008.tex","",0,0,,0,"BSM",0,0
+84,"Increased HP","ui/icon/009000/009001.tex","",0,0,,0,"LNC",0,0
+85,"Enhanced Accuracy","ui/icon/009000/009010.tex","",0,0,,0,"LNC",0,0
+86,"Enhanced Critical Hit","ui/icon/009000/009012.tex","",0,0,,0,"ALC",0,0
+87,"Enhanced Mind","ui/icon/009000/009008.tex","",0,0,,0,"ALC",0,0
+88,"Increased HP","ui/icon/009000/009001.tex","",0,0,,0,"LNC",0,0
+89,"Enhanced Dexterity",,"",0,0,,0,"",0,0
+90,"All Fours","ui/icon/005000/005401.tex","",29,93,,0,"BSM",93,0
+91,"Enhanced Dexterity II",,"",0,0,,0,"",0,0
+92,"Enhanced Dexterity III",,"",0,0,,0,"",0,0
+93,"Fleet of Foot","ui/icon/005000/005403.tex","",29,93,,0,"BSM",93,0
+94,"Nymeia's Ward","ui/icon/005000/005436.tex","",16,17,,0,"",17,0
+95,"Stone Whisperer V","ui/icon/005000/005437.tex","",16,17,,67617,"",17,0
+96,"Enhanced Stealth IV",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN WHM BLM SMN SCH AST",0,0
+97,"Enhanced Stealth V",,"",0,0,,0,"GLA THM PLD BLM",0,0
+98,"Enhanced Stealth VI",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+99,"Nymeia's Ward","ui/icon/005000/005461.tex","",17,18,,0,"",18,0
+100,"Tree Whisperer V","ui/icon/005000/005462.tex","",17,18,,67585,"",18,0
+101,"Enhanced Stealth IV",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN WHM BLM SMN SCH AST",0,0
+102,"Enhanced Stealth V",,"",0,0,,0,"GLA THM PLD BLM",0,0
+103,"Enhanced Stealth VI",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+104,"Gulleye IV",,"",0,0,,0,"THM BLM",0,0
+105,"Gulleye V",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+106,"Cloudfishing","ui/icon/005000/005488.tex","",18,19,,67622,"",19,0
+107,"Enhanced Stealth IV",,"",0,0,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN WHM BLM SMN SCH AST",0,0
+108,"Enhanced Stealth V",,"",0,0,,0,"GLA THM PLD BLM",0,0
+109,"Enhanced Stealth VI",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+110,"Hellfishing","ui/icon/005000/005489.tex","",18,19,,67623,"",19,0
+111,"Aetherfishing","ui/icon/005000/005490.tex","",18,19,,67624,"",19,0
+112,"Enhanced Vitality",,"",0,0,,0,"",0,0
+113,"Enhanced Vitality II",,"",0,0,,0,"",0,0
+114,"Enhanced Vitality III",,"",0,0,,0,"",0,0
+115,"Enhanced Dexterity",,"",0,0,,0,"",0,0
+116,"Enhanced Dexterity II",,"",0,0,,0,"",0,0
+117,"Increased Action Damage","ui/icon/006000/006002.tex","",31,96,,0,"BSM",96,0
+118,"Enhanced Dexterity III",,"",0,0,,0,"",0,0
+119,"Increased Action Damage II","ui/icon/006000/006003.tex","",31,96,,0,"PLD",96,0
+120,"Enhanced Mind",,"",0,0,,0,"",0,0
+121,"Enhanced Mind II",,"",0,0,,0,"",0,0
+122,"Maim and Mend","ui/icon/006000/006102.tex","",33,99,,0,"BSM",99,0
+123,"Enhanced Mind III",,"",0,0,,0,"",0,0
+124,"Enhanced Benefic","ui/icon/006000/006105.tex","",33,99,,0,"ALC",99,0
+125,"Maim and Mend II","ui/icon/006000/006103.tex","",33,99,,0,"Disciple of War",99,0
+126,"Enhanced Stealth VII",,"",0,0,,0,"CNJ WHM SCH AST SGE",0,0
+127,"Enhanced Stealth VIII",,"",0,0,,0,"GLA PGL MRD LNC ROG MNK DRG NIN",0,0
+128,"Enhanced Stealth IX",,"",0,0,,0,"Any Disciple of the Hand (excluding culinarians)",0,0
+129,"Enhanced Stealth VII",,"",0,0,,0,"CNJ WHM SCH AST SGE",0,0
+130,"Enhanced Stealth VIII",,"",0,0,,0,"GLA PGL MRD LNC ROG MNK DRG NIN",0,0
+131,"Enhanced Stealth IX",,"",0,0,,0,"Any Disciple of the Hand (excluding culinarians)",0,0
+132,"Enhanced Stealth VII",,"",0,0,,0,"CNJ WHM SCH AST SGE",0,0
+133,"Enhanced Stealth VIII",,"",0,0,,0,"GLA PGL MRD LNC ROG MNK DRG NIN",0,0
+134,"Enhanced Stealth IX",,"",0,0,,0,"Any Disciple of the Hand (excluding culinarians)",0,0
+135,"Saltfishing","ui/icon/005000/005499.tex","",18,19,,0,"",19,0
+136,"Gulleye VI",,"",0,0,,0,"PGL MNK SAM",0,0
+137,"Gulleye VII",,"",0,0,,0,"Any Disciple of the Hand (excluding culinarians)",0,0
+138,"Quality Assurance","ui/icon/006000/006976.tex","",8,9,,67978,"GLA",9,0
+139,"Quality Assurance","ui/icon/006000/006976.tex","",9,10,,68152,"GLA",10,0
+140,"Quality Assurance","ui/icon/006000/006976.tex","",10,11,,68131,"GLA",11,0
+141,"Quality Assurance","ui/icon/006000/006976.tex","",11,12,,68136,"GLA",12,0
+142,"Quality Assurance","ui/icon/006000/006976.tex","",12,13,,68146,"GLA",13,0
+143,"Quality Assurance","ui/icon/006000/006976.tex","",13,14,,67968,"GLA",14,0
+144,"Quality Assurance","ui/icon/006000/006976.tex","",14,15,,67973,"GLA",15,0
+145,"Quality Assurance","ui/icon/006000/006976.tex","",15,16,,68141,"GLA",16,0
+146,"Stroke of Genius",,"",0,0,,0,"",0,0
+147,"Stroke of Genius",,"",0,0,,0,"",0,0
+148,"Stroke of Genius",,"",0,0,,0,"",0,0
+149,"Stroke of Genius",,"",0,0,,0,"",0,0
+150,"Stroke of Genius",,"",0,0,,0,"",0,0
+151,"Stroke of Genius",,"",0,0,,0,"",0,0
+152,"Stroke of Genius",,"",0,0,,0,"",0,0
+153,"Stroke of Genius",,"",0,0,,0,"",0,0
+154,"Auto Fathom","ui/icon/005000/005497.tex","",18,19,,68458,"",19,0
+155,"Fish Whisperer",,"",0,0,,0,"",0,0
+156,"Enhanced Cover","ui/icon/005000/005209.tex","",0,0,,0,,0,0
+157,"Enhanced Infuriate","ui/icon/005000/005259.tex","",21,22,,0,"",22,0
+158,"Blackblood","ui/icon/006000/006059.tex","",32,98,,0,"",98,0
+159,"Enhanced Blackblood","ui/icon/006000/006060.tex","",32,98,,0,"",98,0
+160,"Deep Meditation","ui/icon/005000/005234.tex","",20,21,,0,"",21,0
+161,"Enhanced Tackle","ui/icon/005000/005235.tex","",0,0,,0,"GLA",0,0
+162,"Lance Mastery","ui/icon/005000/005284.tex","",0,0,,0,"",0,0
+163,"Life of the Dragon","ui/icon/005000/005289.tex","",22,23,,68450,"",23,0
+164,"Dripping Blades",,"",0,0,,0,"",0,0
+165,"Shukiho","ui/icon/005000/005411.tex","",30,92,,0,"ARC",92,0
+166,"Enhanced Shukuchi","ui/icon/005000/005412.tex","",30,92,,0,"",92,0
+167,"Enhanced Mug",,"",0,0,,0,"",0,0
+168,"Bite Mastery","ui/icon/005000/005309.tex","",23,24,,0,"",24,0
+169,"Enhanced Empyreal Arrow","ui/icon/005000/005310.tex","",23,24,,0,"",24,0
+170,"Shot Mastery",,"",0,0,,0,"",0,0
+171,"Thunder Mastery","ui/icon/005000/005357.tex","",25,26,,66612,"",26,0
+172,"Thunder Mastery II","ui/icon/005000/005358.tex","",25,26,,0,"",26,0
+173,"Enhanced Umbral Heart","ui/icon/005000/005359.tex","",0,0,,0,,0,0
+174,"Enhanced Enochian","ui/icon/005000/005360.tex","",25,26,,68128,"LNC",26,0
+175,"Corruption Mastery","ui/icon/005000/005376.tex","",0,0,,0,"",0,0
+176,"Enhanced Ruin II","ui/icon/005000/005377.tex","",0,0,,0,"",0,0
+177,"Corruption Mastery II","ui/icon/005000/005378.tex","",0,0,,0,"",0,0
+178,"Enhanced Dreadwyrm Trance","ui/icon/005000/005380.tex","",27,28,,68165,"",28,0
+179,"Stone Mastery","ui/icon/005000/005333.tex","",6,53,,0,"",53,0
+180,"Aero Mastery","ui/icon/005000/005334.tex","",6,53,,0,"",53,0
+181,"Stone Mastery II","ui/icon/005000/005336.tex","",24,25,,67257,"",25,0
+182,"Stone Mastery III","ui/icon/005000/005337.tex","",24,25,,0,"",25,0
+183,"Secret of the Lily II","ui/icon/005000/005338.tex","",0,0,,0,"PLD",0,0
+184,"Broil Mastery II","ui/icon/005000/005392.tex","",28,29,,0,"",29,0
+185,"Quickened Aetherflow",,"",0,0,,0,"ARC ROG BRD NIN MCH",0,0
+186,"Combust Mastery","ui/icon/006000/006109.tex","",33,99,,0,"",99,0
+187,"Malefic Mastery","ui/icon/006000/006110.tex","",33,99,,67558,"",99,0
+188,"Malefic Mastery II","ui/icon/006000/006111.tex","",33,99,,0,"",99,0
+189,"Hyper Lightspeed","ui/icon/006000/006101.tex","",33,99,,0,,99,0
+190,"Endless Toil of the Mountaineer",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+191,"Endless Toil of the Pioneer",,"",0,0,,0,"GLA MRD LNC PLD WAR DRG DRK GNB RPR",0,0
+192,"Enhanced GP Regeneration","ui/icon/005000/005444.tex","",16,17,,68094,"All Classes",17,0
+193,"Enhanced GP Regeneration","ui/icon/005000/005469.tex","",17,18,,68160,"All Classes",18,0
+194,"Enhanced GP Regeneration","ui/icon/005000/005498.tex","",18,19,,68435,"All Classes",19,0
+195,"Enhanced Jolt","ui/icon/006000/006201.tex","",35,112,,0,"",112,0
+196,"Secret of the Lily","ui/icon/005000/005335.tex","",24,25,,67256,"",25,0
+197,"Enhanced Intelligence",,"",0,0,,0,"",0,0
+198,"Enhanced Intelligence II",,"",0,0,,0,"",0,0
+199,"Enhanced Intelligence III",,"",0,0,,0,"",0,0
+200,"Maim and Mend","ui/icon/005000/005185.tex","",35,112,,0,"BSM",112,0
+201,"Maim and Mend II","ui/icon/005000/005186.tex","",35,112,,0,"Disciple of War",112,0
+202,"Enhanced Strength",,"",0,0,,0,"",0,0
+203,"Enhanced Strength II",,"",0,0,,0,"",0,0
+204,"Enhanced Strength III",,"",0,0,,0,"",0,0
+205,"Dripping Blades II",,"",0,0,,0,"",0,0
+206,"Enhanced Jolt II",,"",0,0,,0,"",0,0
+207,"Divine Magic Mastery","ui/icon/005000/005210.tex","",19,20,,0,,20,0
+208,"Kenki Mastery II","ui/icon/006000/006151.tex","",34,111,,0,"LNC",111,0
+209,"Oath Mastery","ui/icon/005000/005211.tex","",19,20,,66592,"",20,0
+210,"Enhanced Mind",,"",0,0,,0,"",0,0
+211,"Enhanced Mind II",,"",0,0,,0,"",0,0
+212,"Enhanced Mind III",,"",0,0,,0,"",0,0
+213,"Enhanced Enkindle","ui/icon/005000/005379.tex","",0,0,,0,,0,0
+214,"Broil Mastery","ui/icon/005000/005394.tex","",28,29,,67209,"",29,0
+215,"Kenki Mastery","ui/icon/006000/006152.tex","",34,111,,0,"",111,0
+216,"Dualcast","ui/icon/006000/006203.tex","",35,112,,0,"",112,0
+217,"Ruin Mastery","ui/icon/005000/005395.tex","",26,69,,65997,"",69,0
+218,"Berserk Mastery","ui/icon/005000/005260.tex","",21,22,,68440,"",22,0
+219,"Learning","ui/icon/006000/006251.tex","",36,129,,0,"",129,0
+220,"Maim and Mend","ui/icon/005000/005185.tex","",36,129,,0,"BSM",129,0
+221,"Maim and Mend II","ui/icon/005000/005186.tex","",36,129,,0,"PLD",129,0
+222,"Maim and Mend III","ui/icon/005000/005187.tex","",36,129,,0,"Disciple of War",129,0
+223,"Maim and Mend IV","ui/icon/005000/005188.tex","",36,129,,0,"GLA PGL MRD LNC ARC ROG CNJ THM ACN MNK WAR DRG BRD NIN",129,0
+224,"Maim and Mend V","ui/icon/005000/005189.tex","",36,129,,0,"ARC BRD",129,0
+225,"Enhanced Stealth X",,"",0,0,,0,"",0,0
+226,"Enhanced Stealth XI",,"",0,0,,0,"",0,0
+227,"Enhanced Stealth XII",,"",0,0,,0,"",0,0
+228,"Enhanced Stealth X",,"",0,0,,0,"",0,0
+229,"Enhanced Stealth XI",,"",0,0,,0,"",0,0
+230,"Enhanced Stealth XII",,"",0,0,,0,"",0,0
+231,"Enhanced Stealth X",,"",0,0,,0,"",0,0
+232,"Enhanced Stealth XI",,"",0,0,,0,"",0,0
+233,"Enhanced Stealth XII",,"",0,0,,0,"",0,0
+234,"Gulleye VIII",,"",0,0,,0,"",0,0
+235,"Gulleye IX",,"",0,0,,0,"",0,0
+236,"Enhanced GP Regeneration II","ui/icon/005000/005449.tex","",16,17,,0,"GLA",17,0
+237,"Enhanced GP Regeneration II","ui/icon/005000/005474.tex","",17,18,,0,"GLA",18,0
+238,"Enhanced GP Regeneration II","ui/icon/005000/005496.tex","",18,19,,0,"GLA",19,0
+239,"Enhanced GP Regeneration III","ui/icon/005000/005441.tex","",16,17,,0,"PGL",17,0
+240,"Enhanced GP Regeneration III","ui/icon/005000/005466.tex","",17,18,,0,"PGL",18,0
+241,"Enhanced GP Regeneration III","ui/icon/005000/005486.tex","",18,19,,0,"PGL",19,0
+242,"Enhanced Solid Reason","ui/icon/005000/005442.tex","",16,17,,0,"ARC BRD",17,0
+243,"Enhanced Ageless Words","ui/icon/005000/005467.tex","",17,18,,0,"ARC BRD",18,0
+244,"Angler's Art","ui/icon/005000/005485.tex","",18,19,,0,"",19,0
+245,"Deep Meditation II","ui/icon/005000/005238.tex","",20,21,,0,"ARC ROG BRD NIN MCH",21,0
+246,"Chivalry","ui/icon/005000/005212.tex","",19,20,,0,"",20,0
+247,"Lance Mastery","ui/icon/005000/005284.tex","",22,23,,0,"",23,0
+248,"",,"",0,0,,0,"",0,0
+249,"The Beast Within","ui/icon/005000/005261.tex","",21,22,,66586,"",22,0
+250,"Enhanced Kassatsu","ui/icon/005000/005414.tex","",30,92,,0,"",92,0
+251,"Increased Action Damage","ui/icon/006000/006351.tex","",38,150,,0,"BSM",150,0
+252,"Fourfold Fantasy","ui/icon/006000/006352.tex","",38,150,,0,"",150,0
+253,"Increased Action Damage II","ui/icon/006000/006353.tex","",38,150,,0,"PLD",150,0
+254,"Enhanced En Avant","ui/icon/006000/006354.tex","",38,150,,0,"GLA",150,0
+255,"Esprit","ui/icon/006000/006355.tex","",38,150,,0,"",150,0
+256,"Enhanced En Avant II","ui/icon/006000/006356.tex","",38,150,,0,"PGL",150,0
+257,"Cartridge Charge","ui/icon/006000/006301.tex","",37,149,,0,"",149,0
+258,"Enhanced Brutal Shell","ui/icon/006000/006302.tex","",37,149,,0,"",149,0
+259,"Danger Zone Mastery","ui/icon/006000/006303.tex","",37,149,,0,"",149,0
+260,"Rage of Halone Mastery","ui/icon/005000/005213.tex","",19,20,,67573,"",20,0
+261,"Enhanced Prominence","ui/icon/005000/005214.tex","",19,20,,0,"",20,0
+262,"Enhanced Sheltron","ui/icon/005000/005215.tex","",19,20,,0,"",20,0
+263,"Enhanced Requiescat","ui/icon/005000/005216.tex","",19,20,,0,"",20,0
+264,"Sword Oath","ui/icon/005000/005217.tex","",19,20,,0,"",20,0
+265,"Inner Beast Mastery","ui/icon/005000/005262.tex","",21,22,,66124,"",22,0
+266,"Steel Cyclone Mastery","ui/icon/005000/005263.tex","",21,22,,66137,"",22,0
+267,"Nascent Chaos","ui/icon/005000/005264.tex","",21,22,,0,"",22,0
+268,"Mastering the Beast","ui/icon/005000/005265.tex","",21,22,,0,"",22,0
+269,"Enhanced Thrill of Battle","ui/icon/005000/005258.tex","",21,22,,0,"",22,0
+270,"",,"",0,0,,0,"",0,0
+271,"Darkside Mastery","ui/icon/006000/006062.tex","",32,98,,0,"",98,0
+272,"Enhanced Plunge","ui/icon/006000/006063.tex","",0,0,,0,"GLA",0,0
+273,"Riddle of Wind",,"",0,0,,0,"",0,0
+274,"Enhanced Fists of Fire","ui/icon/005000/005237.tex","",0,0,,0,"",0,0
+275,"Jump Mastery","ui/icon/005000/005286.tex","",22,23,,0,"",23,0
+276,"Life of the Dragon Mastery","ui/icon/005000/005287.tex","",0,0,,0,"",0,0
+277,"Enhanced Iaijutsu","ui/icon/006000/006153.tex","",34,111,,0,"",111,0
+278,"Enhanced Fugetsu and Fuka","ui/icon/006000/006154.tex","",34,111,,0,"",111,0
+279,"Enhanced Shukuchi II","ui/icon/005000/005415.tex","",30,92,,0,"GLA",92,0
+280,"Shukiho II","ui/icon/005000/005416.tex","",30,92,,0,"",92,0
+281,"",,"",0,0,,0,"",0,0
+282,"Straight Shot Mastery","ui/icon/005000/005311.tex","",23,24,,68430,"",24,0
+283,"Enhanced Quick Nock","ui/icon/005000/005304.tex","",5,50,,0,"",50,0
+284,"Bite Mastery II","ui/icon/005000/005312.tex","",23,24,,0,"",24,0
+285,"Heavy Shot Mastery","ui/icon/005000/005306.tex","",23,24,,0,"",24,0
+286,"Enhanced Army's Paeon","ui/icon/005000/005314.tex","",23,24,,0,"",24,0
+287,"Soul Voice","ui/icon/005000/005315.tex","",23,24,,0,"",24,0
+288,"Split Shot Mastery","ui/icon/006000/006010.tex","",31,96,,67243,"",96,0
+289,"Slug Shot Mastery","ui/icon/006000/006011.tex","",31,96,,67248,"",96,0
+290,"Clean Shot Mastery","ui/icon/006000/006012.tex","",31,96,,0,"",96,0
+291,"Hot Shot Mastery","ui/icon/006000/006016.tex","",31,96,,0,"",96,0
+292,"Charged Action Mastery","ui/icon/006000/006013.tex","",31,96,,0,"PGL",96,0
+293,"Enhanced Wildfire","ui/icon/006000/006014.tex","",31,96,,0,"",96,0
+294,"Promotion","ui/icon/006000/006015.tex","",31,96,,0,"",96,0
+295,"Umbral Heart","ui/icon/005000/005656.tex","",25,26,,0,"",26,0
+296,"Aspect Mastery","ui/icon/005000/005362.tex","",7,55,,0,"",55,0
+297,"Enhanced Polyglot","ui/icon/005000/005363.tex","",25,26,,0,"",26,0
+298,"Enhanced Dreadwyrm Trance II","ui/icon/005000/005676.tex","",0,0,,0,"",0,0
+299,"Enhanced Egi Assault","ui/icon/005000/005677.tex","",0,0,,0,"",0,0
+300,"Enhanced Tri-disaster","ui/icon/005000/005678.tex","",0,0,,0,"",0,0
+301,"Enhanced Bane","ui/icon/005000/005679.tex","",0,0,,0,"",0,0
+302,"Enhanced Firebird Trance","ui/icon/005000/005680.tex","",0,0,,0,"",0,0
+303,"Scatter Mastery","ui/icon/006000/006207.tex","",35,112,,0,"",112,0
+304,"Enhanced Displacement","ui/icon/006000/006204.tex","",35,112,,0,"",112,0
+305,"Enhanced Manafication","ui/icon/006000/006205.tex","",0,0,,0,,0,0
+306,"Red Magic Mastery","ui/icon/006000/006206.tex","",35,112,,0,,112,0
+307,"Aero Mastery II","ui/icon/005000/005339.tex","",24,25,,0,"",25,0
+308,"Stone Mastery IV","ui/icon/005000/005340.tex","",24,25,,0,"",25,0
+309,"Transcendent Afflatus","ui/icon/005000/005341.tex","",24,25,,0,"",25,0
+310,"Enhanced Asylum","ui/icon/005000/005342.tex","",24,25,,0,"",25,0
+311,"Corruption Mastery II","ui/icon/005000/005701.tex","",28,29,,0,"",29,0
+312,"Broil Mastery III","ui/icon/005000/005702.tex","",28,29,,0,"",29,0
+313,"Enhanced Sacred Soil","ui/icon/005000/005703.tex","",28,29,,0,"",29,0
+314,"Combust Mastery II","ui/icon/006000/006112.tex","",33,99,,0,"",99,0
+315,"Malefic Mastery III","ui/icon/006000/006113.tex","",33,99,,0,"",99,0
+316,"Enhanced Essential Dignity","ui/icon/006000/006114.tex","",33,99,,0,"GLA",99,0
+317,"Tank Mastery","ui/icon/005000/005190.tex","",1,38,,0,,38,0
+318,"Tank Mastery","ui/icon/005000/005190.tex","",3,44,,0,,44,0
+319,"Tank Mastery","ui/icon/005000/005190.tex","",32,98,,0,,98,0
+320,"Tank Mastery","ui/icon/005000/005190.tex","",37,149,,0,,149,0
+321,"Enhanced Sharpcast","ui/icon/005000/005364.tex","",0,0,,0,,0,0
+322,"Enhanced Enochian II","ui/icon/005000/005365.tex","",25,26,,0,"BSM",26,0
+323,"",,"",0,0,,0,"",0,0
+324,"Corruption Mastery","ui/icon/005000/005376.tex","",28,29,,0,"",29,0
+325,"One with the Mountain","ui/icon/005000/005427.tex","",16,17,,0,"",17,0
+326,"One with the Forest","ui/icon/005000/005452.tex","",17,18,,0,"",18,0
+327,"One with the Ocean","ui/icon/005000/005476.tex","",18,19,,68458,"",19,0
+328,"Auto Sneak","ui/icon/005000/005428.tex","",16,17,,0,"",17,0
+329,"Auto Sneak","ui/icon/005000/005453.tex","",17,18,,0,"",18,0
+330,"Auto Sneak","ui/icon/005000/005477.tex","",18,19,,0,"",19,0
+331,"Enhanced Twelve's Bounty III","ui/icon/005000/005440.tex","",16,17,,0,"",17,0
+332,"Enhanced Twelve's Bounty III","ui/icon/005000/005465.tex","",17,18,,0,"",18,0
+333,"Bountiful Yield Mastery","ui/icon/005000/005429.tex","",16,17,,68093,"",17,0
+334,"Unearth Mastery",,"",0,0,,0,"",0,0
+335,"Impulsive Appraisal Mastery",,"",0,0,,0,"",0,0
+336,"Bountiful Harvest Mastery","ui/icon/005000/005454.tex","",17,18,,68159,"",18,0
+337,"Leaf Turn Mastery",,"",0,0,,0,"",0,0
+338,"Impulsive Appraisal Mastery",,"",0,0,,0,"",0,0
+339,"Basic Synthesis Mastery","ui/icon/006000/006979.tex","",8,9,,0,"",9,0
+340,"Basic Synthesis Mastery","ui/icon/006000/006980.tex","",9,10,,0,"",10,0
+341,"Basic Synthesis Mastery","ui/icon/006000/006981.tex","",10,11,,0,"",11,0
+342,"Basic Synthesis Mastery","ui/icon/006000/006982.tex","",11,12,,0,"",12,0
+343,"Basic Synthesis Mastery","ui/icon/006000/006983.tex","",12,13,,0,"",13,0
+344,"Basic Synthesis Mastery","ui/icon/006000/006984.tex","",13,14,,0,"",14,0
+345,"Basic Synthesis Mastery","ui/icon/006000/006985.tex","",14,15,,0,"",15,0
+346,"Basic Synthesis Mastery","ui/icon/006000/006986.tex","",15,16,,0,"",16,0
+347,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",8,9,,0,"",9,0
+348,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",9,10,,0,"",10,0
+349,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",10,11,,0,"",11,0
+350,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",11,12,,0,"",12,0
+351,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",12,13,,0,"",13,0
+352,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",13,14,,0,"",14,0
+353,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",14,15,,0,"",15,0
+354,"Rapid Synthesis Mastery","ui/icon/006000/006978.tex","",15,16,,0,"",16,0
+355,"Enhanced Outburst","ui/icon/005000/005681.tex","",0,0,,0,"",0,0
+356,"Practice Makes Perfect","ui/icon/006000/006987.tex","",8,9,,0,"",9,1
+357,"Practice Makes Perfect","ui/icon/006000/006987.tex","",9,10,,0,"",10,1
+358,"Practice Makes Perfect","ui/icon/006000/006987.tex","",10,11,,0,"",11,1
+359,"Practice Makes Perfect","ui/icon/006000/006987.tex","",11,12,,0,"",12,1
+360,"Practice Makes Perfect","ui/icon/006000/006987.tex","",12,13,,0,"",13,1
+361,"Practice Makes Perfect","ui/icon/006000/006987.tex","",13,14,,0,"",14,1
+362,"Practice Makes Perfect","ui/icon/006000/006987.tex","",14,15,,0,"",15,1
+363,"Practice Makes Perfect","ui/icon/006000/006987.tex","",15,16,,0,"",16,1
+364,"Greased Lightning","ui/icon/005000/005239.tex","",2,41,,0,"",41,0
+365,"Enhanced Greased Lightning","ui/icon/005000/005230.tex","",2,41,,0,"",41,0
+366,"Enhanced Greased Lightning II","ui/icon/005000/005231.tex","",20,21,,0,"",21,0
+367,"Enhanced Greased Lightning III","ui/icon/005000/005240.tex","",20,21,,0,"",21,0
+368,"Maim and Mend","ui/icon/005000/005185.tex","",40,181,,0,"BSM",181,0
+369,"Maim and Mend II","ui/icon/005000/005186.tex","",40,181,,0,"Disciple of War",181,0
+370,"Addersgall","ui/icon/006000/006451.tex","",40,181,,0,"",181,0
+371,"Somanoutic Oath","ui/icon/006000/006452.tex","",40,181,,0,"",181,0
+372,"Somanoutic Oath II","ui/icon/006000/006453.tex","",40,181,,0,"",181,0
+373,"Addersting","ui/icon/006000/006454.tex","",40,181,,0,"",181,0
+374,"Offensive Magic Mastery","ui/icon/006000/006455.tex","",40,181,,0,"",181,0
+375,"Enhanced Kerachole","ui/icon/006000/006456.tex","",40,181,,0,"",181,0
+376,"Offensive Magic Mastery II","ui/icon/006000/006457.tex","",40,181,,0,"",181,0
+377,"Enhanced Healing Magic","ui/icon/006000/006826.tex","",40,181,,0,"",181,0
+378,"Enhanced Zoe","ui/icon/006000/006458.tex","",40,181,,0,,181,0
+379,"Soul Gauge","ui/icon/006000/006401.tex","",39,180,,0,"",180,0
+380,"Melee Mastery","ui/icon/006000/006801.tex","",39,180,,0,"",180,0
+381,"Enhanced Avatar","ui/icon/006000/006403.tex","",39,180,,0,"",180,0
+382,"Hellsgate","ui/icon/006000/006404.tex","",39,180,,0,"",180,0
+383,"Tempered Soul","ui/icon/006000/006405.tex","",39,180,,0,"GLA",180,0
+384,"Shroud Gauge","ui/icon/006000/006406.tex","",39,180,,69614,"",180,0
+385,"Enhanced Arcane Crest","ui/icon/006000/006407.tex","",39,180,,0,"",180,0
+386,"Void Soul","ui/icon/006000/006408.tex","",39,180,,0,"",180,0
+387,"Enhanced Arcane Circle","ui/icon/006000/006409.tex","",39,180,,0,"",180,0
+388,"Inner Quiet","ui/icon/006000/006988.tex","",8,9,,0,"",9,0
+389,"Inner Quiet","ui/icon/006000/006988.tex","",9,10,,0,"",10,0
+390,"Inner Quiet","ui/icon/006000/006988.tex","",10,11,,0,"",11,0
+391,"Inner Quiet","ui/icon/006000/006988.tex","",11,12,,0,"",12,0
+392,"Inner Quiet","ui/icon/006000/006988.tex","",12,13,,0,"",13,0
+393,"Inner Quiet","ui/icon/006000/006988.tex","",13,14,,0,"",14,0
+394,"Inner Quiet","ui/icon/006000/006988.tex","",14,15,,0,"",15,0
+395,"Inner Quiet","ui/icon/006000/006988.tex","",15,16,,0,"",16,0
+396,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",8,9,,0,"",9,0
+397,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",9,10,,0,"",10,0
+398,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",10,11,,0,"",11,0
+399,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",11,12,,0,"",12,0
+400,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",12,13,,0,"",13,0
+401,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",13,14,,0,"",14,0
+402,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",14,15,,0,"",15,0
+403,"Careful Synthesis Mastery","ui/icon/006000/006989.tex","",15,16,,0,"",16,0
+404,"Groundwork Mastery","ui/icon/006000/006990.tex","",8,9,,0,"",9,0
+405,"Groundwork Mastery","ui/icon/006000/006991.tex","",9,10,,0,"",10,0
+406,"Groundwork Mastery","ui/icon/006000/006992.tex","",10,11,,0,"",11,0
+407,"Groundwork Mastery","ui/icon/006000/006993.tex","",11,12,,0,"",12,0
+408,"Groundwork Mastery","ui/icon/006000/006994.tex","",12,13,,0,"",13,0
+409,"Groundwork Mastery","ui/icon/006000/006995.tex","",13,14,,0,"",14,0
+410,"Groundwork Mastery","ui/icon/006000/006996.tex","",14,15,,0,"",15,0
+411,"Groundwork Mastery","ui/icon/006000/006997.tex","",15,16,,0,"",16,0
+412,"Sheltron Mastery","ui/icon/005000/005218.tex","",19,20,,0,"",20,0
+413,"Enhanced Intervention","ui/icon/005000/005219.tex","",19,20,,0,"",20,0
+414,"Divine Magic Mastery II","ui/icon/005000/005220.tex","",19,20,,0,"",20,0
+415,"Spirits Within Mastery","ui/icon/005000/005221.tex","",19,20,,0,"",20,0
+416,"Enhanced Divine Veil","ui/icon/005000/005222.tex","",19,20,,0,"",20,0
+417,"Enhanced Shake It Off","ui/icon/005000/005266.tex","",21,22,,0,"",22,0
+418,"Raw Intuition Mastery","ui/icon/005000/005267.tex","",21,22,,0,"",22,0
+419,"Enhanced Nascent Flash","ui/icon/005000/005268.tex","",21,22,,0,"",22,0
+420,"Enhanced Equilibrium","ui/icon/005000/005269.tex","",21,22,,0,"",22,0
+421,"Enhanced Onslaught","ui/icon/005000/005270.tex","",21,22,,0,"PGL",22,0
+422,"Enhanced Unmend","ui/icon/006000/006064.tex","",32,98,,0,"",98,0
+423,"Enhanced Living Shadow II","ui/icon/006000/006066.tex","",32,98,,0,"",98,0
+424,"Heart of Stone Mastery","ui/icon/006000/006304.tex","",37,149,,0,"",149,0
+425,"Enhanced Aurora","ui/icon/006000/006305.tex","",37,149,,0,"GLA",149,0
+426,"Enhanced Continuation","ui/icon/006000/006306.tex","",37,149,,0,"",149,0
+427,"Cartridge Charge II","ui/icon/006000/006307.tex","",37,149,,0,"",149,0
+428,"Steel Peak Mastery","ui/icon/005000/005241.tex","",20,21,,67564,"",21,0
+429,"Howling Fist Mastery","ui/icon/005000/005242.tex","",20,21,,0,"",21,0
+430,"Arm of the Destroyer Mastery","ui/icon/005000/005243.tex","",20,21,,0,"",21,0
+431,"Enhanced Thunderclap","ui/icon/005000/005244.tex","",20,21,,0,"PGL",21,0
+432,"Enhanced Brotherhood","ui/icon/005000/005245.tex","",20,21,,0,"",21,0
+433,"Enhanced Perfect Balance","ui/icon/005000/005246.tex","",20,21,,67567,"",21,0
+434,"Enhanced Jump","ui/icon/005000/005294.tex","",22,23,,67228,"",23,0
+435,"Enhanced Coerthan Torment","ui/icon/005000/005290.tex","",22,23,,0,"",23,0
+436,"Enhanced Spineshatter Dive","ui/icon/005000/005291.tex","",0,0,,0,"GLA",0,0
+437,"Lance Mastery II","ui/icon/005000/005288.tex","",22,23,,0,"",23,0
+438,"Enhanced Life Surge","ui/icon/005000/005277.tex","",22,23,,0,"GLA",23,0
+439,"Shukiho III","ui/icon/005000/005417.tex","",30,92,,0,"",92,0
+440,"Enhanced Meisui","ui/icon/005000/005418.tex","",30,92,,0,"",92,0
+441,"Enhanced Raiton","ui/icon/005000/005419.tex","",30,92,,0,"",92,0
+442,"Enhanced Tsubame-gaeshi","ui/icon/006000/006155.tex","",0,0,,0,"",0,0
+443,"Enhanced Meikyo Shisui","ui/icon/006000/006156.tex","",34,111,,0,"GLA",111,0
+444,"Quick Nock Mastery","ui/icon/005000/005316.tex","",23,24,,0,"",24,0
+445,"Enhanced Bloodletter","ui/icon/005000/005317.tex","",23,24,,0,"PGL",24,0
+446,"Enhanced Apex Arrow","ui/icon/005000/005318.tex","",23,24,,0,"",24,0
+447,"Enhanced Troubadour","ui/icon/005000/005319.tex","",23,24,,0,,24,0
+448,"Minstrel's Coda","ui/icon/005000/005320.tex","",23,24,,0,"",24,0
+449,"Spread Shot Mastery","ui/icon/006000/006017.tex","",31,96,,0,"",96,0
+450,"Enhanced Reassemble","ui/icon/006000/006018.tex","",31,96,,0,"GLA",96,0
+451,"Queen's Gambit","ui/icon/006000/006019.tex","",31,96,,0,"",96,0
+452,"Enhanced Tactician","ui/icon/006000/006020.tex","",31,96,,0,,96,0
+453,"Enhanced Technical Finish","ui/icon/006000/006357.tex","",38,150,,0,"",150,0
+454,"Enhanced Esprit","ui/icon/006000/006358.tex","",38,150,,0,"",150,0
+455,"Enhanced Flourish","ui/icon/006000/006359.tex","",38,150,,0,"",150,0
+456,"Enhanced Shield Samba","ui/icon/006000/006360.tex","",38,150,,0,,150,0
+457,"Enhanced Devilment","ui/icon/006000/006361.tex","",38,150,,0,"",150,0
+458,"Aspect Mastery II","ui/icon/005000/005366.tex","",7,55,,0,"",55,0
+459,"Aspect Mastery III","ui/icon/005000/005367.tex","",7,55,,0,"",55,0
+460,"Enochian","ui/icon/005000/005368.tex","",25,26,,67217,"",26,0
+461,"Enhanced Foul","ui/icon/005000/005369.tex","",25,26,,0,"",26,0
+462,"Aspect Mastery IV","ui/icon/005000/005370.tex","",25,26,,0,"",26,0
+463,"Enhanced Manafont","ui/icon/005000/005371.tex","",25,26,,0,,26,0
+464,"Enhanced Sharpcast II","ui/icon/005000/005372.tex","",0,0,,0,"GLA",0,0
+465,"Aspect Mastery V","ui/icon/005000/005373.tex","",25,26,,0,"",26,0
+466,"Enhanced Aethercharge","ui/icon/005000/005396.tex","",26,69,,66639,"",69,0
+467,"Enhanced Aethercharge II","ui/icon/005000/005397.tex","",26,69,,0,"",69,0
+468,"Ruby Summoning Mastery","ui/icon/005000/005682.tex","",27,28,,66627,"",28,0
+469,"Topaz Summoning Mastery","ui/icon/005000/005683.tex","",27,28,,66628,"",28,0
+470,"Emerald Summoning Mastery","ui/icon/005000/005684.tex","",27,28,,66631,"",28,0
+471,"Enkindle","ui/icon/005000/005685.tex","",27,28,,66632,"",28,0
+472,"",,"",0,0,,0,"",0,0
+473,"Ruin Mastery II","ui/icon/005000/005687.tex","",27,28,,67638,"",28,0
+474,"Aethercharge Mastery","ui/icon/005000/005690.tex","",27,28,,67640,"",28,0
+475,"Enhanced Energy Siphon","ui/icon/005000/005691.tex","",27,28,,0,"",28,0
+476,"Ruin Mastery III","ui/icon/005000/005688.tex","",27,28,,0,"",28,0
+477,"Outburst Mastery","ui/icon/005000/005692.tex","",27,28,,0,"",28,0
+478,"Outburst Mastery II","ui/icon/005000/005693.tex","",27,28,,0,"",28,0
+479,"Ruin Mastery IV","ui/icon/005000/005689.tex","",27,28,,0,"",28,0
+480,"Enhanced Radiant Aegis","ui/icon/005000/005694.tex","",27,28,,0,"GLA",28,0
+481,"Enkindle II","ui/icon/005000/005695.tex","",27,28,,0,"",28,0
+482,"Mana Stack","ui/icon/006000/006208.tex","",35,112,,0,"",112,0
+483,"Red Magic Mastery II","ui/icon/006000/006209.tex","",35,112,,0,"",112,0
+484,"Red Magic Mastery III","ui/icon/006000/006210.tex","",35,112,,0,"",112,0
+485,"Enhanced Acceleration","ui/icon/006000/006211.tex","",35,112,,0,"GLA",112,0
+486,"Enhanced Manafication II","ui/icon/006000/006212.tex","",0,0,,0,"",0,0
+487,"Glare Mastery","ui/icon/005000/005343.tex","",24,25,,0,"",25,0
+488,"Holy Mastery","ui/icon/005000/005344.tex","",24,25,,0,"",25,0
+489,"Enhanced Healing Magic","ui/icon/006000/006826.tex","",24,25,,0,"",25,0
+490,"Enhanced Divine Benison","ui/icon/005000/005345.tex","",24,25,,0,"GLA",25,0
+491,"Broil Mastery IV","ui/icon/005000/005704.tex","",28,29,,0,"",29,0
+492,"Art of War Mastery","ui/icon/005000/005705.tex","",28,29,,0,"",29,0
+493,"Enhanced Healing Magic","ui/icon/006000/006826.tex","",28,29,,0,"",29,0
+494,"Enhanced Deployment Tactics","ui/icon/005000/005706.tex","",28,29,,0,,29,0
+495,"Enhanced Draw","ui/icon/006000/006115.tex","",0,0,,0,"",0,0
+496,"Enhanced Draw II","ui/icon/006000/006116.tex","",0,0,,0,"",0,0
+497,"Malefic Mastery IV","ui/icon/006000/006117.tex","",33,99,,0,"",99,0
+498,"Gravity Mastery","ui/icon/006000/006118.tex","",33,99,,0,"",99,0
+499,"Enhanced Healing Magic","ui/icon/006000/006826.tex","",33,99,,0,"",99,0
+500,"Enhanced Celestial Intersection","ui/icon/006000/006119.tex","",33,99,,0,"GLA",99,0
+501,"Starfishing","ui/icon/005000/005487.tex","",18,19,,0,"",19,0
+502,"Enhanced Summon Bahamut","ui/icon/005000/005696.tex","",27,28,,0,"",28,0
+503,"Elemental Mastery","ui/icon/005000/005697.tex","",27,28,,0,"",28,0
+504,"Melee Mastery","ui/icon/006000/006801.tex","",19,20,,0,"",20,0
+505,"Melee Mastery","ui/icon/006000/006801.tex","",21,22,,0,"",22,0
+506,"Melee Mastery","ui/icon/006000/006801.tex","",32,98,,0,"",98,0
+507,"Melee Mastery","ui/icon/006000/006801.tex","",37,149,,0,"",149,0
+508,"Lance Mastery III","ui/icon/005000/005292.tex","",22,23,,0,"",23,0
+509,"Enhanced Enochian III","ui/icon/005000/005374.tex","",25,26,,0,"MIN",26,0
+510,"Physis Mastery","ui/icon/006000/006459.tex","",40,181,,0,"",181,0
+511,"Enhanced Living Shadow","ui/icon/006000/006065.tex","",32,98,,0,"",98,0
+512,"Flint Strike Mastery","ui/icon/005000/005248.tex","",20,21,,0,"",21,0
+513,"Tornado Kick Mastery","ui/icon/005000/005247.tex","",20,21,,0,"",21,0
+514,"Enhanced Ikishoten","ui/icon/006000/006157.tex","",34,111,,0,"",111,0
+515,"Adept Assassination","ui/icon/005000/005420.tex","",30,92,,67222,"",92,0
+516,"Melee Mastery","ui/icon/006000/006801.tex","",30,92,,0,"",92,0
+517,"Marksman's Mastery","ui/icon/006000/006801.tex","",31,96,,0,"",96,0
+518,"Melee Mastery","ui/icon/006000/006801.tex","",20,21,,0,"",21,0
+519,"Fuga Mastery","ui/icon/006000/006158.tex","",34,111,,0,"",111,0
+520,"Way of the Samurai","ui/icon/006000/006801.tex","",34,111,,0,"",111,0
+521,"Way of the Samurai II","ui/icon/006000/006802.tex","",34,111,,0,"",111,0
+522,"Melee Mastery II","ui/icon/006000/006802.tex","",30,92,,0,"",92,0
+523,"Melee Mastery II","ui/icon/006000/006802.tex","",39,180,,0,"",180,0
+524,"Viper's Fangs","ui/icon/006000/006501.tex","",41,196,,0,"",196,0
+525,"Viper's Maw","ui/icon/006000/006502.tex","",41,196,,0,"",196,0
+526,"Viper's Bite","ui/icon/006000/006503.tex","",41,196,,0,"",196,0
+527,"Viper's Thresh","ui/icon/006000/006504.tex","",41,196,,0,"",196,0
+528,"Viper's Rattle","ui/icon/006000/006505.tex","",41,196,,0,"",196,0
+529,"Enhanced Slither","ui/icon/006000/006506.tex","",41,196,,0,"PGL",196,0
+530,"Enhanced Viper's Rattle","ui/icon/006000/006507.tex","",41,196,,0,"",196,0
+531,"Serpent's Lineage","ui/icon/006000/006508.tex","",41,196,,0,"",196,0
+532,"Uncoiled Fangs","ui/icon/006000/006510.tex","",41,196,,0,"",196,0
+533,"Enhanced Serpent's Lineage","ui/icon/006000/006511.tex","",41,196,,0,"",196,0
+534,"Serpent's Legacy","ui/icon/006000/006509.tex","",41,196,,0,"",196,0
+535,"",,"",0,0,,0,"",0,0
+536,"",,"",0,0,,0,"",0,0
+537,"Palette Gauge","ui/icon/006000/006551.tex","",42,197,,0,"",197,0
+538,"Enhanced Artistry","ui/icon/006000/006552.tex","",42,197,,0,"",197,0
+539,"Enhanced Smudge","ui/icon/006000/006553.tex","",42,197,,0,"",197,0
+540,"Enhanced Pictomancy II","ui/icon/006000/006554.tex","",42,197,,0,"GLA",197,0
+541,"Enhanced Tempera","ui/icon/006000/006555.tex","",42,197,,0,"",197,0
+542,"Enhanced Palette","ui/icon/006000/006556.tex","",42,197,,0,"",197,0
+543,"Enhanced Pictomancy III","ui/icon/006000/006560.tex","",42,197,,0,"",197,0
+544,"Enhanced Pictomancy V","ui/icon/006000/006561.tex","",42,197,,0,"",197,0
+545,"Enhanced Pictomancy IV","ui/icon/006000/006559.tex","",42,197,,0,"PGL",197,0
+546,"Enhanced Pictomancy","ui/icon/006000/006558.tex","",42,197,,0,"",197,0
+547,"",,"",0,0,,0,"",0,0
+548,"Delicate Synthesis Mastery","ui/icon/006000/006951.tex","",8,9,,0,"",9,0
+549,"Delicate Synthesis Mastery","ui/icon/006000/006952.tex","",9,10,,0,"",10,0
+550,"Delicate Synthesis Mastery","ui/icon/006000/006953.tex","",10,11,,0,"",11,0
+551,"Delicate Synthesis Mastery","ui/icon/006000/006954.tex","",11,12,,0,"",12,0
+552,"Delicate Synthesis Mastery","ui/icon/006000/006955.tex","",12,13,,0,"",13,0
+553,"Delicate Synthesis Mastery","ui/icon/006000/006956.tex","",13,14,,0,"",14,0
+554,"Delicate Synthesis Mastery","ui/icon/006000/006957.tex","",14,15,,0,"",15,0
+555,"Delicate Synthesis Mastery","ui/icon/006000/006958.tex","",15,16,,0,"",16,0
+556,"Expedience","ui/icon/006000/006975.tex","",8,9,,0,"",9,0
+557,"Expedience","ui/icon/006000/006975.tex","",9,10,,0,"",10,0
+558,"Expedience","ui/icon/006000/006975.tex","",10,11,,0,"",11,0
+559,"Expedience","ui/icon/006000/006975.tex","",11,12,,0,"",12,0
+560,"Expedience","ui/icon/006000/006975.tex","",12,13,,0,"",13,0
+561,"Expedience","ui/icon/006000/006975.tex","",13,14,,0,"",14,0
+562,"Expedience","ui/icon/006000/006975.tex","",14,15,,0,"",15,0
+563,"Expedience","ui/icon/006000/006975.tex","",15,16,,0,"",16,0
+564,"Sentinel Mastery","ui/icon/005000/005202.tex","",19,20,,0,"",20,0
+565,"Requiescat Mastery","ui/icon/005000/005223.tex","",19,20,,0,"",20,0
+566,"Enhanced Blade of Valor","ui/icon/005000/005224.tex","",19,20,,0,"",20,0
+567,"Vengeance Mastery","ui/icon/005000/005271.tex","",21,22,,0,"",22,0
+568,"Enhanced Inner Release","ui/icon/005000/005272.tex","",21,22,,0,"",22,0
+569,"Enhanced Primal Rend","ui/icon/005000/005273.tex","",21,22,,0,"",22,0
+570,"Blood Weapon Mastery","ui/icon/006000/006053.tex","",32,98,,0,"",98,0
+571,"Shadow Wall Mastery","ui/icon/006000/006068.tex","",32,98,,0,"",98,0
+572,"Enhanced Delirium","ui/icon/006000/006069.tex","",32,98,,0,"",98,0
+573,"Enhanced Living Shadow III","ui/icon/006000/006070.tex","",32,98,,0,"",98,0
+574,"Nebula Mastery","ui/icon/006000/006308.tex","",37,149,,0,"",149,0
+575,"Enhanced Continuation II","ui/icon/006000/006309.tex","",37,149,,0,"",149,0
+576,"Enhanced Bloodfest","ui/icon/006000/006310.tex","",37,149,,0,"",149,0
+577,"Beast Chakra Mastery","ui/icon/005000/005249.tex","",20,21,,0,"",21,0
+578,"Enhanced Riddle of Wind","ui/icon/005000/005526.tex","",20,21,,0,"",21,0
+579,"Enhanced Riddle of Fire","ui/icon/005000/005527.tex","",20,21,,0,"",21,0
+580,"Enhanced Winged Glide","ui/icon/005000/005295.tex","",22,23,,0,"GLA",23,0
+581,"Enhanced Dragonfire Dive","ui/icon/005000/005296.tex","",22,23,,0,"",23,0
+582,"Lance Mastery IV","ui/icon/005000/005293.tex","",22,23,,0,"",23,0
+583,"Enhanced Stardiver","ui/icon/005000/005298.tex","",22,23,,0,"",23,0
+584,"Increase Attack Speed","ui/icon/005000/005421.tex","",30,92,,0,"",92,0
+585,"Mug Mastery","ui/icon/005000/005422.tex","",30,92,,0,"",92,0
+586,"Trick Attack Mastery","ui/icon/005000/005423.tex","",30,92,,0,"",92,0
+587,"Enhanced Dokumori","ui/icon/005000/005424.tex","",30,92,,0,"",92,0
+588,"Enhanced Ten Chi Jin","ui/icon/005000/005726.tex","",30,92,,0,"",92,0
+589,"Third Eye Mastery","ui/icon/006000/006159.tex","",34,111,,0,"",111,0
+590,"Hakaze Mastery","ui/icon/006000/006160.tex","",34,111,,0,"",111,0
+591,"Enhanced Hissatsu","ui/icon/006000/006161.tex","",34,111,,0,,111,0
+592,"Enhanced Ikishoten II","ui/icon/006000/006162.tex","",34,111,,0,"",111,0
+593,"Enhanced Meikyo Shisui II","ui/icon/006000/006163.tex","",34,111,,0,"",111,0
+594,"Enhanced Enshroud","ui/icon/006000/006411.tex","",39,180,,0,"",180,0
+595,"",,"",0,0,,0,"",0,0
+596,"Enhanced Gluttony","ui/icon/006000/006413.tex","",39,180,,0,"",180,0
+597,"Enhanced Plentiful Harvest","ui/icon/006000/006414.tex","",39,180,,0,"",180,0
+598,"Wide Volley Mastery","ui/icon/005000/005322.tex","",23,24,,0,"",24,0
+599,"Bloodletter Mastery","ui/icon/005000/005323.tex","",23,24,,0,"",24,0
+600,"Enhanced Barrage","ui/icon/005000/005301.tex","",23,24,,0,"",24,0
+601,"Enhanced Troubadour II","ui/icon/005000/005324.tex","",23,24,,0,"",24,0
+602,"Enhanced Radiant Finale","ui/icon/005000/005601.tex","",23,24,,0,"",24,0
+603,"Heat Blast Mastery","ui/icon/006000/006021.tex","",31,96,,0,"",96,0
+604,"Double-barrel Mastery","ui/icon/006000/006022.tex","",31,96,,0,"",96,0
+605,"Enhanced Multiweapon","ui/icon/006000/006023.tex","",31,96,,0,"GLA",96,0
+606,"Enhanced Multiweapon II","ui/icon/006000/006024.tex","",31,96,,0,"",96,0
+607,"Enhanced Tactician II","ui/icon/006000/006025.tex","",31,96,,0,"",96,0
+608,"Enhanced Barrel Stabilizer","ui/icon/006000/006026.tex","",31,96,,0,"",96,0
+609,"Enhanced Standard Finish","ui/icon/006000/006362.tex","",38,150,,0,"",150,0
+610,"Enhanced Flourish II","ui/icon/006000/006363.tex","",38,150,,0,"",150,0
+611,"Enhanced Shield Samba II","ui/icon/006000/006364.tex","",38,150,,0,"",150,0
+612,"Enhanced Technical Finish II","ui/icon/006000/006365.tex","",38,150,,0,"",150,0
+613,"Thunder Mastery III","ui/icon/005000/005651.tex","",25,26,,0,"",26,0
+614,"Enhanced Ley Lines","ui/icon/005000/005652.tex","",25,26,,0,"",26,0
+615,"Enhanced Polyglot II","ui/icon/005000/005653.tex","",25,26,,0,"",26,0
+616,"Enhanced Astral Fire","ui/icon/005000/005654.tex","",25,26,,0,"",26,0
+617,"Enhanced Fester","ui/icon/005000/005398.tex","",27,28,,0,"",28,0
+618,"Enhanced Searing Light","ui/icon/005000/005399.tex","",27,28,,0,"",28,0
+619,"Enhanced Summon Bahamut II","ui/icon/005000/005698.tex","",27,28,,0,"",28,0
+620,"Enhanced Embolden","ui/icon/006000/006213.tex","",35,112,,0,"",112,0
+621,"Enhanced Acceleration II","ui/icon/006000/006214.tex","",35,112,,0,"",112,0
+622,"Enhanced Manafication","ui/icon/006000/006216.tex","",35,112,,0,"",112,0
+623,"Enhanced Presence of Mind","ui/icon/005000/005346.tex","",24,25,,0,"",25,0
+624,"Medica Mastery","ui/icon/005000/005347.tex","",24,25,,0,"",25,0
+625,"Enhanced Tetragrammaton","ui/icon/005000/005349.tex","",24,25,,0,"GLA",25,0
+626,"Enhanced Temperance","ui/icon/005000/005348.tex","",24,25,,0,"",25,0
+627,"Enhanced Chain Stratagem","ui/icon/005000/005707.tex","",28,29,,0,"",29,0
+628,"Succor Mastery","ui/icon/005000/005708.tex","",28,29,,0,"",29,0
+629,"Enhanced Recitation","ui/icon/005000/005710.tex","",28,29,,0,,29,0
+630,"",,"",0,0,,0,"",0,0
+631,"Minor Arcana Mastery","ui/icon/006000/006120.tex","",33,99,,0,"",99,0
+632,"Enhanced Divination","ui/icon/006000/006121.tex","",33,99,,0,"",99,0
+633,"Aspected Helios Mastery","ui/icon/006000/006122.tex","",33,99,,0,"",99,0
+634,"Enhanced Essential Dignity II","ui/icon/006000/006124.tex","",33,99,,0,"PGL",99,0
+635,"Enhanced Neutral Sect","ui/icon/006000/006123.tex","",33,99,,0,"",99,0
+636,"Enhanced Soteria","ui/icon/006000/006461.tex","",40,181,,0,,181,0
+637,"Eukrasian Prognosis Mastery","ui/icon/006000/006460.tex","",40,181,,0,"",181,0
+638,"Enhanced Physis II","ui/icon/006000/006462.tex","",40,181,,0,"",181,0
+639,"Enhanced Rampart","ui/icon/006000/006804.tex","",0,113,,0,"",113,0
+640,"Enhanced Reprisal","ui/icon/006000/006805.tex","",0,113,,0,"",113,0
+641,"Enhanced Feint","ui/icon/006000/006851.tex","",0,114,,0,"",114,0
+642,"Enhanced Second Wind","ui/icon/006000/006852.tex","",0,118,,0,"",118,0
+643,"Enhanced Addle","ui/icon/006000/006827.tex","",0,198,,0,"",198,0
+644,"Enhanced Swiftcast","ui/icon/006000/006828.tex","",0,199,,0,,199,0
+645,"Collector's High Standard","ui/icon/005000/005447.tex","",16,17,,67631,"",17,0
+646,"Collector's High Standard","ui/icon/005000/005472.tex","",17,18,,67631,"",18,0
+647,"Revisit","ui/icon/005000/005446.tex","",16,17,,0,"",17,0
+648,"Revisit","ui/icon/005000/005471.tex","",17,18,,0,"",18,0
+649,"Fisher's Instinct","ui/icon/005000/005480.tex","",18,19,,0,"",19,0
+650,"Melee Mastery II","ui/icon/006000/006802.tex","",19,20,,0,"",20,0
+651,"White Magic Mastery","ui/icon/006000/006831.tex","",24,25,,0,"",25,0
+652,"Enchanted Blade Mastery","ui/icon/006000/006831.tex","",35,112,,0,"",112,0
+653,"Melee Mastery","ui/icon/006000/006806.tex","",22,23,,0,"",23,0
+654,"Melee Mastery II","ui/icon/006000/006802.tex","",21,22,,0,"",22,0
+655,"Way of the Samurai III","ui/icon/006000/006803.tex","",34,111,,0,"",111,0
+656,"Tactician's Mastery","ui/icon/006000/006831.tex","",28,29,,0,"",29,0
+657,"Melee Mastery III","ui/icon/006000/006803.tex","",39,180,,0,"",180,0
+658,"Marksman's Mastery II","ui/icon/006000/006802.tex","",31,96,,0,"",96,0
+659,"Enhanced Enochian IV","ui/icon/005000/005655.tex","",25,26,,0,"WAR",26,0
+660,"Melee Mastery II","ui/icon/006000/006802.tex","",20,21,,0,"",21,0
+661,"Melee Mastery III","ui/icon/006000/006803.tex","",30,92,,0,"",92,0
+662,"Dynamic Dancer","ui/icon/006000/006806.tex","",38,150,,0,"",150,0
+663,"Melee Mastery II","ui/icon/006000/006802.tex","",32,98,,0,"",98,0
+664,"Arcane Mastery","ui/icon/006000/006831.tex","",27,28,,0,"",28,0
+665,"Enhanced Fight or Flight","ui/icon/005000/005205.tex","",19,20,,67570,"",20,0
+666,"Enhanced No Mercy","ui/icon/006000/006311.tex","",37,149,,0,"",149,0
+667,"Melee Mastery II","ui/icon/006000/006802.tex","",37,149,,0,"",149,0
+668,"Ranged Mastery","ui/icon/006000/006806.tex","",23,24,,0,"",24,0
+669,"Magick Mastery","ui/icon/006000/006831.tex","",40,181,,0,"",181,0
+670,"Maim and Mend","ui/icon/005000/005185.tex","",42,197,,0,"BSM",197,0
+671,"Maim and Mend II","ui/icon/005000/005186.tex","",42,197,,0,"Disciple of War",197,0
+672,"Pictomancy Mastery","ui/icon/006000/006829.tex","",42,197,,0,"",197,0
+673,"Magick Mastery","ui/icon/006000/006831.tex","",33,99,,0,"",99,0
+674,"Melee Mastery","ui/icon/006000/006801.tex","",41,196,,0,"",196,0
+675,"Melee Mastery II","ui/icon/006000/006802.tex","",41,196,,0,"",196,0
+676,"Pictomancy Mastery II","ui/icon/006000/006830.tex","",42,197,,0,"",197,0
+677,"Pictomancy Mastery III","ui/icon/006000/006832.tex","",42,197,,0,"",197,0
+678,"Pictomancy Mastery IV","ui/icon/006000/006833.tex","",42,197,,0,"",197,0
+679,"",,"",0,0,,0,"",0,0
+680,"",,"",0,0,,0,"",0,0
+681,"",,"",0,0,,0,"",0,0
+682,"",,"",0,0,,0,"",0,0
+683,"",,"",0,0,,0,"",0,0
+684,"",,"",0,0,,0,"",0,0
+685,"",,"",0,0,,0,"",0,0
+686,"",,"",0,0,,0,"",0,0
+687,"",,"",0,0,,0,"",0,0
+688,"",,"",0,0,,0,"",0,0
+689,"",,"",0,0,,0,"",0,0
+690,"",,"",0,0,,0,"",0,0
+691,"",,"",0,0,,0,"",0,0
+692,"",,"",0,0,,0,"",0,0
+693,"",,"",0,0,,0,"",0,0
+694,"",,"",0,0,,0,"",0,0
+695,"",,"",0,0,,0,"",0,0
+696,"",,"",0,0,,0,"",0,0
+697,"",,"",0,0,,0,"",0,0
+698,"",,"",0,0,,0,"",0,0
+699,"",,"",0,0,,0,"",0,0
+700,"",,"",0,0,,0,"",0,0
+701,"",,"",0,0,,0,"",0,0
+702,"",,"",0,0,,0,"",0,0
+703,"",,"",0,0,,0,"",0,0
+704,"",,"",0,0,,0,"",0,0
+705,"",,"",0,0,,0,"",0,0
+706,"",,"",0,0,,0,"",0,0
+707,"",,"",0,0,,0,"",0,0
+708,"",,"",0,0,,0,"",0,0
+709,"",,"",0,0,,0,"",0,0
+710,"",,"",0,0,,0,"",0,0
+711,"",,"",0,0,,0,"",0,0
+712,"",,"",0,0,,0,"",0,0
+713,"",,"",0,0,,0,"",0,0
+714,"",,"",0,0,,0,"",0,0
+715,"",,"",0,0,,0,"",0,0
+716,"",,"",0,0,,0,"",0,0
+717,"",,"",0,0,,0,"",0,0
+718,"",,"",0,0,,0,"",0,0
+719,"",,"",0,0,,0,"",0,0
+720,"",,"",0,0,,0,"",0,0
+721,"",,"",0,0,,0,"",0,0
+722,"",,"",0,0,,0,"",0,0
+723,"",,"",0,0,,0,"",0,0
+724,"",,"",0,0,,0,"",0,0
+725,"",,"",0,0,,0,"",0,0
+726,"",,"",0,0,,0,"",0,0
+727,"",,"",0,0,,0,"",0,0
+728,"",,"",0,0,,0,"",0,0
+729,"",,"",0,0,,0,"",0,0
+730,"",,"",0,0,,0,"",0,0
+731,"",,"",0,0,,0,"",0,0
+732,"",,"",0,0,,0,"",0,0
+733,"",,"",0,0,,0,"",0,0
+734,"",,"",0,0,,0,"",0,0
+735,"",,"",0,0,,0,"",0,0
+736,"",,"",0,0,,0,"",0,0
+737,"",,"",0,0,,0,"",0,0
+738,"",,"",0,0,,0,"",0,0
+739,"",,"",0,0,,0,"",0,0
+740,"",,"",0,0,,0,"",0,0
+741,"",,"",0,0,,0,"",0,0
+742,"",,"",0,0,,0,"",0,0
+743,"",,"",0,0,,0,"",0,0
+744,"",,"",0,0,,0,"",0,0
+745,"",,"",0,0,,0,"",0,0
+746,"",,"",0,0,,0,"",0,0
+747,"",,"",0,0,,0,"",0,0
+748,"",,"",0,0,,0,"",0,0
+749,"",,"",0,0,,0,"",0,0
+750,"",,"",0,0,,0,"",0,0
+751,"",,"",0,0,,0,"",0,0
+752,"",,"",0,0,,0,"",0,0
+753,"",,"",0,0,,0,"",0,0
+754,"",,"",0,0,,0,"",0,0
+755,"",,"",0,0,,0,"",0,0
+756,"",,"",0,0,,0,"",0,0
+757,"",,"",0,0,,0,"",0,0
+758,"",,"",0,0,,0,"",0,0
+759,"",,"",0,0,,0,"",0,0
+760,"",,"",0,0,,0,"",0,0
+761,"",,"",0,0,,0,"",0,0
+762,"",,"",0,0,,0,"",0,0
+763,"",,"",0,0,,0,"",0,0
+764,"",,"",0,0,,0,"",0,0
+765,"",,"",0,0,,0,"",0,0
+766,"",,"",0,0,,0,"",0,0
+767,"",,"",0,0,,0,"",0,0
+768,"",,"",0,0,,0,"",0,0
+769,"",,"",0,0,,0,"",0,0
+770,"",,"",0,0,,0,"",0,0
+771,"",,"",0,0,,0,"",0,0
+772,"",,"",0,0,,0,"",0,0
+773,"",,"",0,0,,0,"",0,0
+774,"",,"",0,0,,0,"",0,0
+775,"",,"",0,0,,0,"",0,0
+776,"",,"",0,0,,0,"",0,0
+777,"",,"",0,0,,0,"",0,0
+778,"",,"",0,0,,0,"",0,0
+779,"",,"",0,0,,0,"",0,0
+780,"",,"",0,0,,0,"",0,0
+781,"",,"",0,0,,0,"",0,0
+782,"",,"",0,0,,0,"",0,0
+783,"",,"",0,0,,0,"",0,0
+784,"",,"",0,0,,0,"",0,0
+785,"",,"",0,0,,0,"",0,0
+786,"",,"",0,0,,0,"",0,0
+787,"",,"",0,0,,0,"",0,0
+788,"",,"",0,0,,0,"",0,0
+789,"",,"",0,0,,0,"",0,0
+790,"",,"",0,0,,0,"",0,0
+791,"",,"",0,0,,0,"",0,0
+792,"",,"",0,0,,0,"",0,0
+793,"",,"",0,0,,0,"",0,0
+794,"",,"",0,0,,0,"",0,0
+795,"",,"",0,0,,0,"",0,0
+796,"",,"",0,0,,0,"",0,0
+797,"",,"",0,0,,0,"",0,0
+798,"",,"",0,0,,0,"",0,0
+799,"",,"",0,0,,0,"",0,0
+800,"",,"",0,0,,0,"",0,0
+801,"",,"",0,0,,0,"",0,0
+802,"",,"",0,0,,0,"",0,0
+803,"",,"",0,0,,0,"",0,0
+804,"",,"",0,0,,0,"",0,0
+805,"",,"",0,0,,0,"",0,0
+806,"",,"",0,0,,0,"",0,0
+807,"",,"",0,0,,0,"",0,0
+808,"",,"",0,0,,0,"",0,0
+809,"",,"",0,0,,0,"",0,0
+810,"",,"",0,0,,0,"",0,0
+811,"",,"",0,0,,0,"",0,0
+812,"",,"",0,0,,0,"",0,0
+813,"",,"",0,0,,0,"",0,0
+814,"",,"",0,0,,0,"",0,0
+815,"",,"",0,0,,0,"",0,0
+816,"",,"",0,0,,0,"",0,0
+817,"",,"",0,0,,0,"",0,0
+818,"",,"",0,0,,0,"",0,0
+819,"",,"",0,0,,0,"",0,0
+820,"",,"",0,0,,0,"",0,0
+821,"",,"",0,0,,0,"",0,0
+822,"",,"",0,0,,0,"",0,0
+823,"",,"",0,0,,0,"",0,0
+824,"",,"",0,0,,0,"",0,0
+825,"",,"",0,0,,0,"",0,0
+826,"",,"",0,0,,0,"",0,0
+827,"",,"",0,0,,0,"",0,0
+828,"",,"",0,0,,0,"",0,0
+829,"",,"",0,0,,0,"",0,0
+830,"",,"",0,0,,0,"",0,0
+831,"",,"",0,0,,0,"",0,0
+832,"",,"",0,0,,0,"",0,0
+833,"",,"",0,0,,0,"",0,0
+834,"",,"",0,0,,0,"",0,0
+835,"",,"",0,0,,0,"",0,0
+836,"",,"",0,0,,0,"",0,0
+837,"",,"",0,0,,0,"",0,0
+838,"",,"",0,0,,0,"",0,0
+839,"",,"",0,0,,0,"",0,0
+840,"",,"",0,0,,0,"",0,0
+841,"",,"",0,0,,0,"",0,0
+842,"",,"",0,0,,0,"",0,0
+843,"",,"",0,0,,0,"",0,0
+844,"",,"",0,0,,0,"",0,0
+845,"",,"",0,0,,0,"",0,0
+846,"",,"",0,0,,0,"",0,0
+847,"",,"",0,0,,0,"",0,0
+848,"",,"",0,0,,0,"",0,0
+849,"",,"",0,0,,0,"",0,0
+850,"",,"",0,0,,0,"",0,0
+851,"",,"",0,0,,0,"",0,0
+852,"",,"",0,0,,0,"",0,0
+853,"",,"",0,0,,0,"",0,0
+854,"",,"",0,0,,0,"",0,0
+855,"",,"",0,0,,0,"",0,0
+856,"",,"",0,0,,0,"",0,0
+857,"",,"",0,0,,0,"",0,0
+858,"",,"",0,0,,0,"",0,0
+859,"",,"",0,0,,0,"",0,0
+860,"",,"",0,0,,0,"",0,0
+861,"",,"",0,0,,0,"",0,0
+862,"",,"",0,0,,0,"",0,0
+863,"",,"",0,0,,0,"",0,0
+864,"",,"",0,0,,0,"",0,0
+865,"",,"",0,0,,0,"",0,0
+866,"",,"",0,0,,0,"",0,0
+867,"",,"",0,0,,0,"",0,0
+868,"",,"",0,0,,0,"",0,0
+869,"",,"",0,0,,0,"",0,0
+870,"",,"",0,0,,0,"",0,0
+871,"",,"",0,0,,0,"",0,0
+872,"",,"",0,0,,0,"",0,0
+873,"",,"",0,0,,0,"",0,0
+874,"",,"",0,0,,0,"",0,0
+875,"",,"",0,0,,0,"",0,0
+876,"",,"",0,0,,0,"",0,0
+877,"",,"",0,0,,0,"",0,0
+878,"",,"",0,0,,0,"",0,0
+879,"",,"",0,0,,0,"",0,0
+880,"",,"",0,0,,0,"",0,0
+881,"",,"",0,0,,0,"",0,0
+882,"",,"",0,0,,0,"",0,0
+883,"",,"",0,0,,0,"",0,0
+884,"",,"",0,0,,0,"",0,0
+885,"",,"",0,0,,0,"",0,0
+886,"",,"",0,0,,0,"",0,0
+887,"",,"",0,0,,0,"",0,0
+888,"",,"",0,0,,0,"",0,0
+889,"",,"",0,0,,0,"",0,0
+890,"",,"",0,0,,0,"",0,0
+891,"",,"",0,0,,0,"",0,0
+892,"",,"",0,0,,0,"",0,0
+893,"",,"",0,0,,0,"",0,0
+894,"",,"",0,0,,0,"",0,0
+895,"",,"",0,0,,0,"",0,0
+896,"",,"",0,0,,0,"",0,0
+897,"",,"",0,0,,0,"",0,0
+898,"",,"",0,0,,0,"",0,0
+899,"",,"",0,0,,0,"",0,0
+900,"",,"",0,0,,0,"",0,0
+901,"",,"",0,0,,0,"",0,0
+902,"",,"",0,0,,0,"",0,0
+903,"",,"",0,0,,0,"",0,0
+904,"",,"",0,0,,0,"",0,0
+905,"",,"",0,0,,0,"",0,0
+906,"",,"",0,0,,0,"",0,0
+907,"",,"",0,0,,0,"",0,0
+908,"",,"",0,0,,0,"",0,0
+909,"",,"",0,0,,0,"",0,0
+910,"",,"",0,0,,0,"",0,0
+911,"",,"",0,0,,0,"",0,0
+912,"",,"",0,0,,0,"",0,0

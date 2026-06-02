@@ -1,0 +1,263 @@
+﻿key,0,1,2
+#,Fish,IKDContentBonus,
+int32,FishParameter,IKDContentBonus,byte
+0,"","",0
+1,"Galadion Goby","",0
+2,"Galadion Chovy","",0
+3,"La Noscean Jelly","Jelled Together",0
+4,"Ghoul Barracuda","",0
+5,"Leopard Eel","",0
+6,"Sunfly","",0
+7,"Rhotano Wahoo","",0
+8,"Rhotano Sardine","",0
+9,"Deep Plaice","",0
+10,"Floefish","",0
+11,"Megasquid","",0
+12,"Oschon's Stone","",0
+13,"Jasperhead","",0
+14,"Tarnished Shark","Certifiable Shark Hunters",0
+15,"Rosy Bream","",0
+16,"Marine Bomb","Balloon Catchers",0
+17,"Tripod Fish","Balloon Catchers",0
+18,"Momora Mora","",0
+19,"Crimson Monkfish","",0
+20,"Lampfish","Balloon Catchers",0
+21,"Ogre Eel","",0
+22,"Tossed Dagger","",0
+23,"Shaggy Seadragon","Maritime Dragonslayers",0
+24,"Net Crawler","Crab Boat Crew",0
+25,"Cyan Octopus","Octopus Travelers",0
+26,"Heavenswimmer","",0
+27,"Merlthor Butterfly","",0
+28,"Gladius","",0
+29,"Dark Nautilus","",0
+30,"Chrome Hammerhead","Certifiable Shark Hunters",0
+31,"Merlthor Lobster","",0
+32,"Elder Dinichthys","",0
+33,"Drunkfish","",0
+34,"Little Leviathan","",0
+35,"Sabaton","",0
+36,"Shooting Star","",0
+37,"Merman's Mane","Octopus Travelers",0
+38,"Heavenskey","",0
+39,"Ghost Shark","Certifiable Shark Hunters",0
+40,"Quicksilver Blade","Certifiable Shark Hunters",0
+41,"Navigator's Print","",0
+42,"Casket Oyster","",0
+43,"Fishmonger","",0
+44,"Mythril Sovereign","",0
+45,"Nimble Dancer","",0
+46,"Sea Nettle","Jelled Together",0
+47,"Great Grandmarlin","",0
+48,"Shipwreck's Sail","",0
+49,"Charlatan Survivor","",0
+50,"Hi-aetherlouse","",0
+51,"Azeyma's Sleeve","",0
+52,"Aetheric Seadragon","Maritime Dragonslayers",0
+53,"Coral Seadragon","Maritime Dragonslayers",0
+54,"Roguesaurus","",0
+55,"Aronnax","",0
+56,"Sweeper","Certifiable Shark Hunters",0
+57,"Silencer","Balloon Catchers",0
+58,"Deep-sea Eel","",0
+59,"Executioner","Certifiable Shark Hunters",0
+60,"Wild Urchin","",0
+61,"True Barramundi","",0
+62,"Prodigal Son","",0
+63,"Slipsnail","",0
+64,"Hammerclaw","",0
+65,"Coccosteus","",0
+66,"Bartholomew the Chopper","Crab Boat Crew",0
+67,"Prowler","",0
+68,"Mopbeard","Octopus Travelers",0
+69,"Floating Saucer","Jelled Together",0
+70,"Gugrusaurus","",0
+71,"Funnel Shark","Certifiable Shark Hunters",0
+72,"The Fallen One","",0
+73,"Spectral Megalodon","",0
+74,"Spectral Discus","",0
+75,"Spectral Sea Bo","",0
+76,"Spectral Bass","",0
+77,"Sothis","",0
+78,"Coral Manta","",0
+79,"Stonescale","",0
+80,"Elasmosaurus","",0
+81,"Tortoiseshell Crab","Crab Boat Crew",0
+82,"Lady's Cameo","",0
+83,"Metallic Boxfish","Balloon Catchers",0
+84,"Goobbue Ray","",22
+85,"Watermoura","",0
+86,"King Cobrafish","",0
+87,"Mamahi-mahi","",0
+88,"Lavandin Remora","",0
+89,"Spectral Butterfly","",0
+90,"Cieldalaes Geode","",0
+91,"Thaliak Crab","Crab Boat Crew",0
+92,"Star of the Destroyer","",0
+93,"True Scad","",0
+94,"Blooded Wrasse","",0
+95,"Bloodpolish Crab","Crab Boat Crew",0
+96,"Blue Stitcher","",0
+97,"Bloodfresh Tuna","",0
+98,"Sunken Mask","",0
+99,"Spectral Eel","",0
+100,"Bareface","",0
+101,"Crow Puffer","Balloon Catchers",0
+102,"Rothlyt Kelp","",0
+103,"Living Lantern","Jelled Together",0
+104,"Honeycomb Fish","Balloon Catchers",0
+105,"Godsbed","",0
+106,"Lansquenet","",0
+107,"Thavnairian Shark","Certifiable Shark Hunters",0
+108,"Nephrite Eel","",0
+109,"Spectresaur","",0
+110,"Ginkgo Fin","",0
+111,"Titanshell Crab","Crab Boat Crew",0
+112,"Mythril Boxfish","Balloon Catchers",0
+113,"Mistbeard's Cup","",0
+114,"Anomalocaris Saron","",0
+115,"Flaming Eel","",0
+116,"Jetborne Manta","",22
+117,"Devil's Sting","",0
+118,"Callichthyid","",0
+119,"Meandering Mora","",0
+120,"Hafgufa","",0
+121,"Oracular Crab","Crab Boat Crew",0
+122,"Dravanian Bream","",0
+123,"Skaldminni","",22
+124,"Serrated Clam","",0
+125,"Beatific Vision","",0
+126,"Exterminator","Crab Boat Crew",0
+127,"Gory Tuna","",0
+128,"Ticinepomis","",0
+129,"Quartz Hammerhead","Certifiable Shark Hunters",0
+130,"Seafaring Toad","",0
+131,"Garum Jug","Balloon Catchers",0
+132,"Smooth Jaguar","",0
+133,"Rothlyt Mussel","",0
+134,"Levi Elver","",0
+135,"Pearl Bombfish","Balloon Catchers",0
+136,"Trollfish","",0
+137,"Panoptes","",22
+138,"Crepe Sole","",0
+139,"Knifejaw","",0
+140,"Placodus","",0
+141,"Pink Shrimp","",42
+142,"Sirensong Mussel","Maximum Mussel",0
+143,"Arrowhead","Squid Squadron",0
+144,"Ruby Herring","",0
+145,"Whirlpool Turban","Maximum Mussel",0
+146,"Leopard Prawn","",42
+147,"Crimson Kelp","",0
+148,"Reef Squid","Squid Squadron",0
+149,"Pinebark Flounder","",0
+150,"Catching Carp","",0
+151,"Garlean Bluegill","",0
+152,"Yanxian Softshell","",0
+153,"Deepshade Sardine","",0
+154,"Sirensong Mullet","",0
+155,"Selkie Puffer","",0
+156,"Spear Squid","Squid Squadron",0
+157,"Floating Lantern","",0
+158,"Rubescent Tatsunoko","",0
+159,"Mantle Moray","",0
+160,"Shisui Goby","",0
+161,"Sanbaso","",0
+162,"Princess Salmon","",0
+163,"Calligraph","",0
+164,"Singular Shrimp","",42
+165,"Poet's Pipe","",0
+166,"Marine Matanga","",0
+167,"Hatatate","",0
+168,"Silent Shark","",0
+169,"Barded Lobster","",42
+170,"Violet Sentry","",0
+171,"Brocade Carp","",0
+172,"Yanxian Sturgeon","",0
+173,"Dusk Shark","",0
+174,"Mizuhiki","",0
+175,"Heavensent Shark","",0
+176,"Fishy Shark","",0
+177,"Mermaid Scale","Maximum Mussel",0
+178,"Broadhead","Squid Squadron",0
+179,"Vivid Pink Shrimp","",42
+180,"Sunken Coelacanth","",0
+181,"Siren's Sigh","",0
+182,"Black-jawed Helicoprion","Prehistoric Professionals",0
+183,"Impostopus","",0
+184,"Jade Mantis Shrimp","",56
+185,"Nymeia's Wheel","Prehistoric Professionals",0
+186,"Snapping Koban","",0
+187,"Silkweft Prawn","",42
+188,"Stingfin Trevally","",0
+189,"Swordtip Squid","Squid Squadron",0
+190,"Mailfish","",0
+191,"Idaten's Bolt","",0
+192,"Maelstrom Turban","Maximum Mussel",0
+193,"Shoshitsuki","",0
+194,"Spadefish","",0
+195,"Fleeting Squid","Squid Squadron",0
+196,"Bowbarb Lobster","",42
+197,"Pitch Pickle","",0
+198,"Senbei Octopus","",0
+199,"Tentacle Thresher","",0
+200,"Bekko Rockhugger","",0
+201,"Yellow Iris","",0
+202,"Crimson Sentry","",0
+203,"Flying Squid","Squid Squadron",0
+204,"Gensui Shrimp","",42
+205,"Yato-no-kami","",0
+206,"Heron's Eel","",0
+207,"Crowshadow Mussel","Maximum Mussel",0
+208,"Yanxian Goby","",0
+209,"Iridescent Trout","",0
+210,"Un-Namazu","",0
+211,"Gakugyo","",0
+212,"Ginrin Goshiki","",0
+213,"Spectral Coelacanth","",0
+214,"Spectral Wrasse","",0
+215,"Spectral Snake Eel","",0
+216,"Spectral Kotsu Zetsu","",0
+217,"Taniwha","Prehistoric Professionals",0
+218,"Glass Dragon","",0
+219,"Hells' Claw","",0
+220,"Jewel of Plum Spring","",0
+221,"First Mate's Finger","",56
+222,"Specterfish","",0
+223,"Rhotano Permit","",0
+224,"Rhotano Dahlia","",0
+225,"Lodesmate's Pen","",0
+226,"Rhotano Roosterfish","",0
+227,"Rhotanosaurus","Prehistoric Professionals",0
+228,"Royal Handmaiden","",0
+229,"Spectral Starfish","",0
+230,"Frolicsome Fish","",0
+231,"Captain's Finger","",56
+232,"Bright Red Coral","",0
+233,"Royal Favorite","",0
+234,"Pirate's Purse","",0
+235,"Captain's Pen","",0
+236,"Tylosaurus","Prehistoric Professionals",0
+237,"Cieldalaes Roosterfish","",0
+238,"Renegade Rhotanosaurus","Prehistoric Professionals",0
+239,"Red Boarfish","",0
+240,"Akupara","Prehistoric Professionals",0
+241,"Red Mantis","",56
+242,"Datli Gwl","",0
+243,"Agama's Strand","",0
+244,"Palaka's Blade","",0
+245,"Parjanya Wrasse","",0
+246,"Simolestes","Prehistoric Professionals",0
+247,"Thavnasaurus","Prehistoric Professionals",0
+248,"Spectral Grouper","",0
+249,"Silkfin","",0
+250,"Great Red Mantis","",56
+251,"Guzel Gwl","",0
+252,"Darpana","",0
+253,"Silverdart","",0
+254,"Satrapsaurus","Prehistoric Professionals",0
+255,"Tiger Mantis","",56
+256,"Mehi-mahi","",0
+257,"Junior Jinbei","",0
+258,"Pliosaurus","Prehistoric Professionals",0
+259,"Manasvin","",0

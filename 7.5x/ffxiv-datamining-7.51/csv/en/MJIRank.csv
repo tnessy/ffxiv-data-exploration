@@ -1,0 +1,25 @@
+﻿key,0,1,2,3,4
+#,ExpToNext,,LogMessage[0],LogMessage[1],LogMessage[2]
+int32,uint32,byte,LogMessage,LogMessage,LogMessage
+0,0,0,"","",""
+1,3000,0,"","",""
+2,6000,0,"","",""
+3,9500,1,"","",""
+4,13500,0,"You learn a new sanctuary crafting recipe!","You may now renovate the cozy cabin.","“Customization” has been added to “The Hideaway” in the Island Sanctuary Guide.
+“Renovating” and “Customization” have been added to “Construction” in the Island Sanctuary Guide."
+5,18000,0,"You learn a new sanctuary crafting recipe!","You may now construct a granary.","“The Granary” has been added to the Island Sanctuary Guide."
+6,23000,0,"You learn a new sanctuary crafting recipe!","You may now renovate workshops.","You may now renovate granaries."
+7,28500,0,"You learn a new sanctuary crafting recipe!","You may now renovate the cozy cabin.",""
+8,34500,0,"You learn a new sanctuary crafting recipe!","You may now renovate workshops.","You may now renovate granaries."
+9,41000,0,"You learn a new sanctuary crafting recipe!","",""
+10,42000,0,"","",""
+11,43500,0,"You are now able to purchase new seeds from the produce producer.","",""
+12,44000,0,"You may now construct new landmarks.","",""
+13,45500,0,"You learn a new sanctuary crafting recipe!","You may now renovate the cozy cabin.","You may now renovate granaries."
+14,47500,0,"You may now renovate workshops.","You are now able to purchase new seeds from the produce producer.",""
+15,65000,0,"You learn a new sanctuary crafting recipe!","",""
+16,65500,0,"","",""
+17,66000,0,"You learn a new sanctuary crafting recipe!","You may now renovate the cozy cabin.",""
+18,70000,0,"You may now renovate granaries.","You are now able to purchase new seeds from the produce producer.",""
+19,100000,0,"You may now renovate workshops.","You may now construct new landmarks.",""
+20,0,0,"You learn a new sanctuary crafting recipe!","",""

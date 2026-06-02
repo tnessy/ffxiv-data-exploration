@@ -1,0 +1,61 @@
+﻿key,0,1,2,3,4
+#,Requirement[0],Requirement[1],,,
+int32,Quest,Quest,uint32,uint32,bit&02
+65961,,"The Light of Hope",0,0,False
+66572,,,0,0,False
+67199,,,0,0,False
+68668,,,0,0,True
+69307,,"The Light of Hope",17,0,False
+69604,,"Leaving Idyllshire",0,0,False
+69614,,"Over the Wall",0,0,False
+69686,,"Under His Wing",0,0,False
+69691,,"A Frosty Reception",0,0,False
+69692,,"Helping Hands",0,0,False
+69694,,"Hunger in the Garden",0,0,False
+69695,,"Endwalker",0,0,False
+69699,,"The Martyr",0,0,False
+69700,,"At World's End",0,0,False
+69701,,"Thou Must Live, Die, and Know",0,0,False
+69702,,"Endwalker",67624,0,False
+69713,,"A Trip to the Moon",0,0,False
+69714,,"Unto the Heavens",0,0,False
+70009,,"Inscrutable Tastes",0,0,False
+70010,,"The Culture of Love",69702,0,True
+70057,,,0,0,False
+70115,,"Laid to Rest",69667,70000,True
+70186,,"A Redbill Farewell",0,0,False
+70198,,"The Fifth Lord",0,0,False
+70297,,"Forever at Your Side",0,0,False
+70348,,"Growing Light",0,0,False
+70382,,"The Long Road to Xak Tural",0,0,False
+70387,,"Beyond the Great Wall",0,0,False
+70392,,"Heavensward",0,0,False
+70393,,"Stormblood",0,0,False
+70502,,"Inscrutable Tastes",0,0,False
+70503,,"Wellspring of Tears",70538,70786,True
+70509,,"Together as One",0,0,False
+70515,,"The Promise of Peace",0,0,False
+70516,,"Ever Greater, Ever Brighter",0,0,False
+70521,,"Into the Traverse",0,0,False
+70523,,"The Long Road to Xak Tural",0,0,False
+70524,,"The Protector and the Destroyer",0,0,False
+70528,,"The Long Road to Xak Tural",0,0,False
+70535,,"The Skyruin",0,0,False
+70536,,"The Feat of the Brotherhood",0,0,False
+70537,,"The Long Road to Xak Tural",0,0,False
+70538,,"Drowned Vestiges",0,0,False
+70546,,"The Leap to Yak T'el",0,0,False
+70547,,"Through the Gate of Gold",0,0,False
+70548,,"Dawntrail",0,0,False
+70724,,"The Mightiest Shield",70383,70495,True
+70831,,"Crossroads",0,0,False
+70851,,,0,0,False
+70852,,,511,512,False
+70853,,,0,0,False
+70858,,"The Gridanian Envoy",66064,66082,False
+70942,,,0,0,True
+70979,,"It Could Happen to You",0,0,False
+70995,,"A Spellbinding Read",0,0,False
+71042,,"",0,0,False
+71054,,,0,0,False
+71065,,"Litany of Peace",0,0,False

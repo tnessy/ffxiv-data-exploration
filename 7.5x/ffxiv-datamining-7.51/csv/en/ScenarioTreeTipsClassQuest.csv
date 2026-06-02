@@ -1,0 +1,700 @@
+﻿key,0,1,2,3,4,5
+#,Quest,RequiredLevel,RequiredExpansion,RequiredQuest,,
+int32,Quest,uint16,ExVersion,Quest,bit&01,bit&02
+0.0,,0,"A Realm Reborn",,False,False
+1.0,"So You Want to Be a Gladiator",1,"A Realm Reborn",,False,True
+1.1,"Way of the Gladiator",1,"A Realm Reborn",,False,True
+1.2,"Way of the Gladiator",1,"A Realm Reborn",,True,False
+1.3,"My First Gladius",1,"A Realm Reborn",,False,True
+1.4,"Kicking the Hornet's Nest",5,"A Realm Reborn",,False,False
+1.5,"Ul'dah's Most Wanted",10,"A Realm Reborn",,True,False
+1.6,"Ul'dah's Most Wanted",10,"A Realm Reborn",,False,True
+1.7,"That Old Familiar Feeling",15,"A Realm Reborn",,False,False
+1.8,"The Face of Thal",20,"A Realm Reborn",,False,False
+1.9,"On Holy Ground",25,"A Realm Reborn",,False,False
+1.10,"The Rematch",30,"A Realm Reborn",,False,False
+1.11,"Paladin's Pledge",30,"A Realm Reborn","Sylph-management",False,False
+1.12,,0,"A Realm Reborn",,False,False
+2.0,"So You Want to Be a Pugilist",1,"A Realm Reborn",,False,True
+2.1,"Way of the Pugilist",1,"A Realm Reborn",,False,True
+2.2,"Way of the Pugilist",1,"A Realm Reborn",,True,False
+2.3,"My First Hora",1,"A Realm Reborn",,False,True
+2.4,"Harder than Rock",5,"A Realm Reborn",,False,False
+2.5,"Burning Up the Quarter Malm",10,"A Realm Reborn",,True,False
+2.6,"Burning Up the Quarter Malm",10,"A Realm Reborn",,False,True
+2.7,"The Spirit Is Willing",15,"A Realm Reborn",,False,False
+2.8,"Keeping the Spirit Alive",20,"A Realm Reborn",,False,False
+2.9,"Star-crossed Rivals",25,"A Realm Reborn",,False,False
+2.10,"Return of the Holyfist",30,"A Realm Reborn",,False,False
+2.11,"Brother from Another Mother",30,"A Realm Reborn","Sylph-management",False,False
+2.12,,0,"A Realm Reborn",,False,False
+3.0,"So You Want to Be a Marauder",1,"A Realm Reborn",,False,True
+3.1,"Way of the Marauder",1,"A Realm Reborn",,False,True
+3.2,"Way of the Marauder",1,"A Realm Reborn",,True,False
+3.3,"My First Axe",1,"A Realm Reborn",,False,True
+3.4,"Axe in the Stone",5,"A Realm Reborn",,False,False
+3.5,"Wake of Destruction",10,"A Realm Reborn",,True,False
+3.6,"Wake of Destruction",10,"A Realm Reborn",,False,True
+3.7,"Brutal Strength",15,"A Realm Reborn",,False,False
+3.8,"The Mountain That Strides",20,"A Realm Reborn",,False,False
+3.9,"Bleeder of the Pack",25,"A Realm Reborn",,False,False
+3.10,"Bringing Down the Mountain",30,"A Realm Reborn",,False,False
+3.11,"Pride and Duty (Will Take You from the Mountain)",30,"A Realm Reborn","Sylph-management",False,False
+3.12,,0,"A Realm Reborn",,False,False
+4.0,"So You Want to Be a Lancer",1,"A Realm Reborn",,False,True
+4.1,"Way of the Lancer",1,"A Realm Reborn",,False,True
+4.2,"Way of the Lancer",1,"A Realm Reborn",,True,False
+4.3,"My First Spear",1,"A Realm Reborn",,False,True
+4.4,"Spear of the Fearless",5,"A Realm Reborn",,False,False
+4.5,"Courage of Stone",10,"A Realm Reborn",,True,False
+4.6,"Courage of Stone",10,"A Realm Reborn",,False,True
+4.7,"A Dangerous Proposition",15,"A Realm Reborn",,False,False
+4.8,"Lance of Destiny",20,"A Realm Reborn",,False,False
+4.9,"Questions and Lancers",25,"A Realm Reborn",,False,False
+4.10,"Proof of Might",30,"A Realm Reborn",,False,False
+4.11,"Eye of the Dragon",30,"A Realm Reborn","Sylph-management",False,False
+4.12,,0,"A Realm Reborn",,False,False
+5.0,"So You Want to Be an Archer",1,"A Realm Reborn",,False,True
+5.1,"Way of the Archer",1,"A Realm Reborn",,False,True
+5.2,"Way of the Archer",1,"A Realm Reborn",,True,False
+5.3,"My First Bow",1,"A Realm Reborn",,False,True
+5.4,"A Matter of Perspective",5,"A Realm Reborn",,False,False
+5.5,"School of Hard Nocks",10,"A Realm Reborn",,True,False
+5.6,"Training with Leih",10,"A Realm Reborn",,False,True
+5.7,"Violators Will Be Shot",15,"A Realm Reborn",,False,False
+5.8,"To Catch a Poacher",20,"A Realm Reborn",,False,False
+5.9,"Homecoming",25,"A Realm Reborn",,False,False
+5.10,"The One That Got Away",30,"A Realm Reborn",,False,False
+5.11,"A Song of Bards and Bowmen",30,"A Realm Reborn","Sylph-management",False,False
+5.12,,0,"A Realm Reborn",,False,False
+6.0,"So You Want to Be a Conjurer",1,"A Realm Reborn",,False,True
+6.1,"Way of the Conjurer",1,"A Realm Reborn",,False,True
+6.2,"Way of the Conjurer",1,"A Realm Reborn",,True,False
+6.3,"My First Cane",1,"A Realm Reborn",,False,True
+6.4,"Trial by Earth",5,"A Realm Reborn",,False,False
+6.5,"Trial by Wind",10,"A Realm Reborn",,True,False
+6.6,"Trial by Wind",10,"A Realm Reborn",,False,True
+6.7,"Trial by Water",15,"A Realm Reborn",,False,False
+6.8,"Sylphie's Trials",20,"A Realm Reborn",,False,False
+6.9,"Like Mother, Like Daughter",25,"A Realm Reborn",,False,False
+6.10,"In Nature's Embrace",30,"A Realm Reborn",,False,False
+6.11,"Seer Folly",30,"A Realm Reborn","Sylph-management",False,False
+6.12,,0,"A Realm Reborn",,False,False
+7.0,"So You Want to Be a Thaumaturge",1,"A Realm Reborn",,False,True
+7.1,"Way of the Thaumaturge",1,"A Realm Reborn",,False,True
+7.2,"Way of the Thaumaturge",1,"A Realm Reborn",,True,False
+7.3,"My First Scepter",1,"A Realm Reborn",,False,True
+7.4,"The Threat of Intimacy",5,"A Realm Reborn",,False,False
+7.5,"The Threat of Paucity",10,"A Realm Reborn",,True,False
+7.6,"The Threat of Paucity",10,"A Realm Reborn",,False,True
+7.7,"The Threat of Superiority",15,"A Realm Reborn",,False,False
+7.8,"The Threat of Perplexity",20,"A Realm Reborn",,False,False
+7.9,"The Hidden Chapter",25,"A Realm Reborn",,False,False
+7.10,"Facing Your Demons",30,"A Realm Reborn",,False,False
+7.11,"Taking the Black",30,"A Realm Reborn","Sylph-management",False,False
+7.12,,0,"A Realm Reborn",,False,False
+8.0,"So You Want to Be a Carpenter",1,"A Realm Reborn",,False,True
+8.1,"Way of the Carpenter",1,"A Realm Reborn",,False,False
+8.2,"My First Saw",1,"A Realm Reborn",,False,False
+8.3,"To Be the Wood",5,"A Realm Reborn",,False,False
+8.4,"Supplies for the Sick",10,"A Realm Reborn",,False,False
+8.5,"A Carpenter in Need",15,"A Realm Reborn",,False,False
+8.6,"The Lance's Lesson",20,"A Realm Reborn",,False,False
+8.7,"A Crisis of Confidence",25,"A Realm Reborn",,False,False
+8.8,"Between Captain and Conjurer",30,"A Realm Reborn",,False,False
+8.9,"Growing Apart",35,"A Realm Reborn",,False,False
+8.10,"Memento Mori",40,"A Realm Reborn",,False,False
+8.11,"Gone till the Sixth Astral Moon",45,"A Realm Reborn",,False,False
+8.12,"Saving Captain Gairhard",50,"A Realm Reborn",,False,False
+8.13,"Lance of a Lifetime",50,"Heavensward","Before the Dawn",False,False
+8.14,"A-hunting He Will Go",53,"Heavensward",,False,False
+8.15,"Ministers of Grace Defend Him",55,"Heavensward",,False,False
+8.16,"The Son Also Rises",58,"Heavensward",,False,False
+8.17,"More Fierce than Fire",60,"Heavensward",,False,False
+8.18,"Uncharted Territory",60,"Stormblood","The Far Edge of Fate",False,False
+8.19,"The Game of Confidence",63,"Stormblood",,False,False
+8.20,"A Lesson in Listening",65,"Stormblood",,False,False
+8.21,"Live and Let Dine",68,"Stormblood",,False,False
+8.22,"Tea Party Rules",70,"Stormblood",,False,False
+8.23,,0,"A Realm Reborn",,False,False
+9.0,"So You Want to Be a Blacksmith",1,"A Realm Reborn",,False,True
+9.1,"Way of the Blacksmith",1,"A Realm Reborn",,False,False
+9.2,"My First Cross-pein Hammer",1,"A Realm Reborn",,False,False
+9.3,"Hammer Time",5,"A Realm Reborn",,False,False
+9.4,"Riveting Ramblings",10,"A Realm Reborn",,False,False
+9.5,"The Business of Blacksmithing",15,"A Realm Reborn",,False,False
+9.6,"By the Sweat of Your Brow",20,"A Realm Reborn",,False,False
+9.7,"True as Steel",25,"A Realm Reborn",,False,False
+9.8,"As Iron Sharpens Iron",30,"A Realm Reborn",,False,False
+9.9,"Set Faezahr to Stun",35,"A Realm Reborn",,False,False
+9.10,"Forging Ahead",40,"A Realm Reborn",,False,False
+9.11,"Beauty and the Bardiche",45,"A Realm Reborn",,False,False
+9.12,"Waiting in the Winglet",50,"A Realm Reborn",,False,False
+9.13,"Forging Northwards",50,"Heavensward","Before the Dawn",False,False
+9.14,"Leave It to Fremondain",53,"Heavensward",,False,False
+9.15,"The Good Fight",55,"Heavensward",,False,False
+9.16,"Blade That Was Broken",58,"Heavensward",,False,False
+9.17,"Integrity",60,"Heavensward",,False,False
+9.18,"A Missive from the Far East",60,"Stormblood","The Far Edge of Fate",False,False
+9.19,"The Client Is King",63,"Stormblood",,False,False
+9.20,"Blood Ties",65,"Stormblood",,False,False
+9.21,"The Missing Piece",68,"Stormblood",,False,False
+9.22,"The Final Face-off",70,"Stormblood",,False,False
+9.23,,0,"A Realm Reborn",,False,False
+10.0,"So You Want to Be an Armorer",1,"A Realm Reborn",,False,True
+10.1,"Way of the Armorer",1,"A Realm Reborn",,False,False
+10.2,"My First Doming Hammer",1,"A Realm Reborn",,False,False
+10.3,"From Thigh to Neck",5,"A Realm Reborn",,False,False
+10.4,"The Base Fundamentals",10,"A Realm Reborn",,False,False
+10.5,"One's Own Worst Critic",15,"A Realm Reborn",,False,False
+10.6,"An Armorer's Pride",20,"A Realm Reborn",,False,False
+10.7,"Showing Your Steel",25,"A Realm Reborn",,False,False
+10.8,"May the Best Armorer Win",30,"A Realm Reborn",,False,False
+10.9,"Pans of Steel",35,"A Realm Reborn",,False,False
+10.10,"Best of Three",40,"A Realm Reborn",,False,False
+10.11,"For the Good of the Guild",45,"A Realm Reborn",,False,False
+10.12,"Rivalry and Respect",50,"A Realm Reborn",,False,False
+10.13,"The Breaking of Blanstyr",50,"Heavensward","Before the Dawn",False,False
+10.14,"Light-headed",53,"Heavensward",,False,False
+10.15,"Fancy Lancer",55,"Heavensward",,False,False
+10.16,"The Reforging of Blanstyr",58,"Heavensward",,False,False
+10.17,"The Pride of Vymelli",60,"Heavensward",,False,False
+10.18,"Original Blanstyr",60,"Stormblood","The Far Edge of Fate",False,False
+10.19,"Eastern Apprentice",63,"Stormblood",,False,False
+10.20,"Forging with Scales",65,"Stormblood",,False,False
+10.21,"Head-to-head Contest",68,"Stormblood",,False,False
+10.22,"A Confluence of Style",70,"Stormblood",,False,False
+10.23,,0,"A Realm Reborn",,False,False
+11.0,"So You Want to Be a Goldsmith",1,"A Realm Reborn",,False,True
+11.1,"Way of the Goldsmith",1,"A Realm Reborn",,False,False
+11.2,"My First Chaser Hammer",1,"A Realm Reborn",,False,False
+11.3,"Gorgets Rising",5,"A Realm Reborn",,False,False
+11.4,"Throw Some Rings on It",10,"A Realm Reborn",,False,False
+11.5,"Objectively Speaking",15,"A Realm Reborn",,False,False
+11.6,"A Melding of the Minds",20,"A Realm Reborn",,False,False
+11.7,"Or Ever the Silver Cord Be Loosed",25,"A Realm Reborn",,False,False
+11.8,"Serendipity Now",30,"A Realm Reborn",,False,False
+11.9,"Mammets on Fire",35,"A Realm Reborn",,False,False
+11.10,"The Horns of the Green",40,"A Realm Reborn",,False,False
+11.11,"The Fox in the Hen House",45,"A Realm Reborn",,False,False
+11.12,"Jaded",50,"A Realm Reborn",,False,False
+11.13,"Form to the Formless",50,"Heavensward","Before the Dawn",False,False
+11.14,"Elegance and Artistry",53,"Heavensward",,False,False
+11.15,"Double Trouble",55,"Heavensward",,False,False
+11.16,"A Masterclass",58,"Heavensward",,False,False
+11.17,"Two Hearts Beat as One",60,"Heavensward",,False,False
+11.18,"A Royal Request",60,"Stormblood","The Far Edge of Fate",False,False
+11.19,"Gemworks in Progress",63,"Stormblood",,False,False
+11.20,"Blindsided",65,"Stormblood",,False,False
+11.21,"The Perfect Tribute",68,"Stormblood",,False,False
+11.22,"Sultana Dreaming",70,"Stormblood",,False,False
+11.23,,0,"A Realm Reborn",,False,False
+12.0,"So You Want to Be a Leatherworker",1,"A Realm Reborn",,False,True
+12.1,"Way of the Leatherworker",1,"A Realm Reborn",,False,False
+12.2,"My First Head Knife",1,"A Realm Reborn",,False,False
+12.3,"A Test of Technique",5,"A Realm Reborn",,False,False
+12.4,"Geva's Gambit",10,"A Realm Reborn",,False,False
+12.5,"Working Hells for Leather",15,"A Realm Reborn",,False,False
+12.6,"Aldgoat Everything",20,"A Realm Reborn",,False,False
+12.7,"Skin in the Game",25,"A Realm Reborn",,False,False
+12.8,"Toadskins of the Father",30,"A Realm Reborn",,False,False
+12.9,"Lead by Example",35,"A Realm Reborn",,False,False
+12.10,"Brand Loyalty",40,"A Realm Reborn",,False,False
+12.11,"Dissension in the Ranks",45,"A Realm Reborn",,False,False
+12.12,"Accept No Imitations",50,"A Realm Reborn",,False,False
+12.13,"Turndown Service",50,"Heavensward","Before the Dawn",False,False
+12.14,"By Your Bootstraps",53,"Heavensward",,False,False
+12.15,"Perfect Pitch",55,"Heavensward",,False,False
+12.16,"From the Hoplon to the Brume",58,"Heavensward",,False,False
+12.17,"A Winter's Sale",60,"Heavensward",,False,False
+12.18,"A Taxing Request",60,"Stormblood","The Far Edge of Fate",False,False
+12.19,"Mounting Expectations",63,"Stormblood",,False,False
+12.20,"The Value of Life",65,"Stormblood",,False,False
+12.21,"The Trouble with Taxidermy",68,"Stormblood",,False,False
+12.22,"True to Life",70,"Stormblood",,False,False
+12.23,,0,"A Realm Reborn",,False,False
+13.0,"So You Want to Be a Weaver",1,"A Realm Reborn",,False,True
+13.1,"Way of the Weaver",1,"A Realm Reborn",,False,False
+13.2,"My First Needle",1,"A Realm Reborn",,False,False
+13.3,"Once More unto the Breeches",5,"A Realm Reborn",,False,False
+13.4,"Alternative Applications",10,"A Realm Reborn",,False,False
+13.5,"Practical Needs",15,"A Realm Reborn",,False,False
+13.6,"Materia Concerns",20,"A Realm Reborn",,False,False
+13.7,"That Velveteen Dress",25,"A Realm Reborn",,False,False
+13.8,"Miner on a Mission",30,"A Realm Reborn",,False,False
+13.9,"Designed by Committee",35,"A Realm Reborn",,False,False
+13.10,"A Subtle Inquiry",40,"A Realm Reborn",,False,False
+13.11,"The Intervention",45,"A Realm Reborn",,False,False
+13.12,"A Miner Reborn",50,"A Realm Reborn",,False,False
+13.13,"The Social Knitwork",50,"Heavensward","Before the Dawn",False,False
+13.14,"Tomboy Foolery",53,"Heavensward",,False,False
+13.15,"For Lover and Country",55,"Heavensward",,False,False
+13.16,"Spinning the Truth",58,"Heavensward",,False,False
+13.17,"Never Leave without a Good-bye",60,"Heavensward",,False,False
+13.18,"When East Meets West",60,"Stormblood","The Far Edge of Fate",False,False
+13.19,"The Butterfly Effect",63,"Stormblood",,False,False
+13.20,"The Crane's Caveat",65,"Stormblood",,False,False
+13.21,"A Geiko for All Seasons",68,"Stormblood",,False,False
+13.22,"Send Me an Angel",70,"Stormblood",,False,False
+13.23,,0,"A Realm Reborn",,False,False
+14.0,"So You Want to Be an Alchemist",1,"A Realm Reborn",,False,True
+14.1,"Way of the Alchemist",1,"A Realm Reborn",,False,False
+14.2,"My First Alembic",1,"A Realm Reborn",,False,False
+14.3,"The Second Principle",5,"A Realm Reborn",,False,False
+14.4,"All of Your Beeswax",10,"A Realm Reborn",,False,False
+14.5,"For Fair Love",15,"A Realm Reborn",,False,False
+14.6,"The Arcanist's Tome",20,"A Realm Reborn",,False,False
+14.7,"Practical Alchemy",25,"A Realm Reborn",,False,False
+14.8,"Baleful Brews",30,"A Realm Reborn",,False,False
+14.9,"Cease and Assist",35,"A Realm Reborn",,False,False
+14.10,"Might Made Right",40,"A Realm Reborn",,False,False
+14.11,"Ultimate Alchemy",45,"A Realm Reborn",,False,False
+14.12,"Momentary Miracle",50,"A Realm Reborn",,False,False
+14.13,"Without a Trace",50,"Heavensward","Before the Dawn",False,False
+14.14,"Magic Marks the Spot",53,"Heavensward",,False,False
+14.15,"From Hells",55,"Heavensward",,False,False
+14.16,"Burden of Proof",58,"Heavensward",,False,False
+14.17,"What Death Can Join Together",60,"Heavensward",,False,False
+14.18,"Not Quite Dead Yet",60,"Stormblood","The Far Edge of Fate",False,False
+14.19,"The Forbidden Blade",63,"Stormblood",,False,False
+14.20,"Do Goldsmiths Dream of Gilded Sheep",65,"Stormblood",,False,False
+14.21,"No Sin Unpunished",68,"Stormblood",,False,False
+14.22,"A Love Beyond Lifetimes",70,"Stormblood",,False,False
+14.23,,0,"A Realm Reborn",,False,False
+15.0,"So You Want to Be a Culinarian",1,"A Realm Reborn",,False,True
+15.1,"Way of the Culinarian",1,"A Realm Reborn",,False,False
+15.2,"My First Skillet",1,"A Realm Reborn",,False,False
+15.3,"A Treat of Trout",5,"A Realm Reborn",,False,False
+15.4,"Dodo It Yourself",10,"A Realm Reborn",,False,False
+15.5,"On a Skewer Tip",15,"A Realm Reborn",,False,False
+15.6,"Releasing a Burden",20,"A Realm Reborn",,False,False
+15.7,"Winning Friends with Aldgoat",25,"A Realm Reborn",,False,False
+15.8,"The Chefsbane Cometh",30,"A Realm Reborn",,False,False
+15.9,"Of Cooks and Books",35,"A Realm Reborn",,False,False
+15.10,"Diplomacy of the Skillet",40,"A Realm Reborn",,False,False
+15.11,"A Taste of Home",45,"A Realm Reborn",,False,False
+15.12,"Revenge of the Chefsbane",50,"A Realm Reborn",,False,False
+15.13,"Wait on Me",50,"Heavensward","Before the Dawn",False,False
+15.14,"A Spoonful Less Sugar",53,"Heavensward",,False,False
+15.15,"Looking for Some Hot Stuff",55,"Heavensward",,False,False
+15.16,"Love Meat Tender",58,"Heavensward",,False,False
+15.17,"The Spirit of Hospitality",60,"Heavensward",,False,False
+15.18,"Flavors of the Far East",60,"Stormblood","The Far Edge of Fate",False,False
+15.19,"Rice to the Occasion",63,"Stormblood",,False,False
+15.20,"A Broth from the Brine",65,"Stormblood",,False,False
+15.21,"Teach a Man to Make Fish",68,"Stormblood",,False,False
+15.22,"The Way to a Father's Heart",70,"Stormblood",,False,False
+15.23,,0,"A Realm Reborn",,False,False
+16.0,"So You Want to Be a Miner",1,"A Realm Reborn",,False,True
+16.1,"Way of the Miner",1,"A Realm Reborn",,False,False
+16.2,"My First Pickaxe",1,"A Realm Reborn",,False,False
+16.3,"Know Thy Land",5,"A Realm Reborn",,False,False
+16.4,"The Cutting Edge",10,"A Realm Reborn",,False,False
+16.5,"Getting in Deep",15,"A Realm Reborn",,False,False
+16.6,"Old Wisdom, New Ways",20,"A Realm Reborn",,False,False
+16.7,"Water from Stone",25,"A Realm Reborn",,False,False
+16.8,"Obsidian Race",30,"A Realm Reborn",,False,False
+16.9,"Amethysts Are Forever",35,"A Realm Reborn",,False,False
+16.10,"To Die For",40,"A Realm Reborn",,False,False
+16.11,"Gulley of Woes",45,"A Realm Reborn",,False,False
+16.12,"Canyon of Regret",50,"A Realm Reborn",,False,False
+16.13,"Breaking New Ground",50,"Heavensward","Before the Dawn",False,False
+16.14,"Sellspade",53,"Heavensward",,False,False
+16.15,"The Same Vein",55,"Heavensward",,False,False
+16.16,"Digging Deeper",58,"Heavensward",,False,False
+16.17,"The Hole Truth",60,"Heavensward",,False,False
+16.18,"Gift of the Gob",60,"Stormblood","The Far Edge of Fate",False,False
+16.19,"Thick Skin",63,"Stormblood",,False,False
+16.20,"Pedal to the Metal",65,"Stormblood",,False,False
+16.21,"Where the Money Takes You",68,"Stormblood",,False,False
+16.22,"A Miner Success",70,"Stormblood",,False,False
+16.23,,0,"A Realm Reborn",,False,False
+17.0,"So You Want to Be a Botanist",1,"A Realm Reborn",,False,True
+17.1,"Way of the Botanist",1,"A Realm Reborn",,False,False
+17.2,"My First Hatchet",1,"A Realm Reborn",,False,False
+17.3,"Sap for Smiles",5,"A Realm Reborn",,False,False
+17.4,"Weapons of a Feather",10,"A Realm Reborn",,False,False
+17.5,"Haste Makes Waste",15,"A Realm Reborn",,False,False
+17.6,"Dressed to Harvest",20,"A Realm Reborn",,False,False
+17.7,"Aromatic Aspirations",25,"A Realm Reborn",,False,False
+17.8,"What Nature Giveth",30,"A Realm Reborn",,False,False
+17.9,"A Feast to Say the Least",35,"A Realm Reborn",,False,False
+17.10,"Crisis of Faith",40,"A Realm Reborn",,False,False
+17.11,"Botanist in a Bind",45,"A Realm Reborn",,False,False
+17.12,"Seeds of Hope",50,"A Realm Reborn",,False,False
+17.13,"Call from the Clouds",50,"Heavensward","Before the Dawn",False,False
+17.14,"Onions of Life Bestowing",53,"Heavensward",,False,False
+17.15,"Two Nations, One Seed",55,"Heavensward",,False,False
+17.16,"Love for Harmony",58,"Heavensward",,False,False
+17.17,"Seeds Know No Borders",60,"Heavensward",,False,False
+17.18,"Never Meet Your Heroes",60,"Stormblood","The Far Edge of Fate",False,False
+17.19,"You Say Popoto, I Say...",63,"Stormblood",,False,False
+17.20,"Walking for Walker's",65,"Stormblood",,False,False
+17.21,"The White Death",68,"Stormblood",,False,False
+17.22,"Edgyth's Winning Streak",70,"Stormblood",,False,False
+17.23,,0,"A Realm Reborn",,False,False
+18.0,"So You Want to Be a Fisher",1,"A Realm Reborn",,False,True
+18.1,"Way of the Fisher",1,"A Realm Reborn",,False,False
+18.2,"My First Fishing Rod",1,"A Realm Reborn",,False,False
+18.3,"Bigger Fish to Fry",5,"A Realm Reborn",,False,False
+18.4,"The Princess and the Fish",10,"A Realm Reborn",,False,False
+18.5,"Every Fish Has a Silver Lining",15,"A Realm Reborn",,False,False
+18.6,"A Fish in Hot Water",20,"A Realm Reborn",,False,False
+18.7,"A Game of Cat and Fish",25,"A Realm Reborn",,False,False
+18.8,"Like Fish Passing in the Night",30,"A Realm Reborn",,False,False
+18.9,"A Fish out of Water",35,"A Realm Reborn",,False,False
+18.10,"Fishing in the Rain",40,"A Realm Reborn",,False,False
+18.11,"I Believe Fish Can Fly",45,"A Realm Reborn",,False,False
+18.12,"So Long, and Thanks for All the Fish",50,"A Realm Reborn",,False,False
+18.13,"Plenty More Fish in the Sea",50,"Heavensward","Before the Dawn",False,False
+18.14,"The Icepick Challenge",53,"Heavensward",,False,False
+18.15,"Invasion of the Supper Snatchers",55,"Heavensward",,False,False
+18.16,"One Man's Fish Is Another Man's Poison",58,"Heavensward",,False,False
+18.17,"Carpe Diem",60,"Heavensward",,False,False
+18.18,"Whither Wawalago Wanders",60,"Stormblood","The Far Edge of Fate",False,False
+18.19,"A Rousing Reunion",63,"Stormblood",,False,False
+18.20,"Search for the Spawning Grounds",65,"Stormblood",,False,False
+18.21,"Always a Bigger Fish",68,"Stormblood",,False,False
+18.22,"Farewell, and Thanks for the Fish",70,"Stormblood",,False,False
+18.23,,0,"A Realm Reborn",,False,False
+19.0,"Paladin's Pledge",30,"A Realm Reborn",,False,False
+19.1,"Honor Lost",35,"A Realm Reborn",,False,False
+19.2,"Power Struggles",40,"A Realm Reborn",,False,False
+19.3,"Poisoned Hearts",45,"A Realm Reborn",,False,False
+19.4,"Parley in the Sagolii",45,"A Realm Reborn",,False,False
+19.5,"Keeping the Oath",50,"A Realm Reborn",,False,False
+19.6,"An Exemplary Example",50,"Heavensward","Before the Dawn",False,False
+19.7,"The Paladin Who Cried Wolf",52,"Heavensward",,False,False
+19.8,"Big Sollerets to Fill",54,"Heavensward",,False,False
+19.9,"Hey Soul Crystal",56,"Heavensward",,False,False
+19.10,"All According to Plan",58,"Heavensward",,False,False
+19.11,"This Little Sword of Mine",60,"Heavensward",,False,False
+19.12,"Tournament of the Century",60,"Stormblood","The Far Edge of Fate",False,False
+19.13,"In Thal's Name",63,"Stormblood",,False,False
+19.14,"In Nald's Name",65,"Stormblood",,False,False
+19.15,"Fade to Black Lotus",68,"Stormblood",,False,False
+19.16,"Raising the Sword",70,"Stormblood",,False,False
+19.17,,0,"A Realm Reborn",,False,False
+20.0,"Brother from Another Mother",30,"A Realm Reborn",,False,False
+20.1,"Insulted Intelligence",35,"A Realm Reborn",,False,False
+20.2,"A Slave to the Aether",40,"A Realm Reborn",,False,False
+20.3,"The Pursuit of Power",45,"A Realm Reborn",,False,False
+20.4,"Good Vibrations",45,"A Realm Reborn",,False,False
+20.5,"Five Easy Pieces",50,"A Realm Reborn",,False,False
+20.6,"The Legend Continues",50,"Heavensward","Before the Dawn",False,False
+20.7,"Let's Talk about Sects",52,"Heavensward",,False,False
+20.8,"Against the Shadow",54,"Heavensward",,False,False
+20.9,"Fight the Battle to Win",56,"Heavensward",,False,False
+20.10,"Stop the Senseless Killing",58,"Heavensward",,False,False
+20.11,"Appetite for Destruction",60,"Heavensward",,False,False
+20.12,"A Fistful of Resolve",60,"Stormblood","The Far Edge of Fate",False,False
+20.13,"Return of the Monk",63,"Stormblood",,False,False
+20.14,"Cross-fist Training",65,"Stormblood",,False,False
+20.15,"Choices and Paths",68,"Stormblood",,False,False
+20.16,"The Power to Protect",70,"Stormblood",,False,False
+20.17,,0,"A Realm Reborn",,False,False
+21.0,"Pride and Duty (Will Take You from the Mountain)",30,"A Realm Reborn",,False,False
+21.1,"Embracing the Beast",35,"A Realm Reborn",,False,False
+21.2,"Curious Gorge Goes to Wineport",40,"A Realm Reborn",,False,False
+21.3,"Looking the Part",45,"A Realm Reborn",,False,False
+21.4,"Proof Is the Pudding",45,"A Realm Reborn",,False,False
+21.5,"How to Quit You",50,"A Realm Reborn",,False,False
+21.6,"Better Axe Around",50,"Heavensward","Before the Dawn",False,False
+21.7,"Duty and the Beast",52,"Heavensward",,False,False
+21.8,"The Bear Necessity",54,"Heavensward",,False,False
+21.9,"Pirates of Shallow Water",56,"Heavensward",,False,False
+21.10,"How to Train Your Warrior",56,"Heavensward",,False,False
+21.11,"Slap an' Chop",58,"Heavensward",,False,False
+21.12,"And My Axe",60,"Heavensward",,False,False
+21.13,"Curious Gorge Meets His Match",60,"Stormblood","The Far Edge of Fate",False,False
+21.14,"Field Training",63,"Stormblood",,False,False
+21.15,"When Push Comes to Shove",65,"Stormblood",,False,False
+21.16,"Going the Distance",68,"Stormblood",,False,False
+21.17,"The Heart of the Problem",70,"Stormblood",,False,False
+21.18,,0,"A Realm Reborn",,False,False
+22.0,"Eye of the Dragon",30,"A Realm Reborn",,False,False
+22.1,"Lance of Fury",35,"A Realm Reborn",,False,False
+22.2,"Unfading Skies",40,"A Realm Reborn",,False,False
+22.3,"Double Dragoon",45,"A Realm Reborn",,False,False
+22.4,"Fatal Seduction",45,"A Realm Reborn",,False,False
+22.5,"Into the Dragon's Maw",50,"A Realm Reborn",,False,False
+22.6,"Sky's the Limit",50,"Heavensward","Before the Dawn",False,False
+22.7,"Days of Azure",52,"Heavensward",,False,False
+22.8,"Heart of Justice",52,"Heavensward",,False,False
+22.9,"Sworn Upon a Lance",54,"Heavensward",,False,False
+22.10,"Dragoon's Errand",56,"Heavensward",,False,False
+22.11,"Sanguine Dragoon",58,"Heavensward",,False,False
+22.12,"Dragoon's Fate",60,"Heavensward",,False,False
+22.13,"Friends through Eternity",60,"Stormblood","The Far Edge of Fate",False,False
+22.14,"Drowsy Dragons",63,"Stormblood",,False,False
+22.15,"Serpent and the Sea of Rubies",65,"Stormblood",,False,False
+22.16,"Dark as the Night Sky",68,"Stormblood",,False,False
+22.17,"Dragon Sound",70,"Stormblood",,False,False
+22.18,,0,"A Realm Reborn",,False,False
+23.0,"A Song of Bards and Bowmen",30,"A Realm Reborn",,False,False
+23.1,"The Archer's Anthem",35,"A Realm Reborn",,False,False
+23.2,"Bard's-eye View",40,"A Realm Reborn",,False,False
+23.3,"Doing It the Bard Way",45,"A Realm Reborn",,False,False
+23.4,"Pieces of the Past",45,"A Realm Reborn",,False,False
+23.5,"Requiem for the Fallen",50,"A Realm Reborn",,False,False
+23.6,"On the Road Again",50,"Heavensward","Before the Dawn",False,False
+23.7,"The Stiff and the Spent",52,"Heavensward",,False,False
+23.8,"Requiem on Ice",54,"Heavensward",,False,False
+23.9,"When Gnaths Cry",56,"Heavensward",,False,False
+23.10,"A Saint of Song",58,"Heavensward",,False,False
+23.11,"The Ballad of Oblivion",60,"Heavensward",,False,False
+23.12,"Three's a Company",60,"Stormblood","The Far Edge of Fate",False,False
+23.13,"Masked Motives",63,"Stormblood",,False,False
+23.14,"One Autumn's Secret",65,"Stormblood",,False,False
+23.15,"Sleeping Truths Lie",68,"Stormblood",,False,False
+23.16,"Sweet Dreams Are Made of Peace",70,"Stormblood",,False,False
+23.17,,0,"A Realm Reborn",,False,False
+24.0,"Seer Folly",30,"A Realm Reborn",,False,False
+24.1,"Only You Can Prevent Forest Ire",35,"A Realm Reborn",,False,False
+24.2,"O Brother, Where Art Thou",40,"A Realm Reborn",,False,False
+24.3,"Following in His Footsteps",45,"A Realm Reborn",,False,False
+24.4,"Yearn for the Urn",45,"A Realm Reborn",,False,False
+24.5,"Heart of the Forest",50,"A Realm Reborn",,False,False
+24.6,"Taint Misbehaving",50,"Heavensward","Before the Dawn",False,False
+24.7,"A Journey of Purification",52,"Heavensward",,False,False
+24.8,"The Girl with the Dragon Tissue",54,"Heavensward",,False,False
+24.9,"The Dark Blight Writhes",56,"Heavensward",,False,False
+24.10,"In the Wake of Death",58,"Heavensward",,False,False
+24.11,"Trials of the Padjals",58,"Heavensward",,False,False
+24.12,"Hands of Healing",60,"Heavensward",,False,False
+24.13,"Unease in East End",60,"Stormblood","The Far Edge of Fate",False,False
+24.14,"An Aura for Trouble",63,"Stormblood",,False,False
+24.15,"A Beacon for Bad Things",65,"Stormblood",,False,False
+24.16,"The Problem with Padjals",68,"Stormblood",,False,False
+24.17,"What She Always Wanted",70,"Stormblood",,False,False
+24.18,,0,"A Realm Reborn",,False,False
+25.0,"Taking the Black",30,"A Realm Reborn",,False,False
+25.1,"You'll Never Go Back",35,"A Realm Reborn",,False,False
+25.2,"International Relations",40,"A Realm Reborn",,False,False
+25.3,"The Voidgate Breathes Gloomy",45,"A Realm Reborn",,False,False
+25.4,"The Blood Must Flow",45,"A Realm Reborn",,False,False
+25.5,"Always Bet on Black",50,"A Realm Reborn",,False,False
+25.6,"Black Books",50,"Heavensward","Before the Dawn",False,False
+25.7,"An Unexpected Journey",52,"Heavensward",,False,False
+25.8,"A Cunning Plan",54,"Heavensward",,False,False
+25.9,"Black Squawk Down",56,"Heavensward",,False,False
+25.10,"Destruction in the Name of Justice",58,"Heavensward",,False,False
+25.11,"The Defiant Ones",60,"Heavensward",,False,False
+25.12,"Shades of Shatotto",60,"Stormblood","The Far Edge of Fate",False,False
+25.13,"Golems Gone Wild",63,"Stormblood",,False,False
+25.14,"When the Golems Get Tough",65,"Stormblood",,False,False
+25.15,"Unnatural Selection",68,"Stormblood",,False,False
+25.16,"One Golem to Rule Them All",70,"Stormblood",,False,False
+25.17,,0,"A Realm Reborn",,False,False
+26.0,"Way of the Arcanist",1,"A Realm Reborn",,False,True
+26.1,"Way of the Arcanist",1,"A Realm Reborn",,True,False
+26.2,"My First Grimoire",1,"A Realm Reborn",,False,True
+26.3,"What's in the Box",5,"A Realm Reborn",,False,False
+26.4,"Tactical Planning",10,"A Realm Reborn",,True,False
+26.5,"Tactical Planning",10,"A Realm Reborn",,False,True
+26.6,"Topaz Teachings",15,"A Realm Reborn",,False,False
+26.7,"Over the Rails",15,"A Realm Reborn",,False,False
+26.8,"Pincer Maneuver",20,"A Realm Reborn",,False,False
+26.9,"Grimoire Fandango",25,"A Realm Reborn",,False,False
+26.10,"Sinking Doesmaga",30,"A Realm Reborn",,False,False
+26.11,"Austerities of Flame",30,"A Realm Reborn","Sylph-management",False,False
+26.12,"Forgotten but Not Gone",30,"A Realm Reborn","Sylph-management",False,False
+26.13,,0,"A Realm Reborn",,False,False
+27.0,"Austerities of Flame",30,"A Realm Reborn",,False,False
+27.1,"Austerities of Earth",35,"A Realm Reborn",,False,False
+27.2,"Shadowing the Summoner",40,"A Realm Reborn",,False,False
+27.3,"Allagan Attire",45,"A Realm Reborn",,False,False
+27.4,"Austerities of Wind",45,"A Realm Reborn",,False,False
+27.5,"Primal Burdens",50,"A Realm Reborn",,False,False
+27.6,"A Fitting Tomestone",50,"Heavensward","Before the Dawn",False,False
+27.7,"A Matter of Fact",52,"Heavensward",,False,False
+27.8,"A Miner Negotiation",54,"Heavensward",,False,False
+27.9,"Mad, Bad, and Ebon-clad",56,"Heavensward",,False,False
+27.10,"I Could Have Tranced All Night",58,"Heavensward",,False,False
+27.11,"A Flare for the Dramatic",60,"Heavensward",,False,False
+27.12,"A Book with Bite",60,"Stormblood","The Far Edge of Fate",False,False
+27.13,"Performing for Prin",63,"Stormblood",,False,False
+27.14,"An Egi-stential Crisis",65,"Stormblood",,False,False
+27.15,"Off the Record",68,"Stormblood",,False,False
+27.16,"An Art for the Living",70,"Stormblood",,False,False
+27.17,,0,"A Realm Reborn",,False,False
+28.0,"Forgotten but Not Gone",30,"A Realm Reborn",,False,False
+28.1,"The Last Remnants",35,"A Realm Reborn",,False,False
+28.2,"The Consequences of Anger",40,"A Realm Reborn",,False,False
+28.3,"In the Image of the Ancients",45,"A Realm Reborn",,False,False
+28.4,"For Your Fellow Man",45,"A Realm Reborn",,False,False
+28.5,"The Beast Within",50,"A Realm Reborn",,False,False
+28.6,"The Green Death",50,"Heavensward","Before the Dawn",False,False
+28.7,"Quarantine",52,"Heavensward",,False,False
+28.8,"False Friends",54,"Heavensward",,False,False
+28.9,"Ooh Rah",56,"Heavensward",,False,False
+28.10,"Unseen",58,"Heavensward",,False,False
+28.11,"Forward, the Royal Marines",60,"Heavensward",,False,False
+28.12,"The Vanishing Act",60,"Stormblood","The Far Edge of Fate",False,False
+28.13,"A Safe Place to Hide",63,"Stormblood",,False,False
+28.14,"In Loving Memory",65,"Stormblood",,False,False
+28.15,"The Chase",68,"Stormblood",,False,False
+28.16,"Our Unsung Heroes",70,"Stormblood",,False,False
+28.17,,0,"A Realm Reborn",,False,False
+29.0,"My First Daggers",1,"A Realm Reborn",,False,False
+29.1,"Stabbers in Yer Fambles",1,"A Realm Reborn",,False,False
+29.2,"A Dainty Dilemma",5,"A Realm Reborn",,False,False
+29.3,"Stray into the Shadows",10,"A Realm Reborn",,False,False
+29.4,"Stifled Screams",15,"A Realm Reborn",,False,False
+29.5,"Slave to the Code",15,"A Realm Reborn",,False,False
+29.6,"Grinners in the Mist",20,"A Realm Reborn",,False,False
+29.7,"Sweet Sorrows",25,"A Realm Reborn",,False,False
+29.8,"Market for Death",30,"A Realm Reborn",,False,False
+29.9,"Cloying Victory",30,"A Realm Reborn",,False,False
+29.10,"Peasants by Day, Ninjas by Night",30,"A Realm Reborn","Sylph-management",False,False
+29.11,,0,"A Realm Reborn",,False,False
+30.0,"Peasants by Day, Ninjas by Night",30,"A Realm Reborn",,False,False
+30.1,"My First Mudra",30,"A Realm Reborn",,False,False
+30.2,"Killer Combinations",35,"A Realm Reborn",,False,False
+30.3,"Once Upon a Time in Doma",35,"A Realm Reborn",,False,False
+30.4,"Pirates versus Ninjas",40,"A Realm Reborn",,False,False
+30.5,"Ninja Bathin'",40,"A Realm Reborn",,False,False
+30.6,"Tough Guys",45,"A Realm Reborn",,False,False
+30.7,"The Crow Knows",45,"A Realm Reborn",,False,False
+30.8,"Master and Student",50,"A Realm Reborn",,False,False
+30.9,"Strangers in a Strange Land",50,"Heavensward","Before the Dawn",False,False
+30.10,"The Impossible Girl",52,"Heavensward",,False,False
+30.11,"Ninja Assassin",54,"Heavensward",,False,False
+30.12,"Medieval Espionage",56,"Heavensward",,False,False
+30.13,"Staying Alive",58,"Heavensward",,False,False
+30.14,"In Her Defense",60,"Heavensward",,False,False
+30.15,"Search for the Stolen Scroll",60,"Stormblood","The Far Edge of Fate",False,False
+30.16,"Ninja Bathin' Redux",63,"Stormblood",,False,False
+30.17,"A Game of Life and Death",65,"Stormblood",,False,False
+30.18,"True Enlightenment",68,"Stormblood",,False,False
+30.19,"When Clans Collide",70,"Stormblood",,False,False
+30.20,,0,"A Realm Reborn",,False,False
+31.0,"Savior of Skysteel",30,"Heavensward",,False,False
+31.1,"Master of Marksmanship",30,"Heavensward",,False,False
+31.2,"Always the Last Place You Look",35,"Heavensward",,False,False
+31.3,"Rook Before You Reap",40,"Heavensward",,False,False
+31.4,"Securing the Locks",40,"Heavensward",,False,False
+31.5,"A Suppressive Strategy",45,"Heavensward",,False,False
+31.6,"Blood on the Sands",45,"Heavensward",,False,False
+31.7,"Rage against the Machinists",50,"Heavensward",,False,False
+31.8,"The Power of a Tourney",50,"Heavensward",,False,False
+31.9,"A Joye-less Celebration",50,"Heavensward",,False,False
+31.10,"Pushing the Brume",52,"Heavensward",,False,False
+31.11,"A Joye-ful Reunion",54,"Heavensward",,False,False
+31.12,"Wheels of Justice",56,"Heavensward",,False,False
+31.13,"Taking the Fall",58,"Heavensward",,False,False
+31.14,"Rusted Steel",58,"Heavensward",,False,False
+31.15,"Rise of the Machinists",60,"Heavensward",,False,False
+31.16,"The Machinists' Choice",60,"Stormblood","The Far Edge of Fate",False,False
+31.17,"The Hrunting Heist",63,"Stormblood",,False,False
+31.18,"Release the Hounds",65,"Stormblood",,False,False
+31.19,"Snouts Down, Tails Up",68,"Stormblood",,False,False
+31.20,"The Mongrel and the Knight",70,"Stormblood",,False,False
+31.21,,0,"A Realm Reborn",,False,False
+32.0,"Our End",30,"Heavensward",,False,False
+32.1,"Ishgardian Justice",30,"Heavensward",,False,False
+32.2,"The Voice in the Abyss",35,"Heavensward",,False,False
+32.3,"Heroic Reprise",40,"Heavensward",,False,False
+32.4,"Declaration of Blood",45,"Heavensward",,False,False
+32.5,"Our Answer",50,"Heavensward",,False,False
+32.6,"The Wages of Mercy",50,"Heavensward",,False,False
+32.7,"The Knight and the Maiden Fair",52,"Heavensward",,False,False
+32.8,"Kindred Spirits",54,"Heavensward",,False,False
+32.9,"Original Sins",56,"Heavensward",,False,False
+32.10,"The Flame in the Abyss",58,"Heavensward",,False,False
+32.11,"Absolution",60,"Heavensward",,False,False
+32.12,"In Memories We Walked",60,"Stormblood","The Far Edge of Fate",False,False
+32.13,"The Widow and Her Love",63,"Stormblood",,False,False
+32.14,"The Orphans and the Broken Blade",65,"Stormblood",,False,False
+32.15,"We Can Never Go Home",68,"Stormblood",,False,False
+32.16,"Our Compromise",70,"Stormblood",,False,False
+32.17,,0,"A Realm Reborn",,False,False
+33.0,"Stairway to the Heavens",30,"Heavensward",,False,False
+33.1,"Fortune Favors the Bole",30,"Heavensward",,False,False
+33.2,"Hanging in the Balance",35,"Heavensward",,False,False
+33.3,"A Lesson in Patience",40,"Heavensward",,False,False
+33.4,"Slings and Arrows",40,"Heavensward",,False,False
+33.5,"Ewer Right",45,"Heavensward",,False,False
+33.6,"Loved by the Sun",50,"Heavensward",,False,False
+33.7,"Spearheading Initiatives",50,"Heavensward",,False,False
+33.8,"Sharlayan Ascending",50,"Heavensward",,False,False
+33.9,"Empty Nest",52,"Heavensward",,False,False
+33.10,"Conviction",54,"Heavensward",,False,False
+33.11,"Feather in the Cap",56,"Heavensward",,False,False
+33.12,"Trumped",58,"Heavensward",,False,False
+33.13,"The Hands of Fate",60,"Heavensward",,False,False
+33.14,"East Meets West",60,"Stormblood","The Far Edge of Fate",False,False
+33.15,"Ride Like the Wind",63,"Stormblood",,False,False
+33.16,"Come Rain or Shrine",65,"Stormblood",,False,False
+33.17,"Behind Door Number Two",68,"Stormblood",,False,False
+33.18,"Foxfire",70,"Stormblood",,False,False
+33.19,,0,"A Realm Reborn",,False,False
+34.0,"The Way of the Samurai",50,"Stormblood",,False,False
+34.1,"Master Musosai",50,"Stormblood",,False,False
+34.2,"The Sands of Debt",52,"Stormblood",,False,False
+34.3,"Blood on the Deck",54,"Stormblood",,False,False
+34.4,"A Fraudster in the Forest",56,"Stormblood",,False,False
+34.5,"Tears in the Snow",58,"Stormblood",,False,False
+34.6,"The Face of True Evil",60,"Stormblood",,False,False
+34.7,"A Dignified Visitor",60,"Stormblood","The Far Edge of Fate",False,False
+34.8,"Trials of the Sekiseigumi",63,"Stormblood",,False,False
+34.9,"Matsuba Mayhem",65,"Stormblood",,False,False
+34.10,"The Hunt for Ugetsu",68,"Stormblood",,False,False
+34.11,"The Battle on Bekko",70,"Stormblood",,False,False
+34.12,,0,"A Realm Reborn",,False,False
+35.0,"Taking the Red",50,"Stormblood",,False,False
+35.1,"The Crimson Duelist",50,"Stormblood",,False,False
+35.2,"A Rewarding Struggle",52,"Stormblood",,False,False
+35.3,"Tracking the Cabal",54,"Stormblood",,False,False
+35.4,"A Vermilion Vendetta",56,"Stormblood",,False,False
+35.5,"On Lambard's Trail",58,"Stormblood",,False,False
+35.6,"Stained in Scarlet",60,"Stormblood",,False,False
+35.7,"The Color of Her Hair",60,"Stormblood","The Far Edge of Fate",False,False
+35.8,"Traced in Blood",63,"Stormblood",,False,False
+35.9,"Nightkin",65,"Stormblood",,False,False
+35.10,"Child of Lilith",68,"Stormblood",,False,False
+35.11,"With Heart and Steel",70,"Stormblood",,False,False
+35.12,,0,"A Realm Reborn",,False,False
+36.0,,0,"A Realm Reborn",,False,False
+37.0,"The Makings of a Gunbreaker",60,"Shadowbringers",,False,False
+37.1,"Hired Gunblades",60,"Shadowbringers",,False,False
+37.2,"For Better or Worse",63,"Shadowbringers",,False,False
+37.3,"Confessions of a Flaming Mongrel",65,"Shadowbringers",,False,False
+37.4,"Of Defectors and Defenders",68,"Shadowbringers",,False,False
+37.5,"Steel against Steel",70,"Shadowbringers",,False,False
+37.6,,0,"A Realm Reborn",,False,False
+38.0,"Shall We Dance",60,"Shadowbringers",,False,False
+38.1,"Gamboling for Gil",60,"Shadowbringers",,False,False
+38.2,"A Soirée in the Sultanate",63,"Shadowbringers",,False,False
+38.3,"Dances with Duskwights",65,"Shadowbringers",,False,False
+38.4,"High-steppin' in the Holy See",68,"Shadowbringers",,False,False
+38.5,"Save the Last Dance for Me",70,"Shadowbringers",,False,False
+38.6,,0,"A Realm Reborn",,False,False
+39.0,"The Killer Instinct",70,"Endwalker",,False,False
+39.1,"The Harvest Begins",70,"Endwalker",,False,False
+39.2,"On the Hunt",73,"Endwalker",,False,False
+39.3,"Dark Days",75,"Endwalker",,False,False
+39.4,"Thicker than Blood",78,"Endwalker",,False,False
+39.5,"The Killing Art",80,"Endwalker",,False,False
+39.6,,0,"A Realm Reborn",,False,False
+40.0,"Sage's Path",70,"Endwalker",,False,False
+40.1,"Sage's Focus",70,"Endwalker",,False,False
+40.2,"Sands of Despair",73,"Endwalker",,False,False
+40.3,"A Poisoned Gift",75,"Endwalker",,False,False
+40.4,"Pledge of Hope",78,"Endwalker",,False,False
+40.5,"Life Ephemeral, Path Eternal",80,"Endwalker",,False,False
+40.6,,0,"A Realm Reborn",,False,False
+41.0,"Enter the Viper",80,"Dawntrail",,False,False
+41.1,"Fangs of the Viper",80,"Dawntrail",,False,False
+41.2,"Viper in the Vidraal's Shadow",83,"Dawntrail",,False,False
+41.3,"Vipers on the Hunt",85,"Dawntrail",,False,False
+41.4,"Into the Viper Pit",88,"Dawntrail",,False,False
+41.5,"Vengeance of the Viper",90,"Dawntrail",,False,False
+41.6,,0,"A Realm Reborn",,False,False
+42.0,"The Joy of Pictomancy",80,"Dawntrail",,False,False
+42.1,"Mind over Manor",80,"Dawntrail",,False,False
+42.2,"Perspectives in Pursuit",83,"Dawntrail",,False,False
+42.3,"The Crate Beyond",85,"Dawntrail",,False,False
+42.4,"Beruru's Clues",88,"Dawntrail",,False,False
+42.5,"Somewhere Only She Knows",90,"Dawntrail",,False,False
+42.6,,0,"A Realm Reborn",,False,False

@@ -1,0 +1,820 @@
+﻿key,0,1,2,3,4,5,6,7
+#,Condition,ConditionValue,,BonusType,BonusValue,,,
+int32,GatheringCondition,uint32,uint16,GatheringPointBonusType,uint16,uint16,bit&01,uint32
+0,"",0,0,"",0,0,False,0
+1,"DEX ≥ <Value>IntegerParameter(1)</Value>",30,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+2,"Chain ≥ #<Value>IntegerParameter(1)</Value>",2,0," Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+3,"DEX ≥ <Value>IntegerParameter(1)</Value>",20,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",15,0,False,0
+4,"DEX ≥ <Value>IntegerParameter(1)</Value>",30,0," Low-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",20,0,False,0
+5,"Perception ≥ <Value>IntegerParameter(1)</Value>",42,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+6,"Perception ≥ <Value>IntegerParameter(1)</Value>",52,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+7,"Perception ≥ <Value>IntegerParameter(1)</Value>",62,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+8,"Perception ≥ <Value>IntegerParameter(1)</Value>",81,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+9,"Perception ≥ <Value>IntegerParameter(1)</Value>",98,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+10,"Perception ≥ <Value>IntegerParameter(1)</Value>",126,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+11,"Perception ≥ <Value>IntegerParameter(1)</Value>",153,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+12,"Perception ≥ <Value>IntegerParameter(1)</Value>",182,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+13,"Perception ≥ <Value>IntegerParameter(1)</Value>",198,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+14,"Perception ≥ <Value>IntegerParameter(1)</Value>",214,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+15,"Gathering ≥ <Value>IntegerParameter(1)</Value>",34,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+16,"Gathering ≥ <Value>IntegerParameter(1)</Value>",57,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+17,"Gathering ≥ <Value>IntegerParameter(1)</Value>",89,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+18,"Gathering ≥ <Value>IntegerParameter(1)</Value>",128,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+19,"Gathering ≥ <Value>IntegerParameter(1)</Value>",171,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+20,"Gathering ≥ <Value>IntegerParameter(1)</Value>",194,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+21,"Gathering ≥ <Value>IntegerParameter(1)</Value>",216,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+22,"Gathering ≥ <Value>IntegerParameter(1)</Value>",237,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+23,"Gathering ≥ <Value>IntegerParameter(1)</Value>",263,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+24,"Gathering ≥ <Value>IntegerParameter(1)</Value>",295,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+25,"Perception ≥ <Value>IntegerParameter(1)</Value>",89,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+26,"Perception ≥ <Value>IntegerParameter(1)</Value>",110,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+27,"Perception ≥ <Value>IntegerParameter(1)</Value>",131,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+28,"Perception ≥ <Value>IntegerParameter(1)</Value>",153,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+29,"Perception ≥ <Value>IntegerParameter(1)</Value>",174,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+30,"Perception ≥ <Value>IntegerParameter(1)</Value>",195,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+31,"Perception ≥ <Value>IntegerParameter(1)</Value>",216,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+32,"Perception ≥ <Value>IntegerParameter(1)</Value>",238,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+33,"Perception ≥ <Value>IntegerParameter(1)</Value>",259,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+34,"Perception ≥ <Value>IntegerParameter(1)</Value>",280,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+35,"Max GP ≥ <Value>IntegerParameter(1)</Value>",414,444," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+36,"Max GP ≥ <Value>IntegerParameter(1)</Value>",429,459," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+37,"Max GP ≥ <Value>IntegerParameter(1)</Value>",436,466," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+38,"Max GP ≥ <Value>IntegerParameter(1)</Value>",486,516," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+39,"Max GP ≥ <Value>IntegerParameter(1)</Value>",493,523," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+40,"Max GP ≥ <Value>IntegerParameter(1)</Value>",515,545," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+41,"Max GP ≥ <Value>IntegerParameter(1)</Value>",521,551," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+42,"Max GP ≥ <Value>IntegerParameter(1)</Value>",542,572," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+43,"Max GP ≥ <Value>IntegerParameter(1)</Value>",545,575," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+44,"Max GP ≥ <Value>IntegerParameter(1)</Value>",571,601," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+45,"Gathering ≥ <Value>IntegerParameter(1)</Value>",33,36," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+46,"Gathering ≥ <Value>IntegerParameter(1)</Value>",55,60," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+47,"Gathering ≥ <Value>IntegerParameter(1)</Value>",85,93," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+48,"Gathering ≥ <Value>IntegerParameter(1)</Value>",122,134," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+49,"Gathering ≥ <Value>IntegerParameter(1)</Value>",163,179," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+50,"Gathering ≥ <Value>IntegerParameter(1)</Value>",185,203," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+51,"Gathering ≥ <Value>IntegerParameter(1)</Value>",206,226," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+52,"Gathering ≥ <Value>IntegerParameter(1)</Value>",226,248," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+53,"Gathering ≥ <Value>IntegerParameter(1)</Value>",251,276," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+54,"Gathering ≥ <Value>IntegerParameter(1)</Value>",281,309," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+55,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4100,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+56,"Gathering ≥ <Value>IntegerParameter(1)</Value>",302,347," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+57,"Max GP ≥ <Value>IntegerParameter(1)</Value>",574,604," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+58,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3750,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+59,"Gathering ≥ <Value>IntegerParameter(1)</Value>",804,964," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+60,"Gathering ≥ <Value>IntegerParameter(1)</Value>",860,1032," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+61,"Gathering ≥ <Value>IntegerParameter(1)</Value>",916,1099," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+62,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1169,1402," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+63,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1356,1627," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+64,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2040,2448," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+65,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,630," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+66,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,630," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+67,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,630," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+68,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+69,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+70,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,770," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+71,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38745,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+72,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",39740,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+73,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38746,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+74,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",39741,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+75,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",39751,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+76,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",41188,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+77,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38723,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+78,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,770," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+79,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2244,2692," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+80,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",39752,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+81,"Perception ≥ <Value>IntegerParameter(1)</Value>",3800,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+82,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3590,3990," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+83,"Max GP ≥ <Value>IntegerParameter(1)</Value>",850,900," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+84,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+85,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+86,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+87,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+88,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",41189,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+89,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3300,3497,"Sublime Rate +<Value>IntegerParameter(1)</Value>%～ (Requires Maximum Collectability)",10,20,False,0
+90,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38734,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+91,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38724,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+92,"Gathering ≥ <Value>IntegerParameter(1)</Value>",42,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+93,"Gathering ≥ <Value>IntegerParameter(1)</Value>",42,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+94,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+95,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+96,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+97,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+98,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+99,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+100,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+101,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+102,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+103,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+104,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+105,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+106,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+107,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",38735,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+108,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+109,"Gathering ≥ <Value>IntegerParameter(1)</Value>",105,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+110,"",0,0,"",0,0,False,0
+111,"Gathering ≥ <Value>IntegerParameter(1)</Value>",188,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+112,"Gathering ≥ <Value>IntegerParameter(1)</Value>",228,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+113,"Gathering ≥ <Value>IntegerParameter(1)</Value>",323,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+114,"Gathering ≥ <Value>IntegerParameter(1)</Value>",523,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+115,"Gathering ≥ <Value>IntegerParameter(1)</Value>",619,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+116,"Gathering ≥ <Value>IntegerParameter(1)</Value>",889,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+117,"Gathering ≥ <Value>IntegerParameter(1)</Value>",989,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+118,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1546,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+119,"",0,0,"",0,0,False,0
+120,"",0,0,"",0,0,False,0
+121,"Max GP ≥ <Value>IntegerParameter(1)</Value>",486,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+122,"",0,0,"",0,0,False,0
+123,"Max GP ≥ <Value>IntegerParameter(1)</Value>",542,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+124,"Max GP ≥ <Value>IntegerParameter(1)</Value>",571,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+125,"Max GP ≥ <Value>IntegerParameter(1)</Value>",589,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+126,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+127,"Max GP ≥ <Value>IntegerParameter(1)</Value>",652,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+128,"Max GP ≥ <Value>IntegerParameter(1)</Value>",668,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+129,"Max GP ≥ <Value>IntegerParameter(1)</Value>",694,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+130,"Perception ≥ <Value>IntegerParameter(1)</Value>",25,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+131,"Perception ≥ <Value>IntegerParameter(1)</Value>",88,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+132,"Perception ≥ <Value>IntegerParameter(1)</Value>",150,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+133,"Perception ≥ <Value>IntegerParameter(1)</Value>",182,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+134,"Perception ≥ <Value>IntegerParameter(1)</Value>",226,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+135,"Perception ≥ <Value>IntegerParameter(1)</Value>",321,548," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+136,"Perception ≥ <Value>IntegerParameter(1)</Value>",499,960," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+137,"Perception ≥ <Value>IntegerParameter(1)</Value>",611,961," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+138,"Perception ≥ <Value>IntegerParameter(1)</Value>",874,1588," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+139,"Perception ≥ <Value>IntegerParameter(1)</Value>",989,1688," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+140,"Perception ≥ <Value>IntegerParameter(1)</Value>",1535,2024," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+141,"Perception ≥ <Value>IntegerParameter(1)</Value>",3550,3800," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+142,"Max GP ≥ <Value>IntegerParameter(1)</Value>",910,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+143,"Perception ≥ <Value>IntegerParameter(1)</Value>",4000,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+144,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3900,4100," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+145,"Max GP ≥ <Value>IntegerParameter(1)</Value>",900,950," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+146,"Perception ≥ <Value>IntegerParameter(1)</Value>",321,548," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+147,"Perception ≥ <Value>IntegerParameter(1)</Value>",499,960," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+148,"Perception ≥ <Value>IntegerParameter(1)</Value>",611,961," Gathering Yield +<Value>IntegerParameter(1)</Value>～",3,5,False,0
+149,"Perception ≥ <Value>IntegerParameter(1)</Value>",874,1588," Gathering Yield +<Value>IntegerParameter(1)</Value>～",3,5,False,0
+150,"Perception ≥ <Value>IntegerParameter(1)</Value>",989,1688," Gathering Yield +<Value>IntegerParameter(1)</Value>～",3,5,False,0
+151,"Perception ≥ <Value>IntegerParameter(1)</Value>",1535,2024," Gathering Yield +<Value>IntegerParameter(1)</Value>～",3,5,False,0
+152,"Perception ≥ <Value>IntegerParameter(1)</Value>",3650,3900," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+153,"Max GP ≥ <Value>IntegerParameter(1)</Value>",920,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+154,"Perception ≥ <Value>IntegerParameter(1)</Value>",5254,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+155,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5090,5548," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+156,"Max GP ≥ <Value>IntegerParameter(1)</Value>",930,960," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+157,"Perception ≥ <Value>IntegerParameter(1)</Value>",321,548," Gathering Yield +<Value>IntegerParameter(1)</Value>～",4,6,False,0
+158,"Perception ≥ <Value>IntegerParameter(1)</Value>",499,960," Gathering Yield +<Value>IntegerParameter(1)</Value>～",4,6,False,0
+159,"Perception ≥ <Value>IntegerParameter(1)</Value>",611,961," Gathering Yield +<Value>IntegerParameter(1)</Value>～",5,7,False,0
+160,"Perception ≥ <Value>IntegerParameter(1)</Value>",874,1588," Gathering Yield +<Value>IntegerParameter(1)</Value>～",5,7,False,0
+161,"Perception ≥ <Value>IntegerParameter(1)</Value>",989,1688," Gathering Yield +<Value>IntegerParameter(1)</Value>～",5,9,False,0
+162,"Perception ≥ <Value>IntegerParameter(1)</Value>",1535,2024," Gathering Yield +<Value>IntegerParameter(1)</Value>～",5,9,False,0
+163,"Max GP ≥ <Value>IntegerParameter(1)</Value>",836,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",5,0,False,0
+164,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2421,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+165,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2421,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+166,"Perception ≥ <Value>IntegerParameter(1)</Value>",2345,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+167,"Perception ≥ <Value>IntegerParameter(1)</Value>",2345,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+168,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+169,"Perception ≥ <Value>IntegerParameter(1)</Value>",25,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+170,"Max GP ≥ <Value>IntegerParameter(1)</Value>",400,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+171,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+172,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2740,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+173,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2740,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+174,"Perception ≥ <Value>IntegerParameter(1)</Value>",25,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+175,"Perception ≥ <Value>IntegerParameter(1)</Value>",2642,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+176,"Perception ≥ <Value>IntegerParameter(1)</Value>",2642,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+177,"Max GP ≥ <Value>IntegerParameter(1)</Value>",400,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+178,"Max GP ≥ <Value>IntegerParameter(1)</Value>",858,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",5,0,False,0
+179,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30301,0,"<If(IntegerParameter(2))> Collectable Available<Else/> Collectable Unavailable</If>",0,0,True,0
+180,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30302,0,"<If(IntegerParameter(2))> Collectable Available<Else/> Collectable Unavailable</If>",0,0,True,0
+181,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,770," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+182,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2524,3028," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+183,"",0,0,"",0,0,False,0
+184,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+185,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2740,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+186,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2740,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+187,"Perception ≥ <Value>IntegerParameter(1)</Value>",25,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+188,"Perception ≥ <Value>IntegerParameter(1)</Value>",2642,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+189,"Perception ≥ <Value>IntegerParameter(1)</Value>",2642,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",2,0,False,0
+190,"Max GP ≥ <Value>IntegerParameter(1)</Value>",400,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+191,"Max GP ≥ <Value>IntegerParameter(1)</Value>",858,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",5,0,False,0
+192,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1680,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+193,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1960,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+194,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2100,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+195,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2198,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+196,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2296,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+197,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2142,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+198,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2454,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+199,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2499,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+200,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2677,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+201,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2740,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+202,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2802,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+203,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2865,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+204,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3052,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+205,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+206,"Max GP ≥ <Value>IntegerParameter(1)</Value>",750,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+207,"Max GP ≥ <Value>IntegerParameter(1)</Value>",760,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+208,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+209,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+210,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+211,"Max GP ≥ <Value>IntegerParameter(1)</Value>",780,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+212,"Max GP ≥ <Value>IntegerParameter(1)</Value>",790,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+213,"Perception ≥ <Value>IntegerParameter(1)</Value>",1680,2167," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+214,"Perception ≥ <Value>IntegerParameter(1)</Value>",1925,2483," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+215,"Perception ≥ <Value>IntegerParameter(1)</Value>",1960,2528," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+216,"Perception ≥ <Value>IntegerParameter(1)</Value>",2100,2709," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+217,"Perception ≥ <Value>IntegerParameter(1)</Value>",2149,2772," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+218,"Perception ≥ <Value>IntegerParameter(1)</Value>",2198,2835," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+219,"Perception ≥ <Value>IntegerParameter(1)</Value>",2247,2898," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+220,"Perception ≥ <Value>IntegerParameter(1)</Value>",2394,3088," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+221,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2040,2244," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+222,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2338,2571," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+223,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2380,2618," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+224,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2550,2805," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+225,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2610,2871," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+226,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2669,2935," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+227,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2729,3001," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+228,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2907,3197," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+229,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,770," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+230,"Max GP ≥ <Value>IntegerParameter(1)</Value>",750,780," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+231,"Max GP ≥ <Value>IntegerParameter(1)</Value>",760,790," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+232,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,800," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+233,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,800," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+234,"Max GP ≥ <Value>IntegerParameter(1)</Value>",770,800," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+235,"Max GP ≥ <Value>IntegerParameter(1)</Value>",780,810," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+236,"Max GP ≥ <Value>IntegerParameter(1)</Value>",790,820," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+237,"Perception ≥ <Value>IntegerParameter(1)</Value>",2140,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+238,"Perception ≥ <Value>IntegerParameter(1)</Value>",2337,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+239,"Perception ≥ <Value>IntegerParameter(1)</Value>",2380,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+240,"Perception ≥ <Value>IntegerParameter(1)</Value>",2550,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+241,"Perception ≥ <Value>IntegerParameter(1)</Value>",2609,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+242,"Perception ≥ <Value>IntegerParameter(1)</Value>",2669,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+243,"Perception ≥ <Value>IntegerParameter(1)</Value>",2728,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+244,"Perception ≥ <Value>IntegerParameter(1)</Value>",2907,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+245,"Perception ≥ <Value>IntegerParameter(1)</Value>",3401,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+246,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3295,3591," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+247,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,880," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+248,"Max GP ≥ <Value>IntegerParameter(1)</Value>",750,780," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+249,"Max GP ≥ <Value>IntegerParameter(1)</Value>",760,790," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+250,"Max GP ≥ <Value>IntegerParameter(1)</Value>",780,810," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+251,"Max GP ≥ <Value>IntegerParameter(1)</Value>",780,810," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+252,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,860," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+253,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3950,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+254,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2719,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+255,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3139,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+256,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3223,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+257,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3307,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+258,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3391,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+259,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+260,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+261,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+262,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+263,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+264,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+265,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+266,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+267,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+268,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+269,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+270,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+271,"Gathering ≥ <Value>IntegerParameter(1)</Value>",42,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+272,"Gathering ≥ <Value>IntegerParameter(1)</Value>",42,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+273,"Gathering ≥ <Value>IntegerParameter(1)</Value>",54,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+274,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+275,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+276,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+277,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+278,"Gathering ≥ <Value>IntegerParameter(1)</Value>",69,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+279,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+280,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+281,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+282,"Gathering ≥ <Value>IntegerParameter(1)</Value>",90,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+283,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+284,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+285,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+286,"Gathering ≥ <Value>IntegerParameter(1)</Value>",112,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+287,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+288,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+289,"Gathering ≥ <Value>IntegerParameter(1)</Value>",138,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+290,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+291,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+292,"Gathering ≥ <Value>IntegerParameter(1)</Value>",165,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+293,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+294,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+295,"Gathering ≥ <Value>IntegerParameter(1)</Value>",187,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+296,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+297,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+298,"Gathering ≥ <Value>IntegerParameter(1)</Value>",204,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+299,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+300,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+301,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+302,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2000,3000," Collectability +<Value>IntegerParameter(1)</Value>～",1,10,False,0
+303,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2000,3000," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",1,10,False,0
+304,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2000,3000," Scrutiny Effectiveness +<Value>IntegerParameter(1)</Value>%～",1,10,False,0
+305,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2000,3000," Collector's Intuition Effectiveness +<Value>IntegerParameter(1)</Value>%～",1,10,False,0
+306,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4000,0," Collectability +<Value>IntegerParameter(1)</Value>",20,0,False,0
+307,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4000,0," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%",20,0,False,0
+308,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4000,0," Scrutiny Effectiveness +<Value>IntegerParameter(1)</Value>%",20,0,False,0
+309,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4000,0," Collector's Intuition Effectiveness +<Value>IntegerParameter(1)</Value>%",20,0,False,0
+310,"Perception ≥ <Value>IntegerParameter(1)</Value>",3650,3900," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+311,"Max GP ≥ <Value>IntegerParameter(1)</Value>",920,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+312,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3610,4035," Collectability +<Value>IntegerParameter(1)</Value>～",50,150,False,0
+313,"Perception ≥ <Value>IntegerParameter(1)</Value>",3650,3900," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+314,"Max GP ≥ <Value>IntegerParameter(1)</Value>",920,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+315,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3610,4035," Collectability +<Value>IntegerParameter(1)</Value>～",50,150,False,0
+316,"Perception ≥ <Value>IntegerParameter(1)</Value>",3820,4035," Collector's Intuition Effectiveness +<Value>IntegerParameter(1)</Value>%～",50,100,False,0
+317,"Perception ≥ <Value>IntegerParameter(1)</Value>",4020,0," Scrutiny Effectiveness +<Value>IntegerParameter(1)</Value>%",60,0,False,0
+318,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4020,4200," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+319,"Perception ≥ <Value>IntegerParameter(1)</Value>",240,2400," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+320,"Gathering ≥ <Value>IntegerParameter(1)</Value>",235,2400," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+321,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4300,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+322,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+323,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4300,4550," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+324,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,5760," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+325,"",0,0,"",0,0,False,0
+326,"",0,0,"",0,0,False,0
+327,"Perception ≥ <Value>IntegerParameter(1)</Value>",444,572," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+328,"Perception ≥ <Value>IntegerParameter(1)</Value>",451,581," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+329,"Perception ≥ <Value>IntegerParameter(1)</Value>",453,584," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+330,"Perception ≥ <Value>IntegerParameter(1)</Value>",455,586," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+331,"Perception ≥ <Value>IntegerParameter(1)</Value>",457,589," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+332,"Perception ≥ <Value>IntegerParameter(1)</Value>",461,594," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+333,"Perception ≥ <Value>IntegerParameter(1)</Value>",498,642," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+334,"Perception ≥ <Value>IntegerParameter(1)</Value>",505,651," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+335,"Perception ≥ <Value>IntegerParameter(1)</Value>",510,657," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+336,"Gathering ≥ <Value>IntegerParameter(1)</Value>",395,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+337,"Gathering ≥ <Value>IntegerParameter(1)</Value>",460,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+338,"Gathering ≥ <Value>IntegerParameter(1)</Value>",462,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+339,"Gathering ≥ <Value>IntegerParameter(1)</Value>",493,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+340,"Gathering ≥ <Value>IntegerParameter(1)</Value>",495,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+341,"Gathering ≥ <Value>IntegerParameter(1)</Value>",499,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+342,"Gathering ≥ <Value>IntegerParameter(1)</Value>",504,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+343,"Gathering ≥ <Value>IntegerParameter(1)</Value>",510,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+344,"Gathering ≥ <Value>IntegerParameter(1)</Value>",515,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+345,"Max GP ≥ <Value>IntegerParameter(1)</Value>",571,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+346,"Max GP ≥ <Value>IntegerParameter(1)</Value>",577,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+347,"Max GP ≥ <Value>IntegerParameter(1)</Value>",587,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+348,"Max GP ≥ <Value>IntegerParameter(1)</Value>",589,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+349,"Max GP ≥ <Value>IntegerParameter(1)</Value>",589,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+350,"Max GP ≥ <Value>IntegerParameter(1)</Value>",591,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+351,"Max GP ≥ <Value>IntegerParameter(1)</Value>",593,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+352,"Max GP ≥ <Value>IntegerParameter(1)</Value>",595,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+353,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+354,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+355,"Perception ≥ <Value>IntegerParameter(1)</Value>",539,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+356,"Perception ≥ <Value>IntegerParameter(1)</Value>",548,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+357,"Perception ≥ <Value>IntegerParameter(1)</Value>",550,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+358,"Perception ≥ <Value>IntegerParameter(1)</Value>",553,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+359,"Perception ≥ <Value>IntegerParameter(1)</Value>",555,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+360,"Perception ≥ <Value>IntegerParameter(1)</Value>",560,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+361,"Perception ≥ <Value>IntegerParameter(1)</Value>",565,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+362,"Perception ≥ <Value>IntegerParameter(1)</Value>",572,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+363,"Perception ≥ <Value>IntegerParameter(1)</Value>",578,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+364,"Max GP ≥ <Value>IntegerParameter(1)</Value>",577,607," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+365,"Max GP ≥ <Value>IntegerParameter(1)</Value>",587,617," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+366,"Max GP ≥ <Value>IntegerParameter(1)</Value>",589,619," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+367,"Max GP ≥ <Value>IntegerParameter(1)</Value>",589,619," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+368,"Max GP ≥ <Value>IntegerParameter(1)</Value>",591,621," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+369,"Max GP ≥ <Value>IntegerParameter(1)</Value>",593,623," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+370,"Max GP ≥ <Value>IntegerParameter(1)</Value>",595,625," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+371,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,627," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+372,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,627," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+373,"Gathering ≥ <Value>IntegerParameter(1)</Value>",377,414," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+374,"Gathering ≥ <Value>IntegerParameter(1)</Value>",439,482," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+375,"Gathering ≥ <Value>IntegerParameter(1)</Value>",440,484," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+376,"Gathering ≥ <Value>IntegerParameter(1)</Value>",470,517," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+377,"Gathering ≥ <Value>IntegerParameter(1)</Value>",472,519," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+378,"Gathering ≥ <Value>IntegerParameter(1)</Value>",476,523," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+379,"Gathering ≥ <Value>IntegerParameter(1)</Value>",480,528," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+380,"Gathering ≥ <Value>IntegerParameter(1)</Value>",486,534," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+381,"Gathering ≥ <Value>IntegerParameter(1)</Value>",491,540," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+382,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+383,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4750,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+384,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+385,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4750,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+386,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2500,0," Collectability +<Value>IntegerParameter(1)</Value>",140,0,False,0
+387,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2400,3700," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+388,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,4750," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+389,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4750,5445," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+390,"Gathering ≥ <Value>IntegerParameter(1)</Value>",395,454," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+391,"Gathering ≥ <Value>IntegerParameter(1)</Value>",400,460," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+392,"Gathering ≥ <Value>IntegerParameter(1)</Value>",495,569," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+393,"Gathering ≥ <Value>IntegerParameter(1)</Value>",499,573," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+394,"Gathering ≥ <Value>IntegerParameter(1)</Value>",515,592," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+395,"Perception ≥ <Value>IntegerParameter(1)</Value>",240,2400," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+396,"Perception ≥ <Value>IntegerParameter(1)</Value>",2400,3700," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+397,"Gathering ≥ <Value>IntegerParameter(1)</Value>",235,2400," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",30,40,False,0
+398,"Max GP ≥ <Value>IntegerParameter(1)</Value>",577,607," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+399,"Max GP ≥ <Value>IntegerParameter(1)</Value>",583,613," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+400,"Max GP ≥ <Value>IntegerParameter(1)</Value>",591,621," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+401,"Max GP ≥ <Value>IntegerParameter(1)</Value>",593,623," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+402,"Max GP ≥ <Value>IntegerParameter(1)</Value>",597,627," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+403,"Perception ≥ <Value>IntegerParameter(1)</Value>",5600,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+404,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5400,5886," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+405,"Max GP ≥ <Value>IntegerParameter(1)</Value>",960,990," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+406,"",0,0,"",0,0,False,0
+407,"",0,0,"",0,0,False,0
+408,"",0,0,"",0,0,False,0
+409,"Perception ≥ <Value>IntegerParameter(1)</Value>",1840,2760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+410,"Perception ≥ <Value>IntegerParameter(1)</Value>",1840,2760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+411,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1856,2041," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+412,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1856,2041," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+413,"Max GP ≥ <Value>IntegerParameter(1)</Value>",696,765," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+414,"Max GP ≥ <Value>IntegerParameter(1)</Value>",696,765," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+415,"Perception ≥ <Value>IntegerParameter(1)</Value>",1898,2847," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+416,"Perception ≥ <Value>IntegerParameter(1)</Value>",1898,2847," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+417,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1929,2121," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+418,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1929,2121," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+419,"Max GP ≥ <Value>IntegerParameter(1)</Value>",714,785," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+420,"Max GP ≥ <Value>IntegerParameter(1)</Value>",714,785," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+421,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",29642,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+422,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",29643,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+423,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30290,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+424,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30291,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+425,"Perception ≥ <Value>IntegerParameter(1)</Value>",2139,3208," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+426,"Perception ≥ <Value>IntegerParameter(1)</Value>",2139,3208," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+427,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2162,2378," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+428,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2162,2378," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+429,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,814," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+430,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,814," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+431,"Perception ≥ <Value>IntegerParameter(1)</Value>",2156,3234," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+432,"Perception ≥ <Value>IntegerParameter(1)</Value>",2156,3234," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+433,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2192,2411," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+434,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2192,2411," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+435,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,814," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+436,"Max GP ≥ <Value>IntegerParameter(1)</Value>",740,814," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+437,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30301,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+438,"<Sheet(Item,IntegerParameter(1),9)/> <If(IntegerParameter(2))>Equipped<Else/>Unequipped</If>",30302,0,"<If(IntegerParameter(2))> Available<Else/>Gathering Rate <Value>IntegerParameter(1)</Value>%</If>",0,0,True,0
+439,"Perception ≥ <Value>IntegerParameter(1)</Value>",2336,3504," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,30,False,0
+440,"Perception ≥ <Value>IntegerParameter(1)</Value>",2336,3504," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+441,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2348,2582," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+442,"Gathering ≥ <Value>IntegerParameter(1)</Value>",2348,2582," Gathering Yield +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+443,"Max GP ≥ <Value>IntegerParameter(1)</Value>",772,849," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+444,"Max GP ≥ <Value>IntegerParameter(1)</Value>",772,849," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",2,4,False,0
+445,"Perception ≥ <Value>IntegerParameter(1)</Value>",327,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+446,"Perception ≥ <Value>IntegerParameter(1)</Value>",612,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+447,"Perception ≥ <Value>IntegerParameter(1)</Value>",617,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+448,"Perception ≥ <Value>IntegerParameter(1)</Value>",631,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+449,"Perception ≥ <Value>IntegerParameter(1)</Value>",635,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+450,"Perception ≥ <Value>IntegerParameter(1)</Value>",656,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+451,"Perception ≥ <Value>IntegerParameter(1)</Value>",829,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+452,"Perception ≥ <Value>IntegerParameter(1)</Value>",829,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+453,"Perception ≥ <Value>IntegerParameter(1)</Value>",945,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+454,"Perception ≥ <Value>IntegerParameter(1)</Value>",1003,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+455,"Perception ≥ <Value>IntegerParameter(1)</Value>",1024,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+456,"Perception ≥ <Value>IntegerParameter(1)</Value>",1067,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+457,"Perception ≥ <Value>IntegerParameter(1)</Value>",1088,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+458,"Perception ≥ <Value>IntegerParameter(1)</Value>",1109,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+459,"Perception ≥ <Value>IntegerParameter(1)</Value>",1206,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+460,"Perception ≥ <Value>IntegerParameter(1)</Value>",1399,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+461,"Perception ≥ <Value>IntegerParameter(1)</Value>",1592,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+462,"Perception ≥ <Value>IntegerParameter(1)</Value>",1688,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+463,"Perception ≥ <Value>IntegerParameter(1)</Value>",1737,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+464,"Perception ≥ <Value>IntegerParameter(1)</Value>",1828,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+465,"Perception ≥ <Value>IntegerParameter(1)</Value>",1919,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+466,"Perception ≥ <Value>IntegerParameter(1)</Value>",2010,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+467,"Perception ≥ <Value>IntegerParameter(1)</Value>",2105,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+468,"Perception ≥ <Value>IntegerParameter(1)</Value>",2316,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+469,"Perception ≥ <Value>IntegerParameter(1)</Value>",2605,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",40,0,False,0
+470,"",0,0,"",0,0,False,0
+471,"Perception ≥ <Value>IntegerParameter(1)</Value>",3145,3774," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",30,50,False,0
+472,"",0,0,"",0,0,False,0
+473,"",0,0,"",0,0,False,0
+474,"",0,0,"",0,0,False,0
+475,"Max GP ≥ <Value>IntegerParameter(1)</Value>",900,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+476,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3949,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+477,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4002,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+478,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4056,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+479,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4109,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+480,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4163,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+481,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4216,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+482,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4270,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+483,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4323,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+484,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4431,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+485,"Max GP ≥ <Value>IntegerParameter(1)</Value>",810,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+486,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+487,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+488,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+489,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+490,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+491,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+492,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+493,"Max GP ≥ <Value>IntegerParameter(1)</Value>",840,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+494,"Gathering ≥ <Value>IntegerParameter(1)</Value>",221,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+495,"Gathering ≥ <Value>IntegerParameter(1)</Value>",448,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+496,"Gathering ≥ <Value>IntegerParameter(1)</Value>",453,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+497,"Gathering ≥ <Value>IntegerParameter(1)</Value>",457,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+498,"Gathering ≥ <Value>IntegerParameter(1)</Value>",498,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+499,"Perception ≥ <Value>IntegerParameter(1)</Value>",3097,3995," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+500,"Perception ≥ <Value>IntegerParameter(1)</Value>",3139,4049," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+501,"Perception ≥ <Value>IntegerParameter(1)</Value>",3181,4103," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+502,"Perception ≥ <Value>IntegerParameter(1)</Value>",3223,4157," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+503,"Perception ≥ <Value>IntegerParameter(1)</Value>",3265,4211," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+504,"Perception ≥ <Value>IntegerParameter(1)</Value>",3307,4266," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+505,"Perception ≥ <Value>IntegerParameter(1)</Value>",3349,4320," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+506,"Perception ≥ <Value>IntegerParameter(1)</Value>",3391,4374," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+507,"Perception ≥ <Value>IntegerParameter(1)</Value>",3475,4482," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+508,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3761,4137," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+509,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3812,4193," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+510,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3863,4249," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+511,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3914,4305," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+512,"Gathering ≥ <Value>IntegerParameter(1)</Value>",3965,4361," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+513,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4016,4417," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+514,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4067,4473," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+515,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4118,4529," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+516,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4220,4642," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+517,"Max GP ≥ <Value>IntegerParameter(1)</Value>",810,840," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+518,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,850," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+519,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,850," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+520,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,850," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+521,"Max GP ≥ <Value>IntegerParameter(1)</Value>",820,850," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+522,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,860," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+523,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,860," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+524,"Max GP ≥ <Value>IntegerParameter(1)</Value>",830,860," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+525,"Max GP ≥ <Value>IntegerParameter(1)</Value>",840,870," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+526,"Perception ≥ <Value>IntegerParameter(1)</Value>",3761,4513," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+527,"Perception ≥ <Value>IntegerParameter(1)</Value>",3812,4574," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+528,"Perception ≥ <Value>IntegerParameter(1)</Value>",3863,4635," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+529,"Perception ≥ <Value>IntegerParameter(1)</Value>",3914,4696," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+530,"Perception ≥ <Value>IntegerParameter(1)</Value>",3965,4758," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+531,"Perception ≥ <Value>IntegerParameter(1)</Value>",4016,4819," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+532,"Perception ≥ <Value>IntegerParameter(1)</Value>",4067,4880," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+533,"Perception ≥ <Value>IntegerParameter(1)</Value>",4118,4941," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+534,"Gathering ≥ <Value>IntegerParameter(1)</Value>",602,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+535,"Gathering ≥ <Value>IntegerParameter(1)</Value>",714,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+536,"Gathering ≥ <Value>IntegerParameter(1)</Value>",733,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+537,"Gathering ≥ <Value>IntegerParameter(1)</Value>",743,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+538,"Gathering ≥ <Value>IntegerParameter(1)</Value>",774,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+539,"Gathering ≥ <Value>IntegerParameter(1)</Value>",821,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+540,"Gathering ≥ <Value>IntegerParameter(1)</Value>",892,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+541,"Gathering ≥ <Value>IntegerParameter(1)</Value>",928,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+542,"Gathering ≥ <Value>IntegerParameter(1)</Value>",941,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+543,"Gathering ≥ <Value>IntegerParameter(1)</Value>",948,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+544,"Gathering ≥ <Value>IntegerParameter(1)</Value>",987,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+545,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1026,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+546,"Perception ≥ <Value>IntegerParameter(1)</Value>",645,832," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+547,"Perception ≥ <Value>IntegerParameter(1)</Value>",700,903," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+548,"Perception ≥ <Value>IntegerParameter(1)</Value>",728,939," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+549,"Perception ≥ <Value>IntegerParameter(1)</Value>",738,952," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+550,"Perception ≥ <Value>IntegerParameter(1)</Value>",743,958," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+551,"Perception ≥ <Value>IntegerParameter(1)</Value>",774,998," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+552,"Perception ≥ <Value>IntegerParameter(1)</Value>",805,1038," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+553,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+554,"Max GP ≥ <Value>IntegerParameter(1)</Value>",605,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+555,"Max GP ≥ <Value>IntegerParameter(1)</Value>",610,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+556,"Max GP ≥ <Value>IntegerParameter(1)</Value>",620,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+557,"Max GP ≥ <Value>IntegerParameter(1)</Value>",625,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+558,"Max GP ≥ <Value>IntegerParameter(1)</Value>",635,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+559,"Max GP ≥ <Value>IntegerParameter(1)</Value>",645,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+560,"Perception ≥ <Value>IntegerParameter(1)</Value>",4220,5064," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+561,"Max GP ≥ <Value>IntegerParameter(1)</Value>",870,900," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+562,"Max GP ≥ <Value>IntegerParameter(1)</Value>",900,930," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+563,"Max GP ≥ <Value>IntegerParameter(1)</Value>",930,960," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+564,"Perception ≥ <Value>IntegerParameter(1)</Value>",4907,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+565,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4754,5181," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+566,"Max GP ≥ <Value>IntegerParameter(1)</Value>",930,960," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+567,"Perception ≥ <Value>IntegerParameter(1)</Value>",731,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+568,"Perception ≥ <Value>IntegerParameter(1)</Value>",850,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+569,"Perception ≥ <Value>IntegerParameter(1)</Value>",884,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+570,"Perception ≥ <Value>IntegerParameter(1)</Value>",896,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+571,"Perception ≥ <Value>IntegerParameter(1)</Value>",902,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+572,"Perception ≥ <Value>IntegerParameter(1)</Value>",940,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+573,"Perception ≥ <Value>IntegerParameter(1)</Value>",977,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+574,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,630," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+575,"Max GP ≥ <Value>IntegerParameter(1)</Value>",605,635," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+576,"Max GP ≥ <Value>IntegerParameter(1)</Value>",610,640," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+577,"Max GP ≥ <Value>IntegerParameter(1)</Value>",620,650," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+578,"Max GP ≥ <Value>IntegerParameter(1)</Value>",625,655," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+579,"Max GP ≥ <Value>IntegerParameter(1)</Value>",635,665," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+580,"Max GP ≥ <Value>IntegerParameter(1)</Value>",645,675," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+581,"Gathering ≥ <Value>IntegerParameter(1)</Value>",782,860," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+582,"Gathering ≥ <Value>IntegerParameter(1)</Value>",850,935," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+583,"Gathering ≥ <Value>IntegerParameter(1)</Value>",884,972," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+584,"Gathering ≥ <Value>IntegerParameter(1)</Value>",897,986," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+585,"Gathering ≥ <Value>IntegerParameter(1)</Value>",903,993," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+586,"Gathering ≥ <Value>IntegerParameter(1)</Value>",940,1034," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+587,"Gathering ≥ <Value>IntegerParameter(1)</Value>",978,1075," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+588,"Perception ≥ <Value>IntegerParameter(1)</Value>",4300,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",15,0,False,0
+589,"Perception ≥ <Value>IntegerParameter(1)</Value>",4300,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+590,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",15,0,False,0
+591,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+592,"Perception ≥ <Value>IntegerParameter(1)</Value>",4750,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",15,0,False,0
+593,"Perception ≥ <Value>IntegerParameter(1)</Value>",4750,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+594,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4300,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+595,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4300,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+596,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+597,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+598,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4750,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+599,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4750,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+600,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5090,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+601,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5090,5548," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+602,"Perception ≥ <Value>IntegerParameter(1)</Value>",5090,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",15,0,False,0
+603,"Perception ≥ <Value>IntegerParameter(1)</Value>",5090,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",30,0,False,0
+604,"",0,0,"",0,0,False,0
+605,"",0,0,"",0,0,False,0
+606,"",0,0,"",0,0,False,0
+607,"",0,0,"",0,0,False,0
+608,"",0,0,"",0,0,False,0
+609,"Gathering ≥ <Value>IntegerParameter(1)</Value>",821,944," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+610,"Gathering ≥ <Value>IntegerParameter(1)</Value>",928,1067," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+611,"Gathering ≥ <Value>IntegerParameter(1)</Value>",948,1090," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+612,"Gathering ≥ <Value>IntegerParameter(1)</Value>",987,1135," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+613,"",0,0,"",0,0,False,0
+614,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1026,1179," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+615,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1116,1283," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+616,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1006,1156," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+617,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+618,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,5760," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+619,"Perception ≥ <Value>IntegerParameter(1)</Value>",5300,5550," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+620,"Perception ≥ <Value>IntegerParameter(1)</Value>",5300,5550," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+621,"Perception ≥ <Value>IntegerParameter(1)</Value>",5300,5550," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",15,30,False,0
+622,"Perception ≥ <Value>IntegerParameter(1)</Value>",5300,5550," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",40,60,False,0
+623,"Perception ≥ <Value>IntegerParameter(1)</Value>",5300,5550," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+624,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+625,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+626,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+627,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+628,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5460,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+629,"",0,0,"",0,0,False,0
+630,"",0,0,"",0,0,False,0
+631,"",0,0,"",0,0,False,0
+632,"",0,0,"",0,0,False,0
+633,"",0,0,"",0,0,False,0
+634,"",0,0,"",0,0,False,0
+635,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+636,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+637,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",15,30,False,0
+638,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",40,60,False,0
+639,"Perception ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+640,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+641,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+642,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+643,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+644,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+645,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,5000," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+646,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+647,"Gathering ≥ <Value>IntegerParameter(1)</Value>",4550,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+648,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+649,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Collectability +<Value>IntegerParameter(1)</Value>",70,0,False,0
+650,"Max GP ≥ <Value>IntegerParameter(1)</Value>",600,630," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+651,"Max GP ≥ <Value>IntegerParameter(1)</Value>",610,640," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+652,"Max GP ≥ <Value>IntegerParameter(1)</Value>",625,655," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+653,"Max GP ≥ <Value>IntegerParameter(1)</Value>",635,665," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+654,"Max GP ≥ <Value>IntegerParameter(1)</Value>",640,670," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+655,"Max GP ≥ <Value>IntegerParameter(1)</Value>",645,675," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+656,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+657,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,5760," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+658,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,5760," Meticulous Action Effect Chance +<Value>IntegerParameter(1)</Value>%～",10,20,False,0
+659,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",15,30,False,0
+660,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",40,60,False,0
+661,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+662,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",15,30,False,0
+663,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",40,60,False,0
+664,"Perception ≥ <Value>IntegerParameter(1)</Value>",5400,5760," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",60,80,False,0
+665,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+666,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+667,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+668,"Gathering ≥ <Value>IntegerParameter(1)</Value>",5500,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",2,0,False,0
+669,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1543,1851," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+670,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+671,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1015,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+672,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1225,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+673,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1260,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+674,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1326,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+675,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1392,0," High-level Item Gathering Rate +<Value>IntegerParameter(1)</Value>%",10,0,False,0
+676,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1294,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+677,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1517,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+678,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1562,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+679,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1606,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+680,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1649,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+681,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1691,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+682,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1733,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+683,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1859,0," Gathering Yield +<Value>IntegerParameter(1)</Value>",1,0,False,0
+684,"Perception ≥ <Value>IntegerParameter(1)</Value>",1015,1309," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+685,"Perception ≥ <Value>IntegerParameter(1)</Value>",1190,1535," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+686,"Perception ≥ <Value>IntegerParameter(1)</Value>",1225,1580," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+687,"Perception ≥ <Value>IntegerParameter(1)</Value>",1260,1625," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+688,"Perception ≥ <Value>IntegerParameter(1)</Value>",1293,1667," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+689,"Perception ≥ <Value>IntegerParameter(1)</Value>",1326,1710," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+690,"Perception ≥ <Value>IntegerParameter(1)</Value>",1359,1753," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+691,"Perception ≥ <Value>IntegerParameter(1)</Value>",1458,1880," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%～",20,60,False,0
+692,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+693,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+694,"Max GP ≥ <Value>IntegerParameter(1)</Value>",685,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+695,"Max GP ≥ <Value>IntegerParameter(1)</Value>",695,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+696,"Max GP ≥ <Value>IntegerParameter(1)</Value>",700,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+697,"Max GP ≥ <Value>IntegerParameter(1)</Value>",705,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+698,"Max GP ≥ <Value>IntegerParameter(1)</Value>",710,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+699,"Max GP ≥ <Value>IntegerParameter(1)</Value>",725,0," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>",1,0,False,0
+700,"",0,0,"",0,0,False,0
+701,"",0,0,"",0,0,False,0
+702,"",0,0,"",0,0,False,0
+703,"",0,0,"",0,0,False,0
+704,"",0,0,"",0,0,False,0
+705,"",0,0,"",0,0,False,0
+706,"",0,0,"",0,0,False,0
+707,"",0,0,"",0,0,False,0
+708,"Perception ≥ <Value>IntegerParameter(1)</Value>",1350,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+709,"Perception ≥ <Value>IntegerParameter(1)</Value>",1445,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+710,"Perception ≥ <Value>IntegerParameter(1)</Value>",1487,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+711,"Perception ≥ <Value>IntegerParameter(1)</Value>",1530,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+712,"Perception ≥ <Value>IntegerParameter(1)</Value>",1570,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+713,"Perception ≥ <Value>IntegerParameter(1)</Value>",1610,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+714,"Perception ≥ <Value>IntegerParameter(1)</Value>",1650,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+715,"Perception ≥ <Value>IntegerParameter(1)</Value>",1770,0," Gatherer's Boon Chance +<Value>IntegerParameter(1)</Value>%",100,0,False,0
+716,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+717,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+718,"Max GP ≥ <Value>IntegerParameter(1)</Value>",685,715," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+719,"Max GP ≥ <Value>IntegerParameter(1)</Value>",695,725," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+720,"Max GP ≥ <Value>IntegerParameter(1)</Value>",700,730," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+721,"Max GP ≥ <Value>IntegerParameter(1)</Value>",705,735," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+722,"Max GP ≥ <Value>IntegerParameter(1)</Value>",710,740," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+723,"Max GP ≥ <Value>IntegerParameter(1)</Value>",725,755," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+724,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1233,1356," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+725,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1445,1589," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+726,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1488,1636," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+727,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1530,1683," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+728,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1571,1728," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+729,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1611,1772," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+730,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1651,1816," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+731,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1771,1948," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+732,"",0,0,"",0,0,False,0
+733,"",0,0,"",0,0,False,0
+734,"",0,0,"",0,0,False,0
+735,"",0,0,"",0,0,True,0
+736,"",0,0,"",0,0,True,0
+737,"",0,0,"",0,0,True,0
+738,"",0,0,"",0,0,True,0
+739,"",0,0,"",0,0,True,0
+740,"",0,0,"",0,0,True,0
+741,"",0,0,"",0,0,True,0
+742,"",0,0,"",0,0,True,0
+743,"",0,0,"",0,0,True,0
+744,"",0,0,"",0,0,True,0
+745,"",0,0,"",0,0,True,0
+746,"",0,0,"",0,0,False,0
+747,"",0,0,"",0,0,False,0
+748,"",0,0,"",0,0,False,0
+749,"",0,0,"",0,0,False,0
+750,"",0,0,"",0,0,False,0
+751,"",0,0,"",0,0,False,0
+752,"",0,0,"",0,0,False,0
+753,"",0,0,"",0,0,False,0
+754,"",0,0,"",0,0,False,0
+755,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1294,1488," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+756,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1562,1796," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+757,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1606,1846," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+758,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1691,1944," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+759,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1775,2041," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+760,"Gathering ≥ <Value>IntegerParameter(1)</Value>",1859,2137," Gathering Yield +<Value>IntegerParameter(1)</Value>～",1,3,False,0
+761,"",0,0,"",0,0,False,0
+762,"",0,0,"",0,0,False,0
+763,"",0,0,"",0,0,False,0
+764,"",0,0,"",0,0,False,0
+765,"",0,0,"",0,0,False,0
+766,"",0,0,"",0,0,False,0
+767,"Max GP ≥ <Value>IntegerParameter(1)</Value>",680,710," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+768,"Max GP ≥ <Value>IntegerParameter(1)</Value>",685,715," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+769,"Max GP ≥ <Value>IntegerParameter(1)</Value>",695,725," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+770,"Max GP ≥ <Value>IntegerParameter(1)</Value>",705,735," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+771,"Max GP ≥ <Value>IntegerParameter(1)</Value>",715,745," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+772,"Max GP ≥ <Value>IntegerParameter(1)</Value>",725,755," Gathering Attempts/Integrity +<Value>IntegerParameter(1)</Value>～",1,2,False,0
+773,"",0,0,"",0,0,False,0
+774,"",0,0,"",0,0,False,0
+775,"",0,0,"",0,0,False,0
+776,"",0,0,"",0,0,False,0
+777,"",0,0,"",0,0,False,0
+778,"",0,0,"",0,0,False,0
+779,"",0,0,"",0,0,False,0
+780,"",0,0,"",0,0,False,0
+781,"",0,0,"",0,0,False,0
+782,"",0,0,"",0,0,False,0
+783,"",0,0,"",0,0,False,0
+784,"",0,0,"",0,0,False,0
+785,"",0,0,"",0,0,False,0
+786,"",0,0,"",0,0,False,0
+787,"",0,0,"",0,0,False,0
+788,"",0,0,"",0,0,False,0
+789,"",0,0,"",0,0,False,0
+790,"",0,0,"",0,0,False,0
+791,"",0,0,"",0,0,False,0
+792,"",0,0,"",0,0,False,0
+793,"",0,0,"",0,0,False,0
+794,"",0,0,"",0,0,False,0
+795,"",0,0,"",0,0,False,0
+796,"",0,0,"",0,0,False,0
+797,"",0,0,"",0,0,False,0
+798,"",0,0,"",0,0,False,0
+799,"",0,0,"",0,0,False,0
+800,"",0,0,"",0,0,False,0
+801,"",0,0,"",0,0,False,0
+802,"",0,0,"",0,0,False,0
+803,"",0,0,"",0,0,False,0
+804,"",0,0,"",0,0,False,0
+805,"",0,0,"",0,0,False,0
+806,"",0,0,"",0,0,False,0
+807,"",0,0,"",0,0,False,0
+808,"",0,0,"",0,0,False,0
+809,"",0,0,"",0,0,False,0
+810,"",0,0,"",0,0,False,0
+811,"",0,0,"",0,0,False,0
+812,"",0,0,"",0,0,False,0
+813,"",0,0,"",0,0,False,0
+814,"",0,0,"",0,0,False,0
+815,"",0,0,"",0,0,False,0
+816,"",0,0,"",0,0,False,0

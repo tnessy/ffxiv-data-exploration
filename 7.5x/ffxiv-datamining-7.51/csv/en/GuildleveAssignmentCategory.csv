@@ -1,0 +1,9 @@
+﻿key,0,1,2,3,4,5,6,7
+#,Category[0],Category[1],Category[2],Category[3],Category[4],Category[5],Category[6],Category[7]
+int32,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType,LeveAssignmentType
+0,"Battlecraft","","","","","","",""
+1,"Miner","Botanist","Fisher","","","","",""
+2,"Carpenter","Blacksmith","Armorer","Goldsmith","Leatherworker","Weaver","Alchemist","Culinarian"
+3,"The Maelstrom","","","","","","",""
+4,"Order of the Twin Adder","","","","","","",""
+5,"Immortal Flames","","","","","","",""

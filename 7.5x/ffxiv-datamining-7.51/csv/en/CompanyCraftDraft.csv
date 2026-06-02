@@ -1,0 +1,42 @@
+﻿key,0,1,2,3,4,5,6,7,8
+#,Name,CompanyCraftDraftCategory,RequiredItem[0],RequiredItemCount[0],RequiredItem[1],RequiredItemCount[1],RequiredItem[2],RequiredItemCount[2],Order
+int32,str,CompanyCraftDraftCategory,Item,byte,Item,byte,Item,byte,uint32
+0,"airship prototype II","Airships & Submersibles","Bamboo Weave",6,"",0,"",0,1
+1,"airship prototype III","Airships & Submersibles","Balsa Wood Scrap",10,"Bamboo Weave",4,"",0,2
+2,"airship prototype IV","Airships & Submersibles","Balsa Wood Lumber",10,"Bamboo Weave",4,"",0,3
+3,"airship prototype V","Airships & Submersibles","Synthetic Fiber",14,"Balsa Wood Scrap",4,"",0,4
+4,"airship prototype VI","Airships & Submersibles","Aetherochemical Fiber",14,"Balsa Wood Lumber",4,"Bamboo Weave",4,5
+5,"restaurant prototype","Housing","Red Clay",10,"",0,"",0,1
+6,"armor shop prototype","Housing","Black Clay",10,"",0,"",0,2
+7,"weapon shop prototype","Housing","Synthetic Resin",9,"Black Clay",8,"",0,3
+8,"aetherial wheel prototype II","Aetherial Wheels","Empty Crystal",6,"",0,"",0,1
+9,"aetherial wheel prototype III","Aetherial Wheels","Empty Crystal",6,"",0,"",0,2
+10,"aetherial wheel prototype IV","Aetherial Wheels","Empty Crystal",6,"",0,"",0,3
+11,"aetherial wheel prototype V","Aetherial Wheels","Empty Cluster",4,"Synthetic Resin",2,"",0,4
+12,"aetherial wheel prototype VI","Aetherial Wheels","Empty Cluster",4,"Synthetic Resin",2,"",0,5
+13,"aetherial wheel prototype VII","Aetherial Wheels","Empty Cluster",4,"Synthetic Resin",2,"",0,6
+14,"wheel stand prototype II","Aetherial Wheels","Empty Cluster",6,"Synthetic Resin",3,"Red Clay",8,7
+15,"moghouse prototype","Housing","Synthetic Resin",11,"Black Clay",10,"Bamboo Weave",8,4
+16,"wheel stand prototype III","Aetherial Wheels","Empty Cluster",8,"Synthetic Resin",5,"Red Clay",10,8
+17,"airship prototype VII","Airships & Submersibles","Aetherochemical Fiber",18,"Synthetic Fiber",8,"Balsa Wood Lumber",8,6
+18,"wheel stand prototype IV","Aetherial Wheels","Empty Cluster",10,"Synthetic Resin",7,"Red Clay",12,9
+19,"wheel stand prototype V","Aetherial Wheels","Empty Cluster",12,"Synthetic Resin",9,"Red Clay",14,10
+20,"chocobo house prototype","Housing","Synthetic Resin",14,"Black Clay",12,"Bamboo Weave",10,5
+21,"paissa house prototype","Housing","Synthetic Resin",16,"Black Clay",14,"Bamboo Weave",12,6
+22,"Carbuncle house prototype","Housing","Synthetic Resin",18,"Black Clay",16,"Bamboo Weave",14,7
+23,"Shirogane Castle prototype","Housing","Synthetic Resin",20,"Black Clay",18,"Bamboo Weave",16,8
+24,"submersible prototype I","Airships & Submersibles","Mahogany Lumber",6,"",0,"",0,7
+25,"submersible prototype II","Airships & Submersibles","Balsa Wood Scrap",10,"Bamboo Weave",4,"",0,8
+26,"submersible prototype III","Airships & Submersibles","Balsa Wood Lumber",10,"Bamboo Weave",4,"",0,9
+27,"odder otter house prototype","Housing","Synthetic Resin",21,"Black Clay",19,"Bamboo Weave",17,9
+28,"submersible prototype IV","Airships & Submersibles","Synthetic Fiber",14,"Balsa Wood Scrap",4,"",0,10
+29,"submersible prototype V","Airships & Submersibles","Aetherochemical Fiber",14,"Balsa Wood Lumber",4,"Bamboo Weave",4,11
+30,"submersible prototype VI","Airships & Submersibles","Cocobolo Lumber",18,"Synthetic Fiber",8,"Balsa Wood Scrap",8,12
+31,"half-timbered house prototype","Housing","Synthetic Resin",18,"Pelagic Clay",10,"Cocobolo Lumber",8,10
+32,"smithy prototype","Housing","Synthetic Resin",18,"Pelagic Clay",10,"Cocobolo Lumber",8,10
+33,"florist prototype","Housing","Synthetic Resin",18,"Pelagic Clay",10,"Cocobolo Lumber",8,10
+34,"forge prototype","Housing","Synthetic Resin",18,"Pelagic Clay",10,"Cocobolo Lumber",8,10
+35,"cafe prototype","Housing","Synthetic Resin",18,"Pelagic Clay",10,"Cocobolo Lumber",8,10
+36,"gingerbread house prototype","Housing","Pelagic Clay",18,"Basaltic Clay",10,"Cocobolo Lumber",8,10
+37,"sukiya-zukuri prototype","Housing","Pelagic Clay",18,"Basaltic Clay",10,"Cocobolo Lumber",8,10
+38,"country house prototype","Housing","Pelagic Clay",18,"Basaltic Clay",10,"Cocobolo Lumber",8,10

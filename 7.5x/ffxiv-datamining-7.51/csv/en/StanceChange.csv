@@ -1,0 +1,52 @@
+﻿key,0,1,2,3,4
+#,,Action[0],Action[1],,
+int32,uint16,Action,Action,uint16,single
+0,0,"","",0,0
+1,377,"Manipulation","Collectable Synthesis",34,0
+2,0,"Manipulation","Collectable Synthesis",34,0
+3,383,"Manipulation","Collectable Synthesis",34,0
+4,0,"Manipulation","Collectable Synthesis",210,0
+5,383,"Manipulation","Collectable Synthesis",34,0
+6,377,"Manipulation","Collectable Synthesis",210,0
+7,383,"Manipulation","Collectable Synthesis",34,0
+8,400,"Manipulation","Collectable Synthesis",34,0
+9,401,"Manipulation","Collectable Synthesis",34,0
+10,402,"Manipulation","Collectable Synthesis",34,0
+11,403,"Manipulation","Collectable Synthesis",34,0
+12,436,"Name of Water","Collectable Synthesis",211,0
+13,437,"Manipulation","Collectable Synthesis",3604,0
+14,0,"Manipulation","Collectable Synthesis",5896,0
+15,436,"Manipulation","Collectable Synthesis",34,0
+16,437,"Manipulation","Collectable Synthesis",34,0
+17,540,"Manipulation","Collectable Synthesis",34,0
+18,0,"Manipulation","Collectable Synthesis",34,0
+19,437,"Manipulation","Name of the Wind",34,0
+20,0,"Manipulation","Name of Fire",34,0
+21,436,"","Name of Ice",34,0
+22,461,"Manipulation","Collectable Synthesis",210,0
+23,0,"Manipulation","Collectable Synthesis",210,0
+24,461,"Manipulation","Collectable Synthesis",34,0
+25,0,"Name of Water","Collectable Synthesis",34,0
+26,461,"Manipulation","Collectable Synthesis",210,0
+27,378,"Name of Water","Collectable Synthesis",34,0
+28,379,"Name of Water","Collectable Synthesis",34,0
+29,385,"Name of Water","Collectable Synthesis",34,0
+30,0,"Name of Water","Collectable Synthesis",34,0
+31,386,"Manipulation","Collectable Synthesis",34,0
+32,0,"Name of Water","Collectable Synthesis",34,0
+33,387,"Manipulation","Collectable Synthesis",34,0
+34,0,"Name of Water","Collectable Synthesis",34,0
+35,388,"Manipulation","Collectable Synthesis",34,0
+36,0,"Name of Water","Collectable Synthesis",34,0
+37,497,"Manipulation","Collectable Synthesis",34,0
+38,497,"Manipulation","Collectable Synthesis",34,0
+39,498,"Manipulation","Collectable Synthesis",34,0
+40,499,"Name of Water","Collectable Synthesis",34,4.5
+41,514,"Manipulation","Collectable Synthesis",34,0
+42,513,"Name of Water","Collectable Synthesis",34,0
+43,541,"Name of Water","Collectable Synthesis",34,0
+44,546,"Manipulation","Collectable Synthesis",34,0
+45,547,"Manipulation","Collectable Synthesis",34,0
+46,511,"Manipulation","Collectable Synthesis",34,0
+47,550,"Name of Water","Collectable Synthesis",5925,0
+48,555,"Fire III","Fire III",34,0

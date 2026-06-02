@@ -1,0 +1,105 @@
+﻿key,0,1,2,3,4,5,6,7
+#,StartEmote,EndEmote,Move,Camera,EndOnRotate,EndOnEmote,ConditionMode,
+int32,Emote,Emote,bit&01,bit&02,bit&04,bit&08,byte,bit&10
+0,"","",True,True,False,False,0,False
+1,"Sit on Ground","Stand Up",False,True,True,False,11,False
+2,"Sit","Stand Up",False,True,True,True,11,False
+3,"Sleep","",False,True,True,True,11,False
+4,"Step Dance","",True,False,False,False,3,False
+5,"Harvest Dance","",True,False,False,False,3,False
+6,"Ball Dance","",True,False,False,False,3,False
+7,"Manderville Dance","",True,False,False,False,3,False
+8,"Bomb Dance","",True,True,False,False,3,False
+9,"Most Gentlemanly","",True,False,False,False,3,True
+10,"Thavnairian Dance","",True,True,False,False,3,False
+11,"Gold Dance","",True,True,False,False,3,False
+12,"Sundrop Dance","",True,False,False,False,3,False
+13,"Moogle Dance","",True,True,False,False,3,False
+14,"Eastern Dance","",True,True,False,False,3,False
+15,"Red Ranger Pose A","",True,False,False,False,3,True
+16,"Black Ranger Pose A","",True,False,False,False,3,True
+17,"Yellow Ranger Pose A","",True,False,False,False,3,True
+18,"Red Ranger Pose B","",True,False,False,False,3,True
+19,"Black Ranger Pose B","",True,False,False,False,3,True
+20,"Yellow Ranger Pose B","",True,False,False,False,3,True
+21,"Play Dead","",True,True,False,False,3,True
+22,"Moonlift Dance","",True,False,False,False,3,False
+23,"Songbird","",True,False,False,False,3,False
+24,"Water Float","",True,False,False,False,3,False
+25,"Squats","",True,False,False,False,3,False
+26,"Push-ups","",True,True,False,False,3,False
+27,"Sit-ups","",True,True,False,False,3,False
+28,"Breath Control","",True,False,False,False,3,False
+29,"Attention","",True,False,False,False,3,False
+30,"At Ease","",True,False,False,False,3,False
+31,"Box","",True,False,False,False,3,False
+32,"Ritual Prayer","",True,False,False,False,3,False
+33,"Charmed","",True,False,False,False,3,False
+34,"Cheer On: Blue","",True,False,False,False,3,False
+35,"Cheer Wave: Yellow","",True,False,False,False,3,False
+36,"Cheer Jump: Red","",True,False,False,False,3,False
+37,"Tremble","",True,False,False,False,3,False
+38,"Winded","",True,False,False,False,3,False
+39,"Box Step","",True,False,False,False,3,False
+40,"Side Step","",True,False,False,False,3,False
+41,"Yol Dance","",True,False,False,False,3,False
+42,"Sweat","",True,False,False,False,3,False
+43,"Shiver","",True,False,False,False,3,False
+44,"Get Fantasy","",True,False,False,False,3,False
+45,"Popoto Step","",True,False,False,False,3,False
+46,"Hum","",True,False,False,False,3,False
+47,"Confirm","",True,False,False,False,3,False
+48,"Scheme","",True,False,False,False,3,False
+49,"Heel Toe","",True,False,False,False,3,False
+50,"Goobbue Do","",True,False,False,False,3,False
+51,"Reprimand","",True,False,False,False,3,False
+52,"Manderville Mambo","",True,True,False,False,3,False
+53,"Simulation M","",True,False,False,False,3,True
+54,"Simulation F","",True,False,False,False,3,True
+55,"Lean","",True,False,False,False,3,False
+56,"Wasshoi","",True,False,False,False,3,False
+57,"Flame Dance","",True,True,False,False,3,False
+58,"Guard","",True,False,False,False,3,False
+59,"Malevolence","",True,False,False,False,3,False
+60,"Bee's Knees","",True,False,False,False,3,False
+61,"Lali Hop","",True,False,False,False,3,False
+62,"Wring Hands","",True,False,False,False,3,False
+63,"Sweep Up","",True,False,False,False,3,False
+64,"Show Right","",True,False,False,False,3,False
+65,"Show Left","",True,False,False,False,3,False
+66,"Spirit","",True,False,False,False,3,False
+67,"Cheer On: Bright","",True,False,False,False,3,False
+68,"Cheer Wave: Violet","",True,False,False,False,3,False
+69,"Cheer Jump: Green","",True,False,False,False,3,False
+70,"Lop Hop","",True,False,False,False,3,False
+71,"Slump","",True,False,False,False,3,False
+72,"Love Heart","",True,False,False,False,3,True
+73,"Sundering","",True,False,False,False,3,True
+74,"Attend","",True,False,False,False,3,False
+75,"Water","",True,False,False,False,3,False
+76,"Shake Drink","",True,False,False,False,3,False
+77,"Bouquet","",True,False,False,False,3,False
+78,"","",True,False,False,False,3,False
+79,"Dazed","",True,False,False,False,3,False
+80,"Rage","",True,False,False,False,3,False
+81,"Tomescroll","",True,False,False,False,3,False
+82,"Study","",True,False,False,False,3,False
+83,"Gridanian Gulp","",True,False,False,False,3,False
+84,"Ul'dahn Gulp","",True,False,False,False,3,False
+85,"Lominsan Gulp","",True,False,False,False,3,False
+86,"Savor Tea","",True,False,False,False,3,False
+87,"Pen","",True,False,False,False,3,False
+88,"Cheer Rhythm: Red","",True,False,False,False,3,False
+89,"Cheer Light: Yellow","",True,False,False,False,3,False
+90,"Cheer On: Orange","",True,False,False,False,3,False
+91,"Cheer Wave: Pink","",True,False,False,False,3,False
+92,"Cheer Jump: Indigo","",True,False,False,False,3,False
+93,"Carry Book","",True,False,False,False,3,False
+94,"Cheer Rhythm: Violet","",True,False,False,False,3,False
+95,"Cheer Rhythm: Bright","",True,False,False,False,3,False
+96,"Cheer Light: Blue","",True,False,False,False,3,False
+97,"Cheer Light: Green","",True,False,False,False,3,False
+98,"Cackle","",True,False,False,False,3,False
+99,"Conduct","",True,False,False,False,3,False
+100,"Devour Taco","",True,False,False,False,3,False
+101,"","",True,False,False,False,3,True

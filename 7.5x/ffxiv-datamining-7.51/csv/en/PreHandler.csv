@@ -1,0 +1,174 @@
+﻿key,0,1,2,3,4,5,6,7
+#,,Image,Target,UnlockQuest,AcceptMessage,DenyMessage,,
+int32,str,Image,Row,Quest,DefaultTalk,DefaultTalk,byte,byte
+3538944,"",,,,,,0,0
+3538945,"",,,,,,0,0
+3538946,"",,"Purchase Items (Lumber, Metal, Stone, Bone, Leather)",,,,1,0
+3538947,"",,"Purchase Items (Cloth, Reagents)",,,,1,0
+3538948,"",,"Purchase (Cooking Ingredients)",,,,1,0
+3538949,"",,"Purchase Items (Gardening, Dyes)",,,,1,0
+3538950,"",,"Purchase Items (Catalysts)",,,,1,0
+3538951,"",,"Purchase Items",,,,1,0
+3538952,"",,"Purchase Furnishings (Interior)",,,,1,0
+3538953,"",,"Purchase Furnishings (Chairs, Beds)",,,,1,0
+3538954,"",,"Purchase Furnishings (Tables, Food)",,,,1,0
+3538955,"",,"Purchase Furnishings (Shelves, Rugs, Lighting)",,,,1,0
+3538956,"",,"Purchase Furnishings (Other)",,,,1,0
+3538957,"",,"Purchase Weapons",,,,1,0
+3538958,"",,"Purchase Tools",,,,1,0
+3538959,"",,"Purchase Battlecraft Gear (DoW)",,,,1,0
+3538960,"",,"Purchase Battlecraft Gear (DoM)",,,,1,0
+3538961,"",,"Purchase Fieldcraft/Tradecraft Gear",,,,1,0
+3538962,"",,"Purchase Battlecraft Accessories",,,,1,0
+3538963,"",,"Purchase Items",,,,1,0
+3538964,"",,"Mahjong Rules",,,,1,0
+3538965,"",,"",,,,2,0
+3538966,"",,"Purchase Items",,,,5,0
+3538967,"",,"Purchase Battlecraft Accessories",,,,5,0
+3538968,"",,"Purchase Fieldcraft/Tradecraft Accessories",,,,5,0
+3538969,"",,"Purchase Gear (Lv. 62)",,,,5,0
+3538970,"",,"Purchase Gear (Lv. 64)",,,,5,0
+3538971,"",,"Purchase Weapons (Lv. 62)",,,,5,0
+3538972,"",,"Purchase Weapons (Lv. 64)",,,,5,0
+3538973,"",,"Purchase Weapons (Lv. 66)",,,,5,0
+3538974,"",,"Purchase Weapons (Lv. 68)",,,,5,0
+3538975,"",,"Purchase Weapons (Lv. 70)",,,,5,0
+3538976,"",,"Purchase Gear (Lv. 66)",,,,5,0
+3538977,"",,"Purchase Gear (Lv. 68)",,,,5,0
+3538978,"",,"Purchase Gear (Lv. 70)",,,,5,0
+3538979,"",,"Purchase Gear (Lv. 62)",,,,5,0
+3538980,"",,"Purchase Gear (Lv. 64)",,,,5,0
+3538981,"",,"Purchase Gear (Lv. 66)",,,,5,0
+3538982,"",,"Purchase Gear (Lv. 68)",,,,5,0
+3538983,"",,"Purchase Gear (Lv. 70)",,,,5,0
+3538984,"",,"Purchase Furnishings (Partitions, Wall Decorations)",,,,1,0
+3538985,"",,"Purchase Weapons",,,,6,0
+3538986,"",,"Purchase Tools",,,,6,0
+3538987,"",,"Purchase Battlecraft Gear (DoW)",,,,6,0
+3538988,"",,"Purchase Battlecraft Gear (DoM)",,,,6,0
+3538989,"",,"Purchase Fieldcraft/Tradecraft Gear",,,,6,0
+3538990,"",,"Purchase Battlecraft Accessories",,,,6,0
+3538991,"",,"Purchase Items",,,,6,0
+3538992,"",,"Purchase Items",,,,6,0
+3538993,"",,"Purchase Items",,,,4,0
+3538994,"",,"",,,,3,0
+3538995,"",,"Housing Inquiries",,,,3,0
+3538996,"",,"","Inscrutable Tastes",,"DefaultTalk#594673",1,0
+3538997,"",,"","Inscrutable Tastes",,"DefaultTalk#594674",1,0
+3538998,"",,"","Inscrutable Tastes",,"DefaultTalk#594675",1,0
+3538999,"",,"","Inscrutable Tastes",,"DefaultTalk#594670",1,0
+3539000,"",,"","Go West, Craftsman",,"DefaultTalk#594671",1,0
+3539001,"",,"","Reach Long and Prosper",,"DefaultTalk#594672",1,0
+3539002,"",,"","Reach Long and Prosper",,"DefaultTalk#594877",1,0
+3539003,"",,"","The Boutique Always Wins",,"DefaultTalk#595258",1,0
+3539004,"",,"","Inscrutable Tastes",,,1,0
+3539005,"",,"","Inscrutable Tastes",,,1,0
+3539006,"",,"","Reach Long and Prosper",,,1,0
+3539007,"",,"","The Boutique Always Wins",,,1,0
+3539008,"",,"","Reach Long and Prosper",,,1,0
+3539009,"",,"","The Boutique Always Wins",,,1,0
+3539010,"",,"","Reach Long and Prosper",,,1,0
+3539011,"",,"","The Boutique Always Wins",,,1,0
+3539012,"",,"","Reach Long and Prosper",,,1,0
+3539013,"",,"","The Boutique Always Wins",,,1,0
+3539014,"",,"","Reach Long and Prosper",,,1,0
+3539015,"",,"","The Boutique Always Wins",,,1,0
+3539016,"",,"","Reach Long and Prosper",,,1,0
+3539017,"",,"","The Boutique Always Wins",,,1,0
+3539018,"",,"","The Boutique Always Wins",,,1,0
+3539019,"",,"","The Boutique Always Wins",,,1,0
+3539020,"",,"","The Boutique Always Wins",,,1,0
+3539021,"",,"","Inscrutable Tastes",,,1,0
+3539022,"",,"","Inscrutable Tastes",,,1,0
+3539023,"",,"","Reach Long and Prosper",,,1,0
+3539024,"",,"","The Boutique Always Wins",,,1,0
+3539025,"",,"","Reach Long and Prosper",,,1,0
+3539026,"",,"","The Boutique Always Wins",,,1,0
+3539027,"",,"","Reach Long and Prosper",,,1,0
+3539028,"",,"","The Boutique Always Wins",,,1,0
+3539029,"",,"","Reach Long and Prosper",,,1,0
+3539030,"",,"","The Boutique Always Wins",,,1,0
+3539031,"",,"","Reach Long and Prosper",,,1,0
+3539032,"",,"","The Boutique Always Wins",,,1,0
+3539033,"",,"","Reach Long and Prosper",,,1,0
+3539034,"",,"","The Boutique Always Wins",,,1,0
+3539035,"",,"","The Boutique Always Wins",,,1,0
+3539036,"",,"","The Boutique Always Wins",,,1,0
+3539037,"",,"","The Boutique Always Wins",,,1,0
+3539038,"",,"Field Notes Exchange (Lockbox)",,,,1,0
+3539039,"","ui/icon/061000/061392.tex","The Bozjan Southern Front",,"DefaultTalk#596989",,4,0
+3539040,"",,"●収集品回収",,"DefaultTalk#596990","DefaultTalk#596988",4,0
+3539041,"","ui/icon/061000/061391.tex","InclusionShop#3801090",,,,1,0
+3539042,"","ui/icon/061000/061391.tex","InclusionShop#3801091",,,,1,0
+3539043,"","ui/icon/061000/061391.tex","InclusionShop#3801092",,,,1,0
+3539044,"","ui/icon/061000/061391.tex","InclusionShop#3801093",,,,1,0
+3539045,"",,,,,,1,0
+3539046,"",,"Hammered Frogments Exchange",,,,6,0
+3539047,"",,"Purchase Tools",,,,6,0
+3539048,"",,"Purchase Gear",,,,6,0
+3539049,"",,"Purchase Items",,,,6,0
+3539050,"",,"","Inscrutable Tastes",,"DefaultTalk#597069",1,0
+3539051,"",,"Purchase Items","Mislaid Plans",,,1,0
+3539052,"",,"Purchase Skysteel Replicas"," The Tools of Tomorrow",,,1,0
+3539053,"",,"Purchase Items","Oddness in the End",,,3,0
+3539054,"",,"Purchase Skysteel Replicas","Oddness in the End",,,3,0
+3539055,"",,"White Crafters' Scrip Exchange (Lv. 80 Gear) III","The Boutique Always Wins",,,1,0
+3539056,"",,"White Gatherers' Scrip Exchange (Lv. 80 Gear) III","The Boutique Always Wins",,,1,0
+3539057,"",,"Inconceivably Delicate Parts Exchange",,,,3,0
+3539058,"",,"Field Notes Exchange (Other)","The Lady of Blades",,,1,0
+3539059,"",,"Field Notes Exchange (Other)",,,,1,0
+3539060,"","ui/icon/061000/061392.tex","Zadnor",,"DefaultTalk#597468",,4,0
+3539061,"",,"","Expanding House of Splendors",,"DefaultTalk#595258",1,0
+3539062,"",,"InclusionShop#3801097","Expanding House of Splendors",,,1,0
+3539063,"",,"InclusionShop#3801096","The Boutique Always Wins",,,1,0
+3539064,"",,"InclusionShop#3801094","Reach Long and Prosper",,,1,0
+3539065,"",,"InclusionShop#3801094","Inscrutable Tastes",,,1,0
+3539066,"",,"InclusionShop#3801094","Inscrutable Tastes",,,1,0
+3539067,"",,"InclusionShop#3801099",,,,1,0
+3539068,"",,"Small Talk",,"DefaultTalk#599453","DefaultTalk#599269",3,0
+3539069,"",,"Purchase Furnishings (Phasmascapes)",,,,1,0
+3539070,"",,"InclusionShop#3801101",,,,1,0
+3539071,"","ui/icon/061000/061391.tex","InclusionShop#3801102",,,,1,0
+3539072,"",,"InclusionShop#3801103","Dawn of a New Deal",,,1,0
+3539073,"",,"InclusionShop#3801103","Inscrutable Tastes",,,1,0
+3539074,"",,"InclusionShop#3801103",,,,1,0
+3539075,"",,"",,,"DefaultTalk#600624",1,0
+3539076,"",,"Purchase Furnishings (Pillars, Decorations)",,,,1,0
+3539077,"",,"不用品の交換",,"DefaultTalk#600675",,1,0
+3539078,"","ui/icon/061000/061392.tex","The Occult Crescent",,"DefaultTalk#600676",,1,0
+3539079,"",,,,,,0,0
+3539080,"",,"Resistance Token Acquisition (Weapons)",,,,1,0
+3539081,"",,"Resistance Token Acquisition (Gear)",,,,1,0
+3539082,"",,"Resistance Token Acquisition (Accessories)",,,,1,0
+3539083,"",,"Rakshasa Token Acquisition (Weapons)",,,,1,0
+3539084,"",,"Rakshasa Token Acquisition (Gear)",,,,1,0
+3539085,"",,"Rakshasa Token Acquisition (Accessories)",,,,1,0
+3539086,"",,"Eulmoran Certificates of Import (Weapons)","Shadowbringers",,,1,0
+3539087,"",,"Eulmoran Certificates of Import (Gear)","Shadowbringers",,,1,0
+3539088,"",,"Eulmoran Certificates of Import (Accessories)","Shadowbringers",,,1,0
+3539089,"",,"Eulmoran Certificates of Novelty (Weapons)","Shadowbringers",,,1,0
+3539090,"",,"Eulmoran Certificates of Novelty (Gear)","Shadowbringers",,,1,0
+3539091,"",,"Eulmoran Certificates of Novelty (Accessories)","Shadowbringers",,,1,0
+3539092,"",,"Eulmoran Certificates of Grandeur (Weapons)","Shadowbringers",,,1,0
+3539093,"",,"Eulmoran Certificates of Grandeur (Gear)","Shadowbringers",,,1,0
+3539094,"",,"Eulmoran Certificates of Grandeur (Accessories)","Shadowbringers",,,1,0
+3539095,"",,"Hannish Certificates of Grade 1 Import (Weapons)","Endwalker",,,1,0
+3539096,"",,"Hannish Certificates of Grade 1 Import (Gear)","Endwalker",,,1,0
+3539097,"",,"Hannish Certificates of Grade 1 Import (Accessories)","Endwalker",,,1,0
+3539098,"",,"Hannish Certificates of Grade 2 Import (Weapons)","Endwalker",,,1,0
+3539099,"",,"Hannish Certificates of Grade 2 Import (Gear)","Endwalker",,,1,0
+3539100,"",,"Hannish Certificates of Grade 2 Import (Accessories)","Endwalker",,,1,0
+3539101,"",,"Hannish Certificates of Grade 3 Import (Weapons)","Endwalker",,,1,0
+3539102,"",,"Hannish Certificates of Grade 3 Import (Gear)","Endwalker",,,1,0
+3539103,"",,"Hannish Certificates of Grade 3 Import (Accessories)","Endwalker",,,1,0
+3539104,"",,"Everkeep Certificates of Grade 1 Import (Weapons)","Dawntrail",,,1,0
+3539105,"",,"Everkeep Certificates of Grade 1 Import (Gear)","Dawntrail",,,1,0
+3539106,"",,"Everkeep Certificates of Grade 1 Import (Accessories)","Dawntrail",,,1,0
+3539107,"",,"Everkeep Certificates of Grade 2 Import (Weapons)","Dawntrail",,,1,0
+3539108,"",,"Everkeep Certificates of Grade 2 Import (Gear)","Dawntrail",,,1,0
+3539109,"",,"Everkeep Certificates of Grade 2 Import (Accessories)","Dawntrail",,,1,0
+3539110,"",,"Everkeep Certificates of Grade 3 Import (Weapons)","Dawntrail",,,1,0
+3539111,"",,"Everkeep Certificates of Grade 3 Import (Gear)","Dawntrail",,,1,0
+3539112,"",,"Everkeep Certificates of Grade 3 Import (Accessories)","Dawntrail",,,1,0
+3539113,"",,,,,,0,0
+3539114,"",,"InclusionShop#3801094","Go West, Craftsman",,,1,0

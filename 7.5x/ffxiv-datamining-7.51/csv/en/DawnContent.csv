@@ -1,0 +1,80 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+#,Content,,,,,,Exp{BelowExMaxLvl},Exp{AboveExMaxLvl},,,,,,,,,,,,
+int32,ContentFinderCondition,bit&01,uint16,bit&02,bit&04,bit&08,uint32,uint32,uint32,byte,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32
+0,"",False,0,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,"Holminster Switch",False,1,False,True,True,3091000,1236400,68836,4,2009808,0,1029846,1029847,1029848,1029849,0,0,0,0
+2,"Dohn Mheg",False,2,False,True,True,3442000,1376800,68848,2,2009829,0,1029157,1029158,1029159,1029160,1029161,0,0,0
+3,"the Qitana Ravel",False,3,False,True,True,4021000,1608400,68876,2,2009955,0,1029210,1029557,1029850,1029851,0,0,0,0
+4,"Malikah's Well",False,4,False,True,True,4757000,1902800,69157,2,2010511,0,1030157,1030158,1030159,1030160,1030161,1030162,0,0
+5,"Mt. Gulg",False,5,False,True,True,5439000,2175600,69179,3,2010233,0,1030297,1030298,1030299,1030300,1030301,1030302,0,0
+6,"Amaurot",False,6,False,True,True,0,2208400,69190,7,2010235,0,1030361,1030362,1030363,1030364,1030365,1030366,0,0
+7,"the Grand Cosmos",False,7,False,True,True,0,2254000,69210,2,2010808,0,1031726,1031727,1031728,1031729,0,0,0,0
+8,"Anamnesis Anyder",False,8,False,True,True,0,2293200,69305,2,2010952,0,1032539,1032540,1032541,1032542,1032543,1032544,0,0
+9,"the Heroes' Gauntlet",False,9,False,True,True,0,2331200,69313,3,2011101,0,1033839,1033840,1033841,1033842,1033843,1033844,0,0
+10,"Matoya's Relict",False,10,False,True,True,0,2365600,69547,4,2011334,0,1035381,1035382,1035383,1035384,0,0,0,0
+11,"Paglth'an",False,11,False,True,True,0,2404400,69598,3,2011521,0,1036375,1036376,1036377,1036378,1036379,1036380,0,0
+12,"the Tower of Zot",False,1,False,True,True,6566000,2655600,69913,3,2011959,0,1038663,1038664,1038665,1038666,0,0,0,0
+13,"the Tower of Babil",False,2,False,True,True,7590500,3032800,69931,4,2012113,0,1039957,1039958,1039959,1039960,1039961,1039962,1039963,0
+14,"Vanaspati",False,3,False,True,True,8814000,3509200,69945,4,2012228,0,1038979,1038980,1038981,1038982,1038983,1038984,0,0
+15,"Ktisis Hyperboreia",False,4,False,True,True,9967000,3915600,69973,2,2012172,0,1040154,1040155,1040156,0,0,0,0,0
+16,"the Aitiascope",False,5,False,True,True,10795000,4024800,69985,2,2012229,2012742,1040488,1040489,1040490,1040491,1040492,1040493,1040494,0
+17,"the Mothercrystal",False,6,False,False,False,0,0,69985,4,2012230,0,1040496,1040497,1040498,1040499,1040500,1040501,1040502,0
+18,"the Dead Ends",False,7,False,True,True,0,4278400,70000,1,2012370,0,1041172,1041173,1041174,1041175,1041176,1041177,1041178,0
+19,"Alzadaal's Legacy",False,8,False,True,True,0,4532900,70065,1,2012839,0,1039585,1039586,1039587,1039588,0,0,0,0
+20,"the Fell Court of Troia",False,9,False,True,False,0,4787300,70128,4,2013041,0,1042060,1042061,1042062,0,0,0,0,0
+21,"Lapis Manalis",False,10,False,True,True,0,5041000,70210,3,2013225,0,1044264,1044265,1044266,1044267,1044268,1044269,0,0
+22,"the Aetherfont",False,11,False,True,True,0,5294500,70272,7,2013359,0,1045418,1045419,1045420,1045421,0,0,0,0
+23,"the Lunar Subterrane",False,12,False,True,True,0,5548700,70284,1,2013410,0,1045662,1045663,1045664,1045665,0,0,0,0
+24,"Ihuykatumu",False,1,False,True,False,5801800,0,70415,3,2013686,0,1046771,1046772,1046773,0,0,0,0,0
+25,"Worqor Zormor",False,2,False,True,False,6689500,0,70427,1,2013642,0,1046856,1046857,1046858,0,0,0,0,0
+26,"Worqor Lar Dor",False,3,False,False,False,0,0,70430,4,2013643,0,1046900,1046906,1046903,1046901,1046902,1046904,1046905,0
+27,"the Skydeep Cenote",False,4,False,True,True,7718100,0,70445,5,2013659,0,1047713,1047715,1047717,1047716,0,0,0,0
+28,"Vanguard",False,5,False,True,True,8787000,0,70462,3,2013687,0,1047367,1047369,1047368,1047370,0,0,0,0
+29,"Origenics",False,6,False,True,True,9012200,0,70481,2,2013848,0,1048144,1048143,1048141,1048142,0,0,0,0
+30,"Everkeep",False,7,False,False,False,0,0,70481,4,2013849,0,1048146,1048148,1048147,1048149,1048152,1048150,1048151,0
+31,"Alexandria",False,8,False,True,True,0,0,70495,2,2013791,0,1048018,1048020,1048021,0,0,0,0,0
+32,"Yuweyawata Field Station",False,9,False,True,True,0,0,70782,4,2014476,0,1052208,1052209,1052210,1052211,1052212,0,0,0
+33,"the Underkeep",False,10,False,True,True,0,0,70840,2,2014676,0,1053866,1053868,1053869,0,0,0,0,0
+34,"the Meso Terminal",False,11,False,True,True,0,0,70907,2,2014845,0,1054583,1054584,1054585,1054586,1054587,1054588,1054589,0
+35,"the Ageless Necropolis",False,12,False,False,False,0,0,70907,4,2014846,0,1054590,1054591,1054592,1054593,1054594,1054595,1054596,0
+36,"Mistwake",False,13,False,True,True,0,0,70964,2,2014992,0,1056145,1056146,1056147,1056148,0,0,0,0
+37,"the Clyteum",False,14,False,True,True,0,0,71007,2,2015303,0,1058795,1058796,1058797,1058798,1058799,0,0,0
+200,"Sastasha",False,1,False,False,False,0,0,0,0,2002696,0,0,0,0,0,0,0,0,0
+201,"the Tam–Tara Deepcroft",False,2,False,False,False,0,0,0,0,2002697,0,0,0,0,0,0,0,0,0
+202,"Copperbell Mines",False,3,False,False,False,0,0,0,0,2002698,0,0,0,0,0,0,0,0,0
+203,"the Bowl of Embers",False,4,False,False,False,0,0,0,0,2002688,0,0,0,0,0,0,0,0,0
+204,"the Thousand Maws of Toto–Rak",False,5,False,False,False,0,0,0,0,2002700,0,0,0,0,0,0,0,0,0
+205,"Haukke Manor",False,6,False,False,False,0,0,0,0,2002701,0,0,0,0,0,0,0,0,0
+206,"Brayflox's Longstop",False,7,False,False,False,0,0,0,0,2002702,0,0,0,0,0,0,0,0,0
+207,"the Navel",False,8,False,False,False,0,0,0,0,2002690,0,0,0,0,0,0,0,0,0
+208,"the Stone Vigil",False,9,False,False,False,0,0,0,0,2002705,0,0,0,0,0,0,0,0,0
+209,"the Howling Eye",False,10,False,False,False,0,0,0,0,2002689,0,0,0,0,0,0,0,0,0
+210,"Castrum Meridianum",False,11,False,False,False,0,0,0,0,2002710,0,0,0,0,0,0,0,0,0
+211,"the Praetorium",False,12,False,False,False,0,0,0,0,2002711,0,0,0,0,0,0,0,0,0
+212,"the Porta Decumana",False,13,False,False,False,0,0,0,0,2012614,0,0,0,0,0,0,0,0,0
+213,"Snowcloak",False,14,False,False,False,0,0,0,0,2004656,0,0,0,0,0,0,0,0,0
+214,"the Keeper of the Lake",False,15,False,False,False,0,0,0,0,2004639,0,0,0,0,0,0,0,0,0
+215,"Sohm Al",False,1,False,False,False,0,0,0,0,2005449,0,0,0,0,0,0,0,0,0
+216,"the Aery",False,2,False,False,False,0,0,0,0,2005463,0,0,0,0,0,0,0,0,0
+217,"the Vault",False,3,False,False,False,0,0,0,0,2005548,0,0,0,0,0,0,0,0,0
+218,"the Great Gubal Library",False,4,False,False,False,0,0,0,0,2005424,0,0,0,0,0,0,0,0,0
+219,"the Aetherochemical Research Facility",False,5,False,False,False,0,0,0,0,2005549,0,0,0,0,0,0,0,0,0
+220,"the Antitower",False,6,False,False,False,0,0,0,0,2006859,0,0,0,0,0,0,0,0,0
+221,"Sohr Khai",False,7,False,False,False,0,0,0,0,2006982,0,0,0,0,0,0,0,0,0
+222,"Xelphatol",False,8,False,False,False,0,0,0,0,2007427,0,0,0,0,0,0,0,0,0
+223,"Baelsar's Wall",False,9,False,False,False,0,0,0,0,2007503,0,0,0,0,0,0,0,0,0
+224,"the Sirensong Sea",False,1,False,False,False,0,0,0,0,2008161,0,0,0,0,0,0,0,0,0
+225,"Bardam's Mettle",False,2,False,False,False,0,0,0,0,2008249,0,0,0,0,0,0,0,0,0
+226,"Doma Castle",False,3,False,False,False,0,0,0,0,2007933,0,0,0,0,0,0,0,0,0
+227,"Castrum Abania",False,4,False,False,False,0,0,0,0,2008215,0,0,0,0,0,0,0,0,0
+228,"Ala Mhigo",False,5,False,False,False,0,0,0,0,2008286,0,0,0,0,0,0,0,0,0
+229,"the Drowned City of Skalla",False,6,False,False,False,0,0,0,0,2009053,0,0,0,0,0,0,0,0,0
+230,"the Burn",False,7,False,False,False,0,0,0,0,2009596,0,0,0,0,0,0,0,0,0
+231,"the Ghimlyt Dark",False,8,False,False,False,0,0,0,0,2009657,0,0,0,0,0,0,0,0,0
+232,"Halatali",True,101,False,False,False,0,0,0,0,2002699,0,0,0,0,0,0,0,0,0
+233,"the Sunken Temple of Qarn",True,102,False,False,False,0,0,0,0,2002703,0,0,0,0,0,0,0,0,0
+234,"Cutter's Cry",True,103,False,False,False,0,0,0,0,2002704,0,0,0,0,0,0,0,0,0
+235,"Dzemael Darkhold",True,104,False,False,False,0,0,0,0,2002706,0,0,0,0,0,0,0,0,0
+236,"the Aurum Vale",True,105,False,False,False,0,0,0,0,2002708,0,0,0,0,0,0,0,0,0
+237,"the Dusk Vigil",True,201,False,False,False,0,0,0,0,2006378,0,0,0,0,0,0,0,0,0
+238,"Shisui of the Violet Tides",True,301,False,False,False,0,0,0,0,2008812,0,0,0,0,0,0,0,0,0

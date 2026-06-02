@@ -1,0 +1,221 @@
+﻿key,0,1,2,3,4,5,6,7,8
+#,ContentLinkType,Content,,UnlockQuest[0],UnlockQuest[1],UnlockQuest[2],,Map,
+int32,byte,Row,bit&01,Quest,Quest,Quest,uint32,Row,int32
+0,0,,False,,,,0,,0
+1,1,"InstanceContent#9",False,"Braving New Depths",,,0,,0
+2,1,"InstanceContent#12",False,"Dishonor Before Death",,,0,,0
+3,1,"InstanceContent#13",False,"Fort of Fear",,,0,,0
+4,1,"InstanceContent#25",False,"Blood for Stone",,,0,,0
+5,1,"InstanceContent#28",False,"It's Definitely Pirates",,,0,,0
+6,1,"InstanceContent#26",False,"The Wrath of Qarn",,,0,,0
+7,1,"InstanceContent#30",False,"Not Easy Being Green",,,0,,0
+8,1,"InstanceContent#38",False,"Heavensward",,,0,,0
+9,1,"InstanceContent#56",False,"Stormblood",,,0,,0
+10,1,"InstanceContent#59",False,"An Auspicious Encounter",,,0,,0
+11,1,"InstanceContent#67",False,"Shadowbringers",,,0,,0
+12,1,"InstanceContent#84",False,"Endwalker",,,0,,0
+13,1,"InstanceContent#30001",False,"Labyrinth of the Ancients",,,0,,0
+14,1,"InstanceContent#30011",False,"Syrcus Tower",,,0,,0
+15,1,"InstanceContent#30020",False,"The World of Darkness",,,0,,0
+16,1,"InstanceContent#30058",False,"A City Fallen",,,0,,0
+17,1,"InstanceContent#30068",False,"Annihilation",,,0,,0
+18,1,"InstanceContent#30077",False,"The City of Lost Angels",,,0,,0
+19,1,"InstanceContent#30049",False,"Into the Deltascape",,,0,,0
+20,1,"InstanceContent#30050",False,"A Catastrophe Waiting",,,0,,0
+21,1,"InstanceContent#30051",False,"The Croak Queen",,,0,,0
+22,1,"InstanceContent#30052",False,"A Void at All Costs",,,0,,0
+23,1,"InstanceContent#30059",False,"No Slowing Down",,,0,,0
+24,1,"InstanceContent#30060",False,"An Unfinished Masterpiece",,,0,,0
+25,1,"InstanceContent#30061",False,"Won't Let You Pass",,,0,,0
+26,1,"InstanceContent#30062",False,"Test World of Ruin",,,0,,0
+27,1,"InstanceContent#30069",False,"In the Beginning, There Was Chaos",,,0,,0
+28,1,"InstanceContent#30070",False,"And Like Fire Was His Mane",,,0,,0
+29,1,"InstanceContent#30071",False,"In the End, There Is Omega",,,0,,0
+30,1,"InstanceContent#30072",False,"In the End, There Is Omega",,,0,,0
+31,1,"InstanceContent#30078",False,"Deploy the Core",,,0,,0
+32,1,"InstanceContent#30082",False,"One Fell Swoop",,,0,,0
+33,1,"InstanceContent#30080",False,"Nor Any Drop to Drink",,,0,,0
+34,1,"InstanceContent#30084",False,"Super Seismic",,,0,,0
+35,1,"InstanceContent#30088",False,"Blood and Thunder",,,0,,0
+36,1,"InstanceContent#30090",False,"Into the Firestorm",,,0,,0
+37,1,"InstanceContent#30092",False,"Heart of Darkness",,,0,,0
+38,1,"InstanceContent#30094",False,"On Thin Ice",,,0,,0
+39,1,"InstanceContent#30097",False,"Fear of the Dark",,,0,,0
+40,1,"InstanceContent#30099",False,"Shadows of the Past",,,0,,0
+41,1,"InstanceContent#30101",False,"Voice of the Soul",,,0,,0
+42,1,"InstanceContent#30103",False,"Voice of the Soul",,,0,,0
+43,1,"InstanceContent#20037",False,"When the Bough Wakes",,,0,,0
+44,1,"InstanceContent#20041",False,"Balance unto All",,,0,,0
+45,1,"InstanceContent#20043",False,"The Last Pillar to Fall",,,0,,0
+46,1,"InstanceContent#20051",False,"An Auspicious Encounter",,,0,,0
+47,1,"InstanceContent#20057",False,"The Fire-bird Down Below",,,0,,0
+48,1,"InstanceContent#20060",False,"Surpassing the Samurai",,,0,,0
+49,1,"InstanceContent#15",False,"Rock the Castrum",,,0,,0
+50,1,"InstanceContent#86",False,"The Ultimate Weapon",,,0,,0
+51,1,"InstanceContent#20082",False,"The Ultimate Weapon",,,0,,0
+52,1,"InstanceContent#41001",True,"Like Civilized Men and Women (Twin Adder)","Like Civilized Men and Women (Maelstrom)","Like Civilized Men and Women (Immortal Flames)",0,,0
+53,1,"InstanceContent#41004",True,"Like Civilized Men and Women (Twin Adder)","Like Civilized Men and Women (Maelstrom)","Like Civilized Men and Women (Immortal Flames)",0,,0
+54,1,"InstanceContent#41005",True,"Like Civilized Men and Women (Twin Adder)","Like Civilized Men and Women (Maelstrom)","Like Civilized Men and Women (Immortal Flames)",0,,0
+55,1,"InstanceContent#41006",True,"Like Civilized Men and Women (Twin Adder)","Like Civilized Men and Women (Maelstrom)","Like Civilized Men and Women (Immortal Flames)",0,,0
+56,1,"InstanceContent#42002",False,"Earning Your Wings",,,0,,0
+57,2,"GoldSaucerContent#1",False,"It Could Happen to You",,,0,"Level#5673555",0
+58,2,"GoldSaucerContent#4",False,"It Could Happen to You",,,0,"Level#5673555",0
+59,2,"GoldSaucerContent#5",False,"It Could Happen to You",,,0,"Level#5673555",0
+60,2,"GoldSaucerContent#6",False,"It Could Happen to You",,,0,"Level#5673555",0
+61,2,"GoldSaucerContent#7",False,"It Could Happen to You",,,0,"Level#5673555",0
+62,2,"GoldSaucerContent#8",False,"It Could Happen to You",,,0,"Level#5673555",0
+63,0,,False,"All the Fish in the Sea",,,0,,0
+64,1,"InstanceContent#60010",False,"What Lies Beneath",,,0,"Level#6286408",0
+65,3,"n4f1",False,,,,0,"Looming Nightshade",0
+66,3,"n4f3",False,,,,0,"Scavengers Hunted",0
+67,3,"n4f4",False,,,,0,"Mad Magic",0
+68,3,"n4f2",False,,,,0,"Foes Most Formidable",0
+69,3,"n4f5",False,,,,0,"I'll Be Bark",0
+70,3,"n4f6",False,,,,0,"Where Has the Dagon",0
+71,3,"k5f1",False,,,,0,"Incident Files: Seeds of Chaos",0
+72,3,"m5f1",False,,,,0,"Devout Pilgrims vs. Daivadipa",0
+73,3,"m5f2",False,,,,0,"Artificial Malevolence: 15 Minutes to Comply",0
+74,3,"u5f1",False,,,,0,"Lepus Lamentorum: Dynamite Disaster",0
+75,3,"n5f1",False,,,,0,"Grand Designs: Aigokeros",0
+76,3,"u5f2",False,,,,0,"Omicron Recall: Comms Expansion",0
+77,4,"elite mark bill",True,"Let the Hunt Begin (Twin Adder)","Let the Hunt Begin (Maelstrom)","Let the Hunt Begin (Immortal Flames)",99,,0
+78,4,"elite Clan mark bill",False,,,,0,"Level#5892509",0
+79,4,"elite Veteran Clan mark bill",False,,,,0,"Level#6928982",0
+80,5,"Timeworn Toadskin Map",False,"Treasures and Tribulations",,,0,,0
+81,5,"Timeworn Boarskin Map",False,"Treasures and Tribulations",,,0,,0
+82,6,"Armorer",False,"Way of the Fisher",,,0,,0
+83,6,"The Grinner",False,"Way of the Fisher",,,0,,0
+84,6,"The Salter",False,"Way of the Fisher",,,0,,0
+85,6,"Blue Widow",False,"Way of the Fisher",,,0,,0
+86,7,"Fufulupa",False,"Triple Triad Trial",,,0,"Level#3629823",0
+87,7,"indolent imperial",False,"Triple Triad Trial",,,0,"Level#5663701",0
+88,7,"Buscarron",False,"Triple Triad Trial",,,0,"Level#1146551",0
+89,7,"Gegeruju",False,"Triple Triad Trial",,,0,"Level#4258385",0
+90,1,"InstanceContent#29",False,"For Keep's Sake",,,0,,0
+91,1,"InstanceContent#33",False,"Reap What You Sow",,,0,,0
+92,1,"InstanceContent#30021",False,"Disarmed",,,0,,0
+93,1,"InstanceContent#30022",False,"Steel and Steam",,,0,,0
+94,1,"InstanceContent#30023",False,"Tinker, Seeker, Soldier, Spy",,,0,,0
+95,1,"InstanceContent#30024",False,"The Pulsing Heart",,,0,,0
+96,1,"InstanceContent#30030",False,"Rearmed",,,0,,0
+97,1,"InstanceContent#30031",False,"The Folly of Youth",,,0,,0
+98,1,"InstanceContent#30032",False,"Toppling the Tyrant",,,0,,0
+99,1,"InstanceContent#30033",False,"One Step Behind",,,0,,0
+100,1,"InstanceContent#30039",False,"The Coeurl and the Colossus",,,0,,0
+101,1,"InstanceContent#30040",False,"Biggs and Wedge's Excellent Adventure",,,0,,0
+102,1,"InstanceContent#30041",False,"Thus Spake Quickthinx",,,0,,0
+103,1,"InstanceContent#30042",False,"Judgment Day",,,0,,0
+104,1,"InstanceContent#20059",False,"The Past Is Never Past",,,0,,0
+105,1,"InstanceContent#20068",False,"Ruby Doomsday",,,0,,0
+106,1,"InstanceContent#20073",False,"Blood of Emerald",,,0,,0
+107,1,"InstanceContent#20075",False,"Duty in the Sky with Diamond",,,0,,0
+108,7,"Mimidoa",False,"Triple Triad Trial",,,0,"Level#3766212",0
+109,7,"Piralnaut",False,"Triple Triad Trial",,,0,"Level#4249634",0
+110,6,"Zalera",False,"Way of the Fisher",,,0,,0
+111,5,,False,"Treasures and Tribulations",,,0,,0
+112,8,,False,"And We Shall Call It Eureka",,,0,,0
+113,8,,False,"Where Eagles Nest",,,0,,0
+114,1,"InstanceContent#60025",False,"On the Shoulders of Giants",,,0,"Level#7397070",0
+115,7,"King Elmer III",False,"Triple Triad Trial",,,0,"Level#5581186",0
+116,6,"Glimmerscale",False,"Way of the Fisher",,,0,,0
+117,1,"InstanceContent#5",False,"Going for Gold",,,0,,0
+118,1,"InstanceContent#35",False,"Do It for Gilly",,,0,,0
+119,1,"InstanceContent#41",False,"An Overgrown Ambition",,,0,,0
+120,1,"InstanceContent#20035",False,"Heavensward",,,0,,0
+121,1,"InstanceContent#20039",False,"An End to the Song",,,0,,0
+122,1,"InstanceContent#20045",False,"Stormblood",,,0,,0
+123,1,"InstanceContent#20055",False,"The Primary Agreement",,,0,,0
+124,1,"InstanceContent#20066",False,"Shadowbringers",,,0,,0
+125,1,"InstanceContent#20071",False,"Hope's Confluence",,,0,,0
+126,1,"InstanceContent#20079",False,"Endwalker",,,0,,0
+127,1,"InstanceContent#20084",False,"The Wind Rises",,,0,,0
+128,1,"InstanceContent#20086",False,"Desires Untold",,,0,,0
+129,1,"InstanceContent#20089",False,"Abyssal Dark",,,0,,0
+130,1,"InstanceContent#20091",False,"Down in the Dark",,,0,,0
+131,1,"InstanceContent#36001",False,"A Key to the Past",,,0,,0
+132,0,,False,"Inscrutable Tastes",,,0,,0
+133,0,,False,"In Pursuit of the Past",,,0,,0
+134,7,"Gibrillont",False,"Triple Triad Trial",,,0,"Level#5581899",0
+135,6,"Chirurgeon",False,"Way of the Fisher",,,0,,0
+136,1,"InstanceContent#10",False,"Trauma Queen",,,0,,0
+137,1,"InstanceContent#14",False,"Ghosts of Amdapor",,,0,,0
+138,1,"InstanceContent#40",False,"Things Are Getting Sirius",,,0,,0
+139,1,"InstanceContent#42",False,"One More Night in Amdapor",,,0,,0
+140,1,"InstanceContent#62",False,"Secret of the Ooze",,,0,,0
+141,1,"InstanceContent#82",False,"Caging the Messenger",,,0,,0
+142,1,"InstanceContent#81",False,"Her Children, One and All",,,0,,0
+143,1,"InstanceContent#30087",False,"On the Threshold",,,0,,0
+144,1,"InstanceContent#30096",False,"Everything You Know Is Wrong",,,0,,0
+145,1,"InstanceContent#30105",False,"Brave New World",,,0,,0
+146,1,"InstanceContent#30111",False,"Where Familiars Dare",,,0,,0
+147,1,"InstanceContent#30113",False,"Under the Surface",,,0,,0
+148,1,"InstanceContent#30109",False,"The Fires of Creation",,,0,,0
+149,1,"InstanceContent#30107",False,"Who Wards the Warders?",,,0,,0
+150,1,"InstanceContent#30116",False,"Masks of the Father",,,0,,0
+151,1,"InstanceContent#30120",False,"A Keyward's Gaol",,,0,,0
+152,1,"InstanceContent#30118",False,"Servant of Violence",,,0,,0
+153,1,"InstanceContent#30122",False,"One Final Wish",,,0,,0
+154,1,"InstanceContent#30126",False,"Eater of Souls",,,0,,0
+155,1,"InstanceContent#30128",False,"Pandæmonium Awakens",,,0,,0
+156,1,"InstanceContent#30130",False,"The Emissary's Judgment",,,0,,0
+157,1,"InstanceContent#30132",False,"A Mother's Touch",,,0,,0
+158,1,"InstanceContent#17",False,"Sirius Business",,,0,,0
+159,1,"InstanceContent#18",False,"Out of Sight, Out of Mine",,,0,,0
+160,1,"InstanceContent#45",False,"Storming the Hull",,,0,,0
+161,1,"InstanceContent#47",False,"Let Me Gubal That for You",,,0,,0
+162,1,"InstanceContent#30029",False,"To Rule the Skies",,,0,,0
+163,1,"InstanceContent#30038",False,"The Weeping City",,,0,,0
+164,1,"InstanceContent#30047",False,"Where Shadows Reign",,,0,,0
+165,1,"InstanceContent#36002",False,"Mononoke Aware",,,0,,0
+166,7,"Wawalago",False,"Triple Triad Trial",,,0,"Level#1673577",0
+167,6,"Dream Goby",False,"Way of the Fisher",,,0,,0
+168,1,"InstanceContent#19",False,"Maniac Manor",,,0,,0
+169,1,"InstanceContent#22",False,"One Night in Amdapor",,,0,,0
+170,1,"InstanceContent#49",False,"The Fires of Sohm Al",,,0,,0
+171,1,"InstanceContent#51",False,"To Kill a Coeurl",,,0,,0
+172,1,"InstanceContent#68",False,"By the Time You Hear This",,,0,,0
+173,1,"InstanceContent#71",False,"Akadaemia Anyder",,,0,,0
+174,1,"InstanceContent#85",False,"Cutting the Cheese",,,0,,0
+175,1,"InstanceContent#79",False,"Where No Loporrit Has Gone Before",,,0,,0
+176,7,"Marcechamp",False,"Triple Triad Trial",,,0,"Level#5796581",0
+177,8,,False,"Unfamiliar Territory",,,0,,0
+178,9,,False,"Pilgrimage of Light",,,0,,0
+179,1,"InstanceContent#41007",True,"Like Civilized Men and Women (Twin Adder)","Like Civilized Men and Women (Maelstrom)","Like Civilized Men and Women (Immortal Flames)",0,,0
+180,1,"InstanceContent#36003",False,"Stranger from Paradise",,,0,,0
+181,1,"InstanceContent#36004",False,"A Spellbinding Read",,,0,,0
+182,9,,False,"The House That Death Built",,,0,,0
+183,8,,False,"A New Playing Field",,,0,,0
+184,0,,False,,,,0,,0
+185,0,,False,,,,0,,0
+186,10,,False,,,,0,,112401
+187,10,,False,,,,0,,112432
+188,8,,False,"Fit for a Queen",,,0,,0
+189,7,"idle imperial",False,"Triple Triad Trial",,,0,"Level#5927813",0
+190,6,"Caterwauler",False,"Way of the Fisher",,,0,,0
+191,1,"InstanceContent#72",False,"The Lightwardens",,,0,,0
+192,1,"InstanceContent#65",False,"The Key to the Castle",,,0,,0
+193,1,"InstanceContent#66",False,"The Burden of Knowledge",,,0,,0
+194,1,"InstanceContent#69",False,"A Fresh Start",,,0,,0
+195,1,"InstanceContent#70",False,"Extinguishing the Last Light",,,0,,0
+196,1,"InstanceContent#30144",False,"An Otherworldly Encounter",,,0,,0
+197,1,"InstanceContent#30153",False,"Dreams of Paradise",,,0,,0
+198,1,"InstanceContent#30163",False,"The Hollow Promise",,,0,,0
+199,1,"InstanceContent#21",False,"This Time's for Fun",,,0,,0
+200,1,"InstanceContent#20",False,"Curds and Slay",,,0,,0
+201,1,"InstanceContent#23",False,"King of the Hull",,,0,,0
+202,1,"InstanceContent#24",False,"Corpse Groom",,,0,,0
+203,1,"InstanceContent#60",False,"An Unwanted Truth",,,0,,0
+204,1,"InstanceContent#78",False,"In the Dark of the Tower",,,0,,0
+205,1,"InstanceContent#80",False,"Gateway of the Gods",,,0,,0
+206,1,"InstanceContent#83",False,"Skies Aflame",,,0,,0
+207,1,"InstanceContent#94",False,"For All Turali",,,0,,0
+208,1,"InstanceContent#92",False,"The High Luminary",,,0,,0
+209,1,"InstanceContent#96",False,"Road to the Golden City",,,0,,0
+210,1,"InstanceContent#97",False,"All Aboard",,,0,,0
+211,1,"InstanceContent#93",False,"The Resilient Son",,,0,,0
+212,1,"InstanceContent#95",False,"Dawntrail",,,0,,0
+213,1,"InstanceContent#20088",False,"Gentlemen at Heart",,,0,,0
+214,1,"InstanceContent#20095",False,"Dawntrail",,,0,,0
+215,1,"InstanceContent#20100",False,"Descent to the Foundation",,,0,,0
+216,1,"InstanceContent#20104",False,"A Terminal Invitation",,,0,,0
+217,1,"InstanceContent#20106",False,"Where We Call Home",,,0,,0

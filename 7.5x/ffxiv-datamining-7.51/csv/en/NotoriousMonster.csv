@@ -1,0 +1,295 @@
+﻿key,0,1,2,3
+#,BNpcBase,Rank,BNpcName,
+int32,BNpcBase,byte,BNpcName,uint16
+0,"BNpcBase#0",1,"",0
+1,"BNpcBase#3175",1,"White Joker",0
+2,"BNpcBase#3192",2,"Forneus",0
+3,"BNpcBase#3209",3,"Laideronnette",0
+4,"BNpcBase#3176",1,"Stinging Sophie",0
+5,"BNpcBase#3193",2,"Melt",0
+6,"BNpcBase#3210",3,"Wulgaru",0
+7,"BNpcBase#3177",1,"Monarch Ogrefly",0
+8,"BNpcBase#3194",2,"Ghede Ti Malice",0
+9,"BNpcBase#3211",3,"mindflayer",0
+10,"BNpcBase#3178",1,"Phecda",0
+11,"BNpcBase#3195",2,"Girtab",0
+12,"BNpcBase#3212",3,"Thousand-cast Theda",0
+13,"BNpcBase#3179",1,"Sewer Syrup",0
+14,"BNpcBase#3196",2,"Alectryon",0
+15,"BNpcBase#3213",3,"Zona Seeker",0
+16,"BNpcBase#3180",1,"Ovjang",0
+17,"BNpcBase#3197",2,"Sabotender Bailarina",0
+18,"BNpcBase#3214",3,"Brontes",0
+19,"BNpcBase#3181",1,"Gatling",0
+20,"BNpcBase#3198",2,"Maahes",0
+21,"BNpcBase#3215",3,"Lampalagua",0
+22,"BNpcBase#3182",1,"Albin the Ashen",0
+23,"BNpcBase#3199",2,"Zanig'oh",0
+24,"BNpcBase#3216",3,"Nunyunuwi",0
+25,"BNpcBase#3183",1,"Flame Sergeant Dalvag",0
+26,"BNpcBase#3200",2,"Dalvag's Final Flame",0
+27,"BNpcBase#3217",3,"Minhocao",0
+28,"BNpcBase#3184",1,"Skogs Fru",0
+29,"BNpcBase#3201",2,"Vogaal Ja",0
+30,"BNpcBase#3218",3,"Croque-mitaine",0
+31,"BNpcBase#3185",1,"Barbastelle",0
+32,"BNpcBase#3202",2,"Unktehi",0
+33,"BNpcBase#3219",3,"Croakadile",0
+34,"BNpcBase#3186",1,"Bloody Mary",0
+35,"BNpcBase#3203",2,"Hellsclaw",0
+36,"BNpcBase#3220",3,"the Garlok",0
+37,"BNpcBase#3187",1,"Dark Helmet",0
+38,"BNpcBase#3204",2,"Nahn",0
+39,"BNpcBase#3221",3,"Bonnacon",0
+40,"BNpcBase#3188",1,"Myradrosh",0
+41,"BNpcBase#3205",2,"Marberry",0
+42,"BNpcBase#3222",3,"Nandi",0
+43,"BNpcBase#3189",1,"Vuokho",0
+44,"BNpcBase#3206",2,"Cornu",0
+45,"BNpcBase#3223",3,"Chernobog",0
+46,"BNpcBase#3190",1,"Naul",0
+47,"BNpcBase#3207",2,"Marraco",0
+48,"BNpcBase#3224",3,"Safat",0
+49,"BNpcBase#3191",1,"Leech King",0
+50,"BNpcBase#3208",2,"Kurrea",0
+51,"BNpcBase#3225",3,"Agrippa the Mighty",0
+52,"BNpcBase#4527",1,"Alteci",0
+53,"BNpcBase#4528",1,"Kreutzet",0
+54,"BNpcBase#4539",2,"Mirka",0
+55,"BNpcBase#4540",2,"Lyuba",0
+56,"BNpcBase#4551",3,"kaiser behemoth",0
+57,"BNpcBase#4529",1,"Gnath cometdrone",0
+58,"BNpcBase#4530",1,"Thextera",0
+59,"BNpcBase#4541",2,"Pylraster",0
+60,"BNpcBase#4542",2,"Lord of the Wyverns",0
+61,"BNpcBase#4552",3,"Senmurv",0
+62,"BNpcBase#4531",1,"Pterygotus",0
+63,"BNpcBase#4532",1,"false gigantopithecus",0
+64,"BNpcBase#4543",2,"Slipkinx Steeljoints",0
+65,"BNpcBase#4544",2,"Stolas",0
+66,"BNpcBase#4553",3,"the Pale Rider",0
+67,"BNpcBase#4533",1,"Scitalis",0
+68,"BNpcBase#4534",1,"the Scarecrow",0
+69,"BNpcBase#4545",2,"Bune",0
+70,"BNpcBase#4546",2,"Agathos",0
+71,"BNpcBase#4554",3,"Gandarewa",0
+72,"BNpcBase#4535",1,"Squonk",0
+73,"BNpcBase#4536",1,"Sanu Vali of Dancing Wings",0
+74,"BNpcBase#4547",2,"Enkelados",0
+75,"BNpcBase#4548",2,"Sisiutl",0
+76,"BNpcBase#4555",3,"Bird of Paradise",0
+77,"BNpcBase#4537",1,"Lycidas",0
+78,"BNpcBase#4538",1,"Omni",0
+79,"BNpcBase#4549",2,"Campacti",0
+80,"BNpcBase#4550",2,"stench blossom",0
+81,"BNpcBase#4556",3,"Leucrotta",0
+82,"BNpcBase#6851",1,"Gauki Strongblade",0
+83,"BNpcBase#6852",1,"Guhuo Niao",0
+84,"BNpcBase#6845",2,"Funa Yurei",0
+85,"BNpcBase#6846",2,"Oni Yumemi",0
+86,"BNpcBase#6833",3,"Okina",220
+87,"BNpcBase#6853",1,"Deidar",0
+88,"BNpcBase#6854",1,"Gyorai Quickstrike",0
+89,"BNpcBase#6847",2,"Gajasura",0
+90,"BNpcBase#6848",2,"Angada",0
+91,"BNpcBase#6834",3,"Gamma",221
+92,"BNpcBase#6855",1,"Kurma",0
+93,"BNpcBase#6856",1,"Aswang",0
+94,"BNpcBase#6849",2,"Girimekhala",0
+95,"BNpcBase#6850",2,"Sum",0
+96,"BNpcBase#6835",3,"Orghana",222
+97,"BNpcBase#6857",1,"Shadow-dweller Yamini",0
+98,"BNpcBase#6858",1,"Ouzelum",0
+99,"BNpcBase#6839",2,"Orcus",0
+100,"BNpcBase#6840",2,"Erle",0
+101,"BNpcBase#6836",3,"Udumbara",223
+102,"BNpcBase#6859",1,"Gwas-y-neidr",0
+103,"BNpcBase#6860",1,"Buccaboo",0
+104,"BNpcBase#6841",2,"Vochstein",0
+105,"BNpcBase#6842",2,"Aqrabuamelu",0
+106,"BNpcBase#6837",3,"Bone Crawler",224
+107,"BNpcBase#6861",1,"Manes",0
+108,"BNpcBase#6862",1,"Kiwa",0
+109,"BNpcBase#6843",2,"Mahisha",0
+110,"BNpcBase#6844",2,"Luminare",0
+111,"BNpcBase#6838",3,"Salt and Light",225
+112,"BNpcBase#10385",1,"La Velue",0
+113,"BNpcBase#10386",1,"Itzpapalotl",0
+114,"BNpcBase#10383",2,"Nuckelavee",0
+115,"BNpcBase#10384",2,"Nariphon",0
+116,"BNpcBase#10382",3,"Tyger",398
+117,"BNpcBase#10418",1,"Coquecigrue",0
+118,"BNpcBase#10419",1,"Indomitable",0
+119,"BNpcBase#10420",2,"Li'l Murderer",0
+120,"BNpcBase#10421",2,"Huracan",0
+121,"BNpcBase#10634",3,"forgiven pedantry",403
+122,"BNpcBase#10358",1,"Worm of the Well",0
+123,"BNpcBase#10359",1,"Juggler Hecatomb",0
+124,"BNpcBase#10356",2,"Maliktender",0
+125,"BNpcBase#10357",2,"Sugaar",0
+126,"BNpcBase#10355",3,"Tarchia",404
+127,"BNpcBase#10273",1,"Domovoi",0
+128,"BNpcBase#10327",1,"Vulpangue",0
+129,"BNpcBase#10271",2,"the mudman",0
+130,"BNpcBase#10272",2,"O Poorest Pauldia",0
+131,"BNpcBase#10270",3,"Aglaope",408
+132,"BNpcBase#10299",1,"Mindmaker",0
+133,"BNpcBase#10300",1,"Pachamama",0
+134,"BNpcBase#10297",2,"Supay",0
+135,"BNpcBase#10298",2,"Grassman",0
+136,"BNpcBase#10296",3,"Ixtab",407
+137,"BNpcBase#10325",1,"Gilshs Aath Swiftclaw",0
+138,"BNpcBase#10326",1,"Deacon",0
+139,"BNpcBase#10323",2,"Rusalka",0
+140,"BNpcBase#10324",2,"Baal",0
+141,"BNpcBase#10322",3,"Gunitt",406
+142,"BNpcBase#10755",1,"forgiven gossip",0
+143,"BNpcBase#10755",1,"forgiven gossip",0
+144,"BNpcBase#10755",1,"forgiven gossip",0
+145,"BNpcBase#10755",1,"forgiven gossip",0
+146,"BNpcBase#10422",3,"forgiven rebellion",400
+147,"BNpcBase#10755",1,"forgiven gossip",0
+148,"BNpcBase#10755",1,"forgiven gossip",0
+149,"BNpcBase#10755",1,"forgiven gossip",0
+150,"BNpcBase#10755",1,"forgiven gossip",0
+151,"BNpcBase#10422",3,"forgiven rebellion",400
+152,"BNpcBase#10755",1,"forgiven gossip",0
+153,"BNpcBase#10755",1,"forgiven gossip",0
+154,"BNpcBase#10755",1,"forgiven gossip",0
+155,"BNpcBase#10755",1,"forgiven gossip",0
+156,"BNpcBase#10422",3,"forgiven rebellion",400
+157,"BNpcBase#10755",1,"forgiven gossip",0
+158,"BNpcBase#10755",1,"forgiven gossip",0
+159,"BNpcBase#10755",1,"forgiven gossip",0
+160,"BNpcBase#10755",1,"forgiven gossip",0
+161,"BNpcBase#10422",3,"forgiven rebellion",400
+162,"BNpcBase#10755",1,"forgiven gossip",0
+163,"BNpcBase#10755",1,"forgiven gossip",0
+164,"BNpcBase#10755",1,"forgiven gossip",0
+165,"BNpcBase#10755",1,"forgiven gossip",0
+166,"BNpcBase#10422",3,"forgiven rebellion",400
+167,"BNpcBase#10755",1,"forgiven gossip",0
+168,"BNpcBase#10755",1,"forgiven gossip",0
+169,"BNpcBase#10755",1,"forgiven gossip",0
+170,"BNpcBase#10755",1,"forgiven gossip",0
+171,"BNpcBase#10422",3,"forgiven rebellion",400
+172,"BNpcBase#13968",1,"green Archon",0
+173,"BNpcBase#13969",1,"ü-u-ü-u",0
+174,"BNpcBase#13789",2,"hulder",0
+175,"BNpcBase#13790",2,"Storsie",0
+176,"BNpcBase#13834",3,"Burfurlur the Canny",583
+177,"BNpcBase#13938",1,"Ker shroud",0
+178,"BNpcBase#13938",1,"Ker shroud",0
+179,"BNpcBase#13938",1,"Ker shroud",0
+180,"BNpcBase#13938",1,"Ker shroud",0
+181,"BNpcBase#13775",3,"Ker",597
+182,"BNpcBase#13970",1,"Vajrakumara",0
+183,"BNpcBase#13971",1,"Iravati",0
+184,"BNpcBase#13759",2,"Yilan",0
+185,"BNpcBase#13820",2,"Sugriva",0
+186,"BNpcBase#13936",3,"Sphatika",574
+187,"BNpcBase#13938",1,"Ker shroud",0
+188,"BNpcBase#13938",1,"Ker shroud",0
+189,"BNpcBase#13938",1,"Ker shroud",0
+190,"BNpcBase#13938",1,"Ker shroud",0
+191,"BNpcBase#13775",3,"Ker",597
+192,"BNpcBase#13972",1,"warmonger",0
+193,"BNpcBase#13973",1,"Emperor's rose",0
+194,"BNpcBase#13833",2,"Minerva",0
+195,"BNpcBase#13937",2,"Aegeiros",0
+196,"BNpcBase#13758",3,"Armstrong",571
+197,"BNpcBase#13938",1,"Ker shroud",0
+198,"BNpcBase#13938",1,"Ker shroud",0
+199,"BNpcBase#13938",1,"Ker shroud",0
+200,"BNpcBase#13938",1,"Ker shroud",0
+201,"BNpcBase#13775",3,"Ker",597
+202,"BNpcBase#14168",1,"daphnia magna",0
+203,"BNpcBase#13975",1,"genesis rock",0
+204,"BNpcBase#13835",2,"mousse princess",0
+205,"BNpcBase#13791",2,"lunatender queen",0
+206,"BNpcBase#13757",3,"Ruminator",570
+207,"BNpcBase#13938",1,"Ker shroud",0
+208,"BNpcBase#13938",1,"Ker shroud",0
+209,"BNpcBase#13938",1,"Ker shroud",0
+210,"BNpcBase#13938",1,"Ker shroud",0
+211,"BNpcBase#13775",3,"Ker",597
+212,"BNpcBase#13976",1,"Yumcax",0
+213,"BNpcBase#13977",1,"Shockmaw",0
+214,"BNpcBase#13819",2,"petalodus",0
+215,"BNpcBase#13851",2,"Gurangatch",0
+216,"BNpcBase#13788",3,"Ophioneus",601
+217,"BNpcBase#13938",1,"Ker shroud",0
+218,"BNpcBase#13938",1,"Ker shroud",0
+219,"BNpcBase#13938",1,"Ker shroud",0
+220,"BNpcBase#13938",1,"Ker shroud",0
+221,"BNpcBase#13775",3,"Ker",597
+222,"BNpcBase#13978",1,"level cheater",0
+223,"BNpcBase#13979",1,"Oskh Rhei",0
+224,"BNpcBase#13760",2,"Arch-Eta",0
+225,"BNpcBase#13761",2,"Fan Ail",0
+226,"BNpcBase#13787",3,"Narrow-rift",600
+227,"BNpcBase#13938",1,"Ker shroud",0
+228,"BNpcBase#13938",1,"Ker shroud",0
+229,"BNpcBase#13938",1,"Ker shroud",0
+230,"BNpcBase#13938",1,"Ker shroud",0
+231,"BNpcBase#13775",3,"Ker",597
+232,"BNpcBase#17557",1,"mad maguey",0
+233,"BNpcBase#17558",1,"Chupacabra",0
+234,"BNpcBase#17707",2,"queen hawk",0
+235,"BNpcBase#17708",2,"Nechuciho",0
+236,"BNpcBase#17706",3,"Kirlirger the Abhorrent",772
+237,"BNpcBase#17777",1,"crystal incarnation",0
+238,"BNpcBase#17777",1,"crystal incarnation",0
+239,"BNpcBase#17777",1,"crystal incarnation",0
+240,"BNpcBase#17777",1,"crystal incarnation",0
+241,"BNpcBase#17732",3,"arch aethereater",771
+242,"BNpcBase#17559",1,"the Slammer",0
+243,"BNpcBase#17560",1,"go'ozoabek'be",0
+244,"BNpcBase#17791",2,"the Raintriller",0
+245,"BNpcBase#17792",2,"Pkuucha",0
+246,"BNpcBase#17794",3,"Ihnuxokiy",776
+247,"BNpcBase#17777",1,"crystal incarnation",0
+248,"BNpcBase#17777",1,"crystal incarnation",0
+249,"BNpcBase#17777",1,"crystal incarnation",0
+250,"BNpcBase#17777",1,"crystal incarnation",0
+251,"BNpcBase#17732",3,"arch aethereater",771
+252,"BNpcBase#17561",1,"Leafscourge Hadoll Ja",0
+253,"BNpcBase#17562",1,"Xty'iinbek",0
+254,"BNpcBase#16946",2,"Rrax Yity'a",0
+255,"BNpcBase#16892",2,"Starcrier",0
+256,"BNpcBase#16947",3,"Neyoozoteel",777
+257,"BNpcBase#17777",1,"crystal incarnation",0
+258,"BNpcBase#17777",1,"crystal incarnation",0
+259,"BNpcBase#17777",1,"crystal incarnation",0
+260,"BNpcBase#17777",1,"crystal incarnation",0
+261,"BNpcBase#17732",3,"arch aethereater",771
+262,"BNpcBase#17563",1,"nopalitender Fabuloso",0
+263,"BNpcBase#17564",1,"Uktena",0
+264,"BNpcBase#17371",2,"Yehehetoaua'pyo",0
+265,"BNpcBase#17372",2,"Keheniheyamewi",0
+266,"BNpcBase#17373",3,"Sansheya",770
+267,"BNpcBase#17777",1,"crystal incarnation",0
+268,"BNpcBase#17777",1,"crystal incarnation",0
+269,"BNpcBase#17777",1,"crystal incarnation",0
+270,"BNpcBase#17777",1,"crystal incarnation",0
+271,"BNpcBase#17732",3,"arch aethereater",771
+272,"BNpcBase#17565",1,"Gallowsbeak",0
+273,"BNpcBase#17566",1,"gargant",0
+274,"BNpcBase#16750",2,"heshuala",0
+275,"BNpcBase#16751",2,"Urna Variabilis",0
+276,"BNpcBase#16749",3,"Atticus the Primogenitor",755
+277,"BNpcBase#17777",1,"crystal incarnation",0
+278,"BNpcBase#17777",1,"crystal incarnation",0
+279,"BNpcBase#17777",1,"crystal incarnation",0
+280,"BNpcBase#17777",1,"crystal incarnation",0
+281,"BNpcBase#17732",3,"arch aethereater",771
+282,"BNpcBase#17567",1,"jewel bearer",0
+283,"BNpcBase#17568",1,"13th Child",0
+284,"BNpcBase#17301",2,"Sally the Sweeper",0
+285,"BNpcBase#17302",2,"Cat's Eye",0
+286,"BNpcBase#17303",3,"the Forecaster",773
+287,"BNpcBase#17777",1,"crystal incarnation",0
+288,"BNpcBase#17777",1,"crystal incarnation",0
+289,"BNpcBase#17777",1,"crystal incarnation",0
+290,"BNpcBase#17777",1,"crystal incarnation",0
+291,"BNpcBase#17732",3,"arch aethereater",771

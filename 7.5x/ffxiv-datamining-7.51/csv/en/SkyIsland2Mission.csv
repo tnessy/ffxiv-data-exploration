@@ -1,0 +1,638 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+#,Item{1},Item{2},PlaceName,,Objective{1},PopRange[0],RequiredAmount{1},,,Objective2,PopRange[1],RequiredAmount{2},,,Objective3,PopRange[2],,,,,Image,,,,,
+int32,EventItem,EventItem,PlaceName,uint16,SkyIsland2MissionDetail,uint32,byte,uint32,byte,SkyIsland2MissionDetail,uint32,byte,uint32,byte,SkyIsland2MissionDetail,uint32,byte,uint32,byte,uint32,Image,str,str,str,str,str
+0,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+1,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+2,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+3,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+4,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+5,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,6710323,"ui/icon/111000/111102.tex","Operation Landsweep","Ever since a vagrant ruin drifted into the vicinity of the Diadem, the elemental balance of the isles has fallen into chaos. The land has undergone dramatic transformations, and we seek adventurers to conduct sweeping surveys and report on newly available resources. Mining, harvesting, fishing─gather the Diadem's bounty by whichever means you wish, and fear not that we will tax the riches you claim. We care only for the knowledge you uncover.
+
+※Fill the evaluation gauge by gathering or participating in FATEs.","Operation Command here.
+We have received your resources report and will add your findings to our ongoing appraisal.","Pray proceed to the <Emphasis>Bounty</Emphasis> to accept your reward.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+6,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+7,"over-aspected fire crystal","over-aspected water crystal","",0,"Gather over-aspected fire crystals",6798633,4,0,0,"Gather over-aspected water crystals",6798655,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+8,,,"",0,"Use a scent trap to ambush hornflies",6710332,3,0,0,"Use a scent trap to ambush triceratops",6710294,3,0,0,"Use a scent trap to ambush Diadem endymions",6710302,3,0,0,6887965,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+9,,,"",0,"Use a scent trap to ambush jewel flies",6710307,3,0,0,"Use a scent trap to ambush welkinixes",6710345,3,0,0,"Slay a pteranodon",6710345,2,0,0,6887983,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+10,,,"",0,"Use a scent trap to ambush neochus",6710285,3,0,0,"Use a scent trap to ambush lunantishees",6710328,3,0,0,"Use a scent trap to ambush westerly sanuwas",6710310,3,0,0,6887968,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+11,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush jewel wasps, and obtain cloud dweller organs",6710298,3,0,0,"Use a scent trap to ambush diplocauluses, and obtain cloud dweller bones",6710316,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+12,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710333,3,0,0,"Slay flood worms and obtain worm livers",6710286,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+13,,,"",0,"Slay sabertooth tigers",6710303,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798627,5,6798626,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+14,,,"",0,"Slay ant hawks",6710325,3,0,0,"Slay yolk mice",6710311,3,0,0,"Carry the dinosaur egg to the collection point",6710311,2,6798619,5,6798618,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+15,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay ageless sankchinnis weakened by the enfeebling elixir",6710289,3,0,0,"Slay speckled hakulaqs weakened by the enfeebling elixir",6710306,3,0,0,6887967,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+16,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+17,"over-aspected earth crystal","over-aspected wind crystal","",0,"Gather over-aspected earth crystals",6798648,4,0,0,"Gather over-aspected wind crystals",6798628,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+18,,,"",0,"Use a scent trap to ambush sun sordes",6710295,3,0,0,"Use a scent trap to ambush bejeweled unicorns",6788805,3,0,0,"Slay an ageless melia",6788805,2,0,0,6887984,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+19,,,"",0,"Use a scent trap to ambush crown tuco tucos",6710340,3,0,0,"Use a scent trap to ambush killer ants",6710314,3,0,0,"Slay an easterly sanuwa",6710314,2,0,0,6887969,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+20,,,"",0,"Use a scent trap to ambush jewel flies",6710307,3,0,0,"Use a scent trap to ambush welkinixes",6710345,3,0,0,"Use a scent trap to ambush proceratosaurs",6710286,3,0,0,6887958,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+21,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush rainbow gastornis, and obtain cloud dweller organs",6710306,3,0,0,"Use a scent trap to ambush diplocauluses, and obtain cloud dweller bones",6710321,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+22,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710336,3,0,0,"Slay flood worms and obtain worm livers",6710298,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+23,,,"",0,"Slay speckled hakulaqs",6710317,3,0,0,"Slay yolk mice",6710329,3,0,0,"Carry the dinosaur egg to the collection point",6710329,2,6798623,5,6798622,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+24,,,"",0,"Slay sabertooth tigers",6710289,3,0,0,"Slay yolk mice",6710320,3,0,0,"Carry the dinosaur egg to the collection point",6710320,2,6798621,5,6798620,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+25,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay cloud crawlers weakened by the enfeebling elixir",6710299,3,0,0,"Slay Diadem endymions weakened by the enfeebling elixir",6710285,3,0,0,6887957,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+26,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+27,"over-aspected ice crystal","over-aspected lightning crystal","",0,"Gather over-aspected ice crystals",6798651,4,0,0,"Gather over-aspected lightning crystals",6798659,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+28,,,"",0,"Use a scent trap to ambush sabertooth tigers",6710316,3,0,0,"Use a scent trap to ambush Diadem marids",6710341,3,0,0,"Use a scent trap to ambush crown pelicans",6788805,3,0,0,6887984,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+29,,,"",0,"Use a scent trap to ambush neochus",6710285,3,0,0,"Use a scent trap to ambush lunantishees",6710328,3,0,0,"Slay an ageless melia",6710328,3,0,0,6887975,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+30,,,"",0,"Use a scent trap to ambush pack paissas",6710320,3,0,0,"Use a scent trap to ambush speckled hakulaqs",6710306,3,0,0,"Use a scent trap to ambush Diadem endymions",6710291,3,0,0,6887960,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+31,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush jewel wasps, and obtain cloud dweller organs",6710303,3,0,0,"Use a scent trap to ambush proceratosaurs, and obtain cloud dweller bones",6710333,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+32,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710337,3,0,0,"Slay flood worms and obtain worm livers",6782944,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+33,,,"",0,"Slay ant hawks",6710294,3,0,0,"Slay yolk mice",6710329,3,0,0,"Carry the dinosaur egg to the collection point",6710329,2,6798623,5,6798622,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+34,,,"",0,"Slay cloud crawlers",6710332,3,0,0,"Slay yolk mice",6710311,3,0,0,"Carry the dinosaur egg to the collection point",6710311,2,6798619,5,6798618,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+35,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay ageless sankchinnis weakened by the enfeebling elixir",6710302,3,0,0,"Slay diplocauluses weakened by the enfeebling elixir",6710289,3,0,0,6887959,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+36,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+37,"over-aspected ice crystal","over-aspected lightning crystal","",0,"Gather over-aspected ice crystals",6798630,4,0,0,"Gather over-aspected lightning crystals",6798638,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+38,,,"",0,"Use a scent trap to ambush cloud lions",6710310,3,0,0,"Use a scent trap to ambush coelophysis",6710299,3,0,0,"Slay an easterly sanuwa",6710289,3,0,0,6887959,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+39,,,"",0,"Use a scent trap to ambush gigantopithecus",6710286,3,0,0,"Use a scent trap to ambush zeuglodons",6710325,3,0,0,"Slay the celphie",6710325,3,0,0,6887974,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+40,,,"",0,"Use a scent trap to ambush crown tuco tucos",6710340,3,0,0,"Use a scent trap to ambush killer ants",6710314,3,0,0,"Use a scent trap to ambush Diadem endymions",6788805,2,0,0,6887984,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+41,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush ant hawks, and obtain cloud dweller organs",6710329,3,0,0,"Use a scent trap to ambush proceratosaurs, and obtain cloud dweller bones",6710295,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+42,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710336,3,0,0,"Slay flood worms and obtain worm livers",6710317,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+43,,,"",0,"Slay speckled hakulaqs",6710328,3,0,0,"Slay yolk mice",6710321,3,0,0,"Carry the dinosaur egg to the collection point",6710321,2,6798621,5,6798620,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+44,,,"",0,"Slay sabertooth tigers",6710311,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798627,5,6798626,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+45,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay silvershells weakened by the enfeebling elixir",6782944,3,0,0,"Slay crown pelicans weakened by the enfeebling elixir",6710341,3,0,0,6887979,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+46,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+47,"over-aspected earth crystal","over-aspected wind crystal","",0,"Gather over-aspected earth crystals",6798653,4,0,0,"Gather over-aspected wind crystals",6798657,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+48,,,"",0,"Use a scent trap to ambush sun sordes",6710295,3,0,0,"Use a scent trap to ambush bejeweled unicorns",6788805,3,0,0,"Use a scent trap to ambush diplocauluses",6710317,3,0,0,6887971,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+49,,,"",0,"Use a scent trap to ambush ageless sankchinnis",6710291,3,0,0,"Use a scent trap to ambush baby brachiosaurs",6710345,3,0,0,"Slay an easterly sanuwa",6710345,2,0,0,6887983,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+50,,,"",0,"Use a scent trap to ambush gigantopithecus",6710286,3,0,0,"Use a scent trap to ambush zeuglodons",6710325,3,0,0,"Use a scent trap to ambush Diadem endymions",6710310,2,0,0,6887968,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+51,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush ant hawks, and obtain cloud dweller organs",6710294,3,0,0,"Use a scent trap to ambush proceratosaurs, and obtain cloud dweller bones",6710314,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+52,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710341,3,0,0,"Slay flood worms and obtain worm livers",6782944,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+53,,,"",0,"Slay speckled hakulaqs",6710299,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798625,5,6798624,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+54,,,"",0,"Slay cloud crawlers",6710340,3,0,0,"Slay yolk mice",6710321,3,0,0,"Carry the dinosaur egg to the collection point",6710321,2,6798621,5,6798620,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+55,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay sabertooth tigers weakened by the enfeebling elixir",6710344,3,0,0,"Slay crown pelicans weakened by the enfeebling elixir",6710302,3,0,0,6887965,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+56,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+57,"over-aspected fire crystal","over-aspected water crystal","",0,"Gather over-aspected fire crystals",6798651,4,0,0,"Gather over-aspected water crystals",6798643,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+58,,,"",0,"Use a scent trap to ambush hornflies",6710332,3,0,0,"Use a scent trap to ambush triceratops",6710294,3,0,0,"Slay a pteranodon",6710294,3,0,0,6887961,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+59,,,"",0,"Use a scent trap to ambush Diadem marids",6788805,3,0,0,"Use a scent trap to ambush ant hawks",6710333,3,0,0,"Use a scent trap to ambush diplocauluses",6710345,2,0,0,6887983,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+60,,,"",0,"Use a scent trap to ambush gigantopithecus",6710286,3,0,0,"Use a scent trap to ambush zeuglodons",6710325,3,0,0,"Use a scent trap to ambush proceratosaurs",6710310,3,0,0,6887968,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+61,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush lunantishees, and obtain cloud dweller organs",6710328,3,0,0,"Use a scent trap to ambush coelophysis, and obtain cloud dweller bones",6710307,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+62,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710302,3,0,0,"Slay flood worms and obtain worm livers",6710285,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+63,,,"",0,"Slay speckled hakulaqs",6710329,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798627,5,6798626,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+64,,,"",0,"Slay sabertooth tigers",6710291,3,0,0,"Slay yolk mice",6710320,3,0,0,"Carry the dinosaur egg to the collection point",6710320,2,6798621,5,6798620,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+65,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay sun sordes weakened by the enfeebling elixir",6710340,3,0,0,"Slay crown pelicans weakened by the enfeebling elixir",6710295,3,0,0,6887962,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+66,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+67,"over-aspected water crystal","over-aspected fire crystal","",0,"Gather over-aspected water crystals",6798644,4,0,0,"Gather over-aspected fire crystals",6798635,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+68,,,"",0,"Use a scent trap to ambush cloud lions",6710310,3,0,0,"Use a scent trap to ambush coelophysis",6710299,3,0,0,"Slay a pteranodon",6710299,3,0,0,6887963,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+69,,,"",0,"Use a scent trap to ambush Diadem marids",6788805,3,0,0,"Use a scent trap to ambush ant hawks",6710333,3,0,0,"Slay the celphie",6710333,2,0,0,6887978,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+70,,,"",0,"Use a scent trap to ambush ageless sankchinnis",6710291,3,0,0,"Use a scent trap to ambush baby brachiosaurs",6710345,3,0,0,"Use a scent trap to ambush crown pelicans",6710340,2,0,0,6887981,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+71,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush welkinixes, and obtain cloud dweller organs",6710336,3,0,0,"Use a scent trap to ambush zeuglodons, and obtain cloud dweller bones",6710320,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+72,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6782944,3,0,0,"Slay flood worms and obtain worm livers",6710307,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+73,,,"",0,"Slay speckled hakulaqs",6710306,3,0,0,"Slay yolk mice",6710329,3,0,0,"Carry the dinosaur egg to the collection point",6710329,2,6798623,5,6798622,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+74,,,"",0,"Slay cloud crawlers",6710314,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798625,5,6798624,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+75,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay sabertooth tigers weakened by the enfeebling elixir",6710341,3,0,0,"Slay diplocauluses weakened by the enfeebling elixir",6710316,3,0,0,6887970,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+76,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+77,"over-aspected wind crystal","over-aspected earth crystal","",0,"Gather over-aspected wind crystals",6798641,4,0,0,"Gather over-aspected earth crystals",6798637,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+78,,,"",0,"Use a scent trap to ambush sabertooth tigers",6710316,3,0,0,"Use a scent trap to ambush Diadem marids",6710341,3,0,0,"Slay the celphie",6710341,3,0,0,6887979,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+79,,,"",0,"Use a scent trap to ambush cutters",6710345,3,0,0,"Use a scent trap to ambush coelophysis",6710295,3,0,0,"Slay an ageless melia",6710295,3,0,0,6887962,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+80,,,"",0,"Use a scent trap to ambush neochus",6710285,3,0,0,"Use a scent trap to ambush lunantishees",6710328,3,0,0,"Use a scent trap to ambush westerly sanuwas",6710310,3,0,0,6887968,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+81,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush silvershells, and obtain cloud dweller organs",6710321,3,0,0,"Use a scent trap to ambush proceratosaurs, and obtain cloud dweller bones",6710289,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+82,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710302,3,0,0,"Slay flood worms and obtain worm livers",6710340,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+83,,,"",0,"Slay ant hawks",6710298,3,0,0,"Slay yolk mice",6710329,3,0,0,"Carry the dinosaur egg to the collection point",6710329,2,6798623,5,6798622,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+84,,,"",0,"Slay speckled hakulaqs",6782944,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798627,5,6798626,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+85,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay sun sordes weakened by the enfeebling elixir",6710332,3,0,0,"Slay Diadem endymions weakened by the enfeebling elixir",6710307,3,0,0,6887986,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+86,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+87,"over-aspected lightning crystal","over-aspected ice crystal","",0,"Gather over-aspected lightning crystals",6798635,4,0,0,"Gather over-aspected ice crystals",6798647,4,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Crystal Boon","Elemental upheaval throughout the Diadem continues to produce crystallized aether of astounding properties.
+
+House Haillenarte would claim this unique resource. Gather armfuls of over-aspected crystals and deliver them to the pilot at the <Emphasis>Bounty</Emphasis>.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+88,,,"",0,"Use a scent trap to ambush sabertooth tigers",6710298,3,0,0,"Use a scent trap to ambush Diadem marids",6710307,3,0,0,"Use a scent trap to ambush westerly sanuwas",6710294,3,0,0,6887961,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+89,,,"",0,"Use a scent trap to ambush pack paissas",6710320,3,0,0,"Use a scent trap to ambush speckled hakulaqs",6710306,3,0,0,"Slay a pteranodon",6710306,3,0,0,6887967,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+The menace which interrupted your mission has been confirmed slain.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+90,,,"",0,"Use a scent trap to ambush cutters",6710345,3,0,0,"Use a scent trap to ambush coelophysis",6710295,3,0,0,"Use a scent trap to ambush crown pelicans",6710285,3,0,0,6887957,"ui/icon/111000/111101.tex","Operation Depopulate","The dense aetherial concentration of the Diadem seems to attract the deadliest of creatures. Needless to say, these oft-hostile denizens significantly impede our efforts to explore the isles.
+
+Thus we turn to you─to battle-hardened adventurers─to cull their numbers. Make use of the traps provided, lure forth your prey, and slay without mercy.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+91,"cloud dweller organ","cloud dweller bone","",0,"Use a scent trap to ambush welkinixes, and obtain cloud dweller organs",6710303,3,0,0,"Use a scent trap to ambush proceratosaurs, and obtain cloud dweller bones",6710291,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Bloody Harvest","The Diadem is a world of its own, and the fantastical creatures found here are prime examples of the effects of prolonged isolation. Strange as they are, certain of these denizens have been rendered even stranger by the prevailing tempest of unstable aether...
+
+House Haillenarte naturalists are eager to examine the effects of elemental destabilization on the wildlife, and it falls to you to procure suitable samples for research. Make use of the traps provided, lure your prey, and obtain the requested specimens.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+92,"pinch of cloudblossom pollen","worm liver","",0,"Slay cloudtraps and obtain cloudblossom pollen",6710317,3,0,0,"Slay flood worms and obtain worm livers",6710310,3,0,0,"Deliver gathered goods to the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,6710323,"ui/icon/111000/111101.tex","Operation Lethal Attraction","During our explorations throughout the Diadem, we have discovered that the scents emitted by certain species are effective in attracting many of the isles' predators. House Haillenarte's alchemists believe that they can mix these scents to concoct an all-purpose lure, and thus greatly improve the efficiency of our hunting parties. Track down two of the more potent-smelling examples, and harvest from them the substances our alchemists require.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We have received your report and confirm that all mission objectives have been fulfilled.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+93,,,"",0,"Slay ant hawks",6710333,3,0,0,"Slay yolk mice",6710321,3,0,0,"Carry the dinosaur egg to the collection point",6710321,2,6798621,5,6798620,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+94,,,"",0,"Slay cloud crawlers",6710289,3,0,0,"Slay yolk mice",6710337,3,0,0,"Carry the dinosaur egg to the collection point",6710337,2,6798625,5,6798624,"ui/icon/111000/111101.tex","Operation Egg Hunt","As part of House Haillenarte's ongoing naturalist research, we require an intrepid party to procure one of those fiendishly well-hidden dinosaur eggs. Rather than point you in a direction and hope for the best, however, our strategy relies upon the discerning appetite of the region's yolk mice.
+
+We ask that you begin with the usual business of hunting the isles' denizens. But should the egg-devouring rodents surface, pray make haste to their location─the prize we seek cannot be far away. Slay the mice, secure the egg, then convey it to the designated collection point.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","That's far enough for a House Haillenarte agent to effect a safe retrieval.
+Nicely done!","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+95,"enfeebling elixir",,"Crash Site",0,"Accept the enfeebling elixir from the pilot at the <Emphasis>Bounty</Emphasis>",6710324,1,0,0,"Slay ageless sankchinnis weakened by the enfeebling elixir",6710344,3,0,0,"Slay Diadem endymions weakened by the enfeebling elixir",6710311,3,0,0,6887987,"ui/icon/111000/111101.tex","Operation Defang","The beasts of the Diadem pose the greatest obstacle to its exploration, and thus House Haillenarte has devised an alchemical solution. This enfeebling agent is designed to weaken the isles' denizens, but more experimentation is needed. Enter our adventurer allies! We will provide you with a supply of the elixir, as well as the targets upon which we wish the agent to be tested.
+
+Evaluation of your success will also hinge upon the extent of your explorations.
+
+※Fill the evaluation gauge by participating in FATEs.","Operation Command here.
+We've confirmed the results of the field test. Fine work.","A fitting reward has been prepared in recognition of your efforts.","You are otherwise free to enter aetherial gaps, cross through the Grounding Gale, and explore the Diadem as you desire. The unknown awaits!"
+96,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+97,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+98,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+99,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""
+100,,,"",0,"",0,0,0,0,"",0,0,0,0,"",0,0,0,0,0,,"","","","",""

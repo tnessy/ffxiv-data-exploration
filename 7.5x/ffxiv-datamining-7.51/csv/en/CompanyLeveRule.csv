@@ -1,0 +1,9 @@
+﻿key,0,1,2
+#,Type,Objective,Help
+int32,str,LeveString,LeveString
+0,"","",""
+1,"CompanyLeveProtection","Defeat the enemies while protecting your charge.","Objective failed if all <SheetEn(BNpcName,1,IntegerParameter(1),2,1)/> are lost."
+2,"CompanyLeveInterception","Defeat as many enemies as possible within the allotted time.","Objective failed if insufficient number of enemies slain."
+3,"CompanyLevePenetration","Discover who is carrying <SheetEn(EventItem,2,IntegerParameter(1),2,1)/> and slay the target.","Slay enemies that respond to the <If(Equal(IntegerParameter(1),1))>/poke<Else/>/doubt</If> emote and collect <SheetEn(EventItem,1,IntegerParameter(2),2,1)/>."
+4,"","",""
+5,"CompanyLeveSummon","Defeat any enemies summoning reinforcements.",""

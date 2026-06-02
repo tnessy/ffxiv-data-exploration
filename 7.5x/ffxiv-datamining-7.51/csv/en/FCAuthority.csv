@@ -1,0 +1,79 @@
+﻿key,0,1,2
+#,Name,FCAuthorityCategory,
+int32,str,FCAuthorityCategory,byte
+0,"Company Profile","Settings",1
+1,"","",0
+2,"Rank Settings","Settings",2
+3,"Crest Design","Settings",3
+4,"Company Chest Settings","",0
+5,"Invitations","Members",1
+6,"Applications","Members",4
+7,"Member Dismissal","Members",2
+8,"Promotion/Demotion","Members",3
+9,"Company Board","Community",1
+10,"","",0
+11,"Short Message","Community",2
+12,"Company Credits","Actions",1
+13,"Executing Actions","Actions",2
+14,"Discarding Actions","Actions",3
+15,"","",0
+16,"","",0
+17,"","",0
+18,"","",0
+19,"","",0
+20,"","",0
+21,"","",0
+22,"","",0
+23,"","",0
+24,"","",0
+25,"","",0
+26,"","",0
+27,"","",0
+28,"","",0
+29,"","",0
+30,"","",0
+31,"","",0
+32,"","",0
+33,"","",0
+34,"","",0
+35,"","",0
+36,"","",0
+37,"","",0
+38,"","",0
+39,"","",0
+40,"","",0
+41,"","",0
+42,"","",0
+43,"Estate Hall Access","Settings",1
+44,"Estate Renaming","Settings",2
+45,"Greeting Customization","Settings",3
+46,"Purchase/Relinquish Land","Estate",1
+47,"Hall Construction/Removal","Estate",2
+48,"Hall Remodeling","Customization",1
+49,"No Furnishing Privileges","Customization",3
+50,"Furnishing Placement","Customization",4
+51,"Furnishing Placement/Removal","Customization",5
+52,"Paint Fixtures/Furnishings","Customization",2
+53,"Guest Access/Estate Tag Settings","Settings",4
+54,"Message Book Management","Message Book",1
+55,"Planting","Garden",1
+56,"Harvesting","Garden",2
+57,"Crop Disposal","Garden",3
+58,"Stabling Chocobos","Chocobos",1
+59,"Training Members' Chocobos","Chocobos",2
+60,"Aetherial Wheel Use","Customization",7
+61,"Retainer Dispatchment","Customization",6
+62,"Workshop Construction/Removal","Workshop",1
+63,"Project Commencement/Discontinuation","Company Projects",1
+64,"Project Material Delivery","Company Projects",2
+65,"Project Progression","Company Projects",3
+66,"Project Item Collection","Company Projects",4
+67,"Prototype Creation","Company Projects",5
+68,"Registration & Dismantling","Airships & Submersibles",1
+69,"Outfitting","Airships & Submersibles",2
+70,"Color Customization","Airships & Submersibles",3
+71,"Renaming","Airships & Submersibles",4
+72,"Voyage Deployment/Recall","Airships & Submersibles",5
+73,"Voyage Finalization","Airships & Submersibles",6
+74,"Exploratory Mission Embarkation","",0
+75,"Orchestrion Operation","Orchestrion",1

@@ -1,0 +1,13 @@
+﻿key,0,1,2,3
+#,VFX,UiIcon,MapIcon,Name
+int32,VFX,Image,Image,str
+0,"",,,""
+1,"fld_mark_a0f","ui/icon/061000/061241.tex","ui/icon/060000/060474.tex","Waymark A"
+2,"fld_mark_b0f","ui/icon/061000/061242.tex","ui/icon/060000/060475.tex","Waymark B"
+3,"fld_mark_c0f","ui/icon/061000/061243.tex","ui/icon/060000/060476.tex","Waymark C"
+4,"fld_mark_d0f","ui/icon/061000/061247.tex","ui/icon/060000/060936.tex","Waymark D"
+5,"fld_mark_10f","ui/icon/061000/061244.tex","ui/icon/060000/060931.tex","Waymark 1"
+6,"fld_mark_20f","ui/icon/061000/061245.tex","ui/icon/060000/060932.tex","Waymark 2"
+7,"fld_mark_30f","ui/icon/061000/061246.tex","ui/icon/060000/060933.tex","Waymark 3"
+8,"fld_mark_40f","ui/icon/061000/061248.tex","ui/icon/063000/063904.tex","Waymark 4"
+9,"","ui/icon/060000/060026.tex",,"Clear Waymarks"

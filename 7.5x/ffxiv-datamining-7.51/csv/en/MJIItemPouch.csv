@@ -1,0 +1,112 @@
+﻿key,0,1,2,3
+#,Item,Category,Crop,Sort
+int32,Item,MJIItemCategory,MJICropSeed,byte
+0,"Island Palm Leaf","Material","",1
+1,"Island Apple","Material","",11
+2,"Island Branch","Material","",2
+3,"Island Stone","Material","",3
+4,"Island Clam","Material","",4
+5,"Island Laver","Material","",5
+6,"Island Coral","Material","",6
+7,"Islewort","Material","",7
+8,"Island Sand","Material","",8
+9,"Island Log","Material","",12
+10,"Island Palm Log","Material","",13
+11,"Island Vine","Material","",9
+12,"Island Sap","Material","",10
+13,"Island Copper Ore","Material","",14
+14,"Island Limestone","Material","",15
+15,"Island Rock Salt","Material","",16
+16,"Island Sugarcane","Material","",19
+17,"Island Cotton Boll","Material","",20
+18,"Island Hemp","Material","",21
+19,"Island Clay","Material","",17
+20,"Island Tinsand","Material","",18
+21,"Island Iron Ore","Material","",25
+22,"Island Quartz","Material","",26
+23,"Island Leucogranite","Material","",27
+24,"Islefish","Material","",22
+25,"Island Squid","Material","",23
+26,"Island Jellyfish","Material","",24
+27,"Island Alyssum","Material","",100
+28,"Raw Island Garnet","Material","",101
+29,"Island Spruce Log","Material","",102
+30,"Island Hammerhead","Material","",103
+31,"Island Silver Ore","Material","",104
+32,"Island Popoto Set","Gardening Starter","Island Popoto",120
+33,"Island Cabbage Seeds","Gardening Starter","Island Cabbage",121
+34,"Isleberry Seeds","Gardening Starter","Isleberry",122
+35,"Island Pumpkin Seeds","Gardening Starter","Island Pumpkin",123
+36,"Island Onion Set","Gardening Starter","Island Onion",124
+37,"Island Tomato Seeds","Gardening Starter","Island Tomato",125
+38,"Island Wheat Seeds","Gardening Starter","Island Wheat",126
+39,"Island Corn Seeds","Gardening Starter","Island Corn",127
+40,"Island Parsnip Seeds","Gardening Starter","Island Parsnip",128
+41,"Island Radish Seeds","Gardening Starter","Island Radish",129
+42,"Island Popoto","Produce","",150
+43,"Island Cabbage","Produce","",151
+44,"Isleberry","Produce","",152
+45,"Island Pumpkin","Produce","",153
+46,"Island Onion","Produce","",154
+47,"Island Tomato","Produce","",155
+48,"Island Wheat","Produce","",156
+49,"Island Corn","Produce","",157
+50,"Island Parsnip","Produce","",158
+51,"Island Radish","Produce","",159
+52,"Sanctuary Fleece","Leavings","",200
+53,"Sanctuary Claw","Leavings","",201
+54,"Sanctuary Fur","Leavings","",202
+55,"Sanctuary Feather","Leavings","",203
+56,"Sanctuary Egg","Leavings","",204
+57,"Sanctuary Carapace","Leavings","",205
+58,"Sanctuary Fang","Leavings","",206
+59,"Sanctuary Horn","Leavings","",207
+60,"Sanctuary Milk","Leavings","",208
+61,"Island Sweetfeed","Feed","",209
+62,"Island Greenfeed","Feed","",210
+63,"Premium Island Greenfeed","Feed","",211
+64,"Makeshift Net","Restraint","",212
+65,"Makeshift Restraint","Restraint","",213
+66,"Makeshift Soporific","Restraint","",214
+67,"Island Resin","Material","",29
+68,"Island Coconut","Material","",30
+69,"Island Beehive Chip","Material","",31
+70,"Island Wood Opal","Material","",32
+71,"Multicolored Isleblooms","Material","",28
+72,"Island Paprika Seeds","Gardening Starter","Island Paprika",130
+73,"Island Leek Set","Gardening Starter","Island Leek",131
+74,"Island Paprika","Produce","",160
+75,"Island Leek","Produce","",161
+76,"Island Coal","Material","",33
+77,"Island Shale","Material","",36
+78,"Island Glimshroom","Material","",34
+79,"Island Marble","Material","",37
+80,"Island Mythril Ore","Material","",38
+81,"Island Effervescent Water","Material","",35
+82,"Island Spectrine","Material","",39
+83,"Island Cave Shrimp","Material","",105
+84,"Island Runner Bean Seeds","Gardening Starter","Island Runner Beans",132
+85,"Island Beet Seeds","Gardening Starter","Island Beet",133
+86,"Island Eggplant Seeds","Gardening Starter","Island Eggplant",134
+87,"Island Zucchini Seeds","Gardening Starter","Island Zucchini",135
+88,"Island Runner Beans","Produce","",162
+89,"Island Beet","Produce","",163
+90,"Island Eggplant","Produce","",164
+91,"Island Zucchini","Produce","",165
+92,"Island Durium Sand","Material","",40
+93,"Island Yellow Copper Ore","Material","",41
+94,"Island Gold Ore","Material","",42
+95,"Island Hawk's Eye Sand","Material","",43
+96,"Island Crystal Formation","Material","",44
+97,"Island Watermelon Seeds","Gardening Starter","Island Watermelon",136
+98,"Island Sweet Popoto Set","Gardening Starter","Island Sweet Popoto",137
+99,"Island Broccoli Seeds","Gardening Starter","Island Broccoli",138
+100,"Island Buffalo Bean Seeds","Gardening Starter","Island Buffalo Beans",139
+101,"Island Watermelon","Produce","",166
+102,"Island Sweet Popoto","Produce","",167
+103,"Island Broccoli","Produce","",168
+104,"Island Buffalo Beans","Produce","",169
+105,"Flawless Net","Restraint","",215
+106,"Flawless Restraint","Restraint","",216
+107,"Flawless Soporific","Restraint","",217
+108,"Felicitous Token","●手形","",255

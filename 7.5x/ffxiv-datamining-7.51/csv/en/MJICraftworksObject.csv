@@ -1,0 +1,94 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
+#,Item,Theme[0],Theme[1],,Material[0],Amount[0],Material[1],Amount[1],Material[2],Amount[2],Material[3],Amount[3],LevelReq,CraftingTime,Value
+int32,Item,MJICraftworksObjectTheme,MJICraftworksObjectTheme,uint16,MJIItemPouch,uint16,MJIItemPouch,uint16,MJIItemPouch,uint16,MJIItemPouch,uint16,uint16,uint16,uint16
+0,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+1,"Isleworks Potion","Concoctions","",0,"Island Palm Leaf",2,"Islewort",2,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,28
+2,"Isleworks Firesand","Concoctions","Unburied Treasures",0,"Island Sand",2,"Island Limestone",1,"Islewort",1,"Island Palm Leaf",0,1,4,28
+3,"Isleworks Wooden Chair","Furnishings","Woodworks",0,"Island Log",4,"Island Vine",2,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,42
+4,"Isleworks Grilled Clam","Foodstuffs","Marine Merchandise",0,"Island Clam",2,"Island Laver",2,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,28
+5,"Isleworks Necklace","Accessories","Woodworks",0,"Island Branch",3,"Island Vine",1,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,28
+6,"Isleworks Coral Ring","Accessories","Marine Merchandise",0,"Island Coral",3,"Island Vine",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,42
+7,"Isleworks Barbut","Attire","Metalworks",0,"Island Copper Ore",3,"Island Sand",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,42
+8,"Isleworks Macuahuitl","Arms","Woodworks",0,"Island Palm Log",3,"Island Stone",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,42
+9,"Isleworks Sauerkraut","Preserved Food","",0,"Island Cabbage",1,"Island Rock Salt",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,40
+10,"Isleworks Baked Pumpkin","Foodstuffs","",0,"Island Pumpkin",1,"Island Sap",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,40
+11,"Isleworks Tunic","Attire","Textiles",0,"Sanctuary Fleece",2,"Island Vine",4,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,72
+12,"Isleworks Culinary Knife","Sundries","Creature Creations",0,"Sanctuary Claw",1,"Island Palm Log",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,44
+13,"Isleworks Brush","Sundries","Woodworks",0,"Sanctuary Fur",1,"Island Palm Log",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,44
+14,"Isleworks Boiled Egg","Foodstuffs","Creature Creations",0,"Sanctuary Egg",1,"Island Laver",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,44
+15,"Isleworks Hora","Arms","Creature Creations",0,"Sanctuary Carapace",2,"Island Stone",4,"Island Palm Leaf",0,"Island Palm Leaf",0,1,6,72
+16,"Isleworks Earrings","Accessories","Creature Creations",0,"Sanctuary Fang",1,"Island Vine",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,44
+17,"Isleworks Butter","Ingredients","Creature Creations",0,"Sanctuary Milk",1,"Island Rock Salt",3,"Island Palm Leaf",0,"Island Palm Leaf",0,1,4,44
+18,"Isleworks Brick Counter","Furnishings","Unburied Treasures",0,"Island Clay",2,"Island Limestone",2,"Island Palm Log",2,"Island Palm Leaf",0,5,6,48
+19,"Bronze Sheep","Furnishings","Metalworks",0,"Island Tinsand",3,"Island Copper Ore",3,"Island Log",2,"Island Palm Leaf",0,5,8,64
+20,"Isleworks Growth Formula","Concoctions","",0,"Island Alyssum",2,"Islewort",3,"Island Branch",3,"Island Palm Leaf",0,5,8,136
+21,"Isleworks Garnet Rapier","Arms","Unburied Treasures",0,"Raw Island Garnet",2,"Island Copper Ore",3,"Island Tinsand",3,"Island Palm Leaf",0,5,8,136
+22,"Isleworks Spruce Round Shield","Attire","Woodworks",0,"Island Spruce Log",2,"Island Copper Ore",3,"Island Stone",3,"Island Palm Leaf",0,5,8,136
+23,"Isleworks Shark Oil","Sundries","Marine Merchandise",0,"Island Hammerhead",2,"Island Laver",3,"Island Sap",3,"Island Palm Leaf",0,5,8,136
+24,"Isleworks Silver Ear Cuffs","Accessories","Metalworks",0,"Island Silver Ore",2,"Island Tinsand",3,"Island Coral",3,"Island Palm Leaf",0,5,8,136
+25,"Isleworks Sweet Popoto","Confections","",0,"Island Popoto",2,"Sanctuary Milk",1,"Island Sap",3,"Island Palm Leaf",0,5,6,72
+26,"Isleworks Parsnip Salad","Foodstuffs","",0,"Island Parsnip",2,"Islewort",1,"Island Sap",1,"Island Palm Leaf",0,5,4,48
+27,"Isleworks Caramels","Confections","",0,"Island Sugarcane",4,"Sanctuary Milk",2,"Island Palm Leaf",0,"Island Palm Leaf",0,6,6,81
+28,"Isleworks Ribbon","Accessories","Textiles",0,"Island Cotton Boll",2,"Island Copper Ore",2,"Island Vine",2,"Island Palm Leaf",0,6,6,54
+29,"Isleworks Rope","Sundries","Textiles",0,"Island Hemp",2,"Islewort",1,"Island Vine",1,"Island Palm Leaf",0,6,4,36
+30,"Isleworks Cavalier's Hat","Attire","Textiles",0,"Sanctuary Feather",2,"Island Cotton Boll",2,"Island Hemp",2,"Island Palm Leaf",0,6,6,81
+31,"Isleworks Horn","Sundries","Creature Creations",0,"Sanctuary Horn",2,"Island Clay",2,"Island Hemp",2,"Island Palm Leaf",0,6,6,81
+32,"Isleworks Salt Cod","Preserved Food","Marine Merchandise",0,"Islefish",4,"Island Rock Salt",2,"Island Palm Leaf",0,"Island Palm Leaf",0,7,6,54
+33,"Isleworks Squid Ink","Ingredients","Marine Merchandise",0,"Island Squid",2,"Island Rock Salt",2,"Island Palm Leaf",0,"Island Palm Leaf",0,7,4,36
+34,"Isleworks Essential Draught","Concoctions","Marine Merchandise",0,"Island Jellyfish",2,"Island Palm Leaf",2,"Island Laver",2,"Island Palm Leaf",0,7,6,54
+35,"Isleberry Jam","Ingredients","",0,"Isleberry",3,"Island Sugarcane",2,"Island Sap",1,"Island Palm Leaf",0,7,6,78
+36,"Isleworks Tomato Relish","Ingredients","",0,"Island Tomato",2,"Island Sugarcane",1,"Islewort",1,"Island Palm Leaf",0,7,4,52
+37,"Isleworks Onion Soup","Foodstuffs","",0,"Island Onion",3,"Island Rock Salt",2,"Islewort",1,"Island Palm Leaf",0,7,6,78
+38,"Islefish Pie","Confections","Marine Merchandise",0,"Island Wheat",3,"Islefish",2,"Island Sugarcane",1,"Island Palm Leaf",0,7,6,78
+39,"Isleworks Corn Flakes","Preserved Food","",0,"Island Corn",2,"Island Sugarcane",2,"Island Palm Leaf",0,"Island Palm Leaf",0,7,4,52
+40,"Isleworks Pickled Radish","Preserved Food","",0,"Island Radish",4,"Island Apple",2,"Island Sugarcane",2,"Island Palm Leaf",0,7,8,104
+41,"Isleworks Iron Axe","Arms","Metalworks",0,"Island Iron Ore",3,"Island Log",3,"Island Sand",2,"Island Palm Leaf",0,8,8,72
+42,"Isleworks Quartz Ring","Accessories","Unburied Treasures",0,"Island Quartz",3,"Island Iron Ore",3,"Island Stone",2,"Island Palm Leaf",0,8,8,72
+43,"Isleworks Porcelain Vase","Sundries","Unburied Treasures",0,"Island Leucogranite",3,"Island Quartz",3,"Island Clay",2,"Island Palm Leaf",0,8,8,72
+44,"Isleworks Vegetable Juice","Concoctions","",0,"Island Cabbage",3,"Islewort",2,"Island Laver",1,"Island Palm Leaf",0,8,6,78
+45,"Isleworks Pumpkin Pudding","Confections","",0,"Island Pumpkin",3,"Sanctuary Egg",1,"Sanctuary Milk",1,"Island Palm Leaf",0,8,6,78
+46,"Isleworks Sheepfluff Rug","Furnishings","Creature Creations",0,"Sanctuary Fleece",3,"Island Cotton Boll",2,"Island Hemp",1,"Island Palm Leaf",0,8,6,90
+47,"Isleworks Garden Scythe","Sundries","Metalworks",0,"Sanctuary Claw",3,"Island Iron Ore",2,"Island Palm Log",1,"Island Palm Leaf",0,9,6,90
+48,"Isleworks Bed","Furnishings","Textiles",0,"Sanctuary Fur",4,"Island Cotton Boll",2,"Island Log",2,"Island Palm Leaf",0,9,8,120
+49,"Isleworks Scale Fingers","Attire","Creature Creations",0,"Sanctuary Carapace",4,"Island Iron Ore",2,"Island Cotton Boll",2,"Island Palm Leaf",0,9,8,120
+50,"Isleworks Crook","Arms","Woodworks",0,"Sanctuary Fang",4,"Island Quartz",2,"Island Log",2,"Island Palm Leaf",0,9,8,120
+51,"Isleworks Coral Sword","Arms","Marine Merchandise",0,"Island Coral",3,"Island Resin",3,"Island Palm Log",2,"Island Palm Leaf",0,10,8,72
+52,"Isleworks Coconut Juice","Confections","Concoctions",0,"Island Coconut",2,"Island Sugarcane",2,"Island Palm Leaf",0,"Island Palm Leaf",0,10,4,36
+53,"Isleworks Honey","Confections","Ingredients",0,"Island Beehive Chip",2,"Island Sap",2,"Island Palm Leaf",0,"Island Palm Leaf",0,10,4,36
+54,"Isleworks Seashine Opal","Unburied Treasures","",0,"Island Wood Opal",4,"Island Sand",4,"Island Palm Leaf",0,"Island Palm Leaf",0,10,8,80
+55,"Isleworks Dried Flowers","Sundries","Furnishings",0,"Multicolored Isleblooms",3,"Island Coconut",2,"Island Sap",1,"Island Palm Leaf",0,10,6,54
+56,"Isleworks Powdered Paprika","Ingredients","Concoctions",0,"Island Paprika",2,"Islewort",2,"Island Palm Leaf",0,"Island Palm Leaf",0,11,4,52
+57,"Isleworks Cawl Cennin","Concoctions","Creature Creations",0,"Island Leek",3,"Sanctuary Milk",1,"Island Laver",3,"Island Palm Leaf",0,11,6,90
+58,"Isleworks Isloaf","Foodstuffs","Concoctions",0,"Island Wheat",2,"Islefish",1,"Island Rock Salt",1,"Island Palm Leaf",0,11,4,52
+59,"Isleworks Popoto Salad","Foodstuffs","",0,"Island Popoto",2,"Island Apple",1,"Islewort",1,"Island Palm Leaf",0,11,4,52
+60,"Isleworks Dressing","Ingredients","",0,"Island Onion",2,"Island Sap",1,"Island Laver",1,"Island Palm Leaf",0,11,4,52
+61,"Isleworks Stove","Furnishings","Metalworks",0,"Island Coal",2,"Island Iron Ore",3,"Island Leucogranite",1,"Island Palm Leaf",0,12,6,54
+62,"Isleworks Lantern","Sundries","",0,"Island Glimshroom",3,"Island Quartz",3,"Island Copper Ore",2,"Island Palm Leaf",0,12,8,80
+63,"Isleworks Natron","Sundries","Concoctions",0,"Island Effervescent Water",2,"Island Rock Salt",2,"Island Palm Leaf",0,"Island Palm Leaf",0,12,4,36
+64,"Isleworks Bouillabaisse","Foodstuffs","Marine Merchandise",0,"Island Cave Shrimp",2,"Island Clam",2,"Island Squid",2,"Island Tomato",2,12,8,136
+65,"Isleworks Fossil Display","Creature Creations","Unburied Treasures",0,"Island Shale",3,"Island Palm Log",2,"Island Cotton Boll",1,"Island Palm Leaf",0,13,6,54
+66,"Isleworks Bathtub","Furnishings","Unburied Treasures",0,"Island Marble",4,"Island Leucogranite",2,"Island Clay",2,"Island Palm Leaf",0,13,8,72
+67,"Isleworks Spectacles","Attire","Sundries",0,"Island Mythril Ore",3,"Island Quartz",2,"Island Copper Ore",1,"Island Palm Leaf",0,13,6,54
+68,"Isleworks Cooling Glass","Unburied Treasures","",0,"Island Spectrine",4,"Island Sand",4,"Island Palm Leaf",0,"Island Palm Leaf",0,13,8,80
+69,"Isleworks Runner Bean Saute","Foodstuffs","",0,"Island Runner Beans",2,"Island Rock Salt",2,"Island Palm Leaf",0,"Island Palm Leaf",0,14,4,52
+70,"Isleworks Beet Soup","Foodstuffs","",0,"Island Beet",3,"Island Popoto",1,"Sanctuary Milk",1,"Island Palm Leaf",0,14,6,78
+71,"Isleworks Imam Bayildi","Foodstuffs","",0,"Island Eggplant",2,"Island Onion",2,"Island Tomato",2,"Island Palm Leaf",0,14,6,90
+72,"Isleworks Pickled Zucchini","Preserved Food","",0,"Island Zucchini",4,"Island Laver",2,"Island Sugarcane",2,"Island Palm Leaf",0,14,8,104
+73,"Isleworks Brass Serving Dish","Sundries","Metalworks",0,"Island Yellow Copper Ore",2,"Island Copper Ore",2,"Island Palm Leaf",0,"Island Palm Leaf",0,16,4,36
+74,"Island Grinding Wheel","Sundries","",0,"Island Hawk's Eye Sand",2,"Island Mythril Ore",2,"Island Sand",2,"Island Palm Leaf",0,16,6,60
+75,"Island Durium Tathlums","Arms","Metalworks",0,"Island Durium Sand",2,"Island Iron Ore",2,"Island Quartz",2,"Island Palm Leaf",0,17,6,54
+76,"Isleworks Gold Hairpin","Accessories","Metalworks",0,"Island Gold Ore",4,"Island Yellow Copper Ore",2,"Island Quartz",2,"Island Palm Leaf",0,17,8,72
+77,"Mammet of the Cycle Award","Furnishings","",0,"Island Crystal Formation",2,"Island Spectrine",2,"Island Mythril Ore",2,"Island Marble",2,17,8,80
+78,"Isleworks Fruit Punch","Confections","",0,"Island Watermelon",1,"Isleberry",1,"Island Apple",1,"Island Coconut",1,18,4,52
+79,"Isleworks Sweet Popoto Pie","Foodstuffs","Confections",0,"Island Sweet Popoto",3,"Island Wheat",1,"Sanctuary Egg",1,"Island Sugarcane",3,18,8,120
+80,"Isleworks Peperoncino","Foodstuffs","",0,"Island Broccoli",2,"Island Wheat",1,"Island Rock Salt",3,"Island Palm Leaf",0,18,6,75
+81,"Isleworks Buffalo Bean Salad","Foodstuffs","Creature Creations",0,"Island Buffalo Beans",2,"Sanctuary Milk",2,"Island Palm Leaf",0,"Island Palm Leaf",0,18,4,52
+82,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+83,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+84,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+85,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+86,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+87,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+88,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+89,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0
+90,"","","",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,"Island Palm Leaf",0,0,0,0

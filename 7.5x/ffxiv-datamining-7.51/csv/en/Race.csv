@@ -1,0 +1,12 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11
+#,Masculine,Feminine,RSE{M}{Body},RSE{M}{Hands},RSE{M}{Legs},RSE{M}{Feet},RSE{F}{Body},RSE{F}{Hands},RSE{F}{Legs},RSE{F}{Feet},,ExPac
+int32,str,str,Item,Item,Item,Item,Item,Item,Item,Item,byte,ExVersion
+0,"","","","","","","","","","",0,"A Realm Reborn"
+1,"Hyur","Hyur","Hyuran Tunic","Hyuran Gloves","Hyuran Breeches","Hyuran Thighboots","Hyuran Chemisette","Hyuran Halfgloves","Hyuran Skirt","Hyuran Longboots",2,"A Realm Reborn"
+2,"Elezen","Elezen","Elezen Surcoat","Elezen Gloves","Elezen Braccae","Elezen Jackboots","Elezen Gown","Elezen Halfgloves","Elezen Tights","Elezen Shoes",2,"A Realm Reborn"
+3,"Lalafell","Lalafell","Lalafellin Tunic","Lalafellin Wristguards","Lalafellin Gaskins","Lalafellin Top Boots","Lalafellin Kaftan","Lalafellin Wristbands","Lalafellin Bloomers","Lalafellin Bootees",1,"A Realm Reborn"
+4,"Miqo'te","Miqo'te","Miqo'te Vest","Miqo'te Gauntlets","Miqo'te Zouaves","Miqo'te Longboots","Miqo'te Separates","Miqo'te Gloves","Miqo'te Loincloth","Miqo'te Shoes",2,"A Realm Reborn"
+5,"Roegadyn","Roegadyn","Roegadyn Harness","Roegadyn Bracers","Roegadyn Breeches","Roegadyn Boots","Roegadyn Bodice","Roegadyn Armguards","Roegadyn Legstraps","Roegadyn Sandals",3,"A Realm Reborn"
+6,"Au Ra","Au Ra","Auri Harness","Auri Armguards","Auri Breeches","Auri Sandals","Auri Gown","Auri Halfgloves","Auri Pantalettes","Auri Buskins",2,"Heavensward"
+7,"Hrothgar","Hrothgar","Hrothgar Harness","Hrothgar Wristguards","Hrothgar Subligar","Hrothgar Sandals","Hrothgar Vest","Hrothgar Vambraces","Hrothgar Tights","Hrothgar Caligae",3,"Shadowbringers"
+8,"Viera","Viera","Viera Harness","Viera Armguards","Viera Gaskins","Viera Sollerets","Viera Chestwrap","Viera Armlets","Viera Pantalettes","Viera Sandals",2,"Shadowbringers"

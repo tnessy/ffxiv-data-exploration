@@ -1,0 +1,16 @@
+﻿key,0,1
+#,Song,SongName
+int32,BGM,str
+0,"",""
+1,"music/ffxiv/BGM_Event_CrystalHarpOnly.scd","Falling Shards"
+2,"music/ffxiv/BGM_Event_Tabidachi.scd","A World Apart"
+3,"music/ffxiv/BGM_Minigame_Puzzle.scd","The Twelfth Bell"
+4,"music/ffxiv/BGM_Event_Tanoshii1.scd","Daring Dalliances"
+5,"music/ffxiv/BGM_Event_Tanoshii2.scd","Bliss"
+6,"music/ffxiv/BGM_Event_HeroReturn.scd","Return of the Hero"
+7,"music/ffxiv/BGM_Event_Saisyu.scd","Nature's Bounty"
+8,"music/ffxiv/BGM_Company_Lim.scd","Maelstrom Command"
+9,"music/ffxiv/BGM_Company_Gri.scd","Into the Adder's Den"
+10,"music/ffxiv/BGM_Company_Uru.scd","The Hall of Flames"
+11,"music/ffxiv/BGM_Event_Hildy.scd","Agent of Inquiry"
+12,"music/ffxiv/BGM_Season_Easter.scd","Seasons"

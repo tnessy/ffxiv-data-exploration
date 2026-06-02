@@ -1,0 +1,11 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+#,,Gladiator{Item},Pugilist{Item},Marauder{Item},Lancer{Item},Archer{Item},Conjurer{Item},Thaumaturge{Item},Arcanist(SMN){Item},Arcanist(SCH){Item},Shield{Item},Rogue{Item},,,,,
+int32,byte,Item,Item,Item,Item,Item,Item,Item,Item,Item,Item,Item,uint32,uint32,uint32,uint32,uint32
+0,1,"Curtana","Sphairai","Bravura","Gae Bolg","Artemis Bow","Thyrus","Stardust Rod","The Veil of Wiyu","Omnilex","Holy Shield","Yoshimitsu",0,0,0,0,0
+1,2,"Curtana Zenith","Sphairai Zenith","Bravura Zenith","Gae Bolg Zenith","Artemis Bow Zenith","Thyrus Zenith","Stardust Rod Zenith","The Veil of Wiyu Zenith","Omnilex Zenith","Holy Shield Zenith","Yoshimitsu Zenith",0,0,0,0,0
+2,3,"Curtana Atma","Sphairai Atma","Bravura Atma","Gae Bolg Atma","Artemis Bow Atma","Thyrus Atma","Stardust Rod Atma","The Veil of Wiyu Atma","Omnilex Atma","Holy Shield Atma","Yoshimitsu Atma",0,0,0,0,0
+3,4,"Curtana Animus","Sphairai Animus","Bravura Animus","Gae Bolg Animus","Artemis Bow Animus","Thyrus Animus","Stardust Rod Animus","The Veil of Wiyu Animus","Omnilex Animus","Holy Shield Animus","Yoshimitsu Animus",0,0,0,0,0
+4,5,"Curtana Novus","Sphairai Novus","Bravura Novus","Gae Bolg Novus","Artemis Bow Novus","Thyrus Novus","Stardust Rod Novus","The Veil of Wiyu Novus","Omnilex Novus","Holy Shield Novus","Yoshimitsu Novus",0,0,0,0,0
+5,6,"Curtana Nexus","Sphairai Nexus","Bravura Nexus","Gae Bolg Nexus","Artemis Bow Nexus","Thyrus Nexus","Stardust Rod Nexus","The Veil of Wiyu Nexus","Omnilex Nexus","Holy Shield Nexus","Yoshimitsu Nexus",0,0,0,0,0
+6,7,"Excalibur","Kaiser Knuckles","Ragnarok","Longinus","Yoichi Bow","Nirvana","Lilith Rod","Apocalypse","Last Resort","Aegis Shield","Sasuke's Blades",0,0,0,0,0
+7,8,"Excalibur Zeta","Kaiser Knuckles Zeta","Ragnarok Zeta","Longinus Zeta","Yoichi Bow Zeta","Nirvana Zeta","Lilith Rod Zeta","Apocalypse Zeta","Last Resort Zeta","Aegis Shield Zeta","Sasuke's Blades Zeta",0,0,0,0,0

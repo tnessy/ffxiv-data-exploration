@@ -1,0 +1,27 @@
+﻿key,0,1,2,3
+#,ExpReward,GilReward,Expansion,CurrencyReward
+int32,uint32,uint16,ExVersion,uint16
+0,0,0,"A Realm Reborn",0
+1,0,1000,"Heavensward",8
+2,0,2000,"Heavensward",20
+3,0,5000,"Heavensward",100
+4,14742,1000,"Stormblood",3
+5,15444,1000,"Stormblood",4
+6,16146,1500,"Stormblood",15
+7,0,5000,"Stormblood",100
+8,30900,1000,"Stormblood",3
+9,31800,1000,"Stormblood",4
+10,32700,1500,"Stormblood",15
+11,0,5000,"Stormblood",100
+12,66096,1000,"Shadowbringers",3
+13,67392,1000,"Shadowbringers",4
+14,68688,1500,"Shadowbringers",15
+15,0,5000,"Shadowbringers",100
+16,208490,1000,"Shadowbringers",3
+17,220070,1000,"Shadowbringers",4
+18,231660,1500,"Shadowbringers",15
+19,0,5000,"Shadowbringers",100
+20,465696,1000,"Shadowbringers",3
+21,495936,1000,"Shadowbringers",4
+22,501984,1500,"Shadowbringers",15
+23,0,5000,"Shadowbringers",100

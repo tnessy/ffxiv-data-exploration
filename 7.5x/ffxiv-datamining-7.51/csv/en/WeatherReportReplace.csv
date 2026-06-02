@@ -1,0 +1,8 @@
+﻿key,0,1
+#,PlaceName{Sub},PlaceName{Parent}
+int32,PlaceName,PlaceName
+0,"",""
+1,"Limsa Lominsa Upper Decks","Limsa Lominsa"
+2,"Ul'dah - Steps of Nald","Ul'dah"
+3,"New Gridania","Gridania"
+4,"Foundation","Ishgard"

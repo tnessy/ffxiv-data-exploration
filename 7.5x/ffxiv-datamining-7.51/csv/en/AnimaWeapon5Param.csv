@@ -1,0 +1,11 @@
+﻿key,0,1
+#,BaseParam,Name
+int32,BaseParam,str
+0,"",""
+1,"Piety","Resourcefulness"
+2,"Tenacity","Resourcefulness"
+3,"Direct Hit Rate","Attentiveness"
+4,"Critical Hit","Explosiveness"
+5,"Determination","Steadfastness"
+6,"Skill Speed","Swiftness"
+7,"Spell Speed","Swiftness"

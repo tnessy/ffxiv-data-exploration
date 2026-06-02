@@ -1,0 +1,60 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11,12
+#,Name,,ModelKey,Animation{Start},Animation{End},Animation{Idle},Animation{Play01},Animation{Play02},StopAnimation,Instrument,Order,Transient,
+int32,str,bit&01,int64,ActionTimeline,ActionTimeline,ActionTimeline,ActionTimeline,ActionTimeline,ActionTimeline,str,int32,PerformTransient,byte
+0,"",False,"0, 0, 0, 0","","","","","","","",0,"",0
+1,"047harp",False,"697, 1, 1, 0","music/instrument01_start","music/instrument01_end","music/instrument01_idle","music/instrument01_play01_start","music/instrument01_play02_start","","Harp",751,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a harp.",0
+2,"001grandpiano",False,"697, 1, 1, 0","music/instrument01_start","music/instrument01_end","music/instrument01_idle","music/instrument01_play01_start","music/instrument01_play02_start","","Piano",752,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a grand piano.",0
+3,"026steelguitar",False,"697, 1, 1, 0","music/instrument01_start","music/instrument01_end","music/instrument01_idle","music/instrument01_play01_start","music/instrument01_play02_start","","Lute",753,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a steel lute.",0
+4,"046pizzicato",False,"697, 1, 1, 0","music/instrument01_start","music/instrument01_end","music/instrument01_idle","music/instrument01_play01_start","music/instrument01_play02_start","","Fiddle",754,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a plucked fiddle.",0
+5,"074flute",True,"693, 1, 1, 0","music/instrument02_start","music/instrument02_end","music/instrument02_idle","music/instrument02_play01_start","music/instrument02_play02_start","","Flute",755,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a flute.",0
+6,"069oboe",True,"693, 1, 1, 0","music/instrument02_start","music/instrument02_end","music/instrument02_idle","music/instrument02_play01_start","music/instrument02_play02_start","","Oboe",757,"[Performance Actions]
+Manipulate your instrument to emit reedy tones resembling those of an oboe.",0
+7,"072clarinet",True,"693, 1, 1, 0","music/instrument02_start","music/instrument02_end","music/instrument02_idle","music/instrument02_play01_start","music/instrument02_play02_start","","Clarinet",759,"[Performance Actions]
+Manipulate your instrument to emit reedy tones resembling those of a clarinet.",0
+8,"073piccolo",True,"693, 1, 1, 0","music/instrument02_start","music/instrument02_end","music/instrument02_idle","music/instrument02_play01_start","music/instrument02_play02_start","","Fife",758,"[Performance Actions]
+Manipulate your instrument to emit high-pitched tones resembling those of a fife.",0
+9,"076panflute",True,"693, 1, 1, 0","music/instrument02_start","music/instrument02_end","music/instrument02_idle","music/instrument02_play01_start","music/instrument02_play02_start","","Panpipes",756,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of wooden panpipes.",0
+10,"048timpani",False,"696, 1, 1, 0","music/instrument03_start","music/instrument03_end","music/instrument03_idle","music/instrument03_play01_start","music/instrument03_play02_start","","Timpani",760,"[Performance Actions]
+Manipulate your instrument to emit the percussive tones of a timpani.",0
+11,"097bongo",False,"696, 1, 1, 0","music/instrument03_start","music/instrument03_end","music/instrument03_idle","music/instrument03_play01_start","music/instrument03_play02_start","","Bongo",761,"[Performance Actions]
+Manipulate your instrument to emit the percussive ring of a bongo.",0
+12,"098bd",False,"696, 1, 1, 0","music/instrument03_start","music/instrument03_end","music/instrument03_idle","music/instrument03_play01_start","music/instrument03_play02_start","","Bass Drum",762,"[Performance Actions]
+Manipulate your instrument to emit the percussive boom of a bass drum.",0
+13,"099snare",False,"696, 1, 1, 0","music/instrument03_start","music/instrument03_end","music/instrument03_idle","music/instrument03_play01_start","music/instrument03_play02_start","","Snare Drum",763,"[Performance Actions]
+Manipulate your instrument to emit the percussive snap of a snare drum.",0
+14,"100cymbal",False,"696, 1, 1, 0","music/instrument03_start","music/instrument03_end","music/instrument03_idle","music/instrument03_play01_start","music/instrument03_play02_start","","Cymbal",764,"[Performance Actions]
+Manipulate your instrument to emit the percussive crash of a cymbal.",0
+15,"057trumpet",True,"692, 1, 1, 0","music/instrument04_start","music/instrument04_end","music/instrument04_idle","music/instrument04_play01_start","music/instrument04_play02_start","","Trumpet",765,"[Performance Actions]
+Manipulate your instrument to emit brassy tones resembling those of a trumpet.",0
+16,"058trombone",True,"692, 1, 1, 0","music/instrument04_start","music/instrument04_end","music/instrument04_idle","music/instrument04_play01_start","music/instrument04_play02_start","","Trombone",766,"[Performance Actions]
+Manipulate your instrument to emit brassy tones resembling those of a trombone.",0
+17,"059tuba",True,"692, 1, 1, 0","music/instrument04_start","music/instrument04_end","music/instrument04_idle","music/instrument04_play01_start","music/instrument04_play02_start","","Tuba",767,"[Performance Actions]
+Manipulate your instrument to emit brassy tones resembling those of a tuba.",0
+18,"061frenchhorn",True,"692, 1, 1, 0","music/instrument04_start","music/instrument04_end","music/instrument04_idle","music/instrument04_play01_start","music/instrument04_play02_start","","Horn",768,"[Performance Actions]
+Manipulate your instrument to emit brassy tones resembling those of a horn.",0
+19,"066altosax",True,"692, 1, 1, 0","music/instrument04_start","music/instrument04_end","music/instrument04_idle","music/instrument04_play01_start","music/instrument04_play02_start","","Saxophone",769,"[Performance Actions]
+Manipulate your instrument to emit brassy tones resembling those of a saxophone.",0
+20,"041violin",True,"691, 1, 1, 0","music/instrument05_start","music/instrument05_end","music/instrument05_idle","music/instrument05_play01_start","music/instrument05_play02_start","","Violin",770,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a violin.",0
+21,"042viola",True,"691, 1, 1, 0","music/instrument05_start","music/instrument05_end","music/instrument05_idle","music/instrument05_play01_start","music/instrument05_play02_start","","Viola",771,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a viola.",0
+22,"043cello",True,"691, 1, 1, 0","music/instrument05_start","music/instrument05_end","music/instrument05_idle","music/instrument05_play01_start","music/instrument05_play02_start","","Cello",772,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a cello.",0
+23,"044contrabass",True,"691, 1, 1, 0","music/instrument05_start","music/instrument05_end","music/instrument05_idle","music/instrument05_play01_start","music/instrument05_play02_start","","Double Bass",773,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a double bass.",0
+24,"030driveguitar",True,"690, 1, 1, 0","music/instrument06_start","music/instrument06_end","music/instrument06_idle","music/instrument06_play01","music/instrument06_play02","","Electric Guitar: Overdriven",774,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of an overdriven electric guitar.",1
+25,"028cleanguitar",True,"690, 1, 1, 0","music/instrument06_start","music/instrument06_end","music/instrument06_idle","music/instrument06_play01","music/instrument06_play02","","Electric Guitar: Clean",775,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a clean electric guitar.",1
+26,"029muteguitar",False,"690, 1, 1, 0","music/instrument06_start","music/instrument06_end","music/instrument06_idle","music/instrument08_play01","music/instrument08_play02","","Electric Guitar: Muted",776,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of a muted electric guitar.",1
+27,"031powerguitar",True,"690, 1, 1, 0","music/instrument07_start","music/instrument07_end","music/instrument07_idle","music/instrument07_play01","music/instrument07_play02","","Electric Guitar: Power Chords",777,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of power chords played on an electric guitar.",1
+28,"032FXguitar",False,"690, 1, 1, 0","music/instrument06_start","music/instrument06_end","music/instrument06_idle","music/instrument09_play01","music/instrument09_play02","","Electric Guitar: Special",778,"[Performance Actions]
+Manipulate your instrument to emit tones resembling those of special techniques played on an electric guitar.",1

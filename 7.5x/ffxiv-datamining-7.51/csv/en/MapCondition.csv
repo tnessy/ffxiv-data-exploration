@@ -1,0 +1,47 @@
+﻿key,0,1,2
+#,,Quest,
+int32,uint16,Quest,byte
+0,0,,0
+1,67,,0
+2,68,,0
+3,71,,0
+4,0,"To Storm-tossed Seas",4
+5,0,"Where Eagles Nest",2
+6,0,"A New Playing Field",2
+7,0,"A Trip to the Moon",2
+8,0,"Unto the Heavens",3
+9,0,"Hope Upon a Flower",5
+10,0,"The Syrcus Trench",4
+11,0,"The Next Ship to Sail",255
+12,78,,0
+13,80,,0
+14,83,,0
+15,82,,0
+16,81,,0
+17,84,,0
+18,85,,0
+19,79,,0
+20,87,,0
+21,88,,0
+22,89,,0
+23,90,,0
+24,91,,0
+25,0,"A New World to Explore",6
+26,0,"Solution Nine",2
+27,0,"Through the Gate of Gold",4
+28,0,"All Aboard",4
+29,94,,0
+30,92,,0
+31,96,,0
+32,97,,0
+33,93,,0
+34,95,,0
+35,98,,0
+36,99,,0
+37,100,,0
+38,101,,0
+39,0,"Unfamiliar Territory",0
+40,102,,0
+41,103,,0
+42,104,,0
+43,0,"",0

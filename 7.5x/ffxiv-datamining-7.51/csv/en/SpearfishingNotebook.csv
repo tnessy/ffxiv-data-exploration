@@ -1,0 +1,67 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11
+#,GatheringLevel,IsShadowNode,TerritoryType,X,Y,Radius,,PlaceName,,GatheringPointBase,,
+int32,byte,bit&01,TerritoryType,int16,int16,uint16,byte,PlaceName,byte,GatheringPointBase,uint16,uint16
+0,65,False,"e3f1",1578,1434,800,2,"Ruby Price Depths",0,"GatheringPointBase#464",0,0
+1,65,False,"e3f1",1344,516,600,2,"Tamamizu",1,"GatheringPointBase#465",0,0
+2,65,False,"e3f1",828,964,600,2,"Sui–no–Sato",2,"GatheringPointBase#466",0,0
+3,65,False,"e3f1",768,1180,600,2,"The <Emphasis>Adventure</Emphasis>",3,"GatheringPointBase#467",0,0
+4,65,False,"e3f1",192,1802,600,2,"Shisui of the Violet Tides",4,"GatheringPointBase#468",0,0
+5,70,False,"e3f1",1892,264,600,2,"The <Emphasis>Kobayashi Maru</Emphasis>",5,"GatheringPointBase#472",0,0
+6,65,False,"e3f2",704,1824,600,2,"The One River Southwestern Riverbeds",6,"GatheringPointBase#469",0,0
+7,65,False,"e3f2",1022,1782,600,2,"The One River Southern Riverbeds",7,"GatheringPointBase#470",0,0
+8,65,False,"e3f2",1688,1776,600,2,"Imperial Hypersonic Assault Craft L-XXIII",8,"GatheringPointBase#471",0,0
+9,70,False,"e3f2",444,1660,600,2,"The Sunken Junk",9,"GatheringPointBase#473",0,0
+10,70,False,"e3f2",496,484,600,2,"The Dragon's Struggle",10,"GatheringPointBase#474",0,0
+11,70,False,"e3f3",900,1100,600,2,"Azim Khaat Western Lakebed",11,"GatheringPointBase#475",0,0
+12,70,False,"e3f3",1100,1100,600,4,"Azim Khaat Eastern Lakebed",12,"GatheringPointBase#476",0,0
+13,70,False,"g3f3",644,880,600,2,"Loch Seld Northwestern Lakebed",13,"GatheringPointBase#477",0,0
+14,70,False,"g3f3",1115,1190,850,2,"Loch Seld Central Lakebed",14,"GatheringPointBase#478",0,0
+15,70,False,"g3f3",1180,1350,600,2,"Loch Seld Southeastern Lakebed",15,"GatheringPointBase#479",0,0
+16,70,False,"n4f1",656,1506,800,2,"Northeast Source",16,"GatheringPointBase#635",0,0
+17,75,False,"n4f1",324,1562,800,2,"The Isle of Ken",17,"GatheringPointBase#636",0,0
+18,75,False,"n4f1",646,1824,800,4,"Southeast Source",18,"GatheringPointBase#637",0,0
+19,75,False,"n4f4",968,620,600,2,"North Lyhe Ghiah",19,"GatheringPointBase#638",0,0
+20,75,False,"n4f4",934,1046,800,2,"Deepwood Swim",20,"GatheringPointBase#639",0,0
+21,80,False,"n4f4",1224,1224,800,2,"Central Longmirror Lake",21,"GatheringPointBase#640",0,0
+22,80,False,"n4f4",1456,1404,800,2,"Thysm Lran",22,"GatheringPointBase#641",0,0
+23,80,False,"n4f4",1412,1784,800,2,"South Longmirror Lake",23,"GatheringPointBase#642",0,0
+24,80,False,"n4f5",216,1234,800,2,"North Lake Tusi Mek'ta",24,"GatheringPointBase#643",0,0
+25,80,False,"n4f5",424,1444,800,2,"The Covered Halls of Dwatl",25,"GatheringPointBase#644",0,0
+26,70,False,"n4f5",265,1335,300,2,"Central Lake Tusi Mek'ta",26,"GatheringPointBase#696",0,0
+27,70,False,"n4f5",185,1465,300,4,"South Lake Tusi Mek'ta",27,"GatheringPointBase#697",0,0
+28,70,True,"e3f1",1961,433,300,2,"The Eastern Ruby Sea",28,"GatheringPointBase#480",0,0
+29,70,True,"e3f1",1911,89,300,2,"<Emphasis>Kobayashi Maru</Emphasis>'s Northern Wake",29,"GatheringPointBase#530",0,0
+30,70,True,"e3f2",501,1839,300,2,"The Sunken Junk's South Side",30,"GatheringPointBase#481",0,0
+31,70,True,"e3f3",1034,1211,225,4,"Azim Khaat Southern Lakebed",31,"GatheringPointBase#482",0,0
+32,70,True,"g3f3",1056,1194,225,1,"Loch Seld Deep Lakebed",32,"GatheringPointBase#483",0,0
+33,75,True,"n4f1",560,1757,300,2,"Eastern Isle of Ken",33,"GatheringPointBase#645",0,0
+34,80,True,"n4f4",1450,1183,300,2,"East Longmirror Lake",34,"GatheringPointBase#646",0,0
+35,80,True,"n4f5",234,1403,300,2,"Deep Lake Tusi Mek'ta",35,"GatheringPointBase#647",0,0
+36,85,False,"m5f1",694,1792,750,2,"Southern Akyaali",36,"GatheringPointBase#889",0,0
+37,85,False,"e3f1",1361,125,750,2,"Northern Onokoro",37,"GatheringPointBase#890",0,0
+38,85,False,"e3f1",500,644,600,2,"Isari Slope",38,"GatheringPointBase#891",0,0
+39,85,False,"e3f1",1361,1015,900,2,"Exile",39,"GatheringPointBase#892",0,0
+40,90,False,"m5f1",367,1639,750,2,"Western Akyaali",40,"GatheringPointBase#893",0,0
+41,90,False,"m5f1",183,1389,750,2,"Southern Great Runoff",41,"GatheringPointBase#894",0,0
+42,90,False,"m5f1",1165,1188,600,2,"The Font of Maya",42,"GatheringPointBase#895",0,0
+43,90,False,"e3f1",1812,563,750,2,"Northeastern Bekko",43,"GatheringPointBase#896",0,0
+44,90,False,"e3f1",1937,1532,900,2,"Eastern Barrier Isle",44,"GatheringPointBase#897",0,0
+45,90,False,"g3f3",1099,844,750,2,"Loch Seld Northeastern Lakebed",45,"GatheringPointBase#898",0,0
+46,85,True,"e3f1",1119,115,300,2,"Northwestern Onokoro",46,"GatheringPointBase#899",0,0
+47,90,True,"m5f1",292,1764,300,2,"Outer Akyaali",47,"GatheringPointBase#900",0,0
+48,85,False,"g3f3",975,1398,600,2,"Loch Seld Southwestern Lakebed",48,"GatheringPointBase#903",0,0
+49,85,False,"e3f1",1136,1319,600,2,"The Anemone Gardens",49,"GatheringPointBase#904",0,0
+50,85,False,"n4f1",264,1807,800,2,"Southwestern Isle of Ken",50,"GatheringPointBase#915",0,0
+51,85,False,"n4f4",728,803,600,2,"The House of the First Light",51,"GatheringPointBase#916",0,0
+52,90,False,"s1f5",1185,1023,600,2,"Northeast Bronze Lake Depths",52,"GatheringPointBase#917",0,0
+53,85,False,"e3f1",910,620,600,2,"Saibai Cavern",53,"GatheringPointBase#942",0,0
+54,90,False,"s1f5",900,1025,600,4,"Northwest Bronze Lake Depths",54,"GatheringPointBase#943",0,0
+55,95,False,"y6f1",264,967,800,4,"Karvarhur the First",55,"GatheringPointBase#1005",0,0
+56,95,False,"y6f2",1338,1469,600,2,"Eastern Marsh Ligaka",56,"GatheringPointBase#1006",0,0
+57,95,False,"y6f2",1010,1616,600,4,"Western Marsh Ligaka",57,"GatheringPointBase#1007",0,0
+58,95,False,"y6f3",214,332,600,4,"Xd'aa Talat Tsoly",58,"GatheringPointBase#1008",0,0
+59,100,False,"y6f3",1385,190,600,2,"Western Iq Rrax Tsoly",59,"GatheringPointBase#1009",0,0
+60,100,False,"y6f3",1683,332,600,4,"Eastern Iq Rrax Tsoly",60,"GatheringPointBase#1010",0,0
+61,100,False,"x6f1",1528,508,600,2,"Northern Lake Toari",61,"GatheringPointBase#1011",0,0
+62,95,True,"y6f2",1209,1514,225,1,"Marsh Ligaka Depths",62,"GatheringPointBase#1012",0,0
+63,100,True,"y6f3",1522,303,300,1,"Iq Rrax Tsoly Depths",63,"GatheringPointBase#1013",0,0

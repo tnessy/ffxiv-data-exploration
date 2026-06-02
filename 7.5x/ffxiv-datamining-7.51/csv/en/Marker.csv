@@ -1,0 +1,21 @@
+﻿key,0,1,2
+#,Icon,,Name
+int32,Image,byte,str
+0,,0,""
+1,"ui/icon/061000/061201.tex",1,"Target to Attack 1"
+2,"ui/icon/061000/061202.tex",2,"Target to Attack 2"
+3,"ui/icon/061000/061203.tex",3,"Target to Attack 3"
+4,"ui/icon/061000/061204.tex",4,"Target to Attack 4"
+5,"ui/icon/061000/061205.tex",5,"Target to Attack 5"
+6,"ui/icon/061000/061211.tex",9,"Target to Bind 1"
+7,"ui/icon/061000/061212.tex",10,"Target to Bind 2"
+8,"ui/icon/061000/061213.tex",11,"Target to Bind 3"
+9,"ui/icon/061000/061221.tex",12,"Target to Ignore 1"
+10,"ui/icon/061000/061222.tex",13,"Target to Ignore 2"
+11,"ui/icon/061000/061231.tex",14,"Square"
+12,"ui/icon/061000/061232.tex",15,"Circle"
+13,"ui/icon/061000/061233.tex",16,"Plus"
+14,"ui/icon/061000/061234.tex",17,"Triangle"
+15,"ui/icon/061000/061206.tex",6,"Target to Attack 6"
+16,"ui/icon/061000/061207.tex",7,"Target to Attack 7"
+17,"ui/icon/061000/061208.tex",8,"Target to Attack 8"

@@ -1,0 +1,451 @@
+﻿key,0
+#,Quest
+int32,Quest
+2818048,"Purple Flame, Purple Flame"
+2818049,"Bridge over Frozen Water"
+2818050,"Protecting What's Important"
+2818051,"Baby Steps"
+2818052,"For All the Nights to Come"
+2818053,
+2818054,
+2818055,
+2818056,
+2818057,
+2818058,
+2818059,
+2818060,
+2818061,
+2818062,
+2818063,"Mourn in Passing"
+2818064,"Some Bad News"
+2818065,"Natural Repellent"
+2818066,"Chocobo's Last Stand"
+2818067,"A Lesson in Humility"
+2818068,
+2818069,
+2818070,
+2818071,
+2818072,
+2818073,
+2818074,
+2818075,
+2818076,
+2818077,
+2818078,"Forbidden Knowledge"
+2818079,"Louder than Words"
+2818080,"Ebb and Aetherflow"
+2818081,"Taking Stock"
+2818082,"Saro Roggo's Common Life"
+2818083,
+2818084,
+2818085,
+2818086,
+2818087,
+2818088,
+2818089,
+2818090,
+2818091,
+2818092,
+2818093,"Into the Aery"
+2818094,"The Bathing Bully"
+2818095,"Road Kill"
+2818096,"The Unceasing Gardener"
+2818097,"Waiting to Inhale"
+2818098,
+2818099,
+2818100,
+2818101,
+2818102,
+2818103,
+2818104,
+2818105,
+2818106,
+2818107,
+2818108,"Bolt, Chain, and Island"
+2818109,"Clipped Wings"
+2818110,"Search and Rescue"
+2818111,"Sleepless in Ok' Zundu"
+2818112,"Flying the Nest"
+2818113,
+2818114,
+2818115,
+2818116,
+2818117,
+2818118,
+2818119,
+2818120,
+2818121,
+2818122,
+2818123,"Fetters of Lament"
+2818124,"Systematic Exploration"
+2818125,"In Node We Trust"
+2818126,"Chimerical Maintenance"
+2818127,"Close Encounters of the VIth Kind"
+2818128,"The Silence of the Gods"
+2818129,"Magiteknical Failure"
+2818130,"The Hidden Truth"
+2818131,"Unexpected Guests"
+2818132,"Eyes Bigger than Her Stomach"
+2818133,
+2818134,
+2818135,
+2818136,
+2818137,
+2818138,
+2818139,
+2818140,
+2818141,
+2818142,
+2818143,"Liberty or Death"
+2818144,"Saint Sayer"
+2818145,"Out of Sight"
+2818146,"A Hunger for Trade"
+2818147,"Closing Up Shop"
+2818148,
+2818149,
+2818150,
+2818151,
+2818152,
+2818153,
+2818154,
+2818155,
+2818156,
+2818157,
+2818158,"Stormblood"
+2818159,"It's a Zu Out There"
+2818160,"A Rite to Rest"
+2818161,"If I Were a Fish"
+2818162,"Are They Ill-tempered"
+2818163,
+2818164,
+2818165,
+2818166,
+2818167,
+2818168,
+2818169,
+2818170,
+2818171,
+2818172,
+2818173,"Tide Goes in, Imperials Go Out"
+2818174,"The Price of Betrayal"
+2818175,"Pulling Double Booty"
+2818176,"The Sword in the Stone"
+2818177,"The Palace of Lost Souls"
+2818178,
+2818179,
+2818180,
+2818181,
+2818182,
+2818183,
+2818184,
+2818185,
+2818186,
+2818187,
+2818188,"All the Little Angels"
+2818189,"Something Smells"
+2818190,"Fly, My Pretties"
+2818191,"Whacking Day"
+2818192,"Wolves and Weeds"
+2818193,
+2818194,
+2818195,
+2818196,
+2818197,
+2818198,
+2818199,
+2818200,
+2818201,
+2818202,
+2818203,"Glory to the Khagan"
+2818204,"Words Are Very Unnecessary"
+2818205,"Sheep Snatcher"
+2818206,"Forty Years and Counting"
+2818207,"Mauci of the Seven Worries"
+2818208,
+2818209,
+2818210,
+2818211,
+2818212,
+2818213,
+2818214,
+2818215,
+2818216,
+2818217,
+2818218,"Logistics of War"
+2818219," A Jobb Well Done"
+2818220," Imperative Repairs"
+2818221," The Astute Amaro"
+2818222," An Unreasonable Request"
+2818223,
+2818224,
+2818225,
+2818226,
+2818227,
+2818228,
+2818229,
+2818230,
+2818231,
+2818232,
+2818233,"Extinguishing the Last Light"
+2818234," A Plankless Task"
+2818235," Village of Woe"
+2818236," Fugitive of Fear"
+2818237," A Disagreeable Dwarf"
+2818238,
+2818239,
+2818240,
+2818241,
+2818242,
+2818243,
+2818244,
+2818245,
+2818246,
+2818247,
+2818248,"A Fresh Start"
+2818249," Work to Live or Live to Work"
+2818250," Scavengers Assemble"
+2818251," Charmless Man"
+2818252," A Vein Pursuit"
+2818253,
+2818254,
+2818255,
+2818256,
+2818257,
+2818258,
+2818259,
+2818260,
+2818261,
+2818262,
+2818263,"Acht-la Ormh Inn"
+2818264," The Forbidden Lran"
+2818265," Delightful Decorations"
+2818266," The Path to Popularity"
+2818267," A New Amaro"
+2818268,
+2818269,
+2818270,
+2818271,
+2818272,
+2818273,
+2818274,
+2818275,
+2818276,
+2818277,
+2818278,"The Burden of Knowledge"
+2818279," What We Do for Family"
+2818280," The Great Deceiver"
+2818281," Suit Up"
+2818282," Stand on Ceremony"
+2818283,
+2818284,
+2818285,
+2818286,
+2818287,
+2818288,
+2818289,
+2818290,
+2818291,
+2818292,
+2818293,"A Greater Purpose"
+2818294," Koal of the Cups"
+2818295," Responsible Creation"
+2818296," Debate and Discourse"
+2818297," Community Cohesion"
+2818298,
+2818299,
+2818300,
+2818301,
+2818302,
+2818303,
+2818304,
+2818305,
+2818306,
+2818307,
+2818308,"The Ultimate Weapon"
+2818309,"Bonds of Adamant(ite)"
+2818310," Lost Little Troll"
+2818311," The Lad in Labyrinthos"
+2818312," Gleaner's Wish"
+2818313," Let the Good Times Troll"
+2818314,
+2818315,
+2818316,
+2818317,
+2818318,
+2818319,
+2818320,
+2818321,
+2818322,
+2818323,
+2818324,"Simple Pleasures"
+2818325," Alchemist or Dancer"
+2818326," Steppe Child"
+2818327," Radiant Patrol"
+2818328," Curing What Ails"
+2818329,
+2818330,
+2818331,
+2818332,
+2818333,
+2818334,
+2818335,
+2818336,
+2818337,
+2818338,
+2818339,"Gateway of the Gods"
+2818340," Best Delivered Cold"
+2818341," In Pursuit of Power"
+2818342," Children Are Our Future"
+2818343," Stranded at the Station"
+2818344,
+2818345,
+2818346,
+2818347,
+2818348,
+2818349,
+2818350,
+2818351,
+2818352,
+2818353,
+2818354,"Heart of the Matter"
+2818355," True Carrot Crimes"
+2818356," Carrots: It's What's for Dinner"
+2818357," Alluring Allag"
+2818358," Name That Way"
+2818359,
+2818360,
+2818361,
+2818362,
+2818363,
+2818364,
+2818365,
+2818366,
+2818367,
+2818368,
+2818369,"Caging the Messenger"
+2818370," You and the Ailouros"
+2818371," The Perks of Being a Lost Flower "
+2818372," Touring Anagnorisis, Part I"
+2818373," An Expected Guest"
+2818374,
+2818375,
+2818376,
+2818377,
+2818378,
+2818379,
+2818380,
+2818381,
+2818382,
+2818383,
+2818384,"You're Not Alone"
+2818385," Ending as One"
+2818386," A Most Stimulating Discussion"
+2818387," Learn to Love"
+2818388," Combat Evolved"
+2818389,
+2818390,
+2818391,
+2818392,
+2818393,
+2818394,
+2818395,
+2818396,
+2818397,
+2818398,
+2818399,"The Feat of Ice"
+2818400," A Traveler to the Rescue"
+2818401," A Crisis of Corruption"
+2818402," An Illuminating Ritual"
+2818403," The Flame Burns No More"
+2818404,
+2818405,
+2818406,
+2818407,
+2818408,
+2818409,
+2818410,
+2818411,
+2818412,
+2818413,
+2818414,"Sibling Rescue"
+2818415," Ripe for the Offering"
+2818416," Rite of the Wind's Chosen"
+2818417," Divine Inspiration"
+2818418," All Good Potpacts Must Come to an End"
+2818419,
+2818420,
+2818421,
+2818422,
+2818423,
+2818424,
+2818425,
+2818426,
+2818427,
+2818428,
+2818429,"Road to the Golden City"
+2818430," Secrets in the Cinderfield"
+2818431," Aiming High"
+2818432," Beast of the Heartland"
+2818433," Lost and Powerless"
+2818434,
+2818435,
+2818436,
+2818437,
+2818438,
+2818439,
+2818440,
+2818441,
+2818442,
+2818443,
+2818444,"A Hot Commodity"
+2818445," Meeting of the Spirits"
+2818446," Rroneek Seeker"
+2818447," When the Bill Comes Due"
+2818448," A Bad Case of the Blue Devils"
+2818449,
+2818450,
+2818451,
+2818452,
+2818453,
+2818454,
+2818455,
+2818456,
+2818457,
+2818458,
+2818459,"Unto the Summit"
+2818460," Stressed Testing"
+2818461," Phyt for Survival"
+2818462," He Who Remembers"
+2818463," Aunty Knows Best"
+2818464,
+2818465,
+2818466,
+2818467,
+2818468,
+2818469,
+2818470,
+2818471,
+2818472,
+2818473,
+2818474,"A Journey Never-ending"
+2818475," Well-wishing at the Wishing Well"
+2818476," Perplexing Puzzles, Endless Fun"
+2818477," Volcanic Disruptions"
+2818478," Blueprint Protocol"
+2818479,
+2818480,
+2818481,
+2818482,
+2818483,
+2818484,
+2818485,
+2818486,
+2818487,
+2818488,
+2818489,
+2818490,
+2818491,
+2818492,
+2818493,
+2818494,
+2818495,

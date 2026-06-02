@@ -1,0 +1,534 @@
+﻿key,0,1,2,3,4
+#,Action{Type},Action,,,
+int32,byte,Row,bit&01,bit&02,int32
+0.0,0,,True,True,0
+1.0,2,"Royal Authority Combo",True,True,0
+1.1,1,"Fast Blade",False,False,0
+1.2,1,"Riot Blade",False,False,0
+1.3,1,"Royal Authority",False,False,0
+1.4,1,"Shield Smite",True,True,0
+1.5,1,"Holy Spirit",True,True,0
+1.6,1,"Imperator",True,True,0
+1.7,1,"Intervene",True,True,0
+1.8,1,"Holy Sheltron",True,True,0
+1.9,1,"Guardian",True,True,0
+1.10,1,"Phalanx",True,True,0
+1.11,1,"Atonement",False,False,0
+1.12,1,"Supplication",False,False,0
+1.13,1,"Sepulchre",False,False,0
+1.14,1,"Confiteor",False,False,0
+1.15,1,"Blade of Faith",False,False,0
+1.16,1,"Blade of Truth",False,False,0
+1.17,1,"Blade of Valor",False,False,0
+1.18,1,"Standard-issue Elixir",True,True,0
+1.19,1,"Recuperate",True,True,0
+1.20,1,"Purify",True,True,0
+1.21,1,"Guard",True,True,0
+1.22,1,"Sprint",True,True,0
+2.0,2,"Storm's Path Combo",True,True,0
+2.1,1,"Heavy Swing",False,False,0
+2.2,1,"Maim",False,False,0
+2.3,1,"Storm's Path",False,False,0
+2.4,1,"Primal Rend",True,True,0
+2.5,1,"Onslaught",True,True,0
+2.6,1,"Orogeny",True,True,0
+2.7,1,"Blota",True,True,0
+2.8,1,"Bloodwhetting",True,True,0
+2.9,1,"Primal Scream",True,True,0
+2.10,1,"Fell Cleave",False,False,0
+2.11,1,"Primal Ruination",False,False,0
+2.12,1,"Inner Chaos",False,False,0
+2.13,1,"Chaotic Cyclone",False,False,0
+2.14,1,"Primal Wrath",False,False,0
+2.15,1,"Standard-issue Elixir",True,True,0
+2.16,1,"Recuperate",True,True,0
+2.17,1,"Purify",True,True,0
+2.18,1,"Guard",True,True,0
+2.19,1,"Sprint",True,True,0
+2.20,0,,True,True,0
+2.21,0,,True,True,0
+3.0,2,"Souleater Combo",True,True,0
+3.1,1,"Hard Slash",False,False,0
+3.2,1,"Syphon Strike",False,False,0
+3.3,1,"Souleater",False,False,0
+3.4,1,"Impalement",True,True,0
+3.5,1,"Shadowbringer",True,True,0
+3.6,1,"Plunge",True,True,0
+3.7,1,"the Blackest Night",True,True,0
+3.8,1,"Salted Earth",True,True,0
+3.9,1,"Eventide",True,True,0
+3.10,1,"Scarlet Delirium",False,False,0
+3.11,1,"Comeuppance",False,False,0
+3.12,1,"Torcleaver",False,False,0
+3.13,1,"Salt and Darkness",False,False,0
+3.14,1,"Disesteem",False,False,0
+3.15,1,"Standard-issue Elixir",True,True,0
+3.16,1,"Recuperate",True,True,0
+3.17,1,"Purify",True,True,0
+3.18,1,"Guard",True,True,0
+3.19,1,"Sprint",True,True,0
+3.20,0,,True,True,0
+4.0,2,"Phantom Rush Combo",True,True,0
+4.1,1,"Dragon Kick",False,False,0
+4.2,1,"Twin Snakes",False,False,0
+4.3,1,"Demolish",False,False,0
+4.4,1,"Leaping Opo",False,False,0
+4.5,1,"Rising Raptor",False,False,0
+4.6,1,"Pouncing Coeurl",False,False,0
+4.7,1,"Phantom Rush",False,False,0
+4.8,1,"Fire's Reply",True,True,0
+4.9,1,"Wind's Reply",True,True,0
+4.10,1,"Rising Phoenix",True,True,0
+4.11,1,"Riddle of Earth",True,True,0
+4.12,1,"Thunderclap",True,True,0
+4.13,1,"Meteodrive",True,True,0
+4.14,1,"Earth's Reply",False,False,0
+4.15,1,"Standard-issue Elixir",True,True,0
+4.16,1,"Recuperate",True,True,0
+4.17,1,"Purify",True,True,0
+4.18,1,"Guard",True,True,0
+4.19,1,"Sprint",True,True,0
+4.20,0,,True,True,0
+5.0,2,"Drakesbane Combo",True,True,0
+5.1,1,"Raiden Thrust",False,False,0
+5.2,1,"Fang and Claw",False,False,0
+5.3,1,"Wheeling Thrust",False,False,0
+5.4,1,"Drakesbane",False,False,0
+5.5,1,"Chaotic Spring",True,True,0
+5.6,1,"Geirskogul",True,True,0
+5.7,1,"High Jump",True,True,0
+5.8,1,"Elusive Jump",True,True,0
+5.9,1,"Horrid Roar",True,True,0
+5.10,1,"Sky High",True,True,0
+5.11,1,"Heavens' Thrust",False,False,0
+5.12,1,"Starcross",False,False,0
+5.13,1,"Nastrond",False,False,0
+5.14,1,"Wyrmwind Thrust",False,False,0
+5.15,1,"Sky Shatter",False,False,0
+5.16,1,"Standard-issue Elixir",True,True,0
+5.17,1,"Recuperate",True,True,0
+5.18,1,"Purify",True,True,0
+5.19,1,"Guard",True,True,0
+5.20,1,"Sprint",True,True,0
+5.21,0,,True,True,0
+5.22,0,,True,True,0
+6.0,2,"Aeolian Edge Combo",True,True,0
+6.1,1,"Spinning Edge",False,False,0
+6.2,1,"Gust Slash",False,False,0
+6.3,1,"Aeolian Edge",False,False,0
+6.4,1,"Fuma Shuriken",True,True,0
+6.5,1,"Dokumori",True,True,0
+6.6,1,"Three Mudra",True,True,0
+6.7,1,"Bunshin",True,True,0
+6.8,1,"Shukuchi",True,True,0
+6.9,1,"Seiton Tenchu",True,True,0
+6.10,1,"Zesho Meppo",False,False,0
+6.11,1,"Assassinate",False,False,0
+6.12,1,"Forked Raiju",False,False,0
+6.13,1,"Fleeting Raiju",False,False,0
+6.14,1,"Hyosho Ranryu",False,False,0
+6.15,1,"Goka Mekkyaku",False,False,0
+6.16,1,"Meisui",False,False,0
+6.17,1,"Huton",False,False,0
+6.18,1,"Doton",False,False,0
+6.19,1,"Hollow Nozuchi",False,False,0
+6.20,1,"Standard-issue Elixir",True,True,0
+6.21,1,"Recuperate",True,True,0
+6.22,1,"Purify",True,True,0
+6.23,1,"Guard",True,True,0
+6.24,1,"Sprint",True,True,0
+7.0,2,"Kasha Combo",True,True,0
+7.1,1,"Yukikaze",False,False,0
+7.2,1,"Gekko",False,False,0
+7.3,1,"Kasha",False,False,0
+7.4,1,"Ogi Namikiri",True,True,0
+7.5,1,"Hissatsu: Soten",True,True,0
+7.6,1,"Hissatsu: Chiten",True,True,0
+7.7,1,"Mineuchi",True,True,0
+7.8,1,"Meikyo Shisui",True,True,0
+7.9,1,"Zantetsuken",True,True,0
+7.10,1,"Hyosetsu",False,False,0
+7.11,1,"Mangetsu",False,False,0
+7.12,1,"Oka",False,False,0
+7.13,1,"Kaeshi: Namikiri",False,False,0
+7.14,1,"Zanshin",False,False,0
+7.15,1,"Tendo Setsugekka",False,False,0
+7.16,1,"Tendo Kaeshi Setsugekka",False,False,0
+7.17,1,"Standard-issue Elixir",True,True,0
+7.18,1,"Recuperate",True,True,0
+7.19,1,"Purify",True,True,0
+7.20,1,"Guard",True,True,0
+7.21,1,"Sprint",True,True,0
+7.22,0,,True,True,0
+8.0,1,"Powerful Shot",True,True,0
+8.1,1,"Apex Arrow",True,True,0
+8.2,1,"Harmonic Arrow",True,True,0
+8.3,1,"Silent Nocturne",True,True,0
+8.4,1,"Repelling Shot",True,True,0
+8.5,1,"the Warden's Paean",True,True,0
+8.6,1,"Final Fantasia",True,True,0
+8.7,1,"Pitch Perfect",False,False,0
+8.8,1,"Blast Arrow",False,False,0
+8.9,1,"Encore of Light",False,False,0
+8.10,1,"Standard-issue Elixir",True,True,0
+8.11,1,"Recuperate",True,True,0
+8.12,1,"Purify",True,True,0
+8.13,1,"Guard",True,True,0
+8.14,1,"Sprint",True,True,0
+8.15,0,,True,True,0
+8.16,0,,True,True,0
+8.17,0,,True,True,0
+8.18,0,,True,True,0
+8.19,0,,True,True,0
+9.0,1,"Blast Charge",True,True,0
+9.1,1,"Scattergun",True,True,0
+9.2,1,"Drill",True,True,0
+9.3,1,"Full Metal Field",True,True,0
+9.4,1,"Wildfire",True,True,0
+9.5,1,"Bishop Autoturret",True,True,0
+9.6,1,"Analysis",True,True,0
+9.7,1,"Marksman's Spite",True,True,0
+9.8,1,"Blazing Shot",False,False,0
+9.9,1,"Bioblaster",False,False,0
+9.10,1,"Air Anchor",False,False,0
+9.11,1,"Chain Saw",False,False,0
+9.12,1,"Detonator",False,False,0
+9.13,1,"Aether Mortar",False,False,0
+9.14,1,"Standard-issue Elixir",True,True,0
+9.15,1,"Recuperate",True,True,0
+9.16,1,"Purify",True,True,0
+9.17,1,"Guard",True,True,0
+9.18,1,"Sprint",True,True,0
+9.19,0,,True,True,0
+10.0,1,"Fire",True,True,0
+10.1,1,"Blizzard",True,True,0
+10.2,1,"Burst",True,True,0
+10.3,1,"Paradox",True,True,0
+10.4,1,"Xenoglossy",True,True,0
+10.5,1,"Lethargy",True,True,0
+10.6,1,"Aetherial Manipulation",True,True,0
+10.7,1,"Elemental Weave",True,True,0
+10.8,1,"Soul Resonance",True,True,0
+10.9,1,"Fire III",False,False,0
+10.10,1,"Fire IV",False,False,0
+10.11,1,"High Fire II",False,False,0
+10.12,1,"Flare",False,False,0
+10.13,1,"Blizzard III",False,False,0
+10.14,1,"Blizzard IV",False,False,0
+10.15,1,"High Blizzard II",False,False,0
+10.16,1,"Freeze",False,False,0
+10.17,1,"Wreath of Fire",False,False,0
+10.18,1,"Wreath of Ice",False,False,0
+10.19,1,"Flare Star",False,False,0
+10.20,1,"Frost Star",False,False,0
+10.21,1,"Standard-issue Elixir",True,True,0
+10.22,1,"Recuperate",True,True,0
+10.23,1,"Purify",True,True,0
+10.24,1,"Guard",True,True,0
+10.25,1,"Sprint",True,True,0
+11.0,1,"Ruin III",True,True,0
+11.1,1,"Mountain Buster",True,True,0
+11.2,1,"Slipstream",True,True,0
+11.3,1,"Crimson Cyclone",True,True,0
+11.4,1,"Necrotize",True,True,0
+11.5,1,"Radiant Aegis",True,True,0
+11.6,1,"Summon Bahamut",True,True,0
+11.7,1,"Summon Phoenix",True,True,0
+11.8,1,"Ruin IV",False,False,0
+11.9,1,"Astral Impulse",False,False,0
+11.10,1,"Fountain of Fire",False,False,0
+11.11,1,"Crimson Strike",False,False,0
+11.12,1,"Deathflare",False,False,0
+11.13,1,"Brand of Purgatory",False,False,0
+11.14,1,"Megaflare",False,False,0
+11.15,1,"Wyrmwave",False,False,0
+11.16,1,"Everlasting Flight",False,False,0
+11.17,1,"Scarlet Flame",False,False,0
+11.18,1,"Standard-issue Elixir",True,True,0
+11.19,1,"Recuperate",True,True,0
+11.20,1,"Purify",True,True,0
+11.21,1,"Guard",True,True,0
+11.22,1,"Sprint",True,True,0
+11.23,0,,True,True,0
+11.24,0,,True,True,0
+12.0,1,"Jolt III",True,True,0
+12.1,1,"Enchanted Riposte",True,True,0
+12.2,1,"Resolution",True,True,0
+12.3,1,"Embolden",True,True,0
+12.4,1,"Corps-a-corps",True,True,0
+12.5,1,"Displacement",True,True,0
+12.6,1,"Forte",True,True,0
+12.7,1,"Southern Cross",True,True,0
+12.8,1,"Grand Impact",False,False,0
+12.9,1,"Enchanted Zwerchhau",False,False,0
+12.10,1,"Enchanted Redoublement",False,False,0
+12.11,1,"Scorch",False,False,0
+12.12,1,"Prefulgence",False,False,0
+12.13,1,"Vice of Thorns",False,False,0
+12.14,1,"Standard-issue Elixir",True,True,0
+12.15,1,"Recuperate",True,True,0
+12.16,1,"Purify",True,True,0
+12.17,1,"Guard",True,True,0
+12.18,1,"Sprint",True,True,0
+12.19,0,,True,True,0
+12.20,0,,True,True,0
+12.21,0,,True,True,0
+12.22,0,,True,True,0
+12.23,0,,True,True,0
+12.24,0,,True,True,0
+12.25,0,,False,False,0
+12.26,0,,False,False,0
+13.0,1,"Glare III",True,True,0
+13.1,1,"Cure II",True,True,0
+13.2,1,"Afflatus Misery",True,True,0
+13.3,1,"Aquaveil",True,True,0
+13.4,1,"Miracle of Nature",True,True,0
+13.5,1,"Seraph Strike",True,True,0
+13.6,1,"Afflatus Purgation",True,True,0
+13.7,1,"Glare IV",False,False,0
+13.8,1,"Cure III",False,False,0
+13.9,1,"Standard-issue Elixir",True,True,0
+13.10,1,"Recuperate",True,True,0
+13.11,1,"Purify",True,True,0
+13.12,1,"Guard",True,True,0
+13.13,1,"Sprint",True,True,0
+13.14,0,,True,True,0
+13.15,0,,True,True,0
+13.16,0,,True,True,0
+13.17,0,,True,True,0
+13.18,0,,True,True,0
+13.19,0,,True,True,0
+14.0,1,"Broil IV",True,True,0
+14.1,1,"Adloquium",True,True,0
+14.2,1,"Biolysis",True,True,0
+14.3,1,"Deployment Tactics",True,True,0
+14.4,1,"Chain Stratagem",True,True,0
+14.5,1,"Expedient",True,True,0
+14.6,1,"Summon Seraph",True,True,0
+14.7,1,"Seraphism",True,True,0
+14.8,1,"Seraphic Halo",False,False,0
+14.9,1,"Accession",False,False,0
+14.10,1,"Seraphic Veil",False,False,0
+14.11,1,"Standard-issue Elixir",True,True,0
+14.12,1,"Recuperate",True,True,0
+14.13,1,"Purify",True,True,0
+14.14,1,"Guard",True,True,0
+14.15,1,"Sprint",True,True,0
+14.16,0,,True,True,0
+14.17,0,,True,True,0
+14.18,0,,True,True,0
+14.19,0,,True,True,0
+15.0,1,"Fall Malefic",True,True,0
+15.1,1,"Aspected Benefic",True,True,0
+15.2,1,"Gravity II",True,True,0
+15.3,1,"Double Cast",True,True,0
+15.4,1,"Minor Arcana",True,True,0
+15.5,1,"Macrocosmos",True,True,0
+15.6,1,"Epicycle",True,True,0
+15.7,1,"Celestial River",True,True,0
+15.8,1,"Lady of Crowns",False,False,0
+15.9,1,"Lord of Crowns",False,False,0
+15.10,1,"Retrograde",False,False,0
+15.11,1,"Microcosmos",False,False,0
+15.12,1,"Oracle",False,False,0
+15.13,1,"Standard-issue Elixir",True,True,0
+15.14,1,"Recuperate",True,True,0
+15.15,1,"Purify",True,True,0
+15.16,1,"Guard",True,True,0
+15.17,1,"Sprint",True,True,0
+15.18,0,,True,True,0
+15.19,0,,True,True,0
+15.20,0,,True,True,0
+16.0,1,"Full Swing",True,True,0
+16.1,1,"Rampage",True,True,0
+16.2,1,"Rampart",True,True,0
+16.3,0,,True,True,0
+16.4,0,,True,True,0
+16.5,0,,True,True,0
+16.6,0,,True,True,0
+17.0,1,"Smite",True,True,0
+17.1,1,"Swift",True,True,0
+17.2,1,"Bloodbath",True,True,0
+17.3,0,,True,True,0
+17.4,0,,True,True,0
+17.5,0,,True,True,0
+17.6,0,,True,True,0
+18.0,1,"Eagle Eye Shot",True,True,0
+18.1,1,"Bravery",True,True,0
+18.2,1,"Dervish",True,True,0
+18.3,0,,True,True,0
+18.4,0,,True,True,0
+18.5,0,,True,True,0
+18.6,0,,True,True,0
+19.0,1,"Phantom Dart",True,True,0
+19.1,1,"Rust",True,True,0
+19.2,1,"Comet",True,True,0
+19.3,0,,True,True,0
+19.4,0,,True,True,0
+19.5,0,,True,True,0
+19.6,0,,True,True,0
+20.0,1,"Haelan",True,True,0
+20.1,1,"Stoneskin II",True,True,0
+20.2,1,"Diabrosis",True,True,0
+20.3,0,,True,True,0
+20.4,0,,True,True,0
+20.5,0,,True,True,0
+20.6,0,,True,True,0
+21.0,2,"Solid Barrel Combo",True,True,0
+21.1,1,"Keen Edge",False,False,0
+21.2,1,"Brutal Shell",False,False,0
+21.3,1,"Solid Barrel",False,False,0
+21.4,1,"Burst Strike",False,False,0
+21.5,1,"Gnashing Fang",True,True,0
+21.6,1,"Fated Circle",True,True,0
+21.7,1,"Continuation",True,True,0
+21.8,1,"Rough Divide",True,True,0
+21.9,1,"Blasting Zone",True,True,0
+21.10,1,"Heart of Corundum",True,True,0
+21.11,1,"Relentless Rush",True,True,0
+21.12,1,"Savage Claw",False,False,0
+21.13,1,"Wicked Talon",False,False,0
+21.14,1,"Hypervelocity",False,False,0
+21.15,1,"Fated Brand",False,False,0
+21.16,1,"Jugular Rip",False,False,0
+21.17,1,"Abdomen Tear",False,False,0
+21.18,1,"Eye Gouge",False,False,0
+21.19,1,"Terminal Trigger",False,False,0
+21.20,1,"Standard-issue Elixir",True,True,0
+21.21,1,"Recuperate",True,True,0
+21.22,1,"Purify",True,True,0
+21.23,1,"Guard",True,True,0
+21.24,1,"Sprint",True,True,0
+21.25,0,,True,True,0
+21.26,0,,True,True,0
+21.27,0,,True,True,0
+21.28,0,,True,True,0
+22.0,2,"Fountain Combo",True,True,0
+22.1,1,"Cascade",False,False,0
+22.2,1,"Fountain",False,False,0
+22.3,1,"Starfall Dance",True,True,0
+22.4,1,"Honing Dance",True,True,0
+22.5,1,"Fan Dance",True,True,0
+22.6,1,"Curing Waltz",True,True,0
+22.7,1,"En Avant",True,True,0
+22.8,1,"Closed Position",True,True,0
+22.9,1,"Contradance",True,True,0
+22.10,1,"Reverse Cascade",False,False,0
+22.11,1,"Fountainfall",False,False,0
+22.12,1,"Saber Dance",False,False,0
+22.13,1,"Dance of the Dawn",False,False,0
+22.14,1,"Honing Ovation",False,False,0
+22.15,1,"Standard-issue Elixir",True,True,0
+22.16,1,"Recuperate",True,True,0
+22.17,1,"Purify",True,True,0
+22.18,1,"Guard",True,True,0
+22.19,1,"Sprint",True,True,0
+22.20,0,,True,True,0
+23.0,2,"Infernal Slice Combo",True,True,0
+23.1,1,"Slice",False,False,0
+23.2,1,"Waxing Slice",False,False,0
+23.3,1,"Infernal Slice",False,False,0
+23.4,1,"Harvest Moon",True,True,0
+23.5,1,"Plentiful Harvest",True,True,0
+23.6,1,"Grim Swathe",True,True,0
+23.7,1,"Death Warrant",True,True,0
+23.8,1,"Hell's Ingress",True,True,0
+23.9,1,"Arcane Crest",True,True,0
+23.10,1,"Tenebrae Lemurum",True,True,0
+23.11,1,"Executioner's Guillotine",False,False,0
+23.12,1,"Void Reaping",False,False,0
+23.13,1,"Cross Reaping",False,False,0
+23.14,1,"Lemure's Slice",False,False,0
+23.15,1,"Fate Sealed",False,False,0
+23.16,1,"Regress",False,False,0
+23.17,1,"Communio",False,False,0
+23.18,1,"Perfectio",False,False,0
+23.19,1,"Standard-issue Elixir",True,True,0
+23.20,1,"Recuperate",True,True,0
+23.21,1,"Purify",True,True,0
+23.22,1,"Guard",True,True,0
+23.23,1,"Sprint",True,True,0
+23.24,0,,True,True,0
+24.0,1,"Dosis III",True,True,0
+24.1,1,"Phlegma III",True,True,0
+24.2,1,"Pneuma",True,True,0
+24.3,1,"Eukrasia",True,True,0
+24.4,1,"Icarus",True,True,0
+24.5,1,"Toxikon",True,True,0
+24.6,1,"Kardia",True,True,0
+24.7,1,"Mesotes",True,True,0
+24.8,1,"Eukrasian Dosis III",False,False,0
+24.9,1,"Psyche",False,False,0
+24.10,1,"Toxikon II",False,False,0
+24.11,1,"Standard-issue Elixir",True,True,0
+24.12,1,"Recuperate",True,True,0
+24.13,1,"Purify",True,True,0
+24.14,1,"Guard",True,True,0
+24.15,1,"Sprint",True,True,0
+25.0,2,"Dual Fang Combo",True,True,0
+25.1,1,"Steel Fangs",False,False,0
+25.2,1,"Hunter's Sting",False,False,0
+25.3,1,"Barbarous Bite",False,False,0
+25.4,1,"Piercing Fangs",False,False,0
+25.5,1,"Swiftskin's Sting",False,False,0
+25.6,1,"Ravenous Bite",False,False,0
+25.7,1,"Bloodcoil",True,True,0
+25.8,1,"Uncoiled Fury",True,True,0
+25.9,1,"Serpent's Tail",True,True,0
+25.10,1,"Slither",True,True,0
+25.11,1,"Snake Scales",True,True,0
+25.12,1,"Rattling Coil",True,True,0
+25.13,1,"World-swallower",True,True,0
+25.14,1,"First Generation",False,False,0
+25.15,1,"Second Generation",False,False,0
+25.16,1,"Third Generation",False,False,0
+25.17,1,"Fourth Generation",False,False,0
+25.18,1,"Sanguine Feast",False,False,0
+25.19,1,"Ouroboros",False,False,0
+25.20,1,"Death Rattle",False,False,0
+25.21,1,"Twinfang Bite",False,False,0
+25.22,1,"Twinblood Bite",False,False,0
+25.23,1,"Uncoiled Twinfang",False,False,0
+25.24,1,"Uncoiled Twinblood",False,False,0
+25.25,1,"First Legacy",False,False,0
+25.26,1,"Second Legacy",False,False,0
+25.27,1,"Third Legacy",False,False,0
+25.28,1,"Fourth Legacy",False,False,0
+25.29,1,"Backlash",False,False,0
+25.30,1,"Standard-issue Elixir",True,True,0
+25.31,1,"Recuperate",True,True,0
+25.32,1,"Purify",True,True,0
+25.33,1,"Guard",True,True,0
+25.34,1,"Sprint",True,True,0
+26.0,1,"Fire in Red",True,True,0
+26.1,1,"Holy in White",True,True,0
+26.2,1,"Creature Motif",True,True,0
+26.3,1,"Living Muse",True,True,0
+26.4,1,"Mog of the Ages",True,True,0
+26.5,1,"Smudge",True,True,0
+26.6,1,"Tempera Coat",True,True,0
+26.7,1,"Subtractive Palette",True,True,0
+26.8,1,"Advent of Chocobastion",True,True,0
+26.9,1,"Aero in Green",False,False,0
+26.10,1,"Water in Blue",False,False,0
+26.11,1,"Blizzard in Cyan",False,False,0
+26.12,1,"Stone in Yellow",False,False,0
+26.13,1,"Thunder in Magenta",False,False,0
+26.14,1,"Comet in Black",False,False,0
+26.15,1,"Pom Motif",False,False,0
+26.16,1,"Wing Motif",False,False,0
+26.17,1,"Claw Motif",False,False,0
+26.18,1,"Maw Motif",False,False,0
+26.19,1,"Pom Muse",False,False,0
+26.20,1,"Winged Muse",False,False,0
+26.21,1,"Clawed Muse",False,False,0
+26.22,1,"Fanged Muse",False,False,0
+26.23,1,"Retribution of the Madeen",False,False,0
+26.24,1,"Tempera Grassa",False,False,0
+26.25,1,"Star Prism",False,False,0
+26.26,1,"Standard-issue Elixir",True,True,0
+26.27,1,"Recuperate",True,True,0
+26.28,1,"Purify",True,True,0
+26.29,1,"Guard",True,True,0
+26.30,1,"Sprint",True,True,0
+26.31,0,,True,True,0

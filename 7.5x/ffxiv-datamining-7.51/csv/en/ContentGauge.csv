@@ -1,0 +1,104 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11
+#,,Name,Color,,TextString,,,,,,,
+int32,byte,str,ContentGaugeColor,bit&01,str,int16,sbyte,byte,int16,sbyte,byte,int16
+0,0,"","ContentGaugeColor#0",True,"",-1,1,0,-1,1,0,0
+1,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+2,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+3,0,"Corrupted Aether","ContentGaugeColor#4",True,"ContentGaugeMax_negative",80,1,2,-1,1,0,0
+4,0,"Aether Transfer","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+5,0,"Earthen Accord","ContentGaugeColor#3",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+6,0,"Funds","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+7,0,"Alluring Embrace","ContentGaugeColor#4",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+8,0,"Mana","ContentGaugeColor#3",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+9,0,"Aethertrail Attunement","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+10,0,"Emptiness","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+11,0,"Fordola's Aether","ContentGaugeColor#1",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+12,0,"Mateus's Aether","ContentGaugeColor#1",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+13,0,"Aetherial Acceleration","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+14,0,"Genbu's Focus","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+15,0,"Affinity","ContentGaugeColor#2",False,"",60,1,3,90,1,1,0
+16,0,"Down Gauge","ContentGaugeColor#3",False,"ContentGaugeMax_positive",30,-1,2,-1,1,0,0
+17,0,"Suffering","ContentGaugeColor#1",True,"ContentGaugeMax_negative",50,1,3,80,1,2,0
+18,0,"Monkey Magicks","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+19,0,"Ultima Aether","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+20,0,"Mana","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+21,0,"Mana","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+22,0,"Divine Epicness","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+23,0,"Scarlet Melody","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+24,0,"Midgardsormr's Aether","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+25,0,"Meteor Impact","ContentGaugeColor#3",True,"ContentGaugeMax_negative",80,1,2,-1,1,0,0
+26,0,"Dark Aether","ContentGaugeColor#1",False,"ContentGaugeMax_negative",50,1,3,80,1,2,0
+27,0,"Electromagnetic Induction","ContentGaugeColor#1",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+28,0,"Holy Blade","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+29,0,"Seiryu's Focus","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+30,0,"Barrier Strength","ContentGaugeColor#2",False,"",30,1,3,50,1,1,0
+31,0,"Aether Transfer","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+32,0,"Swordplay","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+33,0,"Titania's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+34,0,"Immaculate Authority","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+35,0,"Fervor of the Ancients","ContentGaugeColor#1",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+36,0,"Charge","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+37,0,"Hacking","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+38,0,"Flood of Light","ContentGaugeColor#4",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+39,0,"Charge","ContentGaugeColor#3",True,"ContentGaugeMax_negative",80,1,2,-1,1,0,0
+40,0,"Dalamud Reborn","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+41,0,"Limit Break","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+42,0,"Mother Porxie's Magic","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+43,0,"Gaia's Memories","ContentGaugeColor#2",False,"",35,1,3,50,1,1,0
+44,0,"Za Da's Tempering","ContentGaugeColor#3",False,"",-1,1,0,-1,1,0,0
+45,0,"Sovereignty ","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+46,0,"Chaos","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+47,0,"Despair","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+48,0,"Summoning of the Irmin Hedge","ContentGaugeColor#1",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+49,0,"Threat Awareness","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+50,0,"Zodiark's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+51,0,"Conviction","ContentGaugeColor#4",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+52,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+53,0,"Nidhogg's Influence","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+54,1,"","ContentGaugeColor#0",True,"",600,1,0,900,1,0,0
+55,0,"Profane Fafnir's Magic","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+56,0,"Phoinix Fire","ContentGaugeColor#1",True,"ContentGaugeMax_negative",50,1,3,80,1,2,0
+57,0,"Venat's Aether","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+58,0,"Blade Energy","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,80,1,2,0
+59,0,"Midgardsormr's Aether","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+60,0,"Scarmiglione's Power","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+61,0,"Lahabrea's Power","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+62,0,"Nidhogg's Rancor","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+63,0,"Satiety","ContentGaugeColor#2",False,"",30,1,3,50,1,1,0
+64,0,"Barrier Strength","ContentGaugeColor#2",False,"",30,1,3,70,1,1,0
+65,0,"Knights' Resolve","ContentGaugeColor#2",False,"",30,1,3,70,1,1,0
+66,0,"Cagnazzo's Power","ContentGaugeColor#1",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+67,0,"Barrier Strength","ContentGaugeColor#2",False,"",30,1,3,70,1,1,0
+68,0,"Barrier Strength","ContentGaugeColor#2",False,"",30,1,3,70,1,1,0
+69,0,"Rubicante's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+70,0,"Andromalius's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+71,0,"Ascian Prime's Power","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,90,1,2,0
+72,0,"The Fury's Frost","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,90,1,2,0
+73,0,"The Lover's Power","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,90,1,2,0
+74,0,"Athena's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+75,0,"Charge","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+76,0,"Infernal Aether","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+77,0,"Nine Tails' Yoki","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,90,1,2,0
+78,1,"","ContentGaugeColor#0",True,"",60,1,0,180,1,0,0
+79,0,"Gwyddrud's Power","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+80,0,"Otis's Condition","ContentGaugeColor#2",False,"",30,1,3,70,1,1,0
+81,0,"Ruinous Power","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+82,0,"Iq Soq Xmajun's Power","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+83,0,"Seal Power","ContentGaugeColor#3",True,"",100,1,1,-1,1,0,0
+84,0,"Saber Intensity","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+85,0,"Grooviness","ContentGaugeColor#1",True,"",-1,1,0,-1,1,0,0
+86,0,"Zelenia's Aether","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+87,0,"Rising Fear of Death","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+88,1,"","ContentGaugeColor#0",True,"",-1,1,0,-1,1,0,0
+89,0,"Doom-engine Power","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+90,0,"Channeled Aether","ContentGaugeColor#1",True,"ContentGaugeMax_positive",-1,1,0,-1,1,0,0
+91,0,"Cleaning Spirit","ContentGaugeColor#1",True,"",50,1,3,100,1,2,0
+92,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+93,0,"Massive Gravity Sphere Integrity","ContentGaugeColor#2",False,"",-1,1,0,-1,1,0,0
+94,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+95,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+96,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0
+97,0,"Aetherial Conduit Reserves","ContentGaugeColor#2",True,"ContentGaugeMax_negative",-1,1,0,-1,1,0,0
+98,0,"Burgeoning Arrogance","ContentGaugeColor#3",True,"ContentGaugeMax_negative",100,1,2,-1,1,0,0
+99,0,"Power of the Void","ContentGaugeColor#1",True,"ContentGaugeMax_negative",60,1,3,90,1,2,0
+100,0,"","ContentGaugeColor#0",False,"",0,0,0,0,0,0,0

@@ -1,0 +1,23 @@
+﻿key,0,1,2,3,4,5,6,7,8,9,10,11
+#,,,,,,Exp,Gil,Reward{Tank},Reward{Melee},Reward{Ranged},,Objective
+int32,byte,byte,byte,byte,byte,uint32,uint32,Item,Item,Item,uint32,InstanceContentTextData
+0,0,0,0,0,0,0,0,"","","",0,""
+1,1,0,1,0,0,1440,200,"Brand-new Gauntlets","Brand-new Gloves","Brand-new Halfgloves",0,"Avoid the enemy's attacks!"
+2,1,1,2,3,4,1440,200,"","","",0,"Use the combo advised by the master to attack the striking dummy!"
+3,1,1,5,5,5,1440,200,"Brand-new Sabatons","","",0,"Defeat the axe-wielding training partner!"
+4,1,1,6,7,8,1440,200,"","","",0,"Build enmity with all three striking dummies simultaneously!"
+5,1,1,9,10,11,1440,200,"Brand-new Trousers","","",0,"Fight while building enmity with multiple opponents!"
+6,1,1,12,13,14,1440,200,"","","",0,"Establish enmity with ranged attacks, and defeat all enemies!"
+7,1,1,15,15,15,1440,200,"Brand-new Cuirass","","",0,"Defeat the enemy while staying alert for reinforcements!"
+8,1,2,16,0,0,1440,200,"","Brand-new Boots","Brand-new Thighboots",0,"Defeat the axe-wielding training partner!"
+9,1,2,17,0,0,1440,200,"","","",0,"Coordinate with your allies and defeat the enemy!"
+10,1,2,18,0,0,1440,200,"","Brand-new Skirt","Brand-new Waistwrap",0,"Defeat the enemy while avoiding attacks!"
+11,1,2,19,0,0,1440,200,"","","",0,"Defeat the enemy while staying alert for reinforcements!"
+12,1,2,20,0,0,1440,200,"","Brand-new Tabard","Brand-new Robe",0,"Manipulate the battlefield and defeat the enemy!"
+13,1,3,21,0,0,1440,200,"","","Brand-new Thighboots",0,"Heal your ally and defeat the axe-wielding training partner!"
+14,1,3,22,0,0,1440,200,"","","Brand-new Waistwrap",0,"Maintain the health of your allies and defeat the enemy!"
+15,1,3,23,0,0,1440,200,"","","Brand-new Robe",0,"Defeat the enemy while healing allies and avoiding attacks!"
+16,1,0,24,0,0,2320,300,"Brand-new Ring","Brand-new Ring","Brand-new Ring",0,""
+17,2,0,25,0,0,10440,400,"","","",0,""
+18,2,0,26,0,0,10440,400,"","","",0,""
+19,2,0,27,0,0,10440,400,"","","",44410,""

@@ -1,0 +1,8 @@
+﻿key,0,1
+#,ActionTimeline,Pose
+int32,ActionTimeline,str
+0,"mannequin_ft/mq_normal_idle","Standard"
+1,"mannequin_ft/mq_emote_pose01_loop","Store Window"
+2,"mannequin_ft/mq_emote_pose02_loop","Arms Crossed"
+3,"mannequin_ft/mq_emote_pose03_loop","Unique"
+4,"mannequin_ft/mq_emote_pose04_loop","Runway Model"

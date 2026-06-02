@@ -1,0 +1,11 @@
+﻿key,0,1,2
+#,ScreenImage,LogMessage,Name
+int32,ScreenImage,LogMessage,DeepDungeonFloorEffectUI
+0,"ScreenImage#0","",""
+1,"ScreenImage#411","An ancient enchantment clouds your eyes, making it difficult to discern your quarry.","Area Effect: Blindness"
+2,"ScreenImage#412","An ancient enchantment saps your health.","Area Effect: HP Penalty"
+3,"ScreenImage#413","An ancient enchantment saps your very strength, weakening your blows.","Area Effect: Damage Penalty"
+4,"ScreenImage#415","An ancient enchantment stimulates your humours, increasing the speed with which you act.","Area Effect: Haste"
+5,"ScreenImage#414","An ancient enchantment clouds your mind, making it impossible to remember previously learned abilities.","Area Effect: Inability"
+6,"ScreenImage#416","An ancient enchantment revitalizes your body and mind.","Area Effect: HP/MP Boost"
+7,"ScreenImage#613","An ancient enchantment invigorates your humours, adding speed to your movement.","Area Effect: Sprint"
