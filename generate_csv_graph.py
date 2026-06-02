@@ -16,6 +16,7 @@ Outputs (one per consecutive pair, written to site/ — deployed to gh-pages):
 """
 import csv
 import json
+import shutil
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -543,6 +544,13 @@ def main():
             f"  {st['values_indexed']:,} values indexed  |"
             f"  {size_kb} KB  ->  {index_path}"
         )
+
+    # Write csv_graph_latest.json as an alias for the last version so that
+    # generate_viz.py and the deploy workflow can always read a stable filename.
+    last_id = versions[-1]["id"]
+    if last_id in graphs:
+        shutil.copy(Path(f"csv_graph_{last_id}.json"), Path("csv_graph_latest.json"))
+        print(f"\nAliased csv_graph_{last_id}.json -> csv_graph_latest.json")
 
     rebuilt = len(freshly_built)
     skipped = len([v for v in graphs if v not in freshly_built])
