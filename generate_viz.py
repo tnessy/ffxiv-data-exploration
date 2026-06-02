@@ -85,8 +85,9 @@ def main():
     (SITE_DIR / "data.js").write_text(f"const RAW = {data_json};", encoding="utf-8")
 
     # Copy static source files
-    shutil.copy(SRC_DIR / "styles.css", SITE_DIR / "styles.css")
-    shutil.copy(SRC_DIR / "app.js",     SITE_DIR / "app.js")
+    shutil.copy(SRC_DIR / "styles.css",      SITE_DIR / "styles.css")
+    shutil.copy(SRC_DIR / "app.js",          SITE_DIR / "app.js")
+    shutil.copy(SRC_DIR / "d3.v7.min.js",    SITE_DIR / "d3.v7.min.js")
 
     # Copy HTML template as index.html (no injection needed)
     shutil.copy(TEMPLATE_FILE, SITE_DIR / "index.html")
