@@ -1,0 +1,1 @@
+{"rows_added":[],"rows_removed":[],"rows_changed":{"5466":{"Text":["Required to Gather: <If(Equal(IntegerParameter(2),0))>Tome of Regional Folklore<Else/><Sheet(Item,IntegerParameter(1),0)/></If>","Required to Gather: <If(Equal(IntegerParameter(2),0))>Tome of Regional Folklore<Else/><Sheet(Item,IntegerParameter(1),9)/></If>"]}}}
