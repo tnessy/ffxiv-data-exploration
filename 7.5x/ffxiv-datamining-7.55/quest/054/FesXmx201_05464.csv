@@ -1,0 +1,129 @@
+0,TEXT_FESXMX201_05464_SEQ_00,"Amh Garanjy is keen to impart the tale of the Starlight Celebration upon passersby.
+
+※This quest is available for a limited time only."
+1,TEXT_FESXMX201_05464_SEQ_01,"After exchanging pleasantries with Amh Garanjy, she mentions that Associate Professor Laurenssen has been invited to recreate a certain Starlight tradition. Before either can further elaborate, a young boy named Aitken interrupts with an entreaty for aid. His friend in Bentbranch Meadows is unable to make the trip to Gridania to enjoy the Starlight Celebration, and he wishes to find some way to bring the festivities to her. Fortunately, the Starlight tradition that Amh Garanjy and Laurenssen plan to recreate this year involves a reindeer-drawn sleigh spreading joy and cheer, and Bentbranch Meadows would make a perfect first stop on its Starlight journey. With your purposes aligned, the first step is to find capable and willing artisans to assist in the sleigh's construction. You resolve to speak with Guildmasters Beatin and Geva, of the Carpenters' and Leatherworkers' Guilds respectively.
+
+※Please note that you will be unable to complete this quest after the seasonal event has ended. For details, please check the Lodestone."
+2,TEXT_FESXMX201_05464_SEQ_02,"Happy to help bring festive joy to the children, Beatin and Geva agree to construct the sleigh. With everyone set to convene at the Starlight Stalls, you head to Mih Khetto's Amphitheatre to speak with the guide."
+3,TEXT_FESXMX201_05464_SEQ_03,"Upon arriving at the Starlight Stalls, it is clear that Aitken and Laurenssen have accumulated most anything that might be needed in the construction of a sleigh. Laurenssen seems eager to fill you in on the particulars."
+4,TEXT_FESXMX201_05464_SEQ_04,"With the Saint of Nymeia and some other children joining the team, work on the sleigh can finally begin in earnest. Beatin and Geva appreciate the assistance of a master goldsmith─as the saint surely is─while the children are simply delighted by his presence. Your task, under the watchful eye of acting supervisor Laurenssen, is to provide aid where required to ensure that everything proceeds smoothly."
+5,TEXT_FESXMX201_05464_SEQ_05,
+6,TEXT_FESXMX201_05464_SEQ_06,
+7,TEXT_FESXMX201_05464_SEQ_07,
+8,TEXT_FESXMX201_05464_SEQ_08,
+9,TEXT_FESXMX201_05464_SEQ_09,
+10,TEXT_FESXMX201_05464_SEQ_10,
+11,TEXT_FESXMX201_05464_SEQ_11,
+12,TEXT_FESXMX201_05464_SEQ_12,
+13,TEXT_FESXMX201_05464_SEQ_13,
+14,TEXT_FESXMX201_05464_SEQ_14,
+15,TEXT_FESXMX201_05464_SEQ_15,
+16,TEXT_FESXMX201_05464_SEQ_16,
+17,TEXT_FESXMX201_05464_SEQ_17,
+18,TEXT_FESXMX201_05464_SEQ_18,
+19,TEXT_FESXMX201_05464_SEQ_19,
+20,TEXT_FESXMX201_05464_SEQ_20,
+21,TEXT_FESXMX201_05464_SEQ_21,
+22,TEXT_FESXMX201_05464_SEQ_22,
+23,TEXT_FESXMX201_05464_SEQ_23,
+24,TEXT_FESXMX201_05464_TODO_00,Speak with Beatin at the Carpenters' Guild.
+25,TEXT_FESXMX201_05464_TODO_01,Speak with Geva at the Leatherworkers' Guild.
+26,TEXT_FESXMX201_05464_TODO_02,Speak with the Starlight Stalls guide at Mih Khetto's Amphitheatre.
+27,TEXT_FESXMX201_05464_TODO_03,Speak with Laurenssen.
+28,TEXT_FESXMX201_05464_TODO_04,
+29,TEXT_FESXMX201_05464_TODO_05,
+30,TEXT_FESXMX201_05464_TODO_06,
+31,TEXT_FESXMX201_05464_TODO_07,
+32,TEXT_FESXMX201_05464_TODO_08,
+33,TEXT_FESXMX201_05464_TODO_09,
+34,TEXT_FESXMX201_05464_TODO_10,
+35,TEXT_FESXMX201_05464_TODO_11,
+36,TEXT_FESXMX201_05464_TODO_12,
+37,TEXT_FESXMX201_05464_TODO_13,
+38,TEXT_FESXMX201_05464_TODO_14,
+39,TEXT_FESXMX201_05464_TODO_15,
+40,TEXT_FESXMX201_05464_TODO_16,
+41,TEXT_FESXMX201_05464_TODO_17,
+42,TEXT_FESXMX201_05464_TODO_18,
+43,TEXT_FESXMX201_05464_TODO_19,
+44,TEXT_FESXMX201_05464_TODO_20,
+45,TEXT_FESXMX201_05464_TODO_21,
+46,TEXT_FESXMX201_05464_TODO_22,
+47,TEXT_FESXMX201_05464_TODO_23,
+48,TEXT_FESXMX201_05464_XMXMARKETWARP_000_000,"My apologies, the Starlight Stalls are somewhat overcrowded at present. I will be happy to guide you there once things have calmed down a little."
+49,TEXT_FESXMX201_05464_LAURENSSEN_100_000,"An adventurer, I presume? Though not an official Starlight celebrant myself, I am here at Amh Garanjy's behest, to assist with the celebrations."
+50,TEXT_FESXMX201_05464_LAURENSSEN_101_000,"Why, if it isn't Player. My thanks again for your assistance with my previous research on the historical role of reindeer in the Starlight Celebration. Blitzen is thriving, delighting young ones the realm over with his festive illusions."
+51,TEXT_FESXMX201_05464_AMHGARANJY_000_001,"Merry Starlight, good adventurer! My name is Amh Garanjy, head celebrant of the Starlight Celebration. It's a pleasure to make your acquaintance!"
+52,TEXT_FESXMX201_05464_AMHGARANJY_000_010,"Merry Starlight, Player! It must be the will of the Spinner Herself that draws us together again. Will you not indulge me, and allow me to regale you with the tale of the Starlight Celebration?"
+53,TEXT_FESXMX201_05464_AMHGARANJY_100_001,
+54,TEXT_FESXMX201_05464_AMHGARANJY_000_020,"The Starlight Celebration originated in the snowy lands of Ishgard, and has become a festival in which the Saint of Nymeia delivers gifts to children the land over."
+55,TEXT_FESXMX201_05464_AMHGARANJY_000_021,"We celebrants do what we can to bring additional cheer and goodwill to the season, hosting events that take the celebration beyond the simple distribution of gifts. And this year, there's a particular tradition whose revival we hope will amaze and delight!"
+56,TEXT_FESXMX201_05464_AMHGARANJY_000_022,
+57,TEXT_FESXMX201_05464_LAURENSSEN_000_023,
+58,TEXT_FESXMX201_05464_LAURENSSEN_000_030,"Well met, adventurer. Associate Professor Laurenssen of the Studium in Sharlayan. Amh Garanjy requested my expertise in the recreation of said tradition, namely..."
+59,TEXT_FESXMX201_05464_LAURENSSEN_000_040,"My thanks again for your kind assistance when last I visited the Starlight Celebration. Come now, 'tis I─Associate Professor Laurenssen, of the Studium. Amh Garanjy requested my expertise in the recreation of said tradition, namely..."
+60,TEXT_FESXMX201_05464_AITKEN_000_049,"(-Agitated Boy-)Excuse me! You're in charge of the Starlight Celebration...celebrations, aren't you? Will you help me do something for my friend? Please!"
+61,TEXT_FESXMX201_05464_AITKEN_000_050,"Oh, um...s-sorry for interrupting. I'm Aitken, and I have this friend who lives in Bentbranch Meadows. I was really looking forward to seeing her this Starlight..."
+62,TEXT_FESXMX201_05464_AITKEN_000_051,"But her parents said they're too busy to bring her to Gridania. Is there any way we can take the Starlight Celebration to her? ...I-I mean, to all the children at Bentbranch who are missing out!"
+63,TEXT_FESXMX201_05464_AITKEN_000_052,
+64,TEXT_FESXMX201_05464_LAURENSSEN_000_053,"The road to Gridania is perilous indeed for a child traveling alone. Though I believe we may have the perfect solution to your quandary, young Aitken. Yes, with its well-trodden tracks and spacious clearing, Bentbranch Meadows may be the ideal location!"
+65,TEXT_FESXMX201_05464_LAURENSSEN_000_054,"You see, my boy, we are in the midst of reviving a tradition recorded in ancient texts, in which the saint's helpers would ride a reindeer-drawn sleigh, ringing a bell to announce the coming of the Saint of Nymeia himself."
+66,TEXT_FESXMX201_05464_LAURENSSEN_100_054,
+67,TEXT_FESXMX201_05464_AMHGARANJY_100_054,Bentbranch Meadows sounds like a wonderful first stop for the sleigh! And I'm sure the little ones would be delighted to see the tale come to life.
+68,TEXT_FESXMX201_05464_LAURENSSEN_000_055,
+69,TEXT_FESXMX201_05464_AMHGARANJY_000_056,
+70,TEXT_FESXMX201_05464_LAURENSSEN_000_056,
+71,TEXT_FESXMX201_05464_LAURENSSEN_000_060,
+72,TEXT_FESXMX201_05464_AMHGARANJY_000_070,
+73,TEXT_FESXMX201_05464_AMHGARANJY_100_070,"Thanks to Professor Laurenssen's guidance, matters are already well in hand. As a matter of fact, requisite materials have already been procured and the designs finalized. Would you be willing to lend your aid in the rest of the endeavor, Player?"
+74,TEXT_FESXMX201_05464_LAURENSSEN_100_070,
+75,TEXT_FESXMX201_05464_AITKEN_000_100,Thank you so much! Is there anything I can do to help?
+76,TEXT_FESXMX201_05464_AITKEN_000_101,
+77,TEXT_FESXMX201_05464_AMHGARANJY_000_103,
+78,TEXT_FESXMX201_05464_LAURENSSEN_000_104,"In that case, you may assist me in seeing that the materials are duly prepared and in fetching my eager reindeer colleague from the stables. Though, building a sleigh is somewhat beyond my expertise. It would be prudent to enlist the aid of some local artisans..."
+79,TEXT_FESXMX201_05464_AMHGARANJY_000_105,"Perhaps you could handle the negotiations with the Carpenters' and Leatherworkers' Guilds, Player? In the meantime, I shall be requesting the assistance of a certain someone, who I am sure will more than rise to the occasion."
+80,TEXT_FESXMX201_05464_LAURENSSEN_000_105,
+81,TEXT_FESXMX201_05464_AMHGARANJY_000_106,"Once all the arrangements have been made, you'll need a place to work. Luckily, there is ample space at the Starlight Stalls, and we Starlight celebrants are more than happy to set some aside for your use. Our wonderful guide will see you there once everything is in place!"
+82,TEXT_FESXMX201_05464_AMHGARANJY_000_110,"Though I have my hands rather full running the Starlight Celebration here, I will ensure all celebrants know to lend their support. I look forward to hearing how the young ones in Bentbranch Meadows enjoy the festivities!"
+83,TEXT_FESXMX201_05464_BEATINE_000_120,Yes? I'm a busy man─out with it.
+84,TEXT_FESXMX201_05464_BEATINE_000_130,"A sleigh to delight the younglings? A most compelling request indeed, and one I should not be so churlish as to decline."
+85,TEXT_FESXMX201_05464_BEATINE_000_140,"You require my assistance in creating a sleigh? How could I refuse your impassioned request, especially one to bring joy to the younglings?"
+86,TEXT_FESXMX201_05464_BEATINE_000_150,"Very good! I relish the opportunity to work alongside you as a fellow carpenter, Player. With our hands shall we create a supple and sturdy sleigh, fit for the saint himself...!"
+87,TEXT_FESXMX201_05464_BEATINE_000_160,I must see to my tools. Let us rendezvous at the Starlight Stalls anon.
+88,TEXT_FESXMX201_05464_BEATINE_000_170,I shall join you at the Starlight Stalls anon once I have seen to my tools.
+89,TEXT_FESXMX201_05464_GEVA_000_180,You have a petition for the guild?
+90,TEXT_FESXMX201_05464_GEVA_000_190,"A sleigh, you say? Well, if it's for the children, I can hardly refuse. I shall see to the matter personally."
+91,TEXT_FESXMX201_05464_GEVA_000_200,"As a mother myself, I can hardly refuse a plan to bring joy to the children. Let us make the finest sleigh the Twelveswood has ever seen, Player."
+92,TEXT_FESXMX201_05464_GEVA_000_210,"Before I step away, there are a few loose ends I must tie up here. I shall join you at the Starlight Stalls shortly."
+93,TEXT_FESXMX201_05464_GEVA_000_220,"I am attending to a few matters here, but I shall be along to the Starlight Stalls shortly."
+94,TEXT_FESXMX201_05464_SYSTEM_000_230,Laurenssen and Aitken will be glad to hear that Beatin and Geva have pledged their tools to the cause. Speak to the Starlight Stalls guide and join them at the Starlight Stalls.
+95,TEXT_FESXMX201_05464_XMXMARKETWARP_000_240,Aitken and Professor Laurenssen are already waiting for you at the Starlight Stalls. Allow me to show you there posthaste!
+96,TEXT_FESXMX201_05464_SYSTEM_100_240,Head to the Starlight Stalls?
+97,TEXT_FESXMX201_05464_AITKEN_100_250,"We found everything you might need to make a sleigh! ...Or at least, I think we did, anyway. Now we just need someone who knows how to put it all together!"
+98,TEXT_FESXMX201_05464_LAURENSSEN_100_260,"Impeccable timing, Player. Materials for the sleigh have been acquired, sorted, and neatly stacked. And our reindeer friend is most eager to begin!"
+99,TEXT_FESXMX201_05464_LAURENSSEN_101_260,"Lest you wonder, my dear boy Blitzen remained behind this time. Though his talents for weaving glamours are unparalleled, this particular tradition relies more on physical prowess."
+100,TEXT_FESXMX201_05464_LAURENSSEN_100_261,No need to recount the blow-by-blows of your conversations─your triumphant visage says it all. Let us await their arrival.
+101,TEXT_FESXMX201_05464_GODBERT_000_270,"(-???-)Ho ho ho! Wait no more, for we have arrived!"
+102,TEXT_FESXMX201_05464_AITKEN_000_271,"Thank you, everyone, for agreeing to help my friend! W-Wait...the Saint of Nymeia is here to lend a hand, too?"
+103,TEXT_FESXMX201_05464_GODBERT_000_272,"(-Saint of Nymeia-)A certain pink-haired celebrant told me that a young man at the stalls had a fervent wish to deliver Starlight cheer to an absent friend. My heart was stirred! My hammer roused! Why, 'tis only natural that the saint lend his aid!"
+104,TEXT_FESXMX201_05464_AITKEN_000_273,"When I asked for help, I never dreamed that the Saint of Nymeia himself would answer! Oh, I just know my friend will be delighted!"
+105,TEXT_FESXMX201_05464_GEVA_000_274,"Between us, we should make short work of the wooden carcass, the leather seats and reins, and the golden decorations. Let's make sure these children have a Starlight gift to remember, shall we?"
+106,TEXT_FESXMX201_05464_ASSISTANTGIRL05464_000_275,(-Intrigued Girl-)What's the Saint of Nymeia doing here? Has he come to deliver gifts?
+107,TEXT_FESXMX201_05464_AITKEN_000_276,"No, he's here to help us build a sleigh! Then, a reindeer is going to pull it down to Bentbranch Meadows, to see my friend and everyone there."
+108,TEXT_FESXMX201_05464_ASSISTANTBOY05464_000_277,(-Intrigued Boy-)That sounds kind of fun! Can we help?
+109,TEXT_FESXMX201_05464_AITKEN_000_278,Of course! We're just about to start.
+110,TEXT_FESXMX201_05464_LAURENSSEN_000_279,"I see we have yet more reinforcements! Now, I want each of you to pick an artisan and listen carefully to their instructions. Understood?"
+111,TEXT_FESXMX201_05464_LAURENSSEN_000_280,"As an expert on the source material, I shall be assuming the arduous role of supervisor. This sleigh is no mere toy, and I will ensure our recreation is faithful!"
+112,TEXT_FESXMX201_05464_LAURENSSEN_000_282,"And, undoubtedly, an important task for any supervisor is to delegate. Player, your role will be to review progress and resolve any potential issues. I trust you have no objections?"
+113,TEXT_FESXMX201_05464_AITKEN_000_283,"Come on, everyone! Let's make this the best Starlight ever!"
+114,TEXT_FESXMX201_05464_LAURENSSEN_000_283,
+115,TEXT_FESXMX201_05464_AITKEN_000_071,
+116,TEXT_FESXMX201_05464_Q1_000_000,
+117,TEXT_FESXMX201_05464_A1_000_001,
+118,TEXT_FESXMX201_05464_A1_000_002,
+119,TEXT_FESXMX201_05464_AMHGARANJY_000_080,
+120,TEXT_FESXMX201_05464_AMHGARANJY_000_090,
+121,TEXT_FESXMX201_05464_AITKEN_000_260,
+122,TEXT_FESXMX201_05464_AITKEN_000_261,
+123,TEXT_FESXMX201_05464_LAURENSSEN_000_250,
+124,TEXT_FESXMX201_05464_AITKEN_000_281,

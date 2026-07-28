@@ -32,5 +32,7 @@
   {"id": "7.45h2", "label": "7.45 HF2", "path": "7.4x/ffxiv-datamining-7.45h2", "date": null},
   {"id": "7.50",   "label": "7.50",     "path": "7.5x/ffxiv-datamining-7.50",   "date": null},
   {"id": "7.50h1", "label": "7.50 HF1", "path": "7.5x/ffxiv-datamining-7.50h1", "date": null},
-  {"id": "7.51", "label": "7.51", "path": "7.5x/ffxiv-datamining-7.51", "date": null}
+  {"id": "7.51",   "label": "7.51",     "path": "7.5x/ffxiv-datamining-7.51",   "date": null},
+  {"id": "7.51h1", "label": "7.51 HF1", "path": "7.5x/ffxiv-datamining-7.51h1", "date": null},
+  {"id": "7.51h2", "label": "7.51 HF2", "path": "7.5x/ffxiv-datamining-7.51h2", "date": null}
 ]

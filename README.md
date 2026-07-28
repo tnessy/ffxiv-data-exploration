@@ -17,8 +17,8 @@ python -m venv .venv
 
 1. Add the submodule:
    ```powershell
-   git submodule add https://github.com/xivapi/ffxiv-datamining.git ffxiv-datamining-<version>
-   cd ffxiv-datamining-<version>
+   git submodule add https://github.com/xivapi/ffxiv-datamining.git <patch-cycle>/ffxiv-datamining-<version>
+   cd <patch-cycle>/ffxiv-datamining-<version>
    git checkout <commit>
    cd ..
    ```
