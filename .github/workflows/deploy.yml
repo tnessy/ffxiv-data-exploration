@@ -43,9 +43,12 @@ jobs:
           restore-keys: |
             build-${{ env.CACHE_VERSION }}-${{ hashFiles('generate_csv_graph.py') }}-
 
-      # Only checkout submodules whose cached graph hash doesn't match the expected
-      # commit in the git index. The last version (latest) is always checked out
-      # because its CSV files are always copied to site/ for serving.
+      # Checkout only the submodules this build actually reads:
+      #   1. versions whose cached graph hash doesn't match the commit in the git index
+      #   2. the latest version — its CSV files are copied to site/ for serving
+      #   3. BOTH sides of every diff pair being rebuilt — build_data_diff() reads raw
+      #      rows from each side, and read_table_rows() returns None (not an error) on a
+      #      missing file, so a skipped submodule silently yields an empty data diff.
       - name: Checkout stale submodules
         shell: python
         run: |
@@ -54,41 +57,62 @@ jobs:
 
           versions   = json.loads(Path('versions.json').read_text(encoding='utf-8'))
           latest_id  = versions[-1]['id'] if versions else None
-          checked_out, skipped = 0, 0
 
-          for v in versions:
-              path = v['path']
-
-              # Expected commit hash from git index — no network needed
+          def index_hash(path):
+              """Gitlink commit for a submodule, or None for a plain tracked directory."""
               r = subprocess.run(['git', 'ls-files', '-s', '--', path],
                                  capture_output=True, text=True)
-              if not r.stdout.strip():
-                  continue
-              expected = r.stdout.strip().split()[1]
+              first = r.stdout.strip().split('\n')[0].split() if r.stdout.strip() else []
+              # mode 160000 == gitlink; anything else is a directory of regular files
+              return first[1] if len(first) >= 2 and first[0] == '160000' else None
 
-              # Cached hash stored in graph file by generate_csv_graph.py
-              graph_file = Path(f'csv_graph_{v["id"]}.json')
+          # Pass 1 — classify every version as stale or cached.
+          stale, present = set(), {}
+          for v in versions:
+              vid, expected = v['id'], index_hash(v['path'])
+              present[vid] = expected
               cached_hash = None
+              graph_file  = Path(f'csv_graph_{vid}.json')
               if graph_file.exists():
                   try:
                       data = json.loads(graph_file.read_text(encoding='utf-8'))
                       cached_hash = data.get('metadata', {}).get('submodule_hash')
                   except Exception:
                       pass
+              # expected is None for plain directories — always rebuilt, always present
+              if expected is None or expected != cached_hash:
+                  stale.add(vid)
 
-              # Always checkout latest — its CSV files are copied to site/ for serving
-              if expected == cached_hash and v['id'] != latest_id:
-                  print(f'  {v["id"]}  cached ({expected[:8]})')
+          # Pass 2 — expand to both sides of each rebuilt diff pair, mirroring the
+          # cache condition in generate_csv_graph.py.
+          ids    = [v['id'] for v in versions]
+          needed = set(stale)
+          if latest_id:
+              needed.add(latest_id)
+          for a, b in zip(ids, ids[1:]):
+              pair_cached = (a not in stale and b not in stale
+                             and Path(f'site/diff_{a}_to_{b}.json').exists()
+                             and Path(f'site/data_diff_{a}_to_{b}.json').exists())
+              if not pair_cached:
+                  needed.update((a, b))
+
+          checked_out, skipped = 0, 0
+          for v in versions:
+              vid, path = v['id'], v['path']
+              if present[vid] is None:
+                  continue  # plain directory, already in the main checkout
+              if vid not in needed:
+                  print(f'  {vid}  cached ({present[vid][:8]})')
                   skipped += 1
-              else:
-                  reason = 'always-latest' if v['id'] == latest_id and expected == cached_hash \
-                           else ('new' if not cached_hash else f'{cached_hash[:8]} -> {expected[:8]}')
-                  print(f'  {v["id"]}  checking out ({reason})')
-                  subprocess.run(
-                      ['git', 'submodule', 'update', '--init', '--depth=1', path],
-                      check=True
-                  )
-                  checked_out += 1
+                  continue
+              reason = 'stale' if vid in stale else \
+                       ('always-latest' if vid == latest_id else 'needed for diff')
+              print(f'  {vid}  checking out ({reason})')
+              subprocess.run(
+                  ['git', 'submodule', 'update', '--init', '--depth=1', path],
+                  check=True
+              )
+              checked_out += 1
 
           print(f'\n{checked_out} submodule(s) checked out, {skipped} skipped')
 

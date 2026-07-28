@@ -42,8 +42,12 @@ def get_submodule_hash(submodule_path: Path) -> str | None:
         )
         if result.returncode == 0 and result.stdout.strip():
             # Output format: "160000 <hash> 0\t<path>"
-            parts = result.stdout.strip().split()
-            if len(parts) >= 2:
+            parts = result.stdout.strip().split('\n')[0].split()
+            # Mode 160000 is a gitlink. A plain tracked directory (e.g. a hand-placed
+            # prelim dump) lists its regular files instead — returning the first blob
+            # hash there would cache the graph against one arbitrary file, so return
+            # None and let the version rebuild every run.
+            if len(parts) >= 2 and parts[0] == '160000':
                 return parts[1]
     except Exception:
         pass
@@ -548,9 +552,16 @@ def main():
     # Write csv_graph_latest.json as an alias for the last version so that
     # generate_viz.py and the deploy workflow can always read a stable filename.
     last_id = versions[-1]["id"]
-    if last_id in graphs:
-        shutil.copy(Path(f"csv_graph_{last_id}.json"), Path("csv_graph_latest.json"))
-        print(f"\nAliased csv_graph_{last_id}.json -> csv_graph_latest.json")
+    if last_id not in graphs:
+        # Without this the previous run's alias survives, pointing at an older
+        # version whose submodule the deploy workflow no longer checks out.
+        raise RuntimeError(
+            f"latest version '{last_id}' produced no graph — csv_graph_latest.json would "
+            f"still point at a stale version. Check that {versions[-1]['path']} is checked "
+            f"out and has a csv/en or csv/ directory."
+        )
+    shutil.copy(Path(f"csv_graph_{last_id}.json"), Path("csv_graph_latest.json"))
+    print(f"\nAliased csv_graph_{last_id}.json -> csv_graph_latest.json")
 
     rebuilt = len(freshly_built)
     skipped = len([v for v in graphs if v not in freshly_built])
