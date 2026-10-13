@@ -118,3 +118,6 @@
 [submodule "7.5x/ffxiv-datamining-7.56"]
 	path = 7.5x/ffxiv-datamining-7.56
 	url = https://github.com/xivapi/ffxiv-datamining.git
+[submodule "7.5x/ffxiv-datamining-7.56h1"]
+	path = 7.5x/ffxiv-datamining-7.56h1
+	url = https://github.com/xivapi/ffxiv-datamining.git
