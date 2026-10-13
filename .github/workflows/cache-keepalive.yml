@@ -1,0 +1,34 @@
+name: Keep build cache alive
+
+# GitHub evicts caches not accessed for 7 days. Deploys are infrequent, so
+# touch the newest build cache regularly to avoid a full (~40 min) rebuild.
+# Keep CACHE_VERSION in sync with deploy.yml.
+
+on:
+  schedule:
+    - cron: "0 6 */5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+env:
+  CACHE_VERSION: v1
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restore newest build cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            csv_graph_*.json
+            site/diff_*.json
+            site/data_diff_*.json
+            site/data_diff_*/
+            site/search_index.json
+          key: build-${{ env.CACHE_VERSION }}-keepalive-nonexistent
+          restore-keys: |
+            build-${{ env.CACHE_VERSION }}-

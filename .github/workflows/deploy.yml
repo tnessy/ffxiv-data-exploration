@@ -96,7 +96,7 @@ jobs:
               if not pair_cached:
                   needed.update((a, b))
 
-          checked_out, skipped = 0, 0
+          to_fetch, skipped = [], 0
           for v in versions:
               vid, path = v['id'], v['path']
               if present[vid] is None:
@@ -108,13 +108,17 @@ jobs:
               reason = 'stale' if vid in stale else \
                        ('always-latest' if vid == latest_id else 'needed for diff')
               print(f'  {vid}  checking out ({reason})')
+              to_fetch.append(path)
+
+          # One invocation so git fetches the submodules concurrently.
+          if to_fetch:
               subprocess.run(
-                  ['git', 'submodule', 'update', '--init', '--depth=1', path],
+                  ['git', 'submodule', 'update', '--init', '--depth=1', '--jobs=8',
+                   '--'] + to_fetch,
                   check=True
               )
-              checked_out += 1
 
-          print(f'\n{checked_out} submodule(s) checked out, {skipped} skipped')
+          print(f'\n{len(to_fetch)} submodule(s) checked out, {skipped} skipped')
 
       - name: Generate graphs and diffs
         run: python generate_csv_graph.py
